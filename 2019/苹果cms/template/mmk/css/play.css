@@ -1,0 +1,7 @@
+.video-path{width:1000px;margin:0 auto;}
+.video-path .video-name{float: left;width: 900px;height:70px;line-height:70px;overflow: hidden;}
+.video-name h1{float: left;overflow: hidden;font-size: 20px;color:#000;font-weight: normal;margin-right: 8px;}
+.video-error {float: right;overflow: hidden;font-size: 15px;color:#000;font-weight: normal;}
+.player{width:1000px;margin:0 auto;}
+.player .play{float:left; width:670px;margin:0 auto;height:500px;}
+.player .ads{ float:right;width: 320px;overflow: hidden;height: 250px;display: block; }

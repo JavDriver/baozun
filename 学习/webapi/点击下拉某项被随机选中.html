@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="设置" id="bthSet">
+<select id="selCiteies">
+    <option value="1">北京</option>
+    <option value="2">上海</option>
+    <option value="3">广州</option>
+    <option value="4">南京</option>
+    <option value="5">杭州</option>
+</select>
+<script>
+  var bthSet = document.getElementById('bthSet');
+    bthSet.onclick = function (){
+    var selCiteies = document.getElementById('selCiteies');
+        var option = selCiteies.getElementsByTagName('option');
+        var randomIndex = parseInt( Math.random() * option.length) + 1;
+        var options = option[randomIndex];
+        console.log(options);
+        options.selected = true;
+         console.log(randomIndex);
+    }
+</script>
+　
+</body>
+</html>

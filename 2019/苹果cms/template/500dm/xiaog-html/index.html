@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>高清快播、电影天堂、免费观看电影、2013快播电影、在线qvod播放 - {maccms:name}</title>
+<meta name="keywords" content="电影免费天堂,快播电影,qvod电影,电影天堂,快播在线观看,在线59电影,最近好看电影,男人快播网,快播你知道的,快播你懂的,{maccms:name}" />
+<meta name="description" content="{maccms:name}在线高清快播网提 供免费电影在线播放服务、包括好看的电影、最新影片、全力打造我们的免费在线影院。" />
+<link href="{maccms:templatepath}images/base.css" type="text/css" rel="stylesheet" />
+<script src="{maccms:templatepath}images/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="{maccms:templatepath}images/log.js" type="text/javascript"></script>
+<script src="{maccms:templatepath}images/base.js" type="text/javascript"></script>
+<script>var maccms_path='{maccms:path}';</script>
+<script src="{maccms:path}js/history.js"></script>
+</head>
+<body>
+{maccms:head}
+ 
+<div id="content">   
+<div id="content">  
+<div style="zoom:1;overflow:hidden;width:982px;height:18px;border:1px solid #EDCE7B;margin-top:8px;padding:8px;padding-top:9px;background-color:#FFFFEA;color:#000000;"> <p> <b><font color=red>郑重声明</font></b>：{maccms:name}提供最全的最新快播电影，电视剧，2013最新电影我们向大家承诺：我们坚决不放弹窗广告，为大家提供更清爽、更快速、更绿色的观看体验.</p></div>
+	<div class="ui-box fn-clear" id="latest-focus">
+		<div class="latest-tab-nav">
+			<ul>
+				<li onmouseover="setTab('latest',1,6);" id="latest1" class="current">热门影片推荐</li>
+				<li onmouseover="setTab('latest',2,6);" id="latest2">最新电视剧</li>
+				<li onmouseover="setTab('latest',3,6);" id="latest3">最新电影</li>
+				<li onmouseover="setTab('latest',4,6);" id="latest4">最新动漫</li>
+				<li onmouseover="setTab('latest',5,6);" id="latest5">最新综艺</li>
+				<li onmouseover="setTab('latest',6,6);" id="latest6">蓝光高清</li>
+			</ul>
+		</div>
+		<div class="latest-tab-box">
+			<div id="con_latest_1" class="hot-latest">
+				<ul class="img-list fn-clear">
+				 			  {maccms:vodlist num=7  by=hits type=all order=desc}     <li>
+								   <a href="[vodlist:link]" class="play-pic">
+							<img src="[vodlist:pic]" onerror="javascript:this.src="{maccms:templatepath}images/fx8.gif';" alt="[vodlist:name]" />
+							<label class="fbg"> </label>
+							<label class="txt">[vodlist:remarks]</label>
+						</a>
+						<h5><a href="[vodlist:link]">[vodlist:name]</a></h5>
+					</li> 	{/maccms:vodlist}
+					</ul>
+				<!-- // img-list end -->
+				
+				<ul class="txt-list fn-clear"> 
+				{maccms:vodlist num=12  by=time type=all start=8 order=desc}
+				 <li><em>{if:"[vodlist:num]"<"10"}0[vodlist:num]{else}[vodlist:num]{end if}</em><a href="[vodlist:link]" title="[vodlist:name]" target="_blank">[vodlist:name]</a>/<a href="[vodlist:link]" class="gray" target="_blank">[vodlist:typename]</a></li>{/maccms:vodlist}
+				 </ul>
+				<!-- // txt-list end -->
+					</div>
+			<!-- // con_latest_1 end -->
+			<div id="con_latest_2" class="fn-hide">
+				<ul class="img-list fn-clear">
+				   			        {maccms:vodlist num=7 order=desc by=time type=2}     <li>
+								   <a href="[vodlist:link]" class="play-pic">
+							<img src="[vodlist:pic]" onerror="javascript:this.src="{maccms:templatepath}images/fx8.gif';" alt="[vodlist:name]" />
+							<label class="fbg"> </label>
+							<label class="txt">{if:[vodlist:state]=0}完结{else}第[vodlist:state]集{end if}</label>
+						</a>
+						<h5><a href="[vodlist:link]">[vodlist:name]</a></h5>
+					</li> 	{/maccms:vodlist}
+					</ul>
+				<!-- // img-list end -->
+						<ul class="txt-list fn-clear"> 
+				{maccms:vodlist num=12 order=desc by=time type=2 start=8}
+				 <li><em>{if:"[vodlist:num]"<"10"}0[vodlist:num]{else}[vodlist:num]{end if}</em><a href="[vodlist:link]" title="[vodlist:name]" target="_blank">[vodlist:name]</a>/<a href="[vodlist:link]" class="gray" target="_blank">{if:[vodlist:state]=0}完结{else}第[vodlist:state]集{end if}</a></li>{/maccms:vodlist}
+				 </ul>
+				<!-- // txt-list end -->
+					</div>
+			<!-- // con_latest_2 end -->
+		   <div id="con_latest_3" class="fn-hide">
+			    	<ul class="img-list fn-clear">
+					
+				   			        {maccms:vodlist num=7 order=desc by=time type=1}     <li>
+								   <a href="[vodlist:link]" class="play-pic">
+							<img src="[vodlist:pic]" onerror="javascript:this.src="{maccms:templatepath}images/fx8.gif';" alt="[vodlist:name]" />
+							<label class="fbg"> </label>
+							<label class="txt">[vodlist:remarks]</label>
+						</a>
+						<h5><a href="[vodlist:link]">[vodlist:name]</a></h5>
+					</li> 	{/maccms:vodlist}
+					</ul>
+					<!-- // img-list end -->
+					<ul class="txt-list fn-clear"> 
+					{maccms:vodlist num=12  order=desc by=time type=1 start=8}
+				 <li><em>{if:"[vodlist:num]"<"10"}0[vodlist:num]{else}[vodlist:num]{end if}</em><a href="[vodlist:link]" title="[vodlist:name]" target="_blank">[vodlist:name]</a>/<a href="[vodlist:link]" class="gray" target="_blank">[vodlist:typename]</a></li>{/maccms:vodlist}
+				 </ul>
+				<!-- // txt-list end -->
+					</div>
+			<!-- // con_latest_3 end -->
+			
+					   <div id="con_latest_4" class="fn-hide">
+			    	<ul class="img-list fn-clear">
+				
+				   			        {maccms:vodlist num=7 order=desc by=time type=4}     <li>
+								   <a href="[vodlist:link]" class="play-pic">
+							<img src="[vodlist:pic]" onerror="javascript:this.src="{maccms:templatepath}images/fx8.gif';" alt="[vodlist:name]" />
+							<label class="fbg"> </label>
+							<label class="txt">{if:[vodlist:state]=0}完结{else}第[vodlist:state]集{end if}</label>
+						</a>
+						<h5><a href="[vodlist:link]">[vodlist:name]</a></h5>
+					</li> 	{/maccms:vodlist}
+					</ul>
+					<!-- // img-list end -->
+					<ul class="txt-list fn-clear"> 
+					{maccms:vodlist num=12  order=desc by=time type=4 start=8}
+				 <li><em>{if:"[vodlist:num]"<"10"}0[vodlist:num]{else}[vodlist:num]{end if}</em><a href="[vodlist:link]" title="[vodlist:name]" target="_blank">[vodlist:name]</a>/<a href="[vodlist:link]" class="gray" target="_blank">{if:[vodlist:state]=0}完结{else}第[vodlist:state]集{end if}</a></li>{/maccms:vodlist}
+				 </ul>
+				<!-- // txt-list end -->
+					</div>
+			<!-- // con_latest_4end -->
+						
+					   <div id="con_latest_5" class="fn-hide">
+			    	<ul class="img-list fn-clear">
+					
+				   			        {maccms:vodlist num=7 order=desc by=time type=3}     <li>
+								   <a href="[vodlist:link]" class="play-pic">
+							<img src="[vodlist:pic]" onerror="javascript:this.src="{maccms:templatepath}images/fx8.gif';" alt="[vodlist:name]" />
+							<label class="fbg"> </label>
+							<label class="txt">{if:[vodlist:state]=0}完结{else}第[vodlist:state]期{end if}</label>
+						</a>
+						<h5><a href="[vodlist:link]">[vodlist:name]</a></h5>
+					</li> 	{/maccms:vodlist}
+					</ul>
+					<!-- // img-list end -->
+					<ul class="txt-list fn-clear"> 
+					{maccms:vodlist num=12  order=desc by=time type=3 start=8}
+				 <li><em>{if:"[vodlist:num]"<"10"}0[vodlist:num]{else}[vodlist:num]{end if}</em><a href="[vodlist:link]" title="[vodlist:name]" target="_blank">[vodlist:name]</a>/<a href="[vodlist:link]" class="gray" target="_blank">{if:[vodlist:state]=0}完结{else}第[vodlist:state]期{end if}</a></li>{/maccms:vodlist}
+				 </ul>
+				<!-- // txt-list end -->
+					</div>
+			<!-- // con_latest_5end -->
+					   <div id="con_latest_6" class="fn-hide">
+			    	<ul class="img-list fn-clear">
+					
+				   			        {maccms:vodlist num=7 order=desc by=time type=3}     <li>
+								   <a href="[vodlist:link]" class="play-pic">
+							<img src="[vodlist:pic]" onerror="javascript:this.src="{maccms:templatepath}images/fx8.gif';" alt="[vodlist:name]" />
+							<label class="fbg"> </label>
+							<label class="txt">{if:[vodlist:state]=0}完结{else}第[vodlist:state]期{end if}</label>
+						</a>
+						<h5><a href="[vodlist:link]">[vodlist:name]</a></h5>
+					</li> 	{/maccms:vodlist}
+					</ul>
+					<!-- // img-list end -->
+					<ul class="txt-list fn-clear"> 
+					{maccms:vodlist num=12  order=desc by=time type=3 start=8}
+				 <li><em>{if:"[vodlist:num]"<"10"}0[vodlist:num]{else}[vodlist:num]{end if}</em><a href="[vodlist:link]" title="[vodlist:name]" target="_blank">[vodlist:name]</a>/<a href="[vodlist:link]" class="gray" target="_blank">{if:[vodlist:state]=0}完结{else}第[vodlist:state]期{end if}</a></li>{/maccms:vodlist}
+				 </ul>
+				<!-- // txt-list end -->
+					</div>
+			<!-- // con_latest_6end -->
+			</div>	
+	</div>
+	<!-- // latest-focus end -->
+	<div class="layout fn-clear">
+		<div class="mainbox fn-left">
+			<div class="ui-box l-h" id="tv-module">
+				<div class="ui-title fn-clear">
+					<label class="ui-mark">电视</label>
+					<h2>电视剧<em>·  TV (小俊设计 QQ：787850323)</em></h2>
+					 {maccms:menulist parent=2}
+<span><a href="[menulist:link]">[menulist:name]</a> <em>|</em></span>
+{/maccms:menulist}
+
+			</div>
+				<div class="ui-cnt">
+					<ul class="img-list fn-clear">
+					{maccms:vodlist num=10 order=desc by=time type=2}
+					<li>
+							  <a href="[vodlist:link]" class="play-pic" title="[vodlist:name]" target="_blank">
+								<img src="[vodlist:pic]" onerror="javascript:this.src="{maccms:templatepath}images/fx8.gif';"  alt="[vodlist:name]" />
+								<label class="fbg"> </label>
+								<label class="txt">{if:[vodlist:state]=0}完结{else}第[vodlist:state]集{end if}</label>
+							</a>
+							<h5><a href="[vodlist:link]" title="[vodlist:name]" target="_blank">[vodlist:name]</a></h5>
+							<p class="txt">[vodlist:starring] </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">[vodlist:score]</strong>
+							</p>
+						  </li>		{/maccms:vodlist}
+						  </ul>
+					<!-- // img-list end -->
+					
+					  <ul class="txt-list fn-clear">
+					  {maccms:vodlist num=12  order=desc by=time type=2 start=10}
+					  <li><em>{if:"[vodlist:num]"<"10"}0[vodlist:num]{else}[vodlist:num]{end if}</em><a href="[vodlist:link]" title="[vodlist:name]" target="_blank">[vodlist:name]</a>/<a href="[vodlist:link]" title="[vodlist:name]" class="gray" target="_blank">{if:[vodlist:state]=0}完结{else}第[vodlist:state]集{end if}</a>
+					      </li>{/maccms:vodlist}
+						  </ul>
+					<!-- // txt-list end -->
+				</div>
+			</div>
+			<!-- // ui-box#latest end -->
+		</div>
+		<!-- // mainbox end -->
+		<div class="sidebar fn-right">
+			<div class="ui-box r-h">
+				<div class="ui-box-item score-ranking">
+					<div class="ui-title">
+						<h3>电视剧点播榜</h3>
+					</div>
+					<div class="ui-cnt">
+						<ul class="ranking-list">
+						 {maccms:vodlist num=10  by=time type=2 order=desc}
+						<li><em class="red">[vodlist:numjoin] </em>
+								<span class="score"> [vodlist:hits]</span>
+								<h5><a href="[vodlist:link]" title="[vodlist:name]">[vodlist:name]</a></h5>
+							</li>{/maccms:vodlist}
+							</ul>
+						<!-- // ranking-list end -->
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+				<div class="ui-box-item score-ranking">
+					<div class="ui-title">
+						<h3>电视剧推荐榜</h3>
+					</div>
+					<div class="ui-cnt">
+						<ul class="ranking-list">
+						 {maccms:vodlist num=10  by=time type=2 order=desc}
+						<li><em class="red">[vodlist:numjoin]</em>
+								<span class="score"> [vodlist:hits]</span>
+								<h5><a href="[vodlist:link]" title="[vodlist:name]">[vodlist:name]</a></h5>
+							</li>{/maccms:vodlist}
+							</ul>
+						<!-- // ranking-list end -->
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+			</div>
+		</div>	
+		<!-- // sidebar end -->
+	</div>
+	<!-- // layout end -->
+<div class="layout fn-clear">
+		<div class="mainbox fn-left">
+			<div class="ui-box l-h" id="movie-module">
+				<div class="ui-title fn-clear">
+					<label class="ui-mark">电影</label>
+					<h2>电影<em>·  Movie</em></h2>
+					{maccms:menulist parent=1}
+<span><a href="[menulist:link]">[menulist:name]</a> <em>|</em></span>
+{/maccms:menulist}
+			</div>
+				<div class="ui-cnt">
+					<ul class="img-list fn-clear">
+					{maccms:vodlist num=10 order=desc by=time type=1}
+					<li>
+							  <a href="[vodlist:link]" class="play-pic" title="[vodlist:name]" target="_blank">
+								<img src="[vodlist:pic]" onerror="javascript:this.src="{maccms:templatepath}images/fx8.gif';"  alt="[vodlist:name]" />
+								<label class="fbg"> </label>
+								<label class="txt">[vodlist:remarks]</label>
+							</a>
+							<h5><a href="[vodlist:link]" title="[vodlist:name]" target="_blank">[vodlist:name]</a></h5>
+							<p class="txt">[vodlist:starring] </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">[vodlist:score]</strong>
+							</p>
+						  </li>		{/maccms:vodlist}
+						  </ul>
+					<!-- // img-list end -->
+					
+					  <ul class="txt-list fn-clear">
+					  {maccms:vodlist num=12  order=desc by=time type=1 start=10}
+					  <li><em>{if:"[vodlist:num]"<"10"}0[vodlist:num]{else}[vodlist:num]{end if}</em><a href="[vodlist:link]" title="[vodlist:name]" target="_blank">[vodlist:name]</a>/<a href="[vodlist:link]" title="[vodlist:name]" class="gray" target="_blank">[vodlist:remarks]</a>
+					      </li>{/maccms:vodlist}
+						  </ul>
+					<!-- // txt-list end -->
+				</div>
+			</div>
+			<!-- // ui-box#latest end -->
+		</div>
+		<!-- // mainbox end -->
+	<div class="sidebar fn-right">
+			<div class="ui-box r-h">
+				<div class="ui-box-item score-ranking">
+					<div class="ui-title">
+						<h3>电影点播榜</h3>
+					</div>
+					<div class="ui-cnt">
+						<ul class="ranking-list">
+						 {maccms:vodlist num=10  by=time type=1 order=desc}
+						<li><em class="purple">[vodlist:numjoin] </em>
+								<span class="score"> [vodlist:hits]</span>
+								<h5><a href="[vodlist:link]" title="[vodlist:name]">[vodlist:name]</a></h5>
+							</li>{/maccms:vodlist}
+							</ul>
+						<!-- // ranking-list end -->
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+			<div class="ui-box-item score-ranking">
+					<div class="ui-title">
+						<h3>电影推荐榜</h3>
+					</div>
+					<div class="ui-cnt">
+						<ul class="ranking-list">
+						 {maccms:vodlist num=10  by=time type=1 order=desc}
+						<li><em class="purple">[vodlist:numjoin] </em>
+								<span class="score"> [vodlist:hits]</span>
+								<h5><a href="[vodlist:link]" title="[vodlist:name]">[vodlist:name]</a></h5>
+							</li>{/maccms:vodlist}
+							</ul>
+						<!-- // ranking-list end -->
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+			</div>
+		</div>	
+		<!-- // sidebar end -->
+	</div>
+	<!-- // layout end -->
+		<div class="layout fn-clear">
+		<div class="mainbox fn-left">
+			<div class="ui-box l-h" id="comic-module">
+				<div class="ui-title fn-clear">
+					<label class="ui-mark">动漫</label>
+					<h2>经典动漫<em>·  Comic (小俊设计 QQ：787850323 www.xj.com.nu) </em></h2>
+
+			</div>
+				<div class="ui-cnt">
+					<ul class="img-list fn-clear">
+					{maccms:vodlist num=10 order=desc by=time type=4}
+					<li>
+							  <a href="[vodlist:link]" class="play-pic" title="[vodlist:name]" target="_blank">
+								<img src="[vodlist:pic]" onerror="javascript:this.src="{maccms:templatepath}images/fx8.gif';"  alt="[vodlist:name]" />
+								<label class="fbg"> </label>
+								<label class="txt">{if:[vodlist:state]=0}完结{else}第[vodlist:state]集{end if}</label>
+							</a>
+							<h5><a href="[vodlist:link]" title="[vodlist:name]" target="_blank">[vodlist:name]</a></h5>
+							<p class="txt">[vodlist:starring] </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">[vodlist:score]</strong>
+							</p>
+						  </li>		{/maccms:vodlist}
+						  </ul>
+					<!-- // img-list end -->
+					
+					  <ul class="txt-list fn-clear">
+					  {maccms:vodlist num=12  order=desc by=time type=4 start=10}
+					  <li><em>{if:"[vodlist:num]"<"10"}0[vodlist:num]{else}[vodlist:num]{end if}</em><a href="[vodlist:link]" title="[vodlist:name]" target="_blank">[vodlist:name]</a>/<a href="[vodlist:link]" title="[vodlist:name]" class="gray" target="_blank">{if:[vodlist:state]=0}完结{else}第[vodlist:state]集{end if}</a>
+					      </li>{/maccms:vodlist}
+						  </ul>
+					<!-- // txt-list end -->
+				</div>
+			</div>
+			<!-- // ui-box#latest end -->
+		</div>
+		<!-- // mainbox end -->
+		<div class="sidebar fn-right">
+			<div class="ui-box r-h">
+				<div class="ui-box-item score-ranking">
+					<div class="ui-title">
+						<h3>动漫点播榜</h3>
+					</div>
+					<div class="ui-cnt">
+						<ul class="ranking-list">
+						 {maccms:vodlist num=10  by=time type=4 order=desc}
+						<li><em class="green">[vodlist:numjoin] </em>
+								<span class="score"> [vodlist:hits]</span>
+								<h5><a href="[vodlist:link]" title="[vodlist:name]">[vodlist:name]</a></h5>
+							</li>{/maccms:vodlist}
+							</ul>
+						<!-- // ranking-list end -->
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+				<div class="ui-box-item score-ranking">
+					<div class="ui-title">
+						<h3>动漫推荐榜</h3>
+					</div>
+					<div class="ui-cnt">
+						<ul class="ranking-list">
+						 {maccms:vodlist num=10  by=time type=4 order=desc}
+						<li><em class="green">[vodlist:numjoin] </em>
+								<span class="score"> [vodlist:hits]</span>
+								<h5><a href="[vodlist:link]" title="[vodlist:name]">[vodlist:name]</a></h5>
+							</li>{/maccms:vodlist}
+							</ul>
+						<!-- // ranking-list end -->
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+			</div>
+		</div>	
+		<!-- // sidebar end -->
+	</div>
+	<!-- // layout end -->
+		<div class="layout fn-clear">
+		<div class="mainbox fn-left">
+			<div class="ui-box l-h" id="fun-module">
+				<div class="ui-title fn-clear">
+					<label class="ui-mark">综艺</label>
+					<h2>综艺娱乐<em>·  Variety Show(小俊设计 QQ：787850323 www.xj.com.nu) </em></h2>
+
+			</div>
+				<div class="ui-cnt">
+					<ul class="img-list fn-clear">
+					{maccms:vodlist num=10 order=desc by=time type=4}
+					<li>
+							  <a href="[vodlist:link]" class="play-pic" title="[vodlist:name]" target="_blank">
+								<img src="[vodlist:pic]" onerror="javascript:this.src="{maccms:templatepath}images/fx8.gif';"  alt="[vodlist:name]" />
+								<label class="fbg"> </label>
+								<label class="txt">{if:[vodlist:state]=0}完结{else}第[vodlist:state]期{end if}</label>
+							</a>
+							<h5><a href="[vodlist:link]" title="[vodlist:name]" target="_blank">[vodlist:name]</a></h5>
+							<p class="txt">[vodlist:starring] </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">[vodlist:score]</strong>
+							</p>
+						  </li>		{/maccms:vodlist}
+						  </ul>
+					<!-- // img-list end -->
+					
+					  <ul class="txt-list fn-clear">
+					  {maccms:vodlist num=12  order=desc by=time type=3 start=10}
+					  <li><em>{if:"[vodlist:num]"<"10"}0[vodlist:num]{else}[vodlist:num]{end if}</em><a href="[vodlist:link]" title="[vodlist:name]" target="_blank">[vodlist:name]</a>/<a href="[vodlist:link]" title="[vodlist:name]" class="gray" target="_blank">{if:[vodlist:state]=0}完结{else}第[vodlist:state]期{end if}</a>
+					      </li>{/maccms:vodlist}
+						  </ul>
+					<!-- // txt-list end -->
+				</div>
+			</div>
+			<!-- // ui-box#latest end -->
+		</div>
+		<!-- // mainbox end -->
+		<div class="sidebar fn-right">
+			<div class="ui-box r-h">
+				<div class="ui-box-item score-ranking">
+					<div class="ui-title">
+						<h3>综艺点播榜</h3>
+					</div>
+					<div class="ui-cnt">
+						<ul class="ranking-list">
+						 {maccms:vodlist num=10  by=time type=3 order=desc}
+						<li><em class="brown">[vodlist:numjoin] </em>
+								<span class="score"> [vodlist:hits]</span>
+								<h5><a href="[vodlist:link]" title="[vodlist:name]">[vodlist:name]</a></h5>
+							</li>{/maccms:vodlist}
+							</ul>
+						<!-- // ranking-list end -->
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+			<div class="ui-box-item score-ranking">
+					<div class="ui-title">
+						<h3>综艺推荐榜</h3>
+					</div>
+					<div class="ui-cnt">
+						<ul class="ranking-list">
+						 {maccms:vodlist num=10  by=time type=3 order=desc}
+						<li><em class="brown">[vodlist:numjoin] </em>
+								<span class="score"> [vodlist:hits]</span>
+								<h5><a href="[vodlist:link]" title="[vodlist:name]">[vodlist:name]</a></h5>
+							</li>{/maccms:vodlist}
+							</ul>
+						<!-- // ranking-list end -->
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+			</div>
+		</div>	
+		<!-- // sidebar end -->
+	</div>
+
+	 <div class="ui-box fn-clear" id="link-focus"><div class="ui-title fn-clear"><label class="ui-mark">链接</label><h2>友情链接<em>·  Friend Links</em></h2></div>
+	 <div class="ui-cnt"><ul class="txt-list links-list fn-clear">
+	 <li><a href="http://xiaog.cc/" target="_blank">小俊工作室</a></li>
+	 {maccms:linklist style=font}
+<li><a href="[linklist:link]" target="_blank">[linklist:name len=8]</a></li>
+{/maccms:linklist}</ul></div></div>
+</div>
+<!-- // content end -->
+{maccms:foot}
+</BODY>
+</HTML>

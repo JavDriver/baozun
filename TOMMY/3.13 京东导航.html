@@ -1,0 +1,386 @@
+<style>
+    .user_menu ul {
+        margin: 0px;
+        padding: 0px;
+    }
+    .user_menu ul li a img:nth-child(2){display: none; position: absolute; left:0; top:0;}
+    .user_menu ul li:hover a img:nth-child(2){display:block;}
+    .user_menu ul li {
+        float: left;
+        display: inline;
+        font: 0.9em Arial, Helvetica, sans-serif;
+        list-style: none;
+        z-index: 2;
+    }
+    .user_menu ul li a{ position: relative; display: inline-block;}
+    .user_menu ul li .popBox .topnav-cur-b {
+        top: 2px;
+        overflow: hidden;
+        display: block;
+        width: 1920px;
+        z-index: 2;
+        position: absolute;
+        height: auto;
+        background: rgba(255,255,255,0.8);
+        padding-bottom: 43px;
+        padding-top: 44px;
+    }
+    .user_menu ul li .popBox {
+        visibility: hidden;
+        position: absolute;
+        z-index: 2;
+        margin-top: -2px
+    }
+    .user_menu ul li:hover .popBox {
+        visibility: visible;
+    }
+    .user_menu .nav1{ width: 1165px; margin: 0 auto; }
+    .user_menu .nav1 .nav1_0{ list-style-type: none; width: 196px; float: left; margin-left: 173px;}
+    .user_menu .nav1 .nav1_0 a { font-size: 16px; color: #00164f; margin-bottom: 10px; display: block;}
+    .user_menu .nav1 .nav1_0 a b{ font-weight: bold; font-style: normal;}
+    .user_menu .nav1 .nav1_1{ width: 234px; float: left;}
+    .user_menu .nav1 .nav1_2{ width: 364px; float: left; font-size: 16px; text-align: center;}
+    .user_menu .nav1 .nav1_2 img{ margin-bottom: 10px;}
+    .user_menu .nav1 .nav1_2 a{color: #00164f;}
+    .user_searchArea {
+        width: 190px;
+        height: auto;
+        display: block;
+        overflow: hidden;
+        font-size: 14px;
+        margin-left: 18px;
+        margin-top: 11px;
+    }
+    .user_jSearchArea {
+        background: none repeat scroll 0 0;
+        overflow: hidden;
+    }
+    .user_jSearchInput {
+        overflow: hidden;
+        margin-left: 7px;
+    }
+    .user_inputMiddle {
+        width: 150px;
+        background: none repeat scroll 0 0;
+        border: 0px solid #b1b1b1;
+        color: #999999;
+        float: left;
+        height: 22px;
+        line-height: 22px;
+        padding: 0px 0;
+        text-indent: 5px;
+    }
+    .user_submit {
+        height: 22px;
+        width: 30px;
+        border: medium none;
+        clear: both;
+        cursor: pointer;
+        overflow: hidden;
+        background: none;
+    }
+    .user_menu ul li .img2{ display: none; position: absolute; left:0; top:0;}
+    .user_menu ul li:hover .img2 {
+        display: block;
+    }
+    .user_menu .TM_nav_man {width: 1120px; margin: 0 auto;    padding-left: 213px;}
+    .user_menu .TM_nav_man  a{ font-size: 16px; color: #00164f;font-family:"微软雅黑";margin-bottom: 15px; display: block;}
+    .user_menu .TM_nav_man_box1{ width: 165px;}
+    .user_menu .TM_nav_man_box2{ width: 201px;}
+    .user_menu .TM_nav_man_box3{ width: 177px;}
+    .user_menu .TM_nav_man_box4{ float: left; width: 364px; float: left; text-align: center;}
+    .user_menu .TM_nav_man_box4 a{font-size: 16px; color: #00164f;font-family:"微软雅黑"; text-align: center; }
+    .user_menu .TM_nav_man_box4 img{ margin-bottom: 10px;display: block;}
+    .user_menu .TM_nav_man_box5{ float: left; width: 474px; float: left; text-align: center;}
+    .user_menu .TM_nav_man_box5 a{font-size: 16px; color: #00164f;font-family:"微软雅黑"; text-align: center; }
+    .user_menu .TM_nav_man_box5 img{margin-bottom: 10px;display: block;}
+    .user_menu .TM_nav_th {list-style-type: none;  margin-top: 0; width: 1120px; margin: 0 auto; padding: 0; padding-left: 96px;}
+    .user_menu .TM_nav_zk { width: 125px;}
+    .user_menu .TM_nav_th  a{ font-size: 16px; color: #00164f;font-family:"微软雅黑";display: block;margin-bottom: 15px;}
+    .user_menu .TM_nav_man1{ float: left;}
+    .user_menu .TM_nav_th  a cite{ color: #cb0c2e;   font-style: normal}
+    .user_menu .TM_nav_th1{ float: left;     width: 151px;}
+    .user_menu .TM_nav_tk_box1{width: 160px;float: left; }
+    .user_menu .TM_nav_tk_box2{width: 160px;float: left; margin-left: 200px;}
+    .user_menu .TM_nav_tk_box3{width: 177px;float: left; }
+    .user_menu .TM_nav_uw{ padding-left: 209px;}
+    .user_menu .TM_nav_uw ul{list-style-type: none; float: left;}
+    .user_menu .TM_nav_uw ul li{margin-bottom: 15px;}
+    .user_menu .TM_nav_uw ul li a{ font-size: 16px; color: #00164f;font-family:"微软雅黑";}
+    .user_menu .TM_nav_uw_box1{width: 148px;}
+    .user_menu .TM_nav_uw_box2{width: 300px;}
+    .user_menu .TM_nav_uw_box3{ float: left; width: 474px; float: left;text-align: center;}
+    .user_menu .TM_nav_uw_box3 a{font-size: 16px; color: #00164f;font-family:"微软雅黑"; text-align: center;}
+    .user_menu .TM_nav_uw_box3 img{ margin-bottom: 10px; display: block;}
+    .user_menu .hkg555{position: absolute;right: 0px;top: 14px;}
+    .user_menu .TM_nav_pj{padding-left: 158px;}
+    .user_menu .TM_nav_pj ul{list-style-type: none; float: left;}
+    .user_menu .TM_nav_pj ul li{margin-bottom: 15px;}
+    .user_menu .TM_nav_pj ul li a{ font-size: 16px; color: #00164f;font-family:"微软雅黑";}
+    .user_menu .TM_nav_pj_box1{ width: 218px;}
+    .user_menu .TM_nav_pj_box2{ width: 315px;}
+    .user_menu .TM_zaocun_box1 {
+        width: 103px;
+        float: left;
+        margin-right: 87px; margin-left: 194px;}
+    .user_menu .TM_zaocun_box1 ul {
+        list-style-type: none;
+    }
+    .user_menu .TM_zaocun_box1 ul li {
+        margin-bottom: 15px;
+    }
+    .user_menu .TM_zaocun_box1 ul li a {
+        font-size: 16px;
+        color: rgb(0, 22, 79);
+        font-family: 微软雅黑;
+    }
+    .user_menu .TM_zaocun_box2 {
+        float: left;
+        width: 560px;
+    }
+    .user_menu .TM_zaocun_box2 ul { list-style-type: none;}
+    .user_menu .TM_zaocun_box2 ul li{
+        width: 268px;
+        height: 145px;
+        float: left;
+        margin:0 10px 10px 0;
+    }
+    .user_menu .TM_zaocun_box2 h3 {
+        font-size: 16px;
+        color: #00164F;
+        font-weight: bold;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #00164F;
+        margin-bottom: 10px;
+    }
+    .user_menu .TM_zaocun_box3{
+        float: left;
+        width: 151px;
+    }
+    .user_menu .TM_zaocun_box3 a {
+        font-size: 16px;
+        color: #00164f;
+        font-family: "微软雅黑";
+        display: block;
+        margin-bottom: 15px;
+    }
+</style>
+<div class="" style="width:1920px;background:#001e68;height:35px;margin-top:5px;">
+    <div style="display:block;overflow:hidden;">
+        <div class="user_menu " style="width:1285px;margin:0 auto;">
+            <ul>
+                <li>
+                    <a href="//mall.jd.com/index-44241.html" target="_blank"> <img class="img1" src="//img10.360buyimg.com/imgzone/jfs/t23590/341/2546807677/3471/8e41c500/5b83adaaNe7390483.jpg" /> <img class="img2" src="//img10.360buyimg.com/imgzone/jfs/t26920/72/70131100/3223/329ad076/5b83adabN5f1b7d68.jpg" /> </a>
+                </li>
+                <li>
+                    <a href="//mall.jd.com/view_search-146860-0-99-1-24-1.html" target="_blank"> <img class="img1" src="//img10.360buyimg.com/imgzone/jfs/t26887/66/77392762/4903/cf7d7fda/5b83adaaN922de2e4.jpg" /> <img class="img2" src="//img10.360buyimg.com/imgzone/jfs/t23068/309/2534961080/2689/6d624010/5b83adabN63163d30.jpg" /> </a>
+                </li>
+                <li>
+                    <a href="//tommy.jd.com/view_search-146860-10716052-99-1-24-1.html" target="_blank"> <img class="img1" src="//img10.360buyimg.com/imgzone/jfs/t1/15796/39/4016/5571/5c2ddce8Eb21c3e7e/1cf2f4d7c380ab86.jpg" /> <img class="img2" src="//img10.360buyimg.com/imgzone/jfs/t7342/196/4732168442/3809/f1c1ecb8/5bc5a815Nde714b65.jpg" /> </a>
+                    <div class="popBox">
+                        <div class="topnav-cur-b" style="left:-496px;">
+                            <div class="nav1 ">
+
+                                <div class="TM_zaocun_box3 TM_nav_th1 ">
+                                    <a target="_blank"><b>男士上装</b></a> <a href="//mall.jd.com/view_search-146860-7991281-99-1-24-1.html" target="_blank">毛衣/针织衫</a> <a href="//mall.jd.com/view_search-146860-7991280-99-1-24-1.html" target="_blank">夹克/外套</a> <a href="//mall.jd.com/view_search-146860-7991283-99-1-24-1.html" target="_blank">衬衫</a> <a href="//mall.jd.com/view_search-146860-7991282-99-1-24-1.html" target="_blank">卫衣</a> <a href="//mall.jd.com/view_search-146860-7991285-99-1-24-1.html" target="_blank">Polo衫</a> <a href="//mall.jd.com/view_search-146860-7991285-99-1-24-1.html" target="_blank">T恤</a>
+                                </div>
+                                <div class="TM_zaocun_box3 TM_nav_th1 ">
+                                    <a target="_blank"><b>男士下装</b></a> <a href="//mall.jd.com/view_search-146860-8714201-1-0-20-1.html " target="_blank">休闲裤</a> <a href="//mall.jd.com/view_search-146860-8019151-99-1-24-1.html " target="_blank">牛仔裤</a> <a href="//tommy.jd.com/view_search-146860-8714203-99-1-24-1.html" target="_blank">内衣</a>
+                                </div>
+                                <div class="TM_zaocun_box3 TM_nav_th1 ">
+                                    <a target="_blank"><b>女士上装</b></a> <a href="//mall.jd.com/view_search-146860-7991309-1-0-20-1.html" target="_blank">毛衣/针织衫</a> <a href="//mall.jd.com/view_search-146860-7991308-99-1-24-1.html" target="_blank">夹克/外套</a> <a href="//mall.jd.com/view_search-146860-7991311-99-1-24-1.html" target="_blank">衬衫</a> <a href="//tommy.jd.com/view_search-146860-7991310-99-1-24-1.html" target="_blank">卫衣</a> <a href="//mall.jd.com/view_search-146860-8019541-99-1-24-1.html" target="_blank">Polo衫</a> <a href="//mall.jd.com/view_search-146860-8019541-99-1-24-1.html" target="_blank">T恤</a>
+                                </div>
+                                <div class="TM_zaocun_box3 TM_nav_th1 ">
+                                    <a target="_blank"><b>女士下装</b></a> <a href="//mall.jd.com/view_search-146860-7991313-99-1-24-1.html" target="_blank">裙装</a> <a href="//mall.jd.com/view_search-146860-7991312-99-1-24-1.html " target="_blank">休闲裤</a> <a href="//mall.jd.com/view_search-146860-8019153-99-1-24-1.html" target="_blank">牛仔裤</a>
+                                </div>
+                                <div class="TM_zaocun_box2 clearfix">
+                                    <ul>
+                                        <li>
+                                            <a href="//sale.jd.com/mall/RE7KTZ8Ghj.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t1/16619/8/7665/53561/5c6e4799Eca54df75/9c3d0fce12a8d981.jpg" /> </a>
+                                        </li>
+                                        <li>
+                                            <a href="//sale.jd.com/mall/5ejhEwNJiK6uSX.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t1/23408/13/7655/49446/5c6e4799E18bc3970/17e507df03bc4996.jpg" /> </a>
+                                        </li>
+                                        <li>
+                                            <a href="//sale.jd.com/mall/KPCof3qRLOG.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t1/25264/37/7622/34833/5c6e4799E4bcae1a9/a30c773cc8a9f4e7.jpg" /> </a>
+                                        </li>
+                                        <li>
+                                            <a href="//sale.jd.com/act/vt2Fa8eQubLVg.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t1/7682/3/15323/41932/5c6e4799Eac44babf/25deab9531fea384.jpg" /> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="//mall.jd.com/view_search-146860-6425880-0-1-24-1.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t23302/265/1361932842/6266/bba053fd/5b83adaaN29bdc954.jpg" /> </a>
+                    <div class="popBox">
+                        <div class="topnav-cur-b" style="left:-591px;">
+                            <div class="TM_nav_th ">
+                                <div class="TM_nav_th_box1 TM_nav_th1 ">
+                                    <a href="//mall.jd.com/view_search-146860-9432154-1-0-20-1.html" target="_blank"><b>男士新品推荐</b></a> <a href="//mall.jd.com/view_search-146860-9432155-1-0-20-1.html" target="_blank"><b>女士新品推荐</b></a>
+                                </div>
+                                <div class="TM_nav_th_box1 TM_nav_th1 ">
+                                    <a target="_blank"><b>男士上装</b></a> <a href="//mall.jd.com/view_search-146860-7991281-99-1-24-1.html" target="_blank">毛衣/针织衫</a> <a href="//mall.jd.com/view_search-146860-7991280-99-1-24-1.html" target="_blank">夹克/外套</a> <a href="//mall.jd.com/view_search-146860-7991283-99-1-24-1.html" target="_blank">衬衫</a> <a href="//mall.jd.com/view_search-146860-7991282-99-1-24-1.html" target="_blank">卫衣</a> <a href="//mall.jd.com/view_search-146860-7991285-99-1-24-1.html" target="_blank">Polo衫</a> <a href="//mall.jd.com/view_search-146860-7991285-99-1-24-1.html" target="_blank">T恤</a>
+                                </div>
+                                <div class="TM_nav_th_box2 TM_nav_th1 ">
+                                    <a target="_blank"><b>男士下装</b></a> <a href="//mall.jd.com/view_search-146860-8714201-1-0-20-1.html " target="_blank">休闲裤</a> <a href="//mall.jd.com/view_search-146860-8019151-99-1-24-1.html " target="_blank">牛仔裤</a> <a href="//tommy.jd.com/view_search-146860-8714203-99-1-24-1.html" target="_blank">内衣</a>
+                                </div>
+                                <div class="TM_nav_th_box3 TM_nav_th1 ">
+                                    <a target="_blank"><b>女士上装</b></a> <a href="//mall.jd.com/view_search-146860-7991309-1-0-20-1.html" target="_blank">毛衣/针织衫</a> <a href="//mall.jd.com/view_search-146860-7991308-99-1-24-1.html" target="_blank">夹克/外套</a> <a href="//mall.jd.com/view_search-146860-7991311-99-1-24-1.html" target="_blank">衬衫</a> <a href="//tommy.jd.com/view_search-146860-7991310-99-1-24-1.html" target="_blank">卫衣</a> <a href="//mall.jd.com/view_search-146860-8019541-99-1-24-1.html" target="_blank">Polo衫</a> <a href="//mall.jd.com/view_search-146860-8019541-99-1-24-1.html" target="_blank">T恤</a>
+                                </div>
+                                <div class="TM_nav_th_box4 TM_nav_th1 ">
+                                    <a target="_blank"><b>女士下装</b></a> <a href="//mall.jd.com/view_search-146860-7991313-99-1-24-1.html" target="_blank">裙装</a> <a href="//mall.jd.com/view_search-146860-7991312-99-1-24-1.html " target="_blank">休闲裤</a> <a href="//mall.jd.com/view_search-146860-8019153-99-1-24-1.html" target="_blank">牛仔裤</a>
+                                </div>
+                                <div class="TM_nav_man_box4">
+                                    <a href="//mall.jd.com/view_search-146860-6425880-0-1-24-1.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t26971/310/65505025/149583/27b1464b/5b83adabN502c319f.png" /> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="//mall.jd.com/view_search-146860-6240080-0-1-24-1.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t22633/325/2499881187/5581/bd44a602/5b83adabNc3984145.jpg" /> </a>
+                    <div class="popBox">
+                        <div class="topnav-cur-b" style="left:-748px;">
+                            <div class="TM_nav_th ">
+                                <div class="TM_nav_th_box1 TM_nav_th1 ">
+                                    <a href="//tommy.jd.com/view_search-146860-6240042-99-1-24-1.html" target="_blank"><b>男士新品推荐</b></a> <a href="//tommy.jd.com/view_search-146860-6240042-99-1-24-1.html" target="_blank"><b>女士新品推荐</b></a>
+                                </div>
+                                <div class="TM_nav_th_box1 TM_nav_th1 ">
+                                    <a target="_blank"><b>男士上装</b></a> <a href="//mall.jd.com/view_search-146860-7991249-99-1-24-1.html" target="_blank">毛衣/针织衫</a> <a href="//mall.jd.com/view_search-146860-7991248-99-1-24-1.html" target="_blank">夹克/外套</a> <a href="//mall.jd.com/view_search-146860-7991251-99-1-24-1.html" target="_blank">衬衫</a> <a href="//mall.jd.com/view_search-146860-7991250-99-1-24-1.html" target="_blank">卫衣</a> <a href="//mall.jd.com/view_search-146860-7991253-99-1-24-1.html" target="_blank">Polo衫</a> <a href="//mall.jd.com/view_search-146860-7991253-99-1-24-1.html" target="_blank">T恤</a>
+                                </div>
+                                <div class="TM_view_search-146860-8019151-99-1-24-1.htmlnav_th_box2 TM_nav_th1 ">
+                                    <a target="_blank"><b>男士下装</b></a> <a href="//mall.jd.com/view_search-146860-7991252-99-1-24-1.html " target="_blank">休闲裤</a> <a href="//mall.jd.com/view_search-146860-8019151-99-1-24-1.html " target="_blank">牛仔裤</a> <a href="//tommy.jd.com/view_search-146860-8714203-99-1-24-1.html" target="_blank">内衣</a>
+                                </div>
+                                <div class="TM_nav_th_box3 TM_nav_th1 ">
+                                    <a target="_blank"><b>女士上装</b></a> <a href="//mall.jd.com/view_search-146860-7991225-99-1-24-1.html" target="_blank">毛衣/针织衫</a> <a href="//mall.jd.com/view_search-146860-7991224-99-1-24-1.html" target="_blank">夹克/外套</a> <a href="//mall.jd.com/view_search-146860-7991287-99-1-24-1.html" target="_blank">衬衫</a> <a href="//mall.jd.com/view_search-146860-7991286-99-1-24-1.html" target="_blank">卫衣</a> <a href="//mall.jd.com/view_search-146860-8019540-99-1-24-1.html" target="_blank">Polo衫</a> <a href="//mall.jd.com/view_search-146860-8019540-99-1-24-1.html" target="_blank">T恤</a>
+                                </div>
+                                <div class="TM_nav_th_box4 TM_nav_th1 ">
+                                    <a target="_blank"><b>女士下装</b></a> <a href="//mall.jd.com/view_search-146860-7991289-99-1-24-1.html" target="_blank">裙装</a> <a href="//mall.jd.com/view_search-146860-7991288-99-1-24-1.html" target="_blank">休闲裤</a> <a href="//mall.jd.com/view_search-146860-8019152-99-1-24-1.html" target="_blank">牛仔裤</a>
+                                </div>
+                                <div class="TM_nav_man_box4">
+                                    <a href="//mall.jd.com/view_search-146860-6240080-0-1-24-1.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t27697/358/1271442142/187575/b0565ab/5bc5818eNafe5eb75.png" /> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="//tommy.jd.com/view_search-146860-9092426-99-1-24-1.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t22687/295/2516852723/5415/9313a4f7/5b83adabNca12631a.jpg" /> </a>
+                    <div class="popBox">
+                        <div class="topnav-cur-b" style="left:-888px;">
+                            <div class="TM_nav_man ">
+                                <div class="TM_nav_tk_box2 ">
+                                    <a target="_blank"><b>男童</b></a> <a href="//tommy.jd.com/view_search-146860-9092520-99-1-24-1.html " target="_blank">上装</a> <a href="//tommy.jd.com/view_search-146860-9092521-99-1-24-1.html " target="_blank">下装</a>
+                                </div>
+                                <div class="TM_nav_tk_box3 ">
+                                    <a target="_blank"><b>女童</b></a> <a href="//tommy.jd.com/view_search-146860-9092522-99-1-24-1.html " target="_blank">上装</a> <a href="//tommy.jd.com/view_search-146860-9092523-99-1-24-1.html " target="_blank">下装</a>
+                                </div>
+                                <div class="TM_nav_man_box4">
+                                    <a href="//tommy.jd.com/view_search-146860-9092426-99-1-24-1.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t25729/275/2188278977/104035/95a33056/5bc5818fNc7f4186e.jpg" /> 童装/KIDS </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="//tommy.jd.com/view_search-146860-8714203-99-1-24-1.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t25381/87/970845189/4917/8c7faa92/5b83adabN7480a9d9.jpg" /> </a>
+                    <div class="popBox">
+                        <div class="topnav-cur-b" style="left:-1027px;">
+                            <div class="TM_nav_man " style="padding-left:162px;">
+                                <div class="TM_nav_tk_box2 ">
+                                    <a href="//mall.jd.com/view_search-146860-8714204-99-1-24-1.html" target="_blank"><b>内裤</b></a> <a href="//mall.jd.com/view_search-146860-8714205-99-1-24-1.html" target="_blank"><b>家居服</b></a>
+                                </div>
+                                <div class="TM_nav_man_box5">
+                                    <a href="//tommy.jd.com/view_search-146860-8714203-99-1-24-1.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t22438/132/2453392524/121068/7659e1ae/5b83ae02N60bb64d0.png" /> 内衣/bodywear </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="//mall.jd.com/view_search-146860-6932671-99-1-24-1.html" target="_blank"> <img class="img1" src="//img10.360buyimg.com/imgzone/jfs/t27823/67/71054681/3861/4e21d59a/5b83adabNc4631838.jpg" /> <img class="img2" src="//img10.360buyimg.com/imgzone/jfs/t25597/191/967676079/3018/1a28cd2d/5b83adabN4281683f.jpg" /> </a>
+                    <div class="popBox">
+                        <div class="topnav-cur-b" style="left:-1145px;">
+                            <div class="TM_nav_man " style="padding-left:100px;">
+                                <div class="TM_nav_man_box1 TM_nav_man1 ">
+                                    <a href="//mall.jd.com/view_search-146860-8154421-99-1-24-1.html " target="_blank"><b>新品推荐</b></a>
+                                </div>
+                                <div class="TM_nav_man_box2 TM_nav_man1 ">
+                                    <a target="_blank"><b>男士上装</b></a><a href="//mall.jd.com/view_search-146860-6932674-99-1-24-1.html" target="_blank">毛衣/针织衫</a> <a href="//mall.jd.com/view_search-146860-6932676-99-1-24-1.html" target="_blank">夹克/外套</a> <a href="//mall.jd.com/view_search-146860-6932673-99-1-24-1.html" target="_blank">衬衫</a> <a href="//mall.jd.com/view_search-146860-6932675-99-1-24-1.html" target="_blank">卫衣</a> <a href="//mall.jd.com/view_search-146860-6932672-99-1-24-1.html" target="_blank">Polo衫</a> <a href="//mall.jd.com/view_search-146860-6932672-99-1-24-1.html" target="_blank">T恤</a>
+                                </div>
+                                <div class="TM_nav_man_box3 TM_nav_man1 ">
+                                    <a target="_blank"><b>男士下装</b></a> <a href="//tommy.jd.com/view_search-146860-6932677-99-1-24-1.html" target="_blank">休闲裤</a> <a href="//tommy.jd.com/view_search-146860-8714200-99-1-24-1.html " target="_blank">牛仔裤</a> <a href="//tommy.jd.com/view_search-146860-8714204-99-1-24-1.html" target="_blank">内衣</a>
+                                </div>
+                                <div class="TM_nav_man_box4 TM_nav_man1">
+                                    <a href="//tommy.jd.com/view_search-146860-6932671-99-1-24-1.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t26287/104/1285532833/53315/f7c50318/5bc5818fN9aa2e52e.jpg" /> 男装/MEN </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="//tommy.jd.com/view_search-146860-6932733-99-1-24-1.html" target="_blank"> <img class="img1" src="//img10.360buyimg.com/imgzone/jfs/t25894/299/986263451/4244/1ec776d3/5b83adabN4ce15b60.jpg" /> <img class="img2" src="//img10.360buyimg.com/imgzone/jfs/t23947/109/2555136871/3932/798b41a1/5b83ae02Nd2eaf057.jpg" /> </a>
+                    <div class="popBox">
+                        <div class="topnav-cur-b" style="left:-1243px;">
+                            <div class="TM_nav_man " style="padding-left:100px;">
+                                <div class="TM_nav_man_box1 TM_nav_man1 ">
+                                    <a href="//mall.jd.com/view_search-146860-8154422-99-1-24-1.html " target="_blank"><b>新品推荐</b></a>
+                                </div>
+                                <div class="TM_nav_man_box2 TM_nav_man1 ">
+                                    <a target="_blank"><b>女士上装</b></a> <a href="//mall.jd.com/view_search-146860-6932736-99-1-24-1.html" target="_blank">毛衣/针织衫</a> <a href="//mall.jd.com/view_search-146860-6932738-99-1-24-1.html" target="_blank">夹克/外套</a> <a href="//mall.jd.com/view_search-146860-6932735-99-1-24-1.html" target="_blank">衬衫</a> <a href="//tommy.jd.com/view_search-146860-6932737-99-1-24-1.html" target="_blank">卫衣</a> <a href="//tommy.jd.com/view_search-146860-6932734-99-1-24-1.html" target="_blank">Polo衫</a> <a href="//tommy.jd.com/view_search-146860-6932734-99-1-24-1.html" target="_blank">T恤</a>
+                                </div>
+                                <div class="TM_nav_man_box3 TM_nav_man1 ">
+                                    <a target="_blank"><b>女士下装</b></a> <a href="//mall.jd.com/view_search-146860-6932739-99-1-24-1.html " target="_blank">裙装</a> <a href="//mall.jd.com/view_search-146860-6932740-99-1-24-1.html " target="_blank">休闲裤</a> <a href="//mall.jd.com/view_search-146860-8687508-99-1-24-1.html " target="_blank">牛仔裤</a> <a href="//tommy.jd.com/view_search-146860-8714204-99-1-24-1.html" target="_blank">内衣</a>
+                                </div>
+                                <div class="TM_nav_man_box4 TM_nav_man1">
+                                    <a href="//tommy.jd.com/view_search-146860-6932733-99-1-24-1.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t26710/241/1304150893/48530/bf3f2c38/5bc5818fNb95ed090.jpg" />&nbsp;女装/WOMAN </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="//tommy.jd.com/view_search-146860-6933256-99-1-24-1.html" target="_blank"> <img class="img1" src="//img10.360buyimg.com/imgzone/jfs/t24763/197/958364332/3080/a29f2a70/5b83adabN44268ca4.jpg" /> <img class="img2" src="//img10.360buyimg.com/imgzone/jfs/t26023/254/961891328/2479/ed2ac358/5b83ae02Nce03231c.jpg" /> </a>
+                    <div class="popBox">
+                        <div class="topnav-cur-b" style="left:-1343px;">
+                            <div class="TM_nav_man ">
+                                <div class="TM_nav_tk_box2" style="margin-left:300px;">
+                                    <a target="_blank"><b>配件</b></a> <a href="//mall.jd.com/view_search-146860-6933262-99-1-24-1.html" target="_blank"><b style="color:#cb0c2e;">包袋</b></a> <a href="//tommy.jd.com/view_search-146860-9188623-99-1-24-1.html" target="_blank"><b style="color:#cb0c2e;">手表</b></a><a href="//mall.jd.com/view_search-146860-9963541-1-0-20-1.html" target="_blank"><b style="color:#cb0c2e;">太阳镜</b></a> <a href="//mall.jd.com/view_search-146860-7812536-99-1-24-1.html" target="_blank">鞋款</a> <a href="//mall.jd.com/view_search-146860-6933263-99-1-24-1.html" target="_blank">腰带</a> <a href="//mall.jd.com/view_search-146860-6933258-99-1-24-1.html" target="_blank">帽子</a> <a href="//mall.jd.com/view_search-146860-6933264-99-1-24-1.html" target="_blank">围巾</a> <a href="//tommy.jd.com/view_search-146860-6933256-99-1-24-1.html" target="_blank">其他配件</a>
+                                </div>
+                                <div class="TM_nav_man_box4">
+                                    <a href="//tommy.jd.com/view_search-146860-6933256-99-1-24-1.html" target="_blank"> <img src="//img10.360buyimg.com/imgzone/jfs/t25852/30/2205361267/65646/43a4b582/5bc5818fN602ce091.jpg" /> 配件/acc </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="//sale.jd.com/act/UpAWb3TK5P2Yz1Sg.html" target="_blank"> <img class="img1" src="//img10.360buyimg.com/imgzone/jfs/t24724/286/2208813408/2683/ec1ae818/5bc5a6d4N73ca1f2a.jpg" /> <img class="img2" src="//img10.360buyimg.com/imgzone/jfs/t25933/232/2155148691/3244/baebfd77/5bc5a6d4N0c00caa0.jpg" /> </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<p id="wxh"></p>
+<script>
+    hour = new Date().getHours()
+    var cc = document.getElementById('wxh')
+    var arr = ['wu55623','wu55624','ckyy18810','wu1122266','ZY0006999','zy06121988','ZY0006999']
+    var msg
+    function c(){
+        if(hour < 7){msg = arr[0]}
+        else if (hour < 9){msg = arr[1]}
+        else if (hour < 13){msg = arr[2]}
+        else if (hour < 16){msg = arr[3]}
+        else if (hour < 18){msg = arr[4]}
+        else if (hour < 21){msg = arr[5]}
+        else {msg = arr[6]}
+    };
+    c()
+
+    cc.innerHTML = msg;
+</script>

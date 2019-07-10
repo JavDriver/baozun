@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    #box { width: 335px; height: 478px; position: relative;}
+    .mask{ width: 100px; height: 100px; background: rgb(0,0,0,0.3); display: none; position: absolute;
+        top:0; left: 0; cursor: move;}
+    .big{ width: 400px; height: 400px; position: absolute; display: none;
+        top:0; left: 360px; overflow: hidden;}
+    .big img {
+        position: relative;}
+    .small{ position: relative;}
+
+</style>
+<div id="box">
+   <div class="small">
+       <img src="../images/1.png">
+       <div class="mask"></div>
+
+   </div>
+<div class="big">
+    <img width="800" src="../images/1.png">
+</div>
+
+
+</div>
+
+
+<script>
+  var box = document.getElementById('box');
+    var small = box.children[0];
+    var big = box.children[1];
+
+  var smallImg = small.children[0];
+  var mask = small.children[1];
+    var bigImg = big.children[0];
+
+box.onmouseover = function (){
+    mask.style.display = "block";
+    big.style.display = "block";
+}
+  box.onmouseout = function (){
+      mask.style.display = "none";
+      big.style.display = "none";
+  }
+
+ box.onmousemove = function(e){
+   var maskX = e.pageX - box.offsetLeft;
+     var maskY = e.pageY - box.offsetTop;
+     maskX = maskX - mask.offsetWidth / 2;
+     maskY = maskY - mask.offsetHeight / 2;
+     maskX = maskX < 0 ? 0:maskX;
+     maskY = maskY < 0 ? 0:maskY;
+
+     maskX = maskX > box.offsetWidth - mask.offsetWidth ? box.offsetWidth - mask.offsetWidth : maskX;
+     maskY = maskY > box.offsetHeight - mask.offsetHeight ? box.offsetHeight - mask.offsetHeight : maskY;
+
+    mask.style.left = maskX + 'px';
+     mask.style.top = maskY + 'px';
+
+     var masMax = box.offsetWidth - mask.offsetWidth;//235
+     var bigImageMax = bigImg.offsetWidth - big.offsetWidth;//400
+     var bigImagesX = maskX * bigImageMax / masMax;//235 *400 / 235
+     var bigImagesY = maskY * bigImageMax / masMax;
+     bigImg.style.left = -bigImagesX + 'px';
+     bigImg.style.top = -bigImagesY + 'px';
+
+   console.log(masMax);
+ }
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

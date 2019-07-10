@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>[art:name][art:subname] - {maccms:name}</title>
+<meta name="keywords" content="[art:name]" />
+<meta name="description" content="{maccms:name}第一时间更新[art:name][art:remarks]。" />
+<link rel="alternate" media="only screen and(max-width: 640px)"  href="{maccms:qq}[art:link]" >
+<link rel="stylesheet" href="{maccms:path_tpl}css/art_global.css">
+<link rel="stylesheet" href="{maccms:path_tpl}css/art_list.css">
+{maccms:include}
+<script src="{maccms:path_tpl}js/superslide.2.1.js"></script>
+</head>
+<body>
+{maccms:head}
+<div class="g-bd">
+<div class="m-crm">
+您当前的位置：[art:textlink]</div>
+<div class="g-mn-1">
+<div class="m-article s-shadow">
+<h1><i></i>
+[art:name]</h1>
+<div class="m-atc f-cb">
+    <div class="f-fl">
+        <span class="s-grey-3">{maccms:name}</span>
+        <span class="s-grey-3">·</span>
+        <span class="s-grey-3">[art:time]</span>
+        <span class="s-grey-3">·</span>
+        <span class="s-grey-3">点击：[art:hits]0次</span>
+        <span class="s-grey-3">·</span>
+        <span class="s-grey-4">标签：</span> [art:taglink]</div>
+    <div class="HRshare3 f-fr">
+        <!-- JiaThis Button BEGIN -->
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+    </div>
+</div>
+<div class="m-atc f-cb s-bb">
+                <span class="s-grey-icon s-icon2" ><i></i><a href="[art:typelink]">分类（<em>[art:typename]</em>）</a></span>
+            <span class="s-grey-icon s-icon3"><i></i>
+                <a href="#SOHUCS" >评论</a> 
+            </span>
+            <span class="s-grey-4 f-fr" id="j-sizeControl">
+                字体： <a title="">大</a> / <a title="">中</a> / <a title="">小</a>
+            </span>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#j-sizeControl a").on("click",function(){
+            var index=$(this).index();
+            if(index==0){
+                $("article p").css({ "font-size": "20px" });
+            }if(index==1){
+                $("article p").css({ "font-size": "18px" });
+            }if(index==2){
+                $("article p").css({ "font-size": "16px" });
+            }
+        });
+    })
+</script>
+
+<article>
+        <p>[art:content]</p>  
+    <div class="m-pages-a"></div>
+    <span class="s-grey-2">声明：文章仅代表作者个人观点，不代表本站观点----- {maccms:name}</span>
+    <span class="s-grey-2 f-fr">责任编辑：{maccms:name}小编</span>
+</article>
+
+<div class="m-rlt-2">
+    <h2>相关文章</h2>
+    <ul>
+     {maccms:art num=5 type={maccms:curarttypeid}  order=desc by=monthhits}
+      <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+       {/maccms:art}
+        </ul>
+</div>
+</div>
+    <div class="m-pl s-shadow">
+ <h2>文章评论</h2>
+ <div id="SOHUCS" sid="art[art:id]"></div>
+<!--新闻打分版，可实现对每篇新闻自动星级评分-->
+<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window._config = { showScore: true };
+    window.changyan.api.config({
+        appid: 'cyrTclNCR',
+        conf: 'prod_5733ef6427bacca070f0416c1b1508c1'
+    });
+</script>
+</div>
+</div>
+<div class="g-sd-1">
+        <div class="g-sdc s-shadow">
+        <h2>今日头条</h2>
+        {maccms:art num=1 type=all start=1 order=desc by=time level=1}
+        <a href="[art:link]" title="[art:name]" target="_blank" ><img src="[art:pic]" alt="[art:name]"></a> <h3><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></h3>
+         {/maccms:art}  
+    </div>
+
+    <div class="m-top-2 s-shadow">
+        <h2>点击排行</h2>
+        <ul class="hd">
+            <li class="on">今日热点</li>
+            <li>一周热点</li>
+            <li>一月热点</li>
+        </ul>
+        <div class="bd">
+            <ol>
+                                                           {maccms:art num=10 by=dayhits type={maccms:curarttypeid} order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}                                  
+                               </ol>
+                            <ol style="display: none;">
+                            {maccms:art num=10 by=weekhits type={maccms:curarttypeid} order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}
+                           </ol>
+                            <ol style="display: none;">
+                                                        {maccms:art num=10 by=monthhits type={maccms:curarttypeid} order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}
+                            </ol>
+            
+        </div>
+    </div>
+    <script type="text/javascript">
+        jQuery(".m-top-2").slide({trigger: "click"});
+    </script>
+<script src="{maccms:path_ads}250x250-1.js"></script>
+<script src="{maccms:path_ads}250x250-2.js"></script>
+</div>
+<div class="g-mn m-pages"></div>
+</div>{maccms:foot}
+</body>
+</html>
+

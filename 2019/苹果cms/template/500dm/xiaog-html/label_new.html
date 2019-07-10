@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>最新更新的100个电视剧、电影、动漫节目 - {maccms:name}</title>
+<meta name="keywords" content="最新,2013最新,{maccms:name}">
+<meta name="description" content="最新,2013最新,{maccms:name}！">
+		<link href="{maccms:templatepath}images/base.css" type="text/css" rel="stylesheet" />
+<script src="{maccms:templatepath}images/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="{maccms:templatepath}images/log.js" type="text/javascript"></script>
+<script src="{maccms:templatepath}images/base.js" type="text/javascript"></script>
+</head>
+<body>
+{maccms:head}
+<div id="content">
+ <div id="content">	
+	<div class="ui-box" id="lasted-box">
+		<div class="ui-title fn-clear">
+			<label class="ui-mark">最新</label>
+			<h2>最近100个更新</h2>
+		</div>
+		<div class="ui-cnt">
+			<ul class="new-list fn-clear">{maccms:vodlist num=100 order=desc by=time type=all}
+				                <li>
+					<div class="lasted-num fn-left">[vodlist:numjoin].</div>
+					<h5 class="show-tipinfo"><a href="[vodlist:link]" title="[vodlist:name]" target='_blank'>[vodlist:name]</a>/<a href="[vodlist:link]" title="[vodlist:name]" target='_blank'>{if:[vodlist:state] =0}[vodlist:remarks]{else}第[vodlist:state] 集{end if}</a></h5>
+					<div class="lasted-type fn-left">[vodlist:typename]</div>						<div class="lasted-type fn-left"> 主演：</label> [vodlist:starring] </div>											<div class="lasted-time fn-right"><font {if:"[vodlist:time style=yyyy-m-d]"==date} color="red"  {end if} >[vodlist:time style=mm-dd]</font>     </div>
+				</li>{/maccms:vodlist}
+	</ul>
+			<!-- // new-list End -->
+		</div>
+	</div>
+	<!-- // ui-box#latest end -->
+</div>
+ 
+{maccms:foot}
+</BODY>
+</HTML>

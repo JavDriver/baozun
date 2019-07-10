@@ -1,0 +1,15 @@
+{
+  "name": "第二个Chrome插件",
+  "manifest_version":2,
+  "version": "1.0",
+  "description":"jason的第二个chrome扩展程序",
+  "browser_action":{
+    "default_icon":"logo.png"
+  },
+  "content_scripts":[
+    {
+      "matches":["https://da.tmall.com/pages/design/375180?contentId=9233553&pageModelId=14&from=content&pageId=14&referId=9233553&newPreview=freePage"],
+      "js":["content.js"]
+    }
+  ]
+}

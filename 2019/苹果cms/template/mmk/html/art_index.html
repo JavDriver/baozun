@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>资讯首页 - {maccms:name}</title>
+<meta name="keywords" content="影视资讯,娱乐资讯"/>
+<meta name="description" content="{maccms:name}24小时不断更新最新娱乐新闻和搞笑新闻，各种各样的搞笑新闻，让你开心看新闻。"/>
+<link rel="alternate" media="only screen and(max-width: 640px)"  href="{maccms:qq}{maccms:link_index_art}" >
+<link rel="stylesheet" href="{maccms:path_tpl}css/art_global.css">
+<link rel="stylesheet" href="{maccms:path_tpl}css/art_index.css">
+{maccms:include}
+<script src="{maccms:path_tpl}js/superslide.2.1.js"></script>
+</head>
+<body>
+{maccms:head}
+        <div class="g-bd">
+            <div class="g-wrap g-wrap-4 f-cb" id="anchor-firsttile">
+                <div class="g-mn m-box m-sld f-fl" id="j-sld">
+                    <ul class="hd">
+                        <li class="on"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="bd">
+                        <ul class="m-list-3">
+                        {maccms:art num=8 type={maccms:curarttypeid} start=1 order=desc by=time level=1}
+                                                        <li>
+                                <a href="[art:link]" title="[art:name]" target="_blank">
+                                    <img src="[art:pic]"  />
+                                    <div class="u-tt">[art:name]</div>
+                                    <div class="u-st">[art:contenttext len=100]</div>
+                                </a>
+                            </li>
+                                {/maccms:art}   
+                                                    </ul>
+                    </div>
+
+
+                    <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                    <a class="prev" href="javascript:void(0)"></a>
+                    <a class="next" href="javascript:void(0)"></a>
+
+		</div>	
+                
+                <script type="text/javascript">
+                    jQuery("#j-sld").slide({titCell:".hd",mainCell:".bd ul",autoPage:true,effect:"leftLoop",autoPlay:true,interTime:20000});
+                    $("#j-sld .bd,#j-sld .prev,#j-sld .next").hover(
+                        function () {
+                          $("#j-sld .prev,#j-sld .next").addClass("z-hover");
+                        },
+                        function () {
+                          $("#j-sld .prev,#j-sld .next").removeClass("z-hover");
+                        }
+                    );
+                </script>
+                
+                <div class="g-sd f-fr">
+                  <script src="{maccms:path_ads}250x250-1.js"></script>
+            </div>
+       	</div>
+        {maccms:matrix type=1 table=art}
+<div class="g-wrap g-wrap-5 f-cb" id="anchor-isgood" name="anchor-isgood">
+                <div class="m-box m-sxxs f-fl" id="j-sxxs">
+                    <div class="m-list">
+                        {maccms:art num=5 by=time type=[matrix:id] order=desc}
+                    {if-A:[art:num]=1}
+                        <div class="m-first">
+                             <a class="u-pic" href="[art:link]" title="[art:name]"  target="_blank"><img src="[art:pic]" alt="[art:name]"></a>
+                            <div class="m-item">
+                                                                <div class="u-tt"><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></div>
+                                                                <div class="u-st">[art:contenttext len=70]</div>
+                                                                <div class="u-box u-box-3">
+                                    <span class="u-time"><em class="s-red">[art:time]</em></span>
+                                    <span class="u-num">点击：[art:hits]</span>
+                                    <span class="u-tag"></span>
+                                </div>
+                                                            </div>
+                           <div class="u-head"><a href="[matrix:link]" title="[matrix:name]" target="_blank">[matrix:name]</a></div>
+                            <div class="u-bg u-bg-2"></div>
+                                                    </div>  {elseif-A:[art:num]>1}
+                                                                        <div class="m-item">
+                                                        <div class="u-tt"><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></div>
+                                                        <div class="u-st">[art:contenttext len=130]</div>
+                                                        <div class="u-box u-box-3">
+                                <span class="u-time">[art:time]</span>
+                                <span class="u-num">点击：[art:hits]</span>
+                                <span class="u-tag"></span>
+                            </div>
+  </div>                                   {endif-A}
+                                  {/maccms:art} 
+                                            </div>
+                  <a class="u-more" href="[matrix:link]" title="[matrix:name]" target="_blank">去列表查看更多</a>
+                    <div class="m-rank m-rank-1" id="j-rank-1">
+                        <div class="m-head m-head-2">点击排行</div>
+                        <ul class="hd">
+                            <li class="on">今天</li>
+                            <li>一周</li>
+                            <li>一月</li>
+                        </ul>
+                        <div class="bd">
+                            <ol>
+                            {maccms:art num=10 by=dayhits type=[matrix:id] order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}                                  
+                               </ol>
+                            <ol style="display: none;">
+                            {maccms:art num=10 by=weekhits type=[matrix:id] order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}
+                           </ol>
+                            <ol style="display: none;">
+                                                        {maccms:art num=10 by=monthhits type=[matrix:id] order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}
+
+                            </ol>
+                        </div>
+                    </div>
+                    {/maccms:matrix}
+                    <script type="text/javascript">
+                        jQuery("#j-rank-1").slide({trigger: "click",defaultIndex:2});
+                    </script>
+                </div>
+    {maccms:matrix type=2  table=art}
+                <div class="m-box m-gdpl f-fl" id="j-gdpl">
+                    <div class="m-list">
+                     {maccms:art num=5 by=time type=[matrix:id] order=desc}
+                    {if-A:[art:num]=1}
+                        <div class="m-first">
+                             <a class="u-pic" href="[art:link]" title="[art:name]"  target="_blank"><img src="[art:pic]" alt="[art:name]"></a>
+                            <div class="m-item">
+                                                                <div class="u-tt"><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></div>
+                                                                <div class="u-st">[art:contenttext len=70]</div>
+                                                                <div class="u-box u-box-3">
+                                    <span class="u-time"><em class="s-red">[art:time]</em></span>
+                                    <span class="u-num">点击：[art:hits]</span>
+                                    <span class="u-tag"></span>
+                                </div>
+                                                            </div>
+                           <div class="u-head"><a href="[matrix:link]" title="[matrix:name]" target="_blank">[matrix:name]</a></div>
+                            <div class="u-bg u-bg-2"></div>
+                                                    </div>  {elseif-A:[art:num]>1}
+                                                    
+                                    <div class="m-item">
+                                       <div class="u-tt"><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></div>
+                                      <a class="u-pic" href="[art:link]" title="[art:name]"  target="_blank"><img src="[art:pic]" alt="[art:name]"></a>
+                                                                <div class="u-st">[art:contenttext len=70]</div>
+                                                                <div class="u-box u-box-3">
+                                    <span class="u-time"><em class="s-red">[art:time]</em></span>
+                                    <span class="u-num">点击：[art:hits]</span>
+                                    <span class="u-tag"></span>
+                            </div>
+                                                    </div>
+                                                                       
+                                  {endif-A}
+                                  {/maccms:art} 
+                                                                    </div>
+                  <a class="u-more" href="[matrix:link]" title="[matrix:name]" target="_blank">去列表查看更多</a>
+                    <div class="m-rank m-rank-2" id="j-rank-2">
+                        <div class="m-head m-head-2">点击排行</div>
+                        <ul class="hd">
+                            <li class="on">今天</li>
+                            <li>一周</li>
+                            <li>一月</li>
+                        </ul>
+                        <div class="bd">
+                            <ol>
+                            {maccms:art num=10 by=dayhits type=[matrix:id] order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}                                  
+                               </ol>
+                            <ol style="display: none;">
+                            {maccms:art num=10 by=weekhits type=[matrix:id] order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}
+                           </ol>
+                            <ol style="display: none;">
+                                                        {maccms:art num=10 by=monthhits type=[matrix:id] order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}
+
+                            </ol>
+                        </div>
+                    </div>
+                    {/maccms:matrix}
+                    <script type="text/javascript">
+                        jQuery("#j-rank-2").slide({trigger: "click"});
+                    </script>
+                </div>
+ {maccms:matrix type=2 table=art}
+                <div class="g-sd m-box m-xwyq f-fr" id="j-xwyq">
+                    <div class="m-list">
+                       {maccms:art num=5 by=weenkhits type=[matrix:id] level=1 order=desc}
+                    {if-A:[art:num]=1}
+                        <div class="m-first">                                         
+                            <a class="u-pic" href="[art:link]" title="[art:name]"  target="_blank"><img src="[art:pic]" alt="[art:name]"></a>
+                            <div class="m-item">
+                                <div class="u-tt"><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></div>
+                                                                <div class="u-box u-box-3">
+                                    <span class="u-time"><em class="s-red">[art:time]</em></span>
+                                    <span class="u-num">点击：[art:hits]</span>
+                                    <span class="u-tag"></span>
+                                </div>
+                                                            </div>
+
+                            <div class="u-head"><a href="[matrix:link]" title="[matrix:name]" target="_blank">热点推荐</a></div>
+                            <div class="u-bg u-bg-2"></div>
+                                                    </div>           {elseif-A:[art:num]>1}
+                                                   
+                             <div class="m-item">
+                                                                                 <a class="u-pic" href="[art:link]" title="[art:name]"  target="_blank"><img src="[art:pic]" alt="[art:name]"></a>
+                                <div class="u-tt"><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></div>
+                                                                <div class="u-box u-box-3">
+                                    <span class="u-time"><em class="s-red">[art:time]</em></span>
+                                    <span class="u-num">点击：[art:hits]</span>
+                                    <span class="u-tag"></span>
+                                </div>
+                                  </div>
+                                  {endif-A}
+                                  {/maccms:art} 
+                                                                     
+                                                                    </div>
+
+                    <a class="u-more" href="[matrix:link]" title="[matrix:name]" target="_blank">去列表查看更多</a>
+                    <div class="m-rank m-rank-3" id="j-rank-3">
+                        <div class="m-head m-head-2">点击排行</div>
+                        <ul class="hd">
+                            <li class="on">今天</li>
+                            <li>一周</li>
+                            <li>一月</li>
+                        </ul>
+                        <div class="bd">
+                            <ol>
+                            {maccms:art num=10 by=dayhits type=[matrix:id] order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}                                  
+                               </ol>
+                            <ol style="display: none;">
+                            {maccms:art num=10 by=weekhits type=[matrix:id] order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}
+                           </ol>
+                            <ol style="display: none;">
+                                                        {maccms:art num=10 by=monthhits type=[matrix:id] order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}
+
+                            </ol>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        jQuery("#j-rank-3").slide({trigger: "click"});
+                    </script>
+                </div>
+            </div>
+            </div>
+  {/maccms:matrix}
+   {maccms:matrix type=1 table=art}
+<div class="g-wrap g-wrap-7 m-deep" id="j-deep" name="j-deep">
+ <div class="m-head m-head-1"><a href="[matrix:link]"  >热门[matrix:name]</a></div>
+    <div class="hd">
+        <a class="prev"></a>
+        <ul></ul>
+        <a class="next"></a>
+    </div>
+    <div class="bd">
+        <div class="tempWrap" style="overflow:hidden; position:relative; width:1015px"><ul style="width: 9135px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -3045px;">
+          {maccms:art num=15 by=weenkhits type=[matrix:id] level=1 order=desc}
+                                                  <li style="float: left; width: 188px;">
+                            <a class="u-pic" href="[art:link]" title="[art:name]" target="_blank" ><img  alt="[art:name]" src="[art:pic]" ></a>
+                           <div class="aa"> <a   href="[art:link]" title="[art:name]" target="_blank" >[art:name]</a></div>
+            </li>
+              {/maccms:art}
+                </ul></div>
+    </div>
+  </div>  {/maccms:matrix}
+  
+            <script type="text/javascript">
+                jQuery("#j-deep").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"leftLoop",autoPlay:true,scroll:5,vis:5});
+            </script>
+           
+
+{maccms:foot}
+</body>
+</html>

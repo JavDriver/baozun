@@ -1,0 +1,40 @@
+<html> 
+<head> 
+<title>无刷新上传文件</title> 
+<meta Content-type="text/html" charset="utf-8" /> 
+<script type="text/javascript"> 
+function startUpload() { 
+document.getElementById('processing').innerHTML = 'loding...'; 
+return true; 
+} 
+function stopUpload(rel){ 
+var msg; 
+switch (rel) { 
+case 0: 
+msg = "上传成功"; 
+break; 
+case 1: 
+msg = "上传的文件超过限制"; 
+break; 
+case 2: 
+msg = "只能上传csv文件"; 
+break; 
+default: 
+msg = "上传文件失败"; 
+} 
+document.getElementById('processing').innerHTML = msg; 
+} 
+</script> 
+</head> 
+<body> 
+<div style="text-align:center"> 
+<div id="processing"></div> 
+<form action="upload.php" method="post" enctype="multipart/form-data" target="form-target" onsubmit="startUpload();"> 
+<input type="hidden" name="MAX_FILE_SIZE" value="1000000" /> 
+<input type="file" name="myfile" /> 
+<input type="submit" name="sub" value="upload" /> 
+</form> 
+<iframe style="width:0; height:0; border:0;" name="form-target"></iframe> 
+</div> 
+</body> 
+</html> 

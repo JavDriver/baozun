@@ -1,0 +1,30 @@
+﻿<div class="yydd">微信公众号: wbg372191 点击右上角,分享到朋友圈↑</div>
+<a href="{maccms:getlink search.html}"><img class="saom" src="{maccms:path_tpl}css/search.jpg" /></a>
+
+<div class="menu">
+  <ul>
+      <li><a{if-A:{maccms:siteaid}=10} class="current"{endif-A} href="/" onclick="change_bg(this)">首页</a></li>
+{maccms:menu type=1,2,3,4}
+    <li><a{if-A:[menu:id]={maccms:curvodtypeid}} class="current"{endif-A} href="[menu:link]" onclick="change_bg(this)">[menu:name]</a></li>
+    {/maccms:menu}
+<li><a href="http://#" onclick="change_bg(this)">直播</a></li>
+  </ul>
+</div>
+<div class="profile_info"> <span class="radius_avatar profile_avatar"><img src="{maccms:path_tpl}css/fenm.jpg"></span> <strong class="profile_nickname">掌上放映厅</strong>
+  <p class="profile_desc">微信内唯一可以免费在线看电影的公众号</p>
+  <div class="profile_opr"> <a id="weui_btn" href="http://www.wbg3721.com/template/2weima.png">进入公众号</a> </div>
+</div>
+
+  <script src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201402/jiaoben1993/js/jquery.min.js 
+
+"></script>
+  <script src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201402/jiaoben1993/js/jquery.lazyload.js?v=1.9.0 
+
+"></script>
+  <script type="text/javascript" charset="utf-8">
+  $(function() {
+     $("img.lazy").lazyload({
+         effect : "fadeIn"
+     });
+  });
+  </script>

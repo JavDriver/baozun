@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBliC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>[vodinfo:name][playinfo:name] [playinfo:name] - {maccms:name}</title>
+<meta name="keywords" content="[vodinfo:name][playinfo:name],[vodinfo:typename],{maccms:name}">
+<meta name="description" content="[vodinfo:name][playinfo:name],[vodinfo:typename],{maccms:name}">
+<script>var maccms_path = "{maccms:path}";</script>
+<script src="{maccms:path}js/jquery.js"></script>
+<script src="{maccms:path}js/function.js"></script>
+<script src="{maccms:path}js/player.js"></script>
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/tv/basic_other.css">
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/tv/play_dongman.css">
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/tv/vod.css">
+</head>
+<body screen_capture_injected="true">
+{maccms:head}
+<!--广告-->
+<div align="center">
+ <script src="{maccms:templatepath}ads/vod980x90-1.js"></script>
+</div>
+<!--广告 end-->
+<!--播放条目[-->
+<div class="gui_TopInfo crumb_bar">
+	<div class="topInfoC_add"> 
+	</div>
+	<!--面包屑新修改-->
+	<div class="crumb_new">
+		<h1 id="navbar">
+			[vodinfo:name][playinfo:name] 
+		</h1>
+[vodinfo:textlink]
+	</div>
+ 
+</div>
+<!--]播放条目-->
+ 
+<!--播放器[-->
+<div collection="Y" style=" overflow:hidden;zoom:1; position:relative;" id="flashArea" class="gui_FlashPlayer">
+  <div style="position:static;width:960px; margin: 0px auto; position: relative;">
+    <div style="float:left"><script src="{maccms:templatepath}ads/vod160x450-1.js"></script></div>
+	<div style="float: right;"><script src="{maccms:templatepath}ads/vod160x450-2.js"></script></div>
+    <div style="width: 640px; margin: 0px auto; position: relative;">
+    [playinfo:info][playinfo:player]
+<div style="height:10px"></div>
+    </div>
+  </div>
+</div>
+<!--播放器-->
+<div class="wrap">
+  <!--专辑列表-->
+	<div class="gui_scroll gui_border" id="j-videoList" collection="Y">
+		{maccms:playlist}
+    <div class="hd">
+	  		<div class="diversity_tt">
+						<div class="diversity_tt_tab"><a><strong>[playlist:show]</strong></a>--([playlist:tip])</div>
+		</div>
+		<div class="diversity_box">
+			<ul class="diversity_list diversity_dsj">
+			{maccms:urllist order=desc}
+			<li><a href="[urllist:link]" title="[urllist:name]">[urllist:name]</a></li>
+			{/maccms:urllist}					
+			</ul>		
+		</div><!--diversity_box 分集区域 END-->
+		<div style="height:20px"></div>		
+    </div>
+	{/maccms:playlist}
+</div>
+<!-- 分集显示 -->
+ 
+<div class="high15"></div>
+  <div class="g-lay-box">
+    <div class="g-lay-box-left">
+      	<div class="gui_Looking gui_border" collection="Y">
+	<div >
+		<div class="look_t">
+			<h2 class="title_t2">你可能喜欢的</h2>		
+		  </div>
+		<div class="bd hide_l" style="height: 380px;" qiyubuildend="true">
+		<ul class="ulList">
+{maccms:vodlist num=10 type={maccms:curvodtypeid}  by=time order=desc}
+			<li>
+   <a href="[vodlist:link]" class="a_bar">
+       <img src="[vodlist:pic]" width="116" height="135" title="[vodlist:name]" alt="[vodlist:name]">
+   </a>
+   <p>
+       <a href="[vodlist:link]" title="[vodlist:name][[vodlist:remarks]]">[vodlist:name len=8]</a>
+   </p>
+</li>
+{/maccms:vodlist}</ul>
+	</div>
+		<div class="look_t">
+			<h2 class="title_t2">吹他一把</h2>		
+		  </div>
+		<div class="bd hide_l" style="height: 380px;" qiyubuildend="true">
+        [vodinfo:comment]
+	    </div>		
+	</div>
+</div>
+    </div>   
+	
+	
+	
+<div class="g-lay-box-right gui_border">
+<div collection="Y" class="gui_txt">
+<div class="fx_box">
+	<div class="boxTop">
+		<div class="hd">
+			<strong><a href="[vodinfo:link]">[vodinfo:name]</a></strong>
+		</div>
+		<div class="name_list">
+		    <p><span>主角：</span>[vodinfo:starringlink]</p>
+			<p><span>年份：</span>[vodinfo:yearlink]</p>
+			<p><span>播放：</span><span>[vodinfo:hits]</span>次</p>			
+		</div>
+		<div class="yanyuan"><span class="selected"> 剧情简介</span></div>
+						<div>
+							<div class="wenzi" style="display: block;">
+                <p class="wenzi1">
+                    [vodinfo:contenttext len=150]..<a href="[vodinfo:link]">[详细]</a></p>
+							</div>
+	</div>	
+ 
+	</div>
+</div>
+ 
+<div class="common_line"></div>
+ 
+<div style="margin:0 auto; width:250px;position:relative;">
+<script src="{maccms:templatepath}ads/vod250x250-1.js"></script>
+</div>
+<div class="top10_general">
+	<div class="hd pub_conHd">
+		<h2>风云榜</h2>
+	</div>	
+	<div id="tab_group_fengyun" class="bd">
+		<div class="tabsCont" style="display: block;">
+			<ol>
+{maccms:vodlist num=10 type={maccms:curvodtypeid} by=monthhits order=desc}
+		<li>
+			<em class="mod_num">[vodlist:num]</em>
+			<p>
+				<a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]">[vodlist:name len=10]</a>
+			</p>
+			<span></span>人气：[vodlist:hits]
+		</li>
+            {/maccms:vodlist}
+			</ol>			
+		</div>
+	</div>
+</div>
+ 
+			
+	</div>
+  </div>
+</div>
+
+<!-- 标准尾 begin -->
+{maccms:foot}
+ 
+<!-- 标准尾 end -->
+<script type="text/javascript" src="{maccms:templatepath}images/js/config.js"></script>
+<script type="text/javascript" src="{maccms:templatepath}images/js/sea1.2.js"></script>
+ 
+<script type="text/javascript"> 
+ __loadCompatibleMainJs('cartoonSetFinal2');
+ Q.projectName = 'qiyiV2';
+ Q.ready(function (lib) {
+     Q.load('base');
+ });
+</script>
+
+</body>
+</html>

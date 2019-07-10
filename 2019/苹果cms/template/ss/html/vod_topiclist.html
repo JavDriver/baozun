@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<TITLE>{page:name} - {maccms:name}</TITLE>
+<meta name="keywords" content="{page:name},{maccms:keywords}">
+<meta name="description" content="{page:name},{maccms:description}">
+{maccms:include}
+<style type="text/css"> 
+body{ background-color:#000;}
+.top_banner{ width:100%; height:400px; background-image:url({page:pic}); background-repeat:no-repeat; background-position:center 0px;}
+.publicboxz{margin-bottom:10px;border:1px solid #afafaf;_height:1%;
+border:1px solid #333;overflow:hidden;_height:1%; margin-bottom:0px;position:relative; background-color:#FFF;}
+.publicboxx{ width:975px;margin-bottom:10px;overflow:hidden;border:1px solid #ddd;_height:1%;
+border:1px solid #333; margin-bottom:0px;position:absolute;top:280px;background-color:#000;}
+.publicboxzt{padding-right: 10px;padding-left: 13px;}
+.topobjbox .sharebox{ position:absolute; bottom:200px; left:0px;  width:532px; height:45px; overflow:hidden; padding:3px 0px 0px 4px;}
+.topobjbox .shareboxbg{position:absolute; bottom:200px; left:0px; width:536px; height:48px; background-color:#000; filter:alpha(opacity=60); opacity:0.6;}
+</style>
+</head>
+<body>
+{maccms:head}
+<div class="top_banner">
+	<div class="topobjbox">
+		<div class="shareboxbg"></div>
+		<div class="sharebox">
+			<!-- Baidu Button BEGIN -->
+			<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare" data="{
+			'url':'{page:link}',
+			'desc':'{page:name}高清电影专题',
+			'text':'{page:name}-影视专题',
+			'pic':'{page::pic}'
+			}">
+			<a class="bds_qzone"></a>
+			<a class="bds_tsina"></a>
+			<a class="bds_tsohu"></a>
+			<a class="bds_tqq"></a>
+			<a class="bds_renren"></a>
+			<a class="bds_kaixin001"></a>
+			<a class="bds_baidu"></a>
+			<a class="bds_tieba"></a>
+			<a class="bds_hi"></a>
+			<a class="bds_douban"></a>
+			<a class="bds_taobao"></a>
+			<span id="bds_more" class="bds_more"></span>
+			<a class="shareCount"></a>
+			</div>
+			<script type="text/javascript" id="bdshare_js" data="type=tools&uid=6556540" ></script>
+			<script type="text/javascript" id="bdshell_js"></script>
+			<script type="text/javascript">
+			document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+			</script>
+			<!-- Baidu Button END -->
+		</div>
+	</div>
+</div>
+<div class="ad980">
+<script src="{maccms:path_ads}h960x90.js"></script>
+</div> 
+<div class="box980">
+	<div class="publicboxx mt10">
+		<div class="contentbox">
+			<h2>{page:name}</h2>
+			<p class="contentt">{page:content}人气：{page:hits}</p>
+		</div>
+	</div>
+	<div class="publicboxzt mt10">
+<ul>
+{maccms:vod pagesize=240 topic=current order=desc by=time}
+<li><a class="play_img" href="[vod:link]"><img class="loading" width="138" height="194"  src="{maccms:path_tpl}images/blank.png" data-original="[vod:pic]" alt="[vod:name]" />
+            <label class="mask"></label>
+            <label class="text"></label>
+            <label class="score">[vod:score]</label>
+            </a>
+            <h4><a href="[vod:link]">[vod:name]</a></h4>
+            <p>[vod:starringlink]</p>
+    </li>
+{/maccms:vod}	
+	</ul>
+</div>
+</div>
+<script language="javascript"> 
+$(document).ready(function(){ 
+	var menuYloc = $("#l_menu_item").offset().top; 
+	$(window).scroll(function (){
+		var stops = $(window).scrollTop()-menuYloc;
+		var zsheight = $("#l_menu_item").innerHeight();
+		var maxtop = zsheight+stops+20;
+		var czheight = $("div.r_itembox").innerHeight();
+		if(stops > 0 && maxtop < czheight)$("#l_menu_item").stop(true,false).animate({top:stops+20+"px"},{duration:400, queue:false}); 
+		else if(maxtop > czheight)$("#l_menu_item").stop(true,false).animate({top:czheight-zsheight + "px"},{duration:400, queue:false}); 
+		else $("#l_menu_item").stop(true,false).animate({top:"0px"},{duration:400, queue:false}); 
+	});
+	$("#l_menu_item a").click(function(e){
+		$("html,body").animate({scrollTop: $($(this).attr("href")).offset().top}, 300);
+		e.preventDefault(); 
+	});
+
+});
+</script>
+{maccms:foot}
+<script src="{maccms:path_tpl}js/main.js" type="text/javascript"></script>
+<script type="text/javascript" src="{maccms:path_tpl}js/IE6Top.js"></script>
+<div class="back-to-top" id="back-to-top"><a href="javascript:window.scrollTo(0, 0);" target="_self">Back to Top</a></div>
+</body>
+</html>

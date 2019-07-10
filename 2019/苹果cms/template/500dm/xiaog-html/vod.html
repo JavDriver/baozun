@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>《[vodinfo:name]》在线全集快播观看,高清迅雷下载  -[vodinfo:typename] - {maccms:name} </title>
+<meta name="keywords" content="[vodinfo:name]在线{if:[vodinfo:state] =0}[vodinfo:remarks] {else}更新至[vodinfo:state]集{end if}观看,[vodinfo:name]高清,{playpagename}在线,[vodinfo:name]迅雷下载" />
+<meta name="description" content="{maccms:name} 为您提供[vodinfo:name]在线观看和高速下载,剧情:[vodinfo:content len=50}" />
+ <link href="{maccms:templatepath}images/basea.css" type="text/css" rel="stylesheet" />
+<script src="{maccms:templatepath}images/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="{maccms:templatepath}images/log.js" type="text/javascript"></script>
+<script src="{maccms:templatepath}images/base.js" type="text/javascript"></script>
+<script>var maccms_path='{maccms:path}';</script>
+<script src="{maccms:path}js/jquery.js"></script>
+<script src="{maccms:path}js/function.js"></script>
+</head>
+<body>
+{maccms:head}
+<div id="content">
+ <div id="content">	
+<div class="wrap mb8 mt5">
+<div class="bread">
+<div class="fr breadr">
+ 
+</div>
+<div class="position">[vodinfo:textlink] 
+</div>
+</div>
+</div>
+<div class="ui-box fn-clear" id="detail-focus">
+		<div class="detail-pic fn-left">
+			<img width="190" height="250" alt="[vodinfo:name]" title="[vodinfo:name]" src="[vodinfo:pic]">
+		</div>
+		<div class="detail-info">
+			<h2>  [vodinfo:name] </h2>
+			<dl>
+				<dt>主演：</dt>
+				<dd>
+				[vodinfo:starringlink]</dd>
+			</dl>
+			<dl>
+				<dt>状态：</dt>
+				<dd>{if:[vodinfo:state]=0}[vodinfo:remarks]{else}第[vodinfo:state]集{end if}</dd>
+			</dl>
+			<dl class="short">
+				<dt>类型：</dt>
+				<dd> <a href="[vodinfo:typelink]">[vodinfo:typename]</a> </dd>
+				<dt>点播：</dt>
+				<dd> [vodinfo:hits]次</dd>
+			</dl>
+			<dl class="short">
+				<dt>语言：</dt>
+				<dd> <span> [vodinfo:language]</span> </dd>
+                <dt>地区：</dt>
+				<dd>[vodinfo:area]</dd>
+			</dl>	
+			<dl class="short">	
+				<dt>时间：</dt>
+				<dd><span id="addtime">[vodinfo:addtime]</span></dd>
+				<dt>年份：</dt>
+				<dd>[vodinfo:year]</dd>
+			</dl>
+			<dl class="dec">
+				<dt>剧情：</dt>
+				<dd> [vodinfo:content len=20] ...<a href="#detail-intro" class="detail-desc">详细剧情</a></dd>
+			</dl>
+		</div>
+		<div class="fn-right">广告位300x300</div>
+	</div>	<!-- // detail-focus end -->
+	   {maccms:playlist}
+		<div class="ui-box ui-box-big play-list-box" id="baiduhd-pl-list">
+		<div class="ui-title fn-clear">
+   <h2>[playlist:show] </h2>
+<span>[playlist:tip]</span>
+						</div>
+		<div class="ui-cnt">
+			<ul class="play-list"><ul>
+			{maccms:urllist order=asc}<li><a href="[urllist:link]" target="_blank">[urllist:name]</a></li>{/maccms:urllist}
+			</ul></ul>
+		</div>
+	</div>
+
+{/maccms:playlist}
+ 	
+ 
+	<!-- // play-list end -->
+	<div class="ui-box latest-tab-box" id="hot-commend">
+		<div class="ui-title fn-clear">
+			<h3>喜欢看“<strong>[vodinfo:name]</strong>”的人也喜欢：</h3>
+		</div>
+			  	
+		<ul class="img-list fn-clear">
+		{maccms:vodlist num=7 type=current by=time order=desc}
+		 <li>
+				<a href="[vodlist:link]" class="play-pic">
+					<img src="[vodlist:pic]" alt="[vodlist:name]" />
+					<span class="ico"> </span>
+					<label class="fbg"> </label>
+					<label class="txt">{if:[vodlist:state]=0}[vodlist:remarks]{else}第[vodlist:state]集{end if}</label>
+				</a>
+				<h5><a href="[vodlist:link]">[vodlist:name]</a></h5>
+			</li>{/maccms:vodlist}
+			</ul>
+		<!-- // img-list end -->
+		
+		<div class="txt-list-box"> 
+			<ul class="txt-list fn-clear"> {maccms:vodlist num=12 type=current by=time day=7 start=8 order=desc}
+			<li><em>{if:"[vodlist:numjoin]"<"10"}0[vodlist:numjoin]{else}[vodlist:numjoin]{end if}</em><a href="[vodlist:link]">[vodlist:name]</a>/<a href="[vodlist:link]" class="gray">{if:[vodlist:state]=0}[vodlist:remarks]{else}第[vodlist:state]集{end if}</a></li>	{/maccms:vodlist}
+			</ul>
+			<!-- // txt-list end -->
+	</div></div>
+	<!-- // ui-box end -->
+	
+	<div class="ui-box play-list-box" id="detail-intro">
+		<div class="ui-title fn-clear">
+			<h3>《[vodinfo:name]》剧情介绍：</h3>
+		</div>
+			<div class="ui-cnt">
+			<div class="introduction">
+			  [vodinfo:content]</div>
+		</div>
+	</div>
+	<!-- // play-list end -->
+	<div class="ui-box latest-tab-box" id="hot-m59">
+		<div class="ui-title fn-clear">
+			<h3>《[vodinfo:name]》网友点评：</h3><span>  每个人的观点都是一种思考 </span>
+			</div>
+			[vodinfo:comment] 
+</div>
+	</div>
+	<!--//uyancc end -->
+</div>
+<!-- // content end -->
+ 
+{maccms:foot}
+ 
+ 
+</BODY>
+</HTML>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <title>45区</title>
+    <link type="text/css" rel="stylesheet" href="css/demo.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/dropload.css">
+    <link href="css/base.css" rel="stylesheet" type="text/css"/>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/global_hzj.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+    <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+
+
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+
+    var $orgMenu, $menu, $html;
+
+
+
+    $(function() {
+
+        $html = $('html');
+
+        $orgMenu = $('nav#menu').detach();
+
+        updateMenu({});
+
+    });
+
+
+
+    function updateMenu( opts )
+
+    {
+
+        var opened = false;
+
+        var createMenu = function()
+
+        {
+
+            if ( $menu )
+
+            {
+
+                $menu.remove();
+
+            }
+
+            $menu = $orgMenu.clone().prependTo( 'body' ).mmenu( opts );
+
+            if ( opened )
+
+            {
+
+                $menu.trigger( 'open.mm' );
+
+            }
+
+        }
+
+
+
+        if ( $menu )
+
+        {
+
+            if ( $html.hasClass( 'mm-opened' ) )
+
+            {
+
+                opened = true;
+
+                $menu
+
+                        .on( 'closed.mm', createMenu )
+
+                        .trigger( 'close.mm' );
+
+            }
+
+            else
+
+            {
+
+                createMenu();
+
+            }
+
+        }
+
+        else
+
+        {
+
+            createMenu();
+
+        }
+
+
+
+    }
+
+</script>
+<header class="clearfix heec">
+    <div class="w1120 clearfix">
+        <div class="header-left clearfix">
+            <div class="logo"><img src="images/logo.png"></div>
+            <div class="nav clearfix">
+                <a class="navactive" href="#">首页</a>
+                <a href="#">深度阅读</a>
+                <a href="#">作弊手册</a>
+                <a href="#">早知道</a>
+                <a href="#">关于我们</a>
+                <a href="#">找工作</a>
+            </div>
+        </div>
+        <div class="header-right clearfix">
+            <a class="header-right01 modaltrigger" href="#loginmodal"><img src="images/heard01.png">搜索</a>
+            <a class="header-right01" href="#"><img src="images/heard02.png">登录</a>
+            <a class="header-right01" href="#"><img src="images/heard03.png">注册</a>
+            <a class="header-right02" href="#">投稿</a>
+            <div class="header-right03"><img src="images/heard04.png">
+                <div class="header-right031">
+                    <img src="images/rwm.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="page">
+
+    <div class="header">
+
+        <a href="#menu">
+        </a>
+        45区
+
+    </div>
+
+
+
+    <nav id="menu" >
+
+        <ul>
+
+            <li><a href="#">首页 </a></li>
+            <li><a href="#">深度阅读</a></li>
+            <li><a href="#">作弊手册</a> </li>
+            <li><a href="#">早知道</a> </li>
+            <li><a href="#">关于我们</a> </li>
+            <li><a  href="#">找工作</a> </li>
+            <li><a  href="#">搜索</a> </li>
+            <li><a href="#">登录</a> </li>
+            <li><a href="#">注册</a> </li>
+
+
+        </ul>
+
+    </nav>
+
+</div>
+
+
+
+<div class="conter w1120 clearfix">
+    <div class="conter-left clearfix">
+
+
+        <div class='tabs clearfix' id="tabs">
+<div class="sdyd clearfix">
+    <a href="#">全部</a>
+    <a class="sdyd1" href="javascript:">热度<img src="images/yd01.png"> </a>
+    <a class="sdyd1" href="javascript:">时间<img src="images/yd01.png"></a>
+</div>
+            <div rel='tab-1' class="tabs1 content clearfix">
+                <div class="inner">
+                <div class="lists">
+                    <a href="#1"><dl class="clearfix"><dt><img src="images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+
+
+
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="conter-right clearfix">
+        <div class="conter-right1">
+            <h3><img src="images/index31.png"> 新闻早知道</h3>
+            <dl class="clearfix">
+                <dt><img src="images/index32.png"></dt>
+                <dd><h4>互联网及电话订火车票预售期恢复30天，元旦车票明日开抢</h4>
+                    <p class="conter-right11"><i><img src="images/index33.png"></i><span>据TechWeb报道，研究机构IDC预测称，2018年全球对物联网的支出将达到7725亿美元，比2017的收入增长14.6%。IDC分析称，硬件将在2018成为“最大的技术类别”，其中2390亿美元主要投资于模块和传感器，以及在基础设施和安全方面；服务业将成为第二大技术类别，软件将成为增长最快的技术领域，其年复合增长率为16.1%。到2021年底，超过55%的物联网项目的支出将用于软件和服务。</span>
+                    </p>
+                    <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                        <div class="panel-weixin">
+                            <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                            </section>
+                            <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                    </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+
+                    </cite>
+                </dd>
+
+            </dl>
+
+            <dl class="clearfix">
+                <dt><img src="images/index32.png"></dt>
+                <dd><h4>互联网及电话订火车票预售期恢复30天，元旦车票明日开抢</h4>
+                    <p class="conter-right11"><i><img src="images/index33.png"></i><span>据TechWeb报道，研究机构IDC预测称，2018年全球对物联网的支出将达到7725亿美元，比2017的收入增长14.6%。IDC分析称，硬件将在2018成为“最大的技术类别”，其中2390亿美元主要投资于模块和传感器，以及在基础设施和安全方面；服务业将成为第二大技术类别，软件将成为增长最快的技术领域，其年复合增长率为16.1%。到2021年底，超过55%的物联网项目的支出将用于软件和服务。</span>
+                    </p>
+                    <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                        <div class="panel-weixin">
+                            <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                            </section>
+                            <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                    </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+
+                    </cite>
+                </dd>
+
+            </dl>
+
+
+            <dl class="clearfix">
+                <dt><img src="images/index32.png"></dt>
+                <dd><h4>互联网及电话订火车票预售期恢复30天，元旦车票明日开抢</h4>
+                    <p class="conter-right11"><i><img src="images/index33.png"></i><span>据TechWeb报道，研究机构IDC预测称，2018年全球对物联网的支出将达到7725亿美元，比2017的收入增长14.6%。IDC分析称，硬件将在2018成为“最大的技术类别”，其中2390亿美元主要投资于模块和传感器，以及在基础设施和安全方面；服务业将成为第二大技术类别，软件将成为增长最快的技术领域，其年复合增长率为16.1%。到2021年底，超过55%的物联网项目的支出将用于软件和服务。</span>
+                    </p>
+                    <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                        <div class="panel-weixin">
+                            <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                            </section>
+                            <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                    </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+
+                    </cite>
+                </dd>
+
+            </dl>
+
+            <dl class="clearfix">
+                <dt><img src="images/index32.png"></dt>
+                <dd><h4>互联网及电话订火车票预售期恢复30天，元旦车票明日开抢</h4>
+                    <p class="conter-right11"><i><img src="images/index33.png"></i><span>据TechWeb报道，研究机构IDC预测称，2018年全球对物联网的支出将达到7725亿美元，比2017的收入增长14.6%。IDC分析称，硬件将在2018成为“最大的技术类别”，其中2390亿美元主要投资于模块和传感器，以及在基础设施和安全方面；服务业将成为第二大技术类别，软件将成为增长最快的技术领域，其年复合增长率为16.1%。到2021年底，超过55%的物联网项目的支出将用于软件和服务。</span>
+                    </p>
+                    <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                        <div class="panel-weixin">
+                            <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                            </section>
+                            <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                    </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+
+                    </cite>
+                </dd>
+
+            </dl>
+
+            <dl class="clearfix">
+                <dt><img src="images/index32.png"></dt>
+                <dd><h4>互联网及电话订火车票预售期恢复30天，元旦车票明日开抢</h4>
+                    <p class="conter-right11"><i><img src="images/index33.png"></i><span>据TechWeb报道，研究机构IDC预测称，2018年全球对物联网的支出将达到7725亿美元，比2017的收入增长14.6%。IDC分析称，硬件将在2018成为“最大的技术类别”，其中2390亿美元主要投资于模块和传感器，以及在基础设施和安全方面；服务业将成为第二大技术类别，软件将成为增长最快的技术领域，其年复合增长率为16.1%。到2021年底，超过55%的物联网项目的支出将用于软件和服务。</span>
+                    </p>
+                    <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                        <div class="panel-weixin">
+                            <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                            </section>
+                            <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                    </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+
+                    </cite>
+                </dd>
+
+            </dl>
+
+        </div>
+        <div class="conter-right2 clearfix">
+            <h3><img src="images/index41.png"> 热点标签</h3>
+            <div id="tagsList">
+
+                <a class="tagsListact" href="#/Article.aspx?kid=1" title="星级评分">星级评分</a>
+
+                <a href="#/Article.aspx?kid=2" title="层特效">层特效</a>
+
+                <a class="tagsListact" href="#/Article.aspx?kid=3" title="关键字">关键字</a>
+
+                <a href="#/Article.aspx?kid=4" title="拖拽">拖拽</a>
+
+                <a href="#/Article.aspx?kid=5" title="分页插件">分页插件</a>
+
+                <a href="#/Article.aspx?kid=6" title="时间插件">时间插件</a>
+
+                <a href="#/Article.aspx?kid=7" title="弹出层">弹出层</a>
+
+                <a href="#/Article.aspx?kid=8" title="数据统计">数据统计</a>
+
+                <a class="tagsListact" href="#/Article.aspx?kid=9" title="HTML5">HTML5</a>
+
+                <a href="#/Article.aspx?kid=10" title="置顶特效">置顶特效</a>
+
+                <a href="#/Article.aspx?kid=11" title="选项卡">选项卡</a>
+
+                <a href="#/Article.aspx?kid=12" title="导航菜单">导航菜单</a>
+
+                <a href="#/Article.aspx?kid=13" title="原创">原创</a>
+
+                <a href="#/Article.aspx?kid=14" title="动画插件">动画插件</a>
+
+                <a href="#/Article.aspx?kid=15" title="实用特效">实用特效</a>
+
+                <a href="#/Article.aspx?kid=16" title="table插件">table插件</a>
+
+                <a class="tagsListact" href="#/Article.aspx?kid=17" title="文字特效">文字特效</a>
+
+                <a href="#/Article.aspx?kid=18" title="图片特效">图片特效</a>
+
+                <a href="#/Article.aspx?kid=19" title="在线客服">在线客服</a>
+
+                <a href="#/Article.aspx?kid=20" title="瀑布流">瀑布流</a>
+
+                <a href="#/Article.aspx?kid=21" title="网友蘑菇">网友蘑菇</a>
+
+            </div>
+
+        </div>
+        <div class="conter-right3 clearfix">
+            <h3><img src="images/index41.png"> TOP点击</h3>
+            <ul class="am-list clearfix">
+                <li class="top" data-index="4">
+                    <div>
+                        <div>
+                            <div class="img-left-cover"><a href="/p/5109888.html" target="_blank"
+                                                           data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888"><span>1</span>
+                                <div class="img-cell" style="background-image: url(images/index42.png);"></div>
+                            </a></div>
+                            <div class="right-article"><h4><a href="/p/5109888.html" target="_blank" data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888">向吃鸡和《王者荣耀》发起进攻！挑战者居然是款恋爱游戏</a>
+                            </h4>
+                                <div class="time_about" title="2017-12-27 07:11">7小时前</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="top" data-index="4">
+                    <div>
+                        <div>
+                            <div class="img-left-cover"><a href="/p/5109888.html" target="_blank"
+                                                           data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888"><span>2</span>
+                                <div class="img-cell" style="background-image: url(images/index42.png);"></div>
+                            </a></div>
+                            <div class="right-article"><h4><a href="/p/5109888.html" target="_blank" data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888">向吃鸡和《王者荣耀》发起进攻！挑战者居然是款恋爱游戏</a>
+                            </h4>
+                                <div class="time_about" title="2017-12-27 07:11">7小时前</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="top" data-index="4">
+                    <div>
+                        <div>
+                            <div class="img-left-cover"><a href="/p/5109888.html" target="_blank"
+                                                           data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888"><span>3</span>
+                                <div class="img-cell" style="background-image: url(images/index42.png);"></div>
+                            </a></div>
+                            <div class="right-article"><h4><a href="/p/5109888.html" target="_blank" data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888">向吃鸡和《王者荣耀》发起进攻！挑战者居然是款恋爱游戏</a>
+                            </h4>
+                                <div class="time_about" title="2017-12-27 07:11">7小时前</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="top" data-index="4">
+                    <div>
+                        <div>
+                            <div class="img-left-cover"><a href="/p/5109888.html" target="_blank"
+                                                           data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888"><span>4</span>
+                                <div class="img-cell" style="background-image: url(images/index42.png);"></div>
+                            </a></div>
+                            <div class="right-article"><h4><a href="/p/5109888.html" target="_blank" data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888">向吃鸡和《王者荣耀》发起进攻！挑战者居然是款恋爱游戏</a>
+                            </h4>
+                                <div class="time_about" title="2017-12-27 07:11">7小时前</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="top" data-index="4">
+                    <div>
+                        <div>
+                            <div class="img-left-cover"><a href="/p/5109888.html" target="_blank"
+                                                           data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888"><span>5</span>
+                                <div class="img-cell" style="background-image: url(images/index42.png);"></div>
+                            </a></div>
+                            <div class="right-article"><h4><a href="/p/5109888.html" target="_blank" data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888">向吃鸡和《王者荣耀》发起进攻！挑战者居然是款恋爱游戏</a>
+                            </h4>
+                                <div class="time_about" title="2017-12-27 07:11">7小时前</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="foot clearfix">
+    <div class="clearfix w1120">
+        <div class="foot1 clearfix">
+
+            <div class="foot11 clearfix">
+                <h3>我们的产品</h3>
+                <dl class="clearfix">
+                    <dt><img src="images/foot1.png"></dt>
+                    <dd><span>渡渡鸟访谈</span>让一部分人先看到未来</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt><img src="images/foot2.png"></dt>
+                    <dd><span>45区媒体</span>让一部分人先看到未来</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt><img src="images/foot3.png"></dt>
+                    <dd><span>作弊手册</span>让一部分人先看到未来</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt><img src="images/foot4.png"></dt>
+                    <dd><span>研究院</span>让一部分人先看到未来</dd>
+                </dl>
+            </div>
+            <div class="foot12 clearfix">
+                <h3>日常</h3>
+                <a href="#">关于我们</a>
+                <a href="#">我要投稿</a>
+                <a href="#">找工作</a>
+            </div>
+
+            <div class="foot13">
+                <h3>45区微信公众号</h3>
+                <img src="images/rwm.png">
+                <em>扫一扫，关注45区</em>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="footer-logo"><a href=""> <img src="images/footlogo.png" alt=""> </a></div>
+            <div class="copyright"><span class="mobile-hide">本站由 <a href="http://www.aliyun.com" rel="nofollow" target="_blank">
+                <img src="images/aly.png" alt="阿里云" ></a><em>提供计算与安全服务</em>   </span>
+                <span class="law">Copyright ©  45区   京ICP备12013432号-1 <img src="images/wj.png"> 京公网安备 11010102001402号  技术支持：            <span
+                        class="mobile-hide">| <a href="" target="_blank">司慧网络 </a></span></span>
+
+                <br></div>
+            <div class="share"><a class="iconfooter-weibo" href="" target="_blank" rel="nofollow"></a>
+                <a class="iconfooter-qq" href="" target="_blank" rel="nofollow"></a>
+                <a class="iconfooter-txwb" href="" target="_blank" rel="nofollow"></a>
+                <a class="iconfooter-rss" href="" target="_blank" rel="nofollow"></a>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script type="text/javascript" src="js/tags.js"></script>
+<!--搜索-->
+<header class="clearfix isearch" style="display:none;" id="loginmodal">
+    <div class="w1120 clearfix">
+        <div class="logo"><img src="images/logo.png"></div>
+        <div class="search1">
+            <img src="images/heard01.png">
+            <form action="" class="">
+                <input type="text" placeholder="搜索" class="" tabindex="-1">
+            </form>
+        </div>
+        <a href="javascript:" class="search1a hidemodal1"><img src="images/close2.png"> </a>
+    </div>
+</header>
+<script src="js/dropload.min.js"></script>
+<script>
+    $(function(){
+        var counter = 0;
+        // 每页展示4个
+        var num = 4;
+        var pageStart = 0,pageEnd = 0;
+
+        // dropload
+        $('.inner').dropload({
+            scrollArea : window,
+
+
+            loadDownFn : function(me){
+                $.ajax({
+                    type: 'GET',
+                    url: 'json/more.json',
+                    dataType: 'json',
+                    success: function(data){
+                        var result = '';
+                        counter++;
+                        pageEnd = num * counter;
+                        pageStart = pageEnd - num;
+
+                        for(var i = pageStart; i < pageEnd; i++){
+                            result += '<a href="' + data.lists[i].link + '">'
+                                    + '<dl class="clearfix">'
+                                    + '<dt><img src="' + data.lists[i].pic + '" alt=""> </dt>'
+                                    + '<dd><h3>' + data.lists[i].title + '</h3>'
+                                    + '<em>' + data.lists[i].info + '</em>'
+                                    + '<span>' + data.lists[i].name + ' · ' + data.lists[i].date + '    <img src="images/index2a.jpg" >' + data.lists[i].lable + '<i>' + data.lists[i].Collection + '收藏</i></span>'
+                                    + '</dd>'
+                                    + '</dl>'
+                                    + '</a>';
+                            if((i + 1) >= data.lists.length){
+                                // 锁定
+                                me.lock();
+                                // 无数据
+                                me.noData();
+                                break;
+                            }
+                        }
+                        // 为了测试，延迟1秒加载
+                        setTimeout(function(){
+                            $('.lists').append(result);
+                            // 每次数据加载完，必须重置
+                            me.resetload();
+                        },1000);
+                    },
+                    error: function(xhr, type){
+                        alert('Ajax error!');
+                        // 即使加载出错，也得重置
+                        me.resetload();
+                    }
+                });
+            },
+            threshold : 50
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+﻿html { overflow-y:scroll; }
+body { margin:0; color:#000; font:12px/21px "宋体";}
+ul, li, dl, dd, dt, p, h1, h2, h3, form { margin:0; padding:0; }
+img { border:none; vertical-align:middle; }
+li { list-style:none; }
+a { color:#000; text-decoration:none; }
+a:hover { color:#4a7f07; text-decoration:underline; }
+div, ul { zoom:1; }
+div:after, ul:after { content:"."; display:block; clear:both; height:0; visibility:hidden; }
+.fEn, .fEn p { font-family:Arial!important; }
+.fGray { color:#bfbfbf; }
+.f12 { font-size:12px!important; }
+.wrap { width:970px; margin:0 auto; }
+.nav { height:100px; overflow:hidden; }
+.nav a { color:#4a4a4a; }
+.nav a:hover { color:#4a7f07; }
+.h1Title { padding-top:5px; float:left; font:bold 14px/21px "微软雅黑"; height:61px; float:left; color:#333; }
+.h1Title span { color:#c8c8c8; font-weight:normal; }
+.h1Title img { vertical-align:baseline; margin-bottom:-10px; }
+.moreLink { float:right; padding-top:30px; z-index:10; position:relative; }
+.indexMBg { margin-top:-80px; }
+.indexP { padding-top:130px; height:50px; }
+.flash { padding:15px 0 10px; }
+.indexInfo { width:370px; height:185px; background:url(http://www.qiyipic.com/common/about_images/infoBg.png) 0 0 no-repeat; padding:20px 0 0 15px; }
+.indexH2 { font:14px/30px "微软雅黑"; background:url(http://www.qiyipic.com/common/about_images/lineBg.jpg) 0 bottom no-repeat; }
+.indexUl { font-size:14px; padding-top:13px; }
+.indexUl li { background:url(http://www.qiyipic.com/common/about_images/lidotBg.gif) 0 8px no-repeat; text-indent:8px; line-height:23px; }
+.indexUl em { color:#b1b1b1; font-style:normal; font-weight:normal; font-size:12px; font-family:Arial; margin-left:5px; }
+.secMain { padding:30px 0 45px; z-index:2; position:relative; clear:both }
+.secMain, .secMain a { color:#4c4c4c; }
+.secMain a:hover { color:#4a7f07; }
+.secMBg { background:url(http://www.qiyipic.com/common/about_images/conBg.jpg) right 0 no-repeat; }
+.sideBar { width:165px; float:left; }
+.sideBar dt { text-align:center; padding-bottom:13px; background:url(http://www.qiyipic.com/common/about_images/titleBg.gif) 0 bottom no-repeat; }
+.sideBarEn { width:195px; }
+.sideBarEn dt { background-image:url(http://www.qiyipic.com/common/about_images/titleBg2.gif); }
+.secUlList { padding:15px 0; }
+.secUlList li { line-height:30px; background:url(http://www.qiyipic.com/common/about_images/lidotBg.gif) 30px 13px no-repeat; border-bottom:1px solid #e6e6e6; text-indent:45px; font-size:14px; padding-top:1px; }
+.secUlList li.selected { font-weight:bold; background-position:30px -18px; }
+.sideBarEn .secUlList li { text-indent:20px; background-position:10px 13px; }
+.sideBarEn .secUlList li.selected { background-position:10px -18px; }
+.secMainC { width:740px; float:left; padding-top:22px; margin-left:60px; display:inline; }
+.fEn .secMainC {width: 710px;}
+.secMainC a { color:#4a7f07; }
+.aaa a { text-decoration:underline; }
+.aaa a:hover { text-decoration:underline; color:#4a7f07; }
+.content p { font:14px/26px "宋体"; padding-bottom:25px; word-spacing:-1px; }
+.content p.img img { display:block; margin:0 auto; }
+.content p.img { font:12px/30px normal; text-align:center; }
+.h2Title1 { padding-bottom:10px; margin-bottom:20px; height:45px; }
+.h2T1Bg { background:url(http://www.qiyipic.com/common/about_images/dotBg.gif) 0 bottom repeat-x; }
+.h2Title2 { font:bold 14px/25px "宋体"; text-align:center; color:#4c4c4c; padding-bottom:15px; }
+.h2Title2 em { color:#b1b1b1; font-style:normal; font-weight:normal; font-size:12px; display:block; }
+.selectCur, .selectCur:hover { color:#000!important; font-weight:bold; }
+.zhaopinList dt { font-size:14px; font-weight:bold; padding-bottom:10px; }
+.zhaopinList dt em { color:#b1b1b1; font-style:normal; font-weight:normal; font-size:12px; margin-left:30px; }
+.zhaopinList dd { padding-bottom:15px; }
+.zhaopinList p { padding-bottom:20px; font-size:12px; }
+.toTop { margin-left:460px; }
+.xinwenList dt { font-size:14px; font-weight:bold; padding-bottom:10px; }
+.xinwenList dt em { color:#b1b1b1; font-style:normal; font-weight:normal; font-size:12px; margin-left:30px; }
+.xinwenList dd { color:#8a8a8a; padding-bottom:10px; }
+.xinwenList p { font-size:12px; }
+.btnBg { background:url(http://www.qiyipic.com/common/about_images/btnBg.png) 0 0 no-repeat; width:82px; height:23px; display:block; margin:0 auto; line-height:23px; text-align:center; }
+.table1 { width:600px; margin:10px 0; }
+.table1 td { width:200px; text-align:center; }
+.table1 td img { display:block; margin:0 auto 5px; border:1px solid #e6e6e6; }
+.download { padding-left:15px; background:url(http://www.qiyipic.com/common/fix/about_images/download.gif) 0 0 no-repeat; }
+.table2 { width:420px; margin:0 auto; line-height:21px; font-family:Arial; }
+.p50 { width:48%; height:165px; padding-left:10px; float:left; }
+.p50 img { float:left; margin-right:10px; }
+.divInfo img { float:left; margin-right:20px; }
+.divInfo div { overflow:hidden; }
+.divInfo div strong { font-size:14px; }
+.divInfo div p { padding:10px 0; font-size:14px; }
+.footer { line-height:20px; text-align:center; padding:20px 0 40px; margin-top:15px; background:url(http://www.qiyipic.com/common/images/footerBg.png) center 0 no-repeat; clear:both; }
+.footer, .footer a { color:#6b6b6b; }
+.footer a:hover { color:#4c7d08; }
+.fEn { font-family:Arial; }
+.tab_new { background:url(http://www.qiyipic.com/common/fix/about_images/zhaopin_new.png) repeat-x 0 -66px; border:1px solid #e8e8e8; height:31px; line-height:31px; overflow:visible; *overflow:hidden;
+}
+.title1 h2 { border-color:#e3e3e3; border-style:solid; border-width:0 1px; float:left; font:14px/32px "宋体"; margin-left:-1px; }
+.title1 h2 span { padding:0 5px; border-color:#fff; border-style:solid; border-width:0 1px; cursor pointer;
+float:left; padding:0 10px; color:#4a7f07; }
+.title1 h2.selected span { background:url(http://www.qiyipic.com/common/fix/about_images/zhaopin_new.png) repeat-x 0 0; height:32px; font:bold 14px/32px "宋体"; color:#4c4c4c; position:relative; margin-bottom:-1px; }
+.list_new { border:1px solid #e8e8e8; border-top:none; padding:20px; }
+.list_new dd { float:left; width:184px; overflow:hidden; height:21px; background:url(http://www.qiyipic.com/common/fix/about_images/ddbj.png) no-repeat 0 9px; padding-left:10px; }
+a.jl { background:#fff url(http://www.qiyipic.com/common/fix/about_images/jlIcon.png) no-repeat 0 0; padding-left:18px; color:#eb6100; }
+.zhaopinList dd { border-bottom:1px dashed #ccc; margin-bottom:20px; }
+.zhaopinList, .mt40 { margin-top:40px; }
+
+/*搜索框 suggest*/
+.suggest_t{position:absolute; left:20px; top:50px; border:1px solid #ccc; padding-top:5px; width:266px; background:#fff url(http://www.qiyipic.com/common/fix/images/suggest_tbg.png) repeat-x 0 top; font-size:12px; color:#000; z-index:100}
+.suggest_t a:hover{ background:#dfdfdf; color:#000; text-decoration:none;}
+.suggest_t em{font-style:normal; color:#999; float:right;}
+.suggest_t span{ color:#999; margin-left:5px;}
+.suggest_t p.text2{ text-indent:2em;}
+.suggest_t .selected{background:#F3F3F3;}
+.txtindex{ text-indent:.5em;}
+.suggest_t a{ display:block; height:26px; line-height:26px; padding-left:8px; }
+.suggest_t a.otherH{ display:block; height:17px; line-height:17px; padding-left:8px; }
+.mt10{ margin-top:-2px;}
+/*通栏导航*/
+.gui_Header{ height:31px; width:100%;background:url(http://www.qiyipic.com/common/fix/passport_images/headBg.png) 0 0 repeat-x}
+.gui_Header .headBg { height:31px; overflow:hidden; width:970px; margin:0 auto}
+.gui_Header .headBg a { color:#000!important}
+.gui_Header .headBg a:hover { color:#4c7d08!important}
+.gui_Header .nav, .nav li { float:left; font-size:12px}
+.gui_Header .nav li { padding:0 9px 0 10px; border-right:1px solid #d5d5d5; margin:10px 0; line-height:12px; vertical-align:middle; word-spacing:0}
+.gui_Header .nav .li1 { padding:0; border:none; margin:0; position:relative}
+.gui_Header .nav .liLast { border:none}
+.gui_Header .headForm { float:right; background:url(http://www.qiyipic.com/common/fix/passport_images/headBg.png) 0 -70px; width:195px; height:20px; margin:5px 0 0 0; display:inline}
+.gui_Header .headText { float:left; width:155px; height:15px; border:none; padding:3px 5px; background:none}
+.gui_Header .headBtn { float:left; width:30px; height:20px; border:none; background:none; cursor:pointer}
+.gui_Header .headC { float:right; line-height:12px; word-spacing:10px; padding-top:10px; margin-right:10px; font-size:12px}
+.gui_Header .username { background:url(http://www.qiyipic.com/common/fix/passport_images/headBg.png) 0 -43px; padding-left:15px; margin-top:10px}
+.gui_Header .username img{ margin-left:3px; vertical-align:baseline}
+.gui_Header .head_more { background:url(http://www.qiyipic.com/common/fix/passport_images/headBg.png) 100% -43px; padding-right:15px}
+.gui_Header a.a1 { background:url(http://www.qiyipic.com/common/fix/qiyi_images/navIcon.gif) 67px 15px no-repeat; display:inline-block; width:75px; text-align:center; position:relative; z-index:2; vertical-align:middle; padding:10px 5px 2px 0; margin-top:-10px}
+.gui_Header a.a2, .gui_Header a.a2:hover { background:url(http://www.qiyipic.com/common/fix/qiyi_images/navIcon2.gif) 0 4px no-repeat; color:#000; text-decoration:none; display:inline-block; width:75px; text-align:center; position:relative; z-index:2; vertical-align:middle; padding:10px 5px 2px 0; margin-top:-10px}
+
+/*托盘小浮层*/
+.head_popup{background:url(http://www.qiyipic.com/common/fix/passport_images/headBg.png) 0 -100px repeat-x #fff; border:solid #c8c8c8; border-width:0 1px 1px; padding-top:1px; position:absolute; }
+.head_popup a { color:#000; }
+.head_popup a:hover { color:#4c7d08; }
+.head_ul { margin:5px 10px 5px; }
+.head_ul li { border-bottom:1px solid #e2e2e2; line-height:30px; text-align:center;}
+.head_ul .liLast { border:none; }
+.head_popup p { padding:10px 10px 5px; text-align:center; }
+.arraw { display:inline-block; width:12px; height:8px; background:url(http://www.qiyipic.com/common/fix/passport_images/headBg.png) 0 -90px no-repeat; position:absolute; top:-6px; right:20px; font-size:0; }
+.head_popup .alignRight { line-height:30px; padding:5px 10px 0; }
+.head_popup a.jixuLink { color:#589c03; text-decoration:underline; }
+.head_popup a.jixuLink:hover { color:#4a7f07; }
+.head_ul2 { padding:0 5px; margin:0 5px; }
+.head_ul2 li { border-bottom:1px solid #e2e2e2; padding:5px 0; line-height:18px; padding-left:15px; }
+.head_ul2 { height:260px; overflow-x:hidden; overflow-y:scroll; height:230px; }
+.head_ul li.qitan_msg{ padding:0 0 3px 0; text-align:left;}
+.head_ul li.qitan_msg p{ padding:0; margin:0; line-height:20px;text-align:left; zoom:1;}
+.head_ul li.qitan_msg p em{ color:#eb6100; font-family:"宋体"; font-style:normal;}
+.head_ul li.qitan_msg p a:link,
+.head_ul li.qitan_msg p a:visited{ color:#808080!important;}
+.head_ul li.qitan_msg p a:hover{ color:#4a7f07;}
+.qitan_UL li{text-align:left;text-indent:5px;}
+.color55{color:#d5d5d5;}
+.newMessage{background:url(http://www.qiyipic.com/common/fix/header_msg.gif) no-repeat 100% 2px;padding-right:13px;zoom:1;line-height:14px;} 
+.topInfoC_wide{padding-right:15px;}
+
+/*通栏导航END*/
+
+/*logo区*/
+.gui_app_logoarea{ float:left; width:300px;}
+.gui_change_btn{ float:right; width:465px; padding-top:15px;}
+.gui_app_logoarea .slogan_US{ background:url(http://www.qiyipic.com/common/fix/about_images/aboutUs_icon.gif) no-repeat 0 20px;}
+.gui_app_h{ padding:10px 0; height:51px; overflow:hidden;}
+.gui_change_btn a{ float:left;width:145px; height:33px; margin-left:10px; display:inline-block;}
+.about_mt{ margin-top:10px; border-bottom:1px solid #E1E1E1; padding-bottom:10px; width:970px;}
+
+.ab_ust{ font-size:12px; font-weight:normal; font-size:14px; color:#E1E1E1; padding:30px 0 0 80px;}
+.ab_ust a{ color:#000; text-decoration:none;}
+
+/*左侧打成公用碎片当前导航样式*/
+.gsjs .gsjsLink,.dsh .dshLink,.xwdt .xwdtLink,.lxfs .lxfsLink,.zpyc .zpycLink,.bzgf .bzgfLink,.hzzq .hzzqLink,.wzdt .wzdtLink{background-position: 30px -18px;font-weight: bold;}
+
+/*网站地图*/
+.map_box {width:720px;}
+.map_box  dt a{color:#4A7F07; text-decoration:none;}
+.map_box  dd a{color:#000; text-decoration:none;}
+.map_box  dt a:hover,.map_box  dd a:hover{text-decoration:underline;}
+.map_box .h2Title1{ margin-bottom:20px;}
+.map_section{ background:url(http://www.qiyipic.com/common/fix/about_images/wzdt_bg.gif) repeat-y; width:720px; margin-bottom:27px;}
+.map_section .aside_l{ width:340px; float:left;}
+.map_section .aside_r{ width:340px; float:right;}
+.map_section dt{ font-weight:bold; color:#4A7F07; font-size:14px; line-height:30px;}
+.map_section dd{ width:100px; float:left; line-height:25px; margin-right:13px;}
+
+/*网站地图二次改版*/
+.map_container{ position:relative;background:url(http://www.qiyipic.com/common/about_images/dotBg.gif) repeat-x 0 bottom; padding-bottom:15px; margin-bottom:20px;}
+.map_container h2,.map_app h2{ font:14px/30px "宋体"; color:#4A7F07; font-weight:bold; margin-bottom:6px;}
+.map_container .listMsg li{ float:left; width:100px; margin-right:15px; line-height:24px;}
+.map_container .listMsg a{ color:#000;text-decoration:none;}
+.map_container .listMsg a:hover{ color:#4A7F07;text-decoration:underline;}
+.map_container .listMsg li.more_txt{ position:absolute; right:0; bottom:15px; width:40px; margin-right:0;}
+.map_app .app_list{ background:url(http://www.qiyipic.com/common/fix/about_images/map2Bg.gif) no-repeat; width:705px; height:78px;}
+.map_app .app_list li{ float:left; line-height:23px;}
+.map_app .app_list .li_tag{ width:116px; font:14px/60px "微软雅黑"; color:#89B844; text-align:center; background:url(http://www.qiyipic.com/common/fix/about_images/map2Icon.png) no-repeat 0 26px;}
+.map_app .app_list .every{ width:160px; text-align:center; padding-top:10px;}
+.map_app .app_list .downLoad{ background:url(http://www.qiyipic.com/common/fix/about_images/map2Icon.png) no-repeat 0 -35px; padding-left:17px; display:inline-block;}
+.map_app .app_list .every_more{ width:70px; text-align:right; line-height:60px;}
+
+/* add map img */
+.fEn{width: 970px; clear: both;}
+.itemLink{height: 195px; padding: 21px 0 20px; background: url(http://www.qiyipic.com/common/about_images/dotBg.gif) repeat-x 0 top; overflow: hidden; clear: both;}
+.secMainLink .linkBj{ padding-top: 0; background: none;}
+.itemLink p{float: left; width: 375px;}
+.itemLink .img{float: left; width: 345px;}
+.itemLink p strong{display: block; margin: 5px 0 8px; color: #404040;}
+.fEn .itemLink p{width: 350px; font-family: Arial !important; line-height: 32px;}
+.fEn .itemLink .address{display: block; margin: 4px 0; line-height: 18px;}

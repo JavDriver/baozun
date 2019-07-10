@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+	<head>
+		<title>[vod:name]迅雷下载-[vod:typepname]高清完整版免费下载-{if-B:[vod:year]>0}([vod:year]){endif-B}[vod:typename]-{maccms:name}</title>
+		<meta name="keywords" content="[vod:name]迅雷下载,[vod:name]高清,[vod:name]完整版"/>
+		<meta name="description" content="{maccms:name}提供最新[vod:name]迅雷下载地址、高清完整版免费下载，剧情介绍：[vod:contenttext len=120]"/>
+		<link rel="alternate" media="only screen and(max-width: 640px)" href="{maccms:qq}[vod:downlink]">
+		<link href="{maccms:path_tpl}css/detail.css" rel="stylesheet" type="text/css"/>
+		<link href="{maccms:path_tpl}css/down.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="{maccms:path_tpl}js/down.js"></script>
+		{maccms:include}
+		<script type="text/javascript" src="{maccms:path_tpl}js/packed.js"></script>
+	</head>
+	<body>
+		{maccms:head}
+		<div class="mainBox">
+			<div class="mbxAndotherBox">
+				<div class="mbx_nav">
+					<span class="current_position">
+						您当前的位置：
+					</span>
+					[vod:textlink]
+				</div>
+				<div class="other">
+					<a href="[vod:link]" title="[vod:name]影片首页">
+						影片首页
+					</a>
+					<a href="[vod:link]" title="[vod:name]在线观看">
+						在线观看
+					</a>
+					<a href="[vod:downlink]" class="cur" title="[vod:name]迅雷下载">
+						迅雷下载
+					</a>
+					<a href="[vod:link]#jq" title="[vod:name]剧情简介">
+						剧情简介
+					</a>
+					<a href="[vod:link]#SOHUCS" title="[vod:name]影片评论">
+						影片评论
+					</a>
+				</div>
+			</div>
+
+    <div class="contBox">
+        <div class="zxgk_pindaoBox">
+            <div class="main_width">
+                <div class="pindao_L">
+                <a href="[vod:link]" title="[vod:name]" target="_blank"><img src="[vod:pic]" alt="[vod:name]剧照" /></a>
+                <div class="share"><script type="text/javascript">Share();</script></div>
+                </div>
+                <div class="pindao_R">
+                    <div class="pindao_titBox">
+                        <div class="pindao_tit"><h1>[vod:name]迅雷下载</h1></div><div class="sy_time"><span>上映时间：</span>[vod:yearlink]</div>
+                    </div>
+                    <ul class="pindao_xg">
+                       <li class="ltit"><span>主演：</span>[vod:starringlink]</li>
+                       <li><span>语言：</span>[vod:lang]</li>
+                       <li><span>导演：</span>[vod:directedlink]</li>
+                       <li><span>更新：</span>[vod:time]</li>
+                    </ul>
+                    <p class="jq_text_yg">
+                    <span>剧情：</span>
+                    <font id="jies1">[vod:contenttext len=100]...<a onclick="ShowMore()">详情>></a></font>
+                    <font id="jies2" style="display:none;">&nbsp;[vod:contenttext]&hellip;&hellip;<a onclick="HideMore()" >收起>></a></font>
+                    </p>
+                </div>
+            </div>
+         <div style=" margin:0 auto;padding-top:30px; width:1000px;"><script src="{maccms:path_ads}960x90-2.js"></script></div>
+        <div class="main_width">
+					{maccms:down}{if-A:"[down:show]"="迅雷下载"}
+					<div class="jishuzhe_ztq" id="down">
+						<div class="ui-box download-focus">
+							<div class="ui-title">
+								<span>
+									[down:show]观看
+								</span>
+								<h2>
+									[down:show]
+								</h2>
+							</div>
+							<div class="down_list">
+								<ul>
+									{maccms:url order=desc}
+									<li>
+										<input type="checkbox" name="down_url_list_0" class="down_url" value="[url:path]"
+										file_name="[url:name]">
+										<p style="width: 689px;">
+											<strong class="down_part_name">
+												[url:name]
+											</strong>
+											<input type="text" class="thunder_url" title="鼠标左键单击可全选后手动复制该条迅雷地址进行分享或其它操作"
+											onclick="this.select()" style="width: 489px;">
+										</p>
+										<span>
+											<label class="thunder_down">
+												迅雷下载
+											</label>
+											<label class="qqdl">
+												旋风下载
+											</label>
+											<label class="kk">
+												看看播放
+											</label>
+										</span>
+									</li>
+									{/maccms:url}
+								</ul>
+								<div class="downtools box">
+									<input type="checkbox" name="checkall">
+									<em>
+										全选
+									</em>
+									<a href="javascript:void(0);" target="_self" class="thunder_down_all">
+										迅雷批量下载
+									</a>
+									<a href="javascript:void(0);" target="_self" class="xf_down_all">
+										旋风批量下载
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					{else-A}{maccms:url order=desc}
+					<div class="jishuzhe_ztq">
+						<div class="ztq_tit">
+							<strong>
+								[down:show]
+							</strong>
+						</div>
+						<ul class="ztq_cont">
+							<li>
+								<div class="ztq_name">
+									[url:name]
+								</div>
+								<a href="javascript:void(0)" onclick="ViewGc('[vod:downnum]','1')" class="src"
+								rel="nofollow">
+									【查看在线播放说明】
+								</a>
+								<a href="[url:path]" target="_blank" class="shiting_btn" rel="nofollow">
+									<i class="shiting_btn_icon">
+										&nbsp;
+									</i>
+									打开地址
+								</a>
+							</li>
+							<div class="geci" id="geci_[vod:downnum]_1">
+								<div class="txtgc">
+									保存到你网盘以后请把视频文件后缀名MP41改成MP4即可在线观看
+								</div>
+							</div>
+							<li>
+						</ul>
+					</div>
+					{/maccms:url}{endif-A}{/maccms:down}
+				</div>
+				<div class="cl">
+				</div>
+				<div id="wrapper">
+					<div class="movie_sy_table">
+						<strong>
+							猜你喜欢
+						</strong>
+					</div>
+					<div id="carousel">
+						<ul>
+							{maccms:vod type=current num=15 order=desc by=time}
+							<li>
+								<div class="xuxian">
+								</div>
+								<div class="jijiang_time">
+									<div class="jijiang_time_tit">
+										[vod:time style=yy/m/d]
+									</div>
+									<span>
+										更新
+									</span>
+								</div>
+								<div class="movie_cont">
+									<a href="[vod:link]" title="[vod:name]" target="_blank" class="cont_L">
+										<img src="[vod:pic]" alt="[vod:name]" />
+									</a>
+									<div class="cont_R">
+										<div class="cont_tit">
+											<a href="[vod:link]" title="[vod:name]" target="_blank">
+												[vod:name]
+											</a>
+										</div>
+										<div class="want_kan">
+											[vod:typename]
+										</div>
+										<div class="daoyan">
+											导演：[vod:directed]
+										</div>
+										<div class="yugaopian">
+											{if-A:"[vod:remarks]"
+											<>
+												""}[vod:remarks]{else-A}{if-B:[vod:state]>0}第[vod:state]集{else-B}完结{endif-B}{endif-A}
+												<a href="/dy2013/201507/2566_yg.shtml" title="[vod:name]" class="yugao_btn">
+													<i class="yugao_btn_icon">
+														&nbsp;
+													</i>
+												</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							{/maccms:vod}
+						</ul>
+					</div>
+					<a id="prev" class="prev" href="javascript:void(0)" rel="nofollow">
+					</a>
+					<a id="next" class="next" href="javascript:void(0)" rel="nofollow">
+					</a>
+				</div>
+				<script type="text/javascript">
+					$(function() {
+						$('#carousel ul').carouFredSel({
+							prev: '#prev',
+							next: '#next',
+							scroll: 1000
+						})
+					});
+				</script>
+			</div>
+		</div>
+		{maccms:foot}
+	</body>
+</html>

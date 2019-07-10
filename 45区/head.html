@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="description" content="{dede:global.cfg_description/}"/>
+    <meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+    <title>思家新闻网</title>
+    <link type="text/css" rel="stylesheet" href="/css/demo.css"/>
+    <link type="text/css" rel="stylesheet" href="/css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/dropload.css">
+    <link href="/css/base.css" rel="stylesheet" type="text/css"/>
+    <script src='/js/jquery.min.js'></script>
+    <script src="/js/swiper.min.js"></script>
+    <script src="/js/global_hzj.js"></script>
+    <script type="text/javascript" src="/js/jquery.mmenu.min.all.js"></script>
+    <script type="text/javascript" src="/js/jquery.leanModal.min.js"></script>
+    <script src="/js/dropload.min.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+
+
+    var $orgMenu, $menu, $html;
+
+
+    $(function () {
+
+        $html = $('html');
+
+        $orgMenu = $('nav#menu').detach();
+
+        updateMenu({});
+
+    });
+
+
+    function updateMenu(opts) {
+
+        var opened = false;
+
+        var createMenu = function () {
+
+            if ($menu) {
+
+                $menu.remove();
+
+            }
+
+            $menu = $orgMenu.clone().prependTo('body').mmenu(opts);
+
+            if (opened) {
+
+                $menu.trigger('open.mm');
+
+            }
+
+        }
+
+
+        if ($menu) {
+
+            if ($html.hasClass('mm-opened')) {
+
+                opened = true;
+
+                $menu
+
+                        .on('closed.mm', createMenu)
+
+                        .trigger('close.mm');
+
+            }
+
+            else {
+
+                createMenu();
+
+            }
+
+        }
+
+        else {
+
+            createMenu();
+
+        }
+
+
+    }
+
+</script>
+<header class="clearfix heec">
+    <div class="w1120 clearfix">
+        <div class="header-left clearfix">
+            <div class="logo"><img src="images/logo.png"></div>
+            <div class="nav clearfix">
+                <ul>
+                    <li> <a class="navactive" href="/" target="_blank">资讯首页</a></li>
+                    <li><a href='/news/' target="_blank">热点要闻</a></li>
+                    <li><a href='/dfxw/' target="_blank">地方新闻</a></li>
+                    <li><a href='/caiji/'target="_blank">财经要闻</a></li>
+                    <li><a href='/sports/' target="_blank">体育播报</a></li>
+                    <li><a href='/ent/' target="_blank">明星娱乐</a></li>
+                    <li><a href='/ss/' target="_blank">潮流时尚</a></li>
+                    <li><a href='/zj/'target="_blank">军事直击</a></li>
+                    <li><a href='/domestic/' target="_blank">国内新闻</a></li>
+                    <li><a href='/world/' target="_blank">国际新闻</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-right clearfix">
+            <a class="header-right01 modaltrigger" href="#loginmodal"><img src="images/heard01.png">搜索</a>
+        </div>
+    </div>
+</header>
+
+<div id="page">
+
+    <div class="header">
+
+        <a href="#menu">思家新闻
+        </a>
+
+
+    </div>
+
+
+    <nav id="menu">
+
+        <ul>
+
+            <li> <a class="navactive" href="/" target="_blank">资讯首页</a></li>
+            <li><a href='/news/' target="_blank">热点要闻</a></li>
+            <li><a href='/dfxw/' target="_blank">地方新闻</a></li>
+            <li><a href='/caiji/'target="_blank">财经要闻</a></li>
+            <li><a href='/sports/' target="_blank">体育播报</a></li>
+            <li><a href='/ent/' target="_blank">明星娱乐</a></li>
+            <li><a href='/ss/' target="_blank">潮流时尚</a></li>
+            <li><a href='/zj/'target="_blank">军事直击</a></li>
+            <li><a href='/domestic/' target="_blank">国内新闻</a></li>
+            <li><a href='/world/' target="_blank">国际新闻</a></li>
+
+
+        </ul>
+
+    </nav>
+
+</div>

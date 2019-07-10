@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+.hd{width: 800px; height: 110px;}
+    .hd  a{ width: 170px; height: 200px; display: block; float: left; margin-right: 20px;}
+.hd a img{ width: 100%;}
+    .bd{ width: 500px; height: 300px;}
+</style>
+
+<div id="hd1" class="hd">
+        <a href="../images/1.jpg" title="图a"><img src="../images/1.jpg" title="图1"></a>
+       <a href="../images/2.jpg" title="图b"><img src="../images/2.jpg" title="图2"></a>
+        <a href="../images/3.jpg" title="图c"><img src="../images/3.jpg" title="图3"></a>
+       <a href="../images/4.jpg" title="图d"><img src="../images/4.jpg" title="图4"></a>
+    </ul>
+</div>
+
+<div class="bd">
+    <img id="image" src="../images/4.jpg">
+</div>
+<p id="des">选择一张图片</p>
+<script>
+var hd1 = document.getElementById('hd1');
+    var links = hd1.getElementsByTagName('a');
+    for (var i = 0; i < links.length; i++){
+       var link = links[i];
+        link.onclick = function() {
+        var image = document.getElementById('image');
+              image.src = this.href;
+            var des = document.getElementById('des');
+              des.innerHTML = this.title;
+            return false;
+        }
+    }
+
+
+</script>
+
+</body>
+</html>

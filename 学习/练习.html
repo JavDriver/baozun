@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="dw" style=" position:relative; width: 800px; height: 600px; background: #000000;">
+</div>
+<script>
+ var Tools ={
+   RandomNumber : function(min, max){
+       return Math.floor(Math.random() *(max - min + 1)) + min ;
+   }//floor 向下取整
+   }
+
+  //console.log(Tools.RandomNumber(1,20));
+  function Box(parent, daughter){ //parent 最外层div daughter 子元素
+       daughter = daughter || {};
+      this.backgroundColor = daughter.backgroundColor || 'red';
+      this.width = daughter.width || 20;
+      this.height = daughter.height || 20;
+      this.x = daughter.x || 0;
+      this.y = daughter.y ||0;
+      //创建父元素div（方块）;
+      this.div = document.createElement('div');
+      parent.appendChild(this.div);
+      this.parent = parent;
+      this.init();
+  }
+console.log(parent);
+
+
+//设置方块样式
+
+    Box.prototype.init = function(){
+        var div = this.div.style;
+        div.backgroundColor = this.backgroundColor;
+        div.width = this.width + 'px';
+        div.height = this.height + 'px';
+        div.left = this.x + 'px';
+        div.top = this.y + 'px';
+        div.position = 'absolute';
+    }
+
+//设置随机生成方块位置
+    Box.prototype.random = function() {
+       var x = Tools.RandomNumber(0, (this.parent.offsetWidth / this.width - 1) * this.width);
+        var y = Tools.RandomNumber(0, (this.parent.offsetHeight / this.height -1) * this.height);
+        this.div.style.left = x + 'px';
+        this.div.style.top = y + 'px';
+    }
+     var array = [];
+    //随机生成10个方块
+    var dw = document.getElementById('dw');
+    for(var i = 0; i < 10; i++){
+     var r = Tools.RandomNumber(0, 255);
+     var g = Tools.RandomNumber(0, 255);
+     var b = Tools.RandomNumber(0, 255);
+     var box = new Box(dw,{
+         backgroundColor:'rgb(' + r + ' , '+ g + ',' + b +' )'
+     });
+
+     array.push(box);
+ }
+ console.log(box);
+ console.log(array);
+ setInterval(Through ,500);
+ Through();
+function Through(){
+    for(var i = 0; i < array.length; i++){
+        var box = array[i];
+        box.random();
+    }
+
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <title>45区</title>
+    <link type="text/css" rel="stylesheet" href="css/demo.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/dropload.css">
+    <link href="css/base.css" rel="stylesheet" type="text/css"/>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/global_hzj.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+    <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+    <script src="js/dropload.min.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+
+    var $orgMenu, $menu, $html;
+
+
+
+    $(function() {
+
+        $html = $('html');
+
+        $orgMenu = $('nav#menu').detach();
+
+        updateMenu({});
+
+    });
+
+
+
+    function updateMenu( opts )
+
+    {
+
+        var opened = false;
+
+        var createMenu = function()
+
+        {
+
+            if ( $menu )
+
+            {
+
+                $menu.remove();
+
+            }
+
+            $menu = $orgMenu.clone().prependTo( 'body' ).mmenu( opts );
+
+            if ( opened )
+
+            {
+
+                $menu.trigger( 'open.mm' );
+
+            }
+
+        }
+
+
+
+        if ( $menu )
+
+        {
+
+            if ( $html.hasClass( 'mm-opened' ) )
+
+            {
+
+                opened = true;
+
+                $menu
+
+                        .on( 'closed.mm', createMenu )
+
+                        .trigger( 'close.mm' );
+
+            }
+
+            else
+
+            {
+
+                createMenu();
+
+            }
+
+        }
+
+        else
+
+        {
+
+            createMenu();
+
+        }
+
+
+
+    }
+
+</script>
+<header class="clearfix heec">
+    <div class="w1120 clearfix">
+        <div class="header-left clearfix">
+            <div class="logo"><img src="images/logo.png"></div>
+            <div class="nav clearfix">
+                <a  href="#">首页</a>
+                <a href="#">深度阅读</a>
+                <a href="#">作弊手册</a>
+                <a class="navactive" href="#">早知道</a>
+                <a href="#">关于我们</a>
+                <a href="#">找工作</a>
+            </div>
+        </div>
+        <div class="header-right clearfix">
+            <a class="header-right01 modaltrigger" href="#loginmodal"><img src="images/heard01.png">搜索</a>
+            <a class="header-right01" href="#"><img src="images/heard02.png">登录</a>
+            <a class="header-right01" href="#"><img src="images/heard03.png">注册</a>
+            <a class="header-right02" href="#">投稿</a>
+            <div class="header-right03"><img src="images/heard04.png">
+                <div class="header-right031">
+                    <img src="images/rwm.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="page">
+
+    <div class="header">
+
+        <a href="#menu">
+        </a>
+        45区
+
+    </div>
+
+
+
+    <nav id="menu" >
+
+        <ul>
+
+            <li><a href="#">首页 </a></li>
+            <li><a href="#">深度阅读</a></li>
+            <li><a href="#">作弊手册</a> </li>
+            <li><a href="#">早知道</a> </li>
+            <li><a href="#">关于我们</a> </li>
+            <li><a  href="#">找工作</a> </li>
+            <li><a  href="#">搜索</a> </li>
+            <li><a href="#">登录</a> </li>
+            <li><a href="#">注册</a> </li>
+
+
+        </ul>
+
+    </nav>
+
+</div>
+
+
+
+<div class="conter w1120 clearfix">
+    <div class="conter-left moreload clearfix">
+     <div class="zzd clearfix">
+         <p>筛选情报：
+         <a href="#">大公司</a>
+         <a href="#">产品</a>
+         <a href="#">资本</a>
+         <a href="#">政策</a>
+         <a href="#">产业</a>
+         <a href="#">早期项目</a>
+         <a href="#">B轮</a>
+         <a href="#">其他</a></p>
+     </div>
+        <div class="zzd1 clearfix">
+            <form action="" class="">
+                <input type="text" name="">
+            </form>
+
+        </div>
+
+    <div class="zzd2 hidden clearfix">
+
+        <ul class="clearfix">
+            <li>
+            <h3>安大略宣布为电动卡车提供高至60%的购置税 比亚迪将设厂</h3>
+            <p>据cnBeta援引外媒报道，近日，加拿大人口最密集的省份--安大略省宣布，作为绿色商业车辆项目(Green Commercial Vehicle Program)的一部分，政府决定为电动半挂卡车消费者提供最高可达60%的购置税，即每辆卡车最高可减免7.5万加元。<a href="#">[阅读全文]</a></p>
+            <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                <div class="panel-weixin wxc">
+                    <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                    </section>
+                    <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+            </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+            </cite>
+            </li>
+            <li>
+                <h3>安大略宣布为电动卡车提供高至60%的购置税 比亚迪将设厂</h3>
+                <p>据cnBeta援引外媒报道，近日，加拿大人口最密集的省份--安大略省宣布，作为绿色商业车辆项目(Green Commercial Vehicle Program)的一部分，政府决定为电动半挂卡车消费者提供最高可达60%的购置税，即每辆卡车最高可减免7.5万加元。<a href="#">[阅读全文]</a></p>
+                <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                    <div class="panel-weixin wxc">
+                        <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                        </section>
+                        <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+                </cite>
+            </li>
+
+            <li>
+                <h3>安大略宣布为电动卡车提供高至60%的购置税 比亚迪将设厂</h3>
+                <p>据cnBeta援引外媒报道，近日，加拿大人口最密集的省份--安大略省宣布，作为绿色商业车辆项目(Green Commercial Vehicle Program)的一部分，政府决定为电动半挂卡车消费者提供最高可达60%的购置税，即每辆卡车最高可减免7.5万加元。<a href="#">[阅读全文]</a></p>
+                <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                    <div class="panel-weixin wxc">
+                        <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                        </section>
+                        <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+                </cite>
+            </li>
+
+            <li>
+                <h3>安大略宣布为电动卡车提供高至60%的购置税 比亚迪将设厂</h3>
+                <p>据cnBeta援引外媒报道，近日，加拿大人口最密集的省份--安大略省宣布，作为绿色商业车辆项目(Green Commercial Vehicle Program)的一部分，政府决定为电动半挂卡车消费者提供最高可达60%的购置税，即每辆卡车最高可减免7.5万加元。<a href="#">[阅读全文]</a></p>
+                <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                    <div class="panel-weixin wxc">
+                        <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                        </section>
+                        <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+                </cite>
+            </li>
+
+            <div class="zzd21">
+                <h4>2017.12</h4>
+                <h3>15</h3>
+                <i></i>
+
+            </div>
+        </ul>
+        <ul class="clearfix">
+            <li>
+                <h3>安大略宣布为电动卡车提供高至60%的购置税 比亚迪将设厂</h3>
+                <p>据cnBeta援引外媒报道，近日，加拿大人口最密集的省份--安大略省宣布，作为绿色商业车辆项目(Green Commercial Vehicle Program)的一部分，政府决定为电动半挂卡车消费者提供最高可达60%的购置税，即每辆卡车最高可减免7.5万加元。<a href="#">[阅读全文]</a></p>
+                <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                    <div class="panel-weixin wxc">
+                        <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                        </section>
+                        <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+                </cite>
+            </li>
+            <li>
+                <h3>安大略宣布为电动卡车提供高至60%的购置税 比亚迪将设厂</h3>
+                <p>据cnBeta援引外媒报道，近日，加拿大人口最密集的省份--安大略省宣布，作为绿色商业车辆项目(Green Commercial Vehicle Program)的一部分，政府决定为电动半挂卡车消费者提供最高可达60%的购置税，即每辆卡车最高可减免7.5万加元。<a href="#">[阅读全文]</a></p>
+                <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                    <div class="panel-weixin wxc">
+                        <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                        </section>
+                        <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+                </cite>
+            </li>
+
+            <li>
+                <h3>安大略宣布为电动卡车提供高至60%的购置税 比亚迪将设厂</h3>
+                <p>据cnBeta援引外媒报道，近日，加拿大人口最密集的省份--安大略省宣布，作为绿色商业车辆项目(Green Commercial Vehicle Program)的一部分，政府决定为电动半挂卡车消费者提供最高可达60%的购置税，即每辆卡车最高可减免7.5万加元。<a href="#">[阅读全文]</a></p>
+                <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                    <div class="panel-weixin wxc">
+                        <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                        </section>
+                        <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+                </cite>
+            </li>
+
+            <li>
+                <h3>安大略宣布为电动卡车提供高至60%的购置税 比亚迪将设厂</h3>
+                <p>据cnBeta援引外媒报道，近日，加拿大人口最密集的省份--安大略省宣布，作为绿色商业车辆项目(Green Commercial Vehicle Program)的一部分，政府决定为电动半挂卡车消费者提供最高可达60%的购置税，即每辆卡车最高可减免7.5万加元。<a href="#">[阅读全文]</a></p>
+                <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                    <div class="panel-weixin wxc">
+                        <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                        </section>
+                        <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+                </cite>
+            </li>
+
+            <div class="zzd21">
+                <h4>2017.12</h4>
+                <h3>15</h3>
+                <i></i>
+
+            </div>
+        </ul>
+
+    </div>
+        <div class="zzd2 list">数据加载中，请稍后...</div>
+<div class="zzd3 more">
+    <a  href="javascript:;" onClick="moreload.loadMore();">点击加载更多</a>
+</div>
+
+
+    </div>
+
+    <div class="conter-right clearfix">
+        <div class="conter-right3 right-hj clearfix">
+            <h3><img src="images/index41.png"> TOP点击</h3>
+            <ul class="am-list clearfix">
+                <li class="top" data-index="4">
+                    <div>
+                        <div>
+                            <div class="img-left-cover"><a href="/p/5109888.html" target="_blank"
+                                                           data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888"><span>1</span>
+                                <div class="img-cell" style="background-image: url(images/index42.png);"></div>
+                            </a></div>
+                            <div class="right-article"><h4><a href="/p/5109888.html" target="_blank" data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888">向吃鸡和《王者荣耀》发起进攻！挑战者居然是款恋爱游戏</a>
+                            </h4>
+                                <div class="time_about" title="2017-12-27 07:11">7小时前</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="top" data-index="4">
+                    <div>
+                        <div>
+                            <div class="img-left-cover"><a href="/p/5109888.html" target="_blank"
+                                                           data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888"><span>2</span>
+                                <div class="img-cell" style="background-image: url(images/index42.png);"></div>
+                            </a></div>
+                            <div class="right-article"><h4><a href="/p/5109888.html" target="_blank" data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888">向吃鸡和《王者荣耀》发起进攻！挑战者居然是款恋爱游戏</a>
+                            </h4>
+                                <div class="time_about" title="2017-12-27 07:11">7小时前</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="top" data-index="4">
+                    <div>
+                        <div>
+                            <div class="img-left-cover"><a href="/p/5109888.html" target="_blank"
+                                                           data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888"><span>3</span>
+                                <div class="img-cell" style="background-image: url(images/index42.png);"></div>
+                            </a></div>
+                            <div class="right-article"><h4><a href="/p/5109888.html" target="_blank" data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888">向吃鸡和《王者荣耀》发起进攻！挑战者居然是款恋爱游戏</a>
+                            </h4>
+                                <div class="time_about" title="2017-12-27 07:11">7小时前</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="top" data-index="4">
+                    <div>
+                        <div>
+                            <div class="img-left-cover"><a href="/p/5109888.html" target="_blank"
+                                                           data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888"><span>4</span>
+                                <div class="img-cell" style="background-image: url(images/index42.png);"></div>
+                            </a></div>
+                            <div class="right-article"><h4><a href="/p/5109888.html" target="_blank" data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888">向吃鸡和《王者荣耀》发起进攻！挑战者居然是款恋爱游戏</a>
+                            </h4>
+                                <div class="time_about" title="2017-12-27 07:11">7小时前</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="top" data-index="4">
+                    <div>
+                        <div>
+                            <div class="img-left-cover"><a href="/p/5109888.html" target="_blank"
+                                                           data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888"><span>5</span>
+                                <div class="img-cell" style="background-image: url(images/index42.png);"></div>
+                            </a></div>
+                            <div class="right-article"><h4><a href="/p/5109888.html" target="_blank" data-stat-click="remenwenzhang.wenzhangbiaoti.4.5109888">向吃鸡和《王者荣耀》发起进攻！挑战者居然是款恋爱游戏</a>
+                            </h4>
+                                <div class="time_about" title="2017-12-27 07:11">7小时前</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+        <div class="conter-right2 clearfix">
+            <h3><img src="images/index41.png"> 热点标签</h3>
+            <div id="tagsList">
+
+                <a class="tagsListact" href="#/Article.aspx?kid=1" title="星级评分">星级评分</a>
+
+                <a href="#/Article.aspx?kid=2" title="层特效">层特效</a>
+
+                <a class="tagsListact" href="#/Article.aspx?kid=3" title="关键字">关键字</a>
+
+                <a href="#/Article.aspx?kid=4" title="拖拽">拖拽</a>
+
+                <a href="#/Article.aspx?kid=5" title="分页插件">分页插件</a>
+
+                <a href="#/Article.aspx?kid=6" title="时间插件">时间插件</a>
+
+                <a href="#/Article.aspx?kid=7" title="弹出层">弹出层</a>
+
+                <a href="#/Article.aspx?kid=8" title="数据统计">数据统计</a>
+
+                <a class="tagsListact" href="#/Article.aspx?kid=9" title="HTML5">HTML5</a>
+
+                <a href="#/Article.aspx?kid=10" title="置顶特效">置顶特效</a>
+
+                <a href="#/Article.aspx?kid=11" title="选项卡">选项卡</a>
+
+                <a href="#/Article.aspx?kid=12" title="导航菜单">导航菜单</a>
+
+                <a href="#/Article.aspx?kid=13" title="原创">原创</a>
+
+                <a href="#/Article.aspx?kid=14" title="动画插件">动画插件</a>
+
+                <a href="#/Article.aspx?kid=15" title="实用特效">实用特效</a>
+
+                <a href="#/Article.aspx?kid=16" title="table插件">table插件</a>
+
+                <a class="tagsListact" href="#/Article.aspx?kid=17" title="文字特效">文字特效</a>
+
+                <a href="#/Article.aspx?kid=18" title="图片特效">图片特效</a>
+
+                <a href="#/Article.aspx?kid=19" title="在线客服">在线客服</a>
+
+                <a href="#/Article.aspx?kid=20" title="瀑布流">瀑布流</a>
+
+                <a href="#/Article.aspx?kid=21" title="网友蘑菇">网友蘑菇</a>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="foot clearfix">
+    <div class="clearfix w1120">
+        <div class="foot1 clearfix">
+
+            <div class="foot11 clearfix">
+                <h3>我们的产品</h3>
+                <dl class="clearfix">
+                    <dt><img src="images/foot1.png"></dt>
+                    <dd><span>渡渡鸟访谈</span>让一部分人先看到未来</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt><img src="images/foot2.png"></dt>
+                    <dd><span>45区媒体</span>让一部分人先看到未来</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt><img src="images/foot3.png"></dt>
+                    <dd><span>作弊手册</span>让一部分人先看到未来</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt><img src="images/foot4.png"></dt>
+                    <dd><span>研究院</span>让一部分人先看到未来</dd>
+                </dl>
+            </div>
+            <div class="foot12 clearfix">
+                <h3>日常</h3>
+                <a href="#">关于我们</a>
+                <a href="#">我要投稿</a>
+                <a href="#">找工作</a>
+            </div>
+
+            <div class="foot13">
+                <h3>45区微信公众号</h3>
+                <img src="images/rwm.png">
+                <em>扫一扫，关注45区</em>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="footer-logo"><a href=""> <img src="images/footlogo.png" alt=""> </a></div>
+            <div class="copyright"><span class="mobile-hide">本站由 <a href="http://www.aliyun.com" rel="nofollow" target="_blank">
+                <img src="images/aly.png" alt="阿里云" ></a><em>提供计算与安全服务</em>   </span>
+                <span class="law">Copyright ©  45区   京ICP备12013432号-1 <img src="images/wj.png"> 京公网安备 11010102001402号  技术支持：            <span
+                        class="mobile-hide">| <a href="" target="_blank">司慧网络 </a></span></span>
+
+                <br></div>
+            <div class="share"><a class="iconfooter-weibo" href="" target="_blank" rel="nofollow"></a>
+                <a class="iconfooter-qq" href="" target="_blank" rel="nofollow"></a>
+                <a class="iconfooter-txwb" href="" target="_blank" rel="nofollow"></a>
+                <a class="iconfooter-rss" href="" target="_blank" rel="nofollow"></a>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script type="text/javascript" src="js/tags.js"></script>
+<!--搜索-->
+<header class="clearfix isearch" style="display:none;" id="loginmodal">
+    <div class="w1120 clearfix">
+        <div class="logo"><img src="images/logo.png"></div>
+        <div class="search1">
+            <img src="images/heard01.png">
+            <form action="" class="">
+                <input type="text" placeholder="搜索" class="" tabindex="-1">
+            </form>
+        </div>
+        <a href="javascript:" class="search1a hidemodal1"><img src="images/close2.png"> </a>
+    </div>
+</header>
+
+<script>
+    var _content = []; //临时存储li循环内容
+    var moreload = {
+        _default:1, //默认显示图片个数
+        _loading:2,  //每次点击按钮后加载的个数
+        init:function(){
+            var lis = $(".moreload .hidden ul");
+            $(".moreload .list").html("");
+            for(var n=0;n<moreload._default;n++){
+                lis.eq(n).appendTo(".moreload .list");
+            }
+            $(".moreload .list ul").each(function(){
+                $(this).attr('src',$(this).attr('realSrc'));
+            })
+            for(var i=moreload._default;i<lis.length;i++){
+                _content.push(lis.eq(i));
+            }
+            $(".moreload .hidden").html("");
+        },
+        loadMore:function(){
+            var mLis = $(".moreload .list ul").length;
+            for(var i =0;i<moreload._loading;i++){
+                var target = _content.shift();
+                if(!target){
+                    $('.moreload .more').html("<p>全部加载完毕...</p>");
+                    break;
+                }
+                $(".moreload .list").append(target);
+                $(".moreload .list ul").eq(mLis+i).each(function(){
+                    $(this).attr('src',$(this).attr('realSrc'));
+                });
+            }
+        }
+    }
+    moreload.init();
+</script>
+
+
+</body>
+</html>

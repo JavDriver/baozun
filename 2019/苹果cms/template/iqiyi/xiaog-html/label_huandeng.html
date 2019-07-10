@@ -1,0 +1,78 @@
+﻿<link type="text/css" href="{maccms:templatepath}huandeng/css/hd.css" rel="stylesheet" />
+<script src="{maccms:templatepath}huandeng/js/jquery.js"></script>
+<script src="{maccms:templatepath}huandeng/js/js.js"></script>
+<div class="modeA">
+	<!--代码开始-->
+	<div class="slide_screen">
+		<ul class="list">
+			<li class="liA">
+				<div class="window">
+					{maccms:vodlist num=3 level=5 order=desc by=time}
+					<div class="piece"> 
+						<a target="_blank" href="[vodlist:link]"><img alt="" src="[vodlist:picslide]"></a>
+						<div class="bar">
+							<h3>[vodlist:name]</h3>
+							<p>[vodlist:contenttext len=20]！</p>
+							<span></span>
+							<a target="_blank" href="[vodlist:link]">&nbsp;</a>
+						</div>
+					</div>
+					{/maccms:vodlist}
+				</div>
+			</li>
+			<li class="liB">
+				<div class="window">
+					{maccms:vodlist num=3 level=5 start=4 order=desc by=time}
+					<div class="piece"> 
+						<a target="_blank" href="[vodlist:link]"><img alt="" src="[vodlist:picslide]"></a>
+						<div class="bar">
+							<h3>[vodlist:name]</h3>
+							<p>[vodlist:contenttext len=20]！</p>
+							<span></span>
+							<a target="_blank" href="[vodlist:link]">&nbsp;</a>
+						</div>
+					</div>
+					{/maccms:vodlist}
+				</div>
+			</li>
+			<li class="liC">
+				<div class="window">
+					{maccms:vodlist num=3 level=5 start=7 order=desc by=time}
+					<div class="piece"> 
+						<a target="_blank" href="[vodlist:link]"><img alt="" src="[vodlist:picslide]"></a>
+						<div class="bar">
+							<h3>[vodlist:name]</h3>
+							<p>[vodlist:contenttext len=20]！</p>
+							<span></span>
+							<a target="_blank" href="[vodlist:link]">&nbsp;</a>
+						</div>
+					</div>
+					{/maccms:vodlist}
+				</div>
+			</li>
+			<li class="liD">
+				<div class="window">			
+					{maccms:vodlist num=3 level=5 start=10 order=desc by=time}
+					<div class="piece"> 
+						<a target="_blank" href="[vodlist:link]"><img alt="" src="[vodlist:picslide]"></a>
+						<div class="bar">
+							<h3>[vodlist:name]</h3>
+							<p>[vodlist:contenttext len=20]！</p>
+							<span></span>
+							<a target="_blank" href="[vodlist:link]">&nbsp;</a>
+						</div>
+					</div>
+					{/maccms:vodlist}
+				</div>
+			</li>
+		</ul>
+		<ul class="libtn">
+			<li _index="1" class="selected"></li>
+			<li _index="2" class=""></li>
+			<li _index="3" class=""></li>
+		</ul>
+	</div>
+	<!--代码结束-->
+</div>
+
+<script src="{maccms:templatepath}huandeng/js/a.js"></script>

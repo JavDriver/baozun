@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>电视剧排行榜 电影排行榜 热门综艺 动漫排行榜 微电影排行 热播榜 - {maccms:name}</TITLE>
+<meta name="keywords" content="{maccms:keywords}" />
+<meta name="description" content="{maccms:description}" />
+{maccms:include}
+</head>
+<body>
+{maccms:head}
+<div class="wz"><span>您当前的位置：</span><a href="{maccms:path}">首页</a><a class="current" href="{maccms:getlink top.html}">全部排行榜</a></ul></div>
+<div class="ad980">
+<script src="{maccms:path_ads}h960x90.js"></script>
+</div>
+<div class="all p_list">
+<ul class="side_nav aleft">
+<li class="first no_border"><span>排行榜</span></li>
+<li class="curr"><a href="{maccms:getlink top.html}">全部</a></li>
+<li ><a href="{maccms:getlink top1.html}">电影</a></li>
+<li ><a href="{maccms:getlink top2.html}">电视剧</a></li>
+<li ><a href="{maccms:getlink top4.html}">动漫</a></li>
+<li ><a href="{maccms:getlink top3.html}">综艺</a></li>
+<li ><a href="{maccms:getlink top5.html}">微电影</a></li>
+</ul>
+
+<div class="p_vodlist aright">
+{maccms:matrix type=1,2,3,4 table=vod}
+  <div class="top-item-box">
+        <div class="top-title fn-clear"><span><a href="[matrix:link]">更多</a></span>
+          <h2><a href="/top_tv.html">[matrix:name]排行榜</a></h2>
+        </div>
+        <div class="ui-cnt fn-clear">
+          <div class="top-item">
+            <h3>总评分榜</h3>
+            <ul class="top-list fn-clear">
+                     {maccms:vod num=10 type=[matrix:id] by=hits order=desc}
+<li><a href="[vod:link]" title="[vod:name]"><span class="num {if-A:[vod:num]<4 }stress{endif-A}">[vod:numfill].</span><span class="tit">[vod:name]</span><span class="hits">[vod:hits]</span></a></li>
+{/maccms:vod}            </ul>
+          </div>
+          <!-- // top-item end -->
+          <div class="top-item">
+            <h3>周排行榜</h3>
+          <ul class="top-list fn-clear">
+            {maccms:vod num=10 type=[matrix:id] by=weekhits order=desc}
+<li><a href="[vod:link]" title="[vod:name]"><span class="num {if-A:[vod:num]<4 }stress{endif-A}">[vod:numfill].</span><span class="tit">[vod:name]</span><span class="hits">[vod:hits]</span></a></li>
+{/maccms:vod}          
+            </ul>
+          </div>
+          <!-- // top-item end -->
+          <div class="top-item">
+            <h3>月排行榜</h3>
+           <ul class="top-list fn-clear">
+             {maccms:vod num=10 type=[matrix:id] by=monthhits order=desc}
+<li><a href="[vod:link]" title="[vod:name]"><span class="num {if-A:[vod:num]<4 }stress{endif-A}">[vod:numfill].</span><span class="tit">[vod:name]</span><span class="hits">[vod:hits]</span></a></li>
+{/maccms:vod}            </ul>
+          </div>
+          <!-- // top-item end -->
+        </div>
+      </div>
+      <!-- // top-item-box end -->
+	  {/maccms:matrix}
+        </div>
+      </div>   
+            </div></div>
+<div class="h-clear"></div>
+ 
+{maccms:foot}
+
+<script src="{maccms:path_tpl}js/main.js" type="text/javascript"></script>
+<script type="text/javascript" src="{maccms:path_tpl}js/IE6Top.js"></script>
+<div class="back-to-top" id="back-to-top"><a href="javascript:window.scrollTo(0, 0);" target="_self">Back to Top</a></div></body>
+</html>

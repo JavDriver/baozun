@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>好看的{page:name}-最新{page:name}-经典{page:name}-{page:name}电影推荐-第{page:now}页-{maccms:name}</title>
+<meta name="keywords" content="{page:key}" />
+<meta name="description" content="{page:des}" />
+{maccms:include}
+</head>
+<body>
+{maccms:head}     
+<div class="layout mt10">
+	<div class="tbg10"></div>
+	<div class="mainArea px19">
+		<div class="position"><span class="listTotal">共有<em>{page:datacount}</em>部影片</span>您的位置：{page:textlink}</div>
+	</div>
+	<div class="bbg10"></div>
+</div>
+<div class="layout mt10">
+	<div class="tbg20"></div>
+	<div class="mainArea px17">
+		<ul class="movieList">
+		{maccms:vod pagesize=20 order=desc by=time}
+			<li><a href="[vod:link]" target="_blank"><h3>[vod:name]</h3><img src="{maccms:path_tpl}images/grey.jpg" data-original="[vod:pic]" /><p><span>[vod:time style=yy-m-d H:i:s]</span>热播电影</p></a></li>
+		{/maccms:vod}
+		</ul>
+		<div class="clear"></div>
+		<div class="pageNav px14">
+			<div class="pages">当前：{page:now} 页</div>
+			<div class="pageList">{maccms:pages len=5}</div>
+		</div>
+	</div>
+	<div class="bbg20"></div>
+</div>
+{maccms:foot}
+<script type="text/javascript">
+$(function() {
+	$("img").lazyload({
+		effect : "fadeIn"
+	});
+});
+</script>
+</body>
+</html>

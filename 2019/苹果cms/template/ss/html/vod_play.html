@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>正在播放《[vod:name]》-[vod:playname]-{maccms:url}-{maccms:name}</title>
+<meta name="keywords" content="[vod:name],[vod:playname],DVD,{maccms:url},{maccms:name},最新电视剧电影,好看的电视剧电影,西瓜影音"/>
+<meta name="description" content="[vod:contenttext len=150]...">
+{maccms:include}
+<script>MAC.History.Insert("[vod:name] - [vod:playname]","[vod:link]","[vod:typepname]","[vod:typeplink]","[vod:pic]");</script>
+</head>
+<body>
+{maccms:head}
+<div class="wz"><span>您当前的位置：</span><a href="{maccms:path}">首页</a>{maccms:matrix type=1,2,3,4 table=vod}{if-A:[vod:typepid]= [matrix:id]}{maccms:vod num=1 by=level type=[matrix:id] order=desc}<a href="[vod:typelink]">[vod:typepname]</a>{/maccms:vod}{endif-A}{/maccms:matrix}<a href="[vod:typepname]">[vod:typename]</a><a class="current" href="[vod:link]">[vod:name]</a><div class="wfgk"><a arget="_self" href="javascript:void(0)" onclick="MAC.Error(&quot;vod&quot;,&quot;[vod:id]&quot;,&quot;[vod:name]-[vod:playname]&quot;);return false;">无法观看?</a></div>
+</div>
+<div class="ad980">
+<script src="{maccms:path_ads}h960x90.js"></script>
+</div>
+<div id="play-focus">
+  <!-- // layout End -->
+ <div  class="w1000">
+<div class="w685" id="players">
+[vod:playerinfo][vod:player]
+</div>
+    <!-- // player End -->
+    <div class="w300" id="mright"><script src="{maccms:path_ads}300x250-1.js"></script><div class="h10"></div><script src="{maccms:path_ads}300x250-2.js"></script></div>    <!-- // player-ad End -->
+  </div>
+
+    <!-- // idt修改 -->  
+  <div class="p10idt w1000">
+		<div class="p10idt-gold">
+		  <span>[vod:score]</span>
+		</div>
+		<div class="loveidbox user-bt">
+        <a rel="nofollow" class="sect-btn" href="javascript:void(0)" onclick="MAC.UserFav('[vod:id]');return false;">收藏</a>
+         </div>
+        <div class="remind user-bt"><a href="{maccms:link_map_rss}" target="_blank" class="rss-btn sect-btn" rel="nofollow">订阅</a>        </div>
+          <div class="updownbtnbox">
+		  [vod:digg]
+		</div>
+		<div class="playfxbox">
+    <div class="bread-share aright">
+      <div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到微信" class="bshare-weixin"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#style=-1&uuid=&pophcol=2&lang=zh"></script><a class="bshareDiv" onclick="javascript:return false;"></a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+	</div>
+	</div>
+</div> 
+<!-- // idt修改 -->  
+  <!-- // play End -->
+</div>
+
+ <div class="ad980">
+<script src="{maccms:path_ads}p960x90-1.js"></script>
+</div>  
+
+<div class="publicbox w1000" id="detail-list">
+	<div class="vodhottitle">
+    <div class="play_list" >
+	  {maccms:play}<dd {if-A:"[play:show]"="[vod:playfromshow]"}class="current"{endif-A}><a title="[play:show]" id="[play:from]-pl" ><span></span><!--<em class="no_v"> [play:urlcount]集</em>--></a></dd>{maccms:url order=desc}{/maccms:url}{/maccms:play} 
+                  </div>    
+        <div class="txtt"><a target="_self" href="javascript:void(0)" onclick="MAC.Error(&quot;vod&quot;,&quot;[vod:id]&quot;,&quot;[vod:name]-[vod:playname]&quot;);return false;">我要报错</a></div>
+    </div>
+	
+	{maccms:play}
+  	<div class="vodplaybox" id="[play:from]-pl-list" {if-A:"[play:show]"="[vod:playfromshow]"} style="display:block"{else-A}style="display:none"{endif-A}>
+			<div class="wxts" style="margin:0px 20px 10px 20px;height: 15px;">
+				<div style="float: left;"><span class="snvd">温馨提示：</span>[play:tip]</div>  
+				<div class="order">列表排序：<a rel="nofollow" class="desc" href="javascript:void(0);" data="{if-A:[play:num]=1}0{endif-A}{if-A:[play:num]=2}1{endif-A}{if-A:[play:num]=3}2{endif-A}{if-A:[play:num]=4}3{endif-A}{if-A:[play:num]=5}4{endif-A}{if-A:[play:num]=6}5{endif-A}{if-A:[play:num]=7}6{endif-A}{if-A:[play:num]=8}7{endif-A}{if-A:[play:num]=9}8{endif-A}{if-A:[play:num]=10}9{endif-A}">降序</a></div>                  
+			</div>
+             <p class="player_list">{maccms:url order=desc}<a href="[url:link]" target="_blank">[url:name]{if-A:[url:num]=[play:urlcount]}<span class="new"></span>{endif-A}</a>{/maccms:url}</p>  
+   </div>	
+   {/maccms:play}
+   
+   <div class="wxts" style="margin:10px 0 0 0;background-color: #FFF;">   
+                {if-A:"[vod:playfromshow]"="快播qvod"}
+				<div class="askbox">
+						<span class="asktitle">[快播QVOD-常见问题]</span>
+						<p><span class="snvd">紧急BUG一：</span>当您打开影片时候，出现了一部已经缓冲完毕，且影片内容不正确时，请打开baidu player这个下载目录，删除清空里面下载的影片，然后刷新页面即可。注：删除前，请退出打开了百度影音播放页面和"百度影音"播放器或"baidup2pservice"进程，防止由于软件对内容的读写导致无法删除。</p>
+						<p><span class="snvd">紧急BUG二：</span>当缓冲一直为0时，请尝试刷新一下页面。</p>
+						<p><span class="snvd">常见问题一：</span>如打开本页的播放窗口提示需要安装播放器，请点击下载百度影音，一路"下一步"安装，完毕后刷新页面即可</p>
+						<p><span class="snvd">常见问题二：</span>开始播后将有5-15秒左右的缓冲时间，属于正常现象；如播放的页面长时间一直显示为0%，很有可能资源被删除，您可以点击这里留言报错</p>
+						<p><span class="snvd">常见问题三：</span>快播影音太占网速，一播放家里其他人都不能上网了怎么办？百度影音为达到更好的缓冲效果，有时可能会出现过度占用网速的情况。您可以在播放器设置-下载面板中设置最大上传下载速度。也可以在播放器设置-系统中勾选"退出时自动结束p2p进程"，然后在系统托盘图标上右键选择完全退出。</p>
+						<p><span class="snvd">播放技巧一：</span>正常情况下的新片和热片，百度影音都能保持非常流畅的播放；如有出现不流畅，您可以选择暂停缓冲一会再观看，或是检查一下自己电脑是否开启了其他占用网速的软件。（快播影音是一个P2P的播放软件，用户越多速度越快，所以部分老片冷片会速度较慢，用户数增加后这个问题会很快解决）</p>
+						<p><span class="snvd">播放技巧二：</span>页面播放的东西，会在本地存一份，具体可在"播放器设置"-"下载面板"中可以查看和设置缓冲文件目录。在下载过程中若硬盘空间不足，百度影音会弹出提示窗口。只需重新设置缓冲目录或者删除旧缓冲文件即可。</p>
+						<p>具体可以访问以下图文并茂的链接百度影音常见问题、产品简介、快速入门、操作指南。</p>
+		    </div>	
+			{else-A}            
+                <div class="askbox">
+						<span class="asktitle">[Flash常见问题]</span>
+						<p><span class="snvd">常见问题一：</span>如打开本页的播放窗口空白或有个是个大叉叉，请点击这里下载Flash 9插件,然后重启浏览器</p>
+						<p><span class="snvd">常见问题二：</span>在已安装Flash的情况下，如打开的本页播放区域是空白一片，可以尝试刷新本页（网速慢使播放器加载稍慢)</p>
+						<p><span class="snvd">常见问题三：</span>节目出现双语对白，可打开电脑上音量调节功能，拉动平衡杆到任意一边调整语种。</p>
+						<p><span class="snvd">常见问题四：</span>为何有的节目看到一半就断掉或没有响应了？最有效的解决方法是：IE浏览器--工具-- Internet选项--点击"删除文件"按钮，然后关闭浏览器重新打开</p>
+						<p><span class="snvd">播放技巧一： </span>部分视频如果出现卡的情况，可暂停一会，让其缓冲后再播放</p>
+						<p><span class="snvd">播放技巧二： </span>可提前打开下一集的页面，播放后按暂停（不要关闭），让其缓冲，这样看完这集就可以很流畅的看下一集了。</p>
+					</div>
+			{endif-A}		
+	</div>
+					
+</div>
+ <div  class="w1000">
+    <div class="ui-titlej">
+      <ul>
+        <li id="latest1" onclick="setTab('latest',1,3);" class="current">除了"<strong>美国偶像第十三季</strong>"你也可能喜欢以下影片：</li>
+        <!--<li id="latest2" onclick="setTab('latest',2,3);" class="">同主演</li>
+        <li id="latest3" onclick="setTab('latest',3,3);" class="">同导演</li>-->
+      </ul>
+    </div>
+    <div class="box" id="con_latest_1">
+  <ul class="img-listt">
+     {maccms:vod num=6 order=desc by=monthhits}
+            <li><a class="play-img" target="_blank" href="[vod:link]"><img class="loading" width="110" height="150" src="{maccms:path_tpl}images/blank.png" data-lazyload-src="[vod:pic]" data-lazyload-type="auto" alt="[vod:name]"/>
+        <label class="mask"></label>
+        <label class="text">[vod:remarks]</label>
+        <label class="score">[vod:score]</label>
+        </a>
+        <h3><a target="_blank" href="[vod:link]" title="[vod:name]">[vod:name]</a></h3>
+      </li>
+	  {/maccms:vod}
+      </ul>
+      <ul class="txt-list-small">
+              {maccms:vod num=20 order=desc by=monthhits start=7}<li><span>[vod:numjoin].</span><a target="_blank" href="[vod:link]">[vod:name]</a></li>{/maccms:vod}
+      </ul>
+    </div>
+    <div class="box" id="con_latest_2" style="display:none">
+    </div>
+    <div class="box" id="con_latest_3" style="display:none">  
+    </div>
+  </div>
+<div class="w1000" id="comment">
+    <div class="ui-titlej">
+      <h3><strong>[vod:name]</strong>网友评论</h3>
+    </div>
+  <div class="ui-cnt clear">
+   [vod:comment]
+   </div>
+      <!-- // comment-focus end -->           
+     </div>
+    <!-- // comment End -->
+
+{maccms:foot}
+
+<script src="{maccms:path_tpl}js/main.js" type="text/javascript"></script>
+<script type="text/javascript" src="{maccms:path_tpl}js/IE6Top.js"></script>
+<div class="back-to-top" id="back-to-top"><a href="javascript:window.scrollTo(0, 0);" target="_self">Back to Top</a></div>
+</body>
+</html>

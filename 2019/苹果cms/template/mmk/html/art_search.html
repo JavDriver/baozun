@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{page:key}搜索结果 - {maccms:name}</title>
+<meta name="keywords" content="{page:key}" />
+<meta name="description" content="{page:key}搜索结果" />
+<link rel="stylesheet" href="{maccms:path_tpl}css/art_global.css">
+<link rel="stylesheet" href="{maccms:path_tpl}css/art_list.css">
+{maccms:include}
+</head>
+<body>
+{maccms:head}
+<div class="g-bd s-mgt20">
+            <h2 class="m-special">{page:key}搜索结果</h2>
+        </div> 
+        <div class="g-bd s-shadow">
+                <div class="m-hd-rst">
+                    <span>排序：</span>
+                <span  {if-A:"{page:by}"="time"}  class="z-crt" {endif-A} > <a href="{page:linkbytime}">按时间</a><i></i></span>
+                    <span {if-A:"{page:by}"="hits"}  class="z-crt" {endif-A} ><a href="{page:linkbyhits}" >按人气</a><i></i></span>
+                </div>
+                
+                  {maccms:art pagesize=20 order=desc by=time}
+    <section class="m-bd-rst">
+        <h3><a href="[art:link]" target="_blank">[art:name]</a></h3>
+
+        <span class="s-grey-2">时间：2008-10-06</span>
+        <span class="s-grey-2">分类：[art:typename]</span>
+        <span class="s-grey-2">人气：[art:hits]</span>
+        <span class="s-blue-1">标签：[art:taglink]</span>
+    </section>
+
+                {/maccms:art}
+           </div> 
+{maccms:foot}
+</body>
+</html>

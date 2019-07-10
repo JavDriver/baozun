@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{margin:0;padding:0;}
+*{margin:0;padding:0;text-shadow:none;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+body{font-family: "微软雅黑",san-serif;background:#fff;margin:0 auto;overflow-x: hidden;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+address,cite,code,em,th{font-weight:normal;font-style:normal;}
+input,button,textarea,select{font:100% Arial,'微软雅黑';vertical-align:middle;}
+ul, ol{list-style: none;}
+img,fieldset{vertical-align:top;border:0;max-width:100%;height:auto;}
+.clear{height:0px;line-height:0px;font-size:0;clear:both;overflow:hidden;display:block;}
+.clearfix{zoom:1;}
+.clearfix:after{display:block;overflow:hidden;clear:both;height:0;visibility:hidden;content:".";}
+a{color:#666;text-decoration:none;}
+a:hover{color:#db0000;text-decoration:none;}
+p{color:#000;font-weight:normal;word-break:break-all;}
+.fl{float:left;}
+.fr{float:right;}
+.mr{ margin-right: 0 !important;}
+.rel{position:relative;}
+.abs{position:absolute;}
+ul,li{list-style: none;}
+
+.w300{ width: 300px; margin: 0 auto; text-align: center;}
+#foodName{ margin-bottom: 10px;}

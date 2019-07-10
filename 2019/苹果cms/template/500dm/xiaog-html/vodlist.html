@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>2013最新{typepage:name}在线观看-好看的{typepage:name}排行榜-快播最新{typepage:name}-{maccms:name} {typepage:name}大全</title>
+<meta name="Keywords" content="{typepage:name},最新{typepage:name},好看的{typepage:name},{typepage:name}下载,TVB最新{typepage:name}" />
+<meta name="Description" content="{maccms:name} {typepage:name}大全为您提供最新{typepage:name}排行榜2013，韩国{typepage:name}、泰国{typepage:name}、香港TVB最新{typepage:name}排行榜、好看的{typepage:name}等热播{typepage:name}排行榜，并提供免费高清{typepage:name}下载及在线观看，看{typepage:name}尽在{maccms:name} {typepage:name}大全！" />
+ <link href="{maccms:templatepath}images/base.css" type="text/css" rel="stylesheet" />
+<script src="{maccms:templatepath}images/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="{maccms:templatepath}images/log.js" type="text/javascript"></script>
+<script src="{maccms:templatepath}images/base.js" type="text/javascript"></script>
+</head>
+<body>
+{maccms:head}
+<div id="content">
+ <div id="content">
+	<div class="layout fn-clear">
+		<div class="mainbox fn-left">
+			<div class="ui-box l-h" id="tv-module">
+				<div class="ui-title fn-clear">
+					<label class="ui-mark">电视</label>
+					<h2>{typepage:name}列表</h2>
+					{maccms:menulist parent=1}
+<span><a href="[menulist:link]">[menulist:name]</a> <em>|</em></span>
+{/maccms:menulist}
+				</div>
+				<div class="ui-cnt">
+					<ul class="img-list fn-clear">
+					{maccms:vodpagelist num=20 order=desc by=time}
+                                                     								 <li>
+					  <a href="[pagelist:link]" class="play-pic" title="[pagelist:name]" target="_blank">
+								<img src="[pagelist:pic]" onerror="javascript:this.src="{maccms:templatepath}images/fx8.gif';  alt="[pagelist:name]" />
+								<label class="fbg"></label>
+								<label class="txt">[pagelist:name]</label>
+							</a>
+							<h5><a href="[pagelist:link]" title="[pagelist:name]" target="_blank">[pagelist:name]</a></h5>
+							<p class="txt">[pagelist:starring]</p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:100%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">[pagelist:score]</strong>
+							</p>
+						  </li>{/maccms:vodpagelist}
+					</ul>
+					<!-- // img-list end -->
+ 
+					<!-- // primary-list end -->
+					
+					<div class="primary-page fn-clear">
+						<div class="ui-pages">
+<span>共{maccms:pagedata}条记录</span>
+<a href="{maccms:pagefirst}">首页</a><a href="{maccms:pagepre}">上一页</a>
+<a href="{maccms:pagenext}">下一页</a>
+<a href="{maccms:pagelast}">尾页</a>
+ 
+</div>
+</div>
+					<!-- // ui-box#primary-page end -->
+				</div>
+			</div>
+			<!-- // ui-box end -->
+		</div>
+		<!-- // #primary end -->
+		<div class="sidebar fn-right">
+			<div class="ui-box">
+				<div class="ui-box-item">
+					<div class="ui-title">
+						<h3>{typepage:name}推荐榜</h3>
+					</div>
+					<div class="ui-cnt"> 
+						<ul class="ranking-list"> 
+												<ul class="ranking-list"> 
+												{maccms:vodlist num=10 type=current order=desc}
+												<li>
+								<em class="red"> [vodlist:numjoin]</em>
+								<span class="score">[vodlist:hits]</span>
+								<h5><a href="[vodlist:link]">[vodlist:name]</a></h5>
+							</li>{/maccms:vodlist}
+							</ul>
+						<!-- // ranking-list end -->
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+				<div class="ui-box-item" id="score-ranking">
+					<div class="ui-title">
+						<h3>按周点击排行榜</h3>
+					</div>
+					<div class="ui-cnt">
+						
+													<ul class="ranking-list">
+													{maccms:vodlist num=10 type=current by=time  order=desc}
+													<li>
+								<em class="red"> [vodlist:numjoin]</em>
+								<span class="score">[vodlist:hits]</span>
+								<h5><a href="[vodlist:link]">[vodlist:name]</a></h5>
+							</li>{/maccms:vodlist}
+							</ul>
+							<!-- // ranking-list end -->
+					</div>
+				</div>
+				<div class="ui-box-item" id="score-ranking">
+				<div class="ui-title">
+						<h3>按月点击排行榜</h3>
+					</div>
+					<div class="ui-cnt">
+						
+													<ul class="ranking-list">
+													{maccms:vodlist num=10 type=current by=time day=30 order=desc}
+													<li>
+								<em class="red"> [vodlist:numjoin]</em>
+								<span class="score">[vodlist:hits]</span>
+								<h5><a href="[vodlist:link]">[vodlist:name]</a></h5>
+							</li>{/maccms:vodlist}
+							</ul>
+							<!-- // ranking-list end -->
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!-- // sidebar end -->
+	</div>
+	<!-- // layout end -->
+ 
+			</div>
+		</div>	
+		<!-- // sidebar end -->
+	</div>
+	<!-- // layout end -->
+</div>
+<!-- // content end -->
+ 
+ 
+{maccms:foot}
+</BODY>
+</HTML>

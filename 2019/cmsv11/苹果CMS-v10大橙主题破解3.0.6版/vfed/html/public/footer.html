@@ -1,0 +1,45 @@
+</div>
+</div>
+<div class="fed-foot-info fed-part-layout fed-back-whits">
+	<div class="fed-part-case">
+		<div class="fed-text-center fed-text-black fed-hide-xs fed-show-sm-block">{maccms:art num="1" type="all" order="desc" by="time" level="2"}{$vo.art_content}{/maccms:art}</div>
+		<p class="fed-text-center fed-text-black">{$maccms.site_tj}</p>
+		<p class="fed-text-center fed-text-black fed-foot-maps fed-font-size">
+			<a class="fed-font-xiv" href="{:mac_url('map/index')}" target="_blank">最近更新</a>
+			<span class="fed-font-xiv">&nbsp;-&nbsp;</span>
+			<?php if($vfedcc['gbook']['status']=='1') { ?>
+			<a class="fed-font-xiv" href="{:mac_url('gbook/index')}" target="_blank">反馈留言</a>
+			<span class="fed-font-xiv">&nbsp;-&nbsp;</span>
+			<?php } ?>
+			<a class="fed-font-xiv" href="{:mac_url('rss/index')}" target="_blank">RSS订阅</a>
+			<span class="fed-font-xiv">&nbsp;-&nbsp;</span>
+			<a class="fed-font-xiv" href="{:mac_url('rss/baidu')}" target="_blank">百度蜘蛛</a>
+			<span class="fed-font-xiv fed-hide-xs">&nbsp;-&nbsp;</span>
+			<a class="fed-font-xiv fed-hide-xs" href="{:mac_url('rss/google')}" target="_blank">谷歌地图</a>
+			<span class="fed-font-xiv fed-hide-xs">&nbsp;-&nbsp;</span>
+			<a class="fed-font-xiv fed-hide-xs" href="{:mac_url('rss/bing')}" target="_blank">必应爬虫</a>
+			<span class="fed-font-xiv fed-hide-xs">&nbsp;-&nbsp;</span>
+			<a class="fed-font-xiv fed-hide-xs" href="{:mac_url('rss/sogou')}" target="_blank">搜狗蜘蛛</a>
+			<span class="fed-font-xiv fed-hide-xs">&nbsp;-&nbsp;</span>
+			<a class="fed-font-xiv fed-hide-xs" href="{:mac_url('rss/so')}" target="_blank">奇虎地图</a>
+			<span class="fed-font-xiv fed-hide-xs">&nbsp;-&nbsp;</span>
+			<a class="fed-font-xiv fed-hide-xs" href="{:mac_url('rss/sm')}" target="_blank">神马爬虫</a>
+			<span class="fed-font-xiv fed-hide-xs">&nbsp;-&nbsp;</span>
+			<a class="fed-font-xiv fed-hide-xs" href="http://www.rzhyi.com/?url=" target="_blank">极速解析</a>
+			<span class="fed-font-xiv fed-hide-xs">&nbsp;-&nbsp;</span>
+			<a class="fed-font-xiv fed-hide-xs" href="https://vwv.rzhyi.com/" target="_blank">极速官方</a>
+		</p>
+		<p class="fed-text-center fed-text-black">该模板系极速解析官方网提供（模板免费下载）如你是新手可到官方网，观看视频教程<span class="fed-hide-xs"></span></p>
+		<p class="fed-text-center fed-text-black">Copyright {:date('Y')} {$maccms.site_url} Inc.<span class="fed-hide-xs">&nbsp;All Rights Reserved.</span></p>
+		
+		<p class="fed-text-center fed-text-black">官方网站地址：https://vwv.rzhyi.com<span class="fed-hide-xs"></span></p>
+	</div>
+</div>
+<div class="fed-goto-info">
+	<a class="fed-goto-share fed-visible fed-text-center fed-back-whits fed-icon-font fed-icon-fenxiang" href="javascript:;"></a>
+	<a class="fed-goto-color fed-visible fed-text-center fed-back-whits fed-icon-font fed-icon-fengge fed-event" href="javascript:;"></a>
+	<a class="fed-goto-toper fed-visible fed-text-center fed-back-whits fed-icon-font fed-icon-top" href="javascript:;"></a>
+</div>
+{include file="module/colors"}{include file="module/global"}
+</body>
+</html>

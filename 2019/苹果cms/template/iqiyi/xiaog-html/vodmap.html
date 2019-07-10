@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>全站数据-{maccms:name}</title>
+<meta name="keywords" content="全部影片数据{maccms:name}">
+<meta name="description" content="全站数据-{maccms:name}">
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/tv/basic_other.css">
+<link href="{maccms:templatepath}images/v/basic.css" rel="stylesheet" type="text/css">
+<script>var maccms_path = "{maccms:path}";</script>
+<script src="{maccms:path}js/jquery.js"></script>
+<script src="{maccms:path}js/function.js"></script>
+</head>
+<!-- ad js -->
+<style type="text/css"> 
+<!--
+#main {
+	BORDER-RIGHT: #c8c8c8 1px solid; BORDER-TOP: #c8c8c8 1px solid; MARGIN: 0px auto; OVERFLOW: auto; BORDER-LEFT: #c8c8c8 1px solid; WIDTH: 960px; BORDER-BOTTOM: #c8c8c8 1px solid; BACKGROUND-COLOR: #fff
+}
+/*search */
+.search_type {
+	 PADDING-RIGHT: 5px;  PADDING-LEFT: 5px; FLOAT: left; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 5px;  WIDTH: 960px;; PADDING-TOP: 5px;
+}
+.search_ypk {
+	FLOAT:left; OVERFLOW: hidden; WIDTH: auto; LINE-HEIGHT: 25px; HEIGHT: 25px
+}
+.search_pingfen {
+	MARGIN: 0px 5px; OVERFLOW: hidden; WIDTH: auto; PADDING-TOP: 5px
+}
+.search_kkk1_list {
+	PADDING-LEFT: 3px; FLOAT: left; WIDTH: 100px; LINE-HEIGHT: 24px; HEIGHT: 24px; overflow:hidden
+}
+ 
+.search_kkk1_list3 {
+	PADDING-LEFT: 3px; FLOAT: left; WIDTH: 100px; LINE-HEIGHT: 18px; HEIGHT: 18px; overflow:hidden
+}
+.righttitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; WIDTH: 100%; COLOR: #FF6600; TEXT-INDENT: 10px; PADDING-TOP: 2px; BORDER-BOTTOM: #ccc 1px dashed; HEIGHT: 20px; text-align:left
+}
+A.bbb:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000; TEXT-DECORATION: none
+}
+A.bbb:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #06d; TEXT-DECORATION: none
+}
+A.bbb:hover {
+	COLOR: #fff; BACKGROUND-COLOR: #06d; TEXT-DECORATION: none
+}
+-->
+</style>
+<body screen_capture_injected="true">
+{maccms:head}
+		<div class="wrap">
+			<!--位置导航_START-->
+			<div class="m-bar-crumb">
+			<a href="{maccms:path}">首页</a>>>全站数据
+			</div>
+			<!--位置导航_END-->
+	
+				
+ 
+ 
+<body id="index">
+<div id="wrapper">
+ 
+ 
+ 
+	</div>	
+		<TABLE borderColor=#9c9c9c cellSpacing=3 cellPadding=0 width=999 align=center border=0 bgcolor="#FFFFFF">   
+			<TR>
+			  <TD borderColor=#ffffff>
+{maccms:typematrix type=all table=vod}				
+			<div class=search_type id="#List_[typematrix:num]" summary="#List_[typematrix:num]">
+				<div class=righttitle><a href="[typematrix:link]">[typematrix:name]</a>([typematrix:count])</div>
+				<div class=search_pingfen id=p_new_tj>
+				{maccms:vodlist num=90 type=[typematrix:id] by=time order=desc}	
+					<DIV class=search_kkk1_list3><A class=bbb href="[vodlist:link]" title="[vodlist:name]([vodlist:remarks])">[vodlist:name]</a></DIV>
+	            {/maccms:vodlist}
+					
+				</div>
+			</div>
+{/maccms:typematrix}
+			  </TD>
+			</TR>
+		</TABLE>	
+</div>
+				</div>
+			</div>
+{maccms:foot}
+<script type="text/javascript" src="{maccms:templatepath}images/js/config.js"></script>
+<script type="text/javascript" src="{maccms:templatepath}images/js/sea1.2.js"></script>
+<script type="text/javascript"> 
+   //__loadMainJs("ranklistnew");
+ 
+    __loadCompatibleMainJs("ranklistnew"); 
+     Q.projectName = 'qiyiV2';
+       Q.ready(function (lib) {
+     Q.load('base');
+     });
+</script>
+</body>
+</html>

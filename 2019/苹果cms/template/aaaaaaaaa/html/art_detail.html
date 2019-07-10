@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>[art:name] [art:subname] - {maccms:name}</title>
+<meta name="keywords" content="[art:name],{maccms:name}" />
+<meta name="description" content="[art:name],{maccms:name}" />
+{maccms:include}
+</head>
+<body>
+{maccms:head}
+<div class="layout mt10">
+	<div class="tbg10"></div>
+	<div class="mainArea px19">
+		<div class="position">当前位置：[art:textlink]</div>
+	</div>
+	<div class="bbg10"></div>
+</div>
+<div class="layout mt10">
+	<div class="tbg20"></div>
+	<div class="mainArea">
+		<h3 style="text-align:center;font-weight:bold;font-size:20px;;">[art:colorname]</h3>
+         <div style="text-align:center;height:50px;line-height:50px;"><strong>作者：作者：[art:author]</strong>&nbsp;&nbsp;<strong>来源：[art:from]</strong>&nbsp;&nbsp;<strong>人气：[art:hits]</strong>&nbsp;&nbsp;<strong>时间：[art:addtime]</strong></div>
+		<h3 class="navBar px19"><span class="last">[art:prelink]</span><span class="next">[art:nextlink]</span></h3>
+		<div id="picTop"></div>
+		<div class="novelContent">[art:content]</div>
+		<div class="digg">[art:digg]</div>
+        {if-A:{page:datacount}>1}
+          <div class="page" style="width:100%">{maccms:pages len=6}</div>
+          {endif-A}
+		<div id="picBottom"></div>
+		<h3 class="navBar px19"><span class="last">[art:prelink]</span> <span class="next">[art:nextlink]</span></h3>
+		<div class="clear"></div>
+	</div>
+	<div class="bbg20"></div>
+</div>
+{maccms:foot}
+</body>
+</html>

@@ -1,0 +1,51 @@
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		<html xmlns="http://www.w3.org/1999/xhtml">
+		 <head> 
+		  <title>{maccms:name}</title> 
+		  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+		  <meta name="keywords" content="{maccms:name}" /> 
+		  <meta name="description" content="{maccms:name}" />
+		  {maccms:include}
+		 </head>
+		 <body>
+		  {maccms:head} 
+		  <div class="xing_vb"> 
+		  
+		  
+		  <div class="container">
+		<div class="nvc">
+			<dl>
+				<dt>
+					<span>当前位置</span>
+					<i class="arrow"><b class="a_outer"></b><b class="a_inner"></b></i>
+				</dt>
+				<dd>{page:textlink}</dd>
+			</dl>
+		</div>
+</div>  
+		  
+		  
+		  
+		  
+		   <ul>
+			<li><span class="xing_vb1">插件名称</span><span class="xing_vb2">更新时间</span><span class="xing_vb3">下载地址</span></li>
+		   </ul> 
+		   {maccms:art pagesize=50 type=all order=desc by=time} 
+		   <ul>
+			<li>
+			<span class="tt"></span>
+			<span class="xing_vb4"><a href="[art:link]" target="_blank">[art:name]</a></span> 
+			<span class="xing_vb5">[art:time]</span> 
+			<span class="xing_vb6"><a href="[art:from]" target="_blank">[art:subname]</a></span></li>
+		   </ul> 
+		   {/maccms:art} 
+		   <ul style="display:block;clear:both;">
+			<li>
+			 <div class="pages" style="margin-bottom:10px;">{maccms:pages len=6}</div>
+			 </li>
+		   </ul> 
+		   <div style="clear:both"></div> 
+		  </div> 
+		  {maccms:foot}  
+		 </body>
+		</html>

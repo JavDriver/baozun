@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>登陆界面-{maccms:name}</title>
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/style.css">
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/tv/basic_other.css">
+<script type="text/javascript" src="{maccms:templatepath}images/js/config.js"></script>
+<script type="text/javascript" src="{maccms:templatepath}images/js/sea1.2.js"></script>
+</head>
+<body screen_capture_injected="true">
+{maccms:head}
+<style type="text/css">
+<!--
+.tx,.btn{background:url({maccms:templatepath}images/lnk.png) no-repeat;}
+.tx{width:312px;color:#c1c1c1;height:18px;line-height:18px;border:0;margin:6px 7px;}
+.form{padding-left:11px;}
+.form p{margin:0 0 6px;line-height:25px;}
+.form code{width:50px;display:inline-block;}
+.form .jzw{margin-top:-1px;*margin-top:-4px;vertical-align:middle;}
+.tx{vertical-align:middle;background-position:0 -127px;border:1px solid #bcbcbc;margin-right:5px;width:123px;color:#828282;padding:0 5px;line-height:21px;height:21px;}
+.btn{background-position:0 -154px;color:#fff;cursor:pointer;padding:0 0 3px;padding:0;border:0;width:61px;height:26px;vertical-align:middle;}
+a{color:#5a5a5a;text-decoration:none;}
+a:hover{color:#dd0d0b;text-decoration:underline;}
+.blank12H{height:10px;clear:both;font-size:0}
+-->
+</style>
+<center>
+<div class="form"><form action="?action=check" id="loginform" name="loginform" method="post"> 
+<div></div>
+<p>账&nbsp;&nbsp;号：<input type="text" disableautocomplete="" autocomplete="off" class="tx" name="u_name" value=""></p>
+<p>密&nbsp;&nbsp;码：<input disableautocomplete="" autocomplete="off" class="tx" name="u_password" type="password"></p>
+<p><code>&nbsp;</code><input name="persistentcookie" type="checkbox" class="jzw" checked="checked" value="1">记住我&nbsp;&nbsp;<input type="submit" alt="登 录" onFocus="return checklg()" value="登 录" class="btn"></p>
+<p align=center><a href="{maccms:userreglink}" target="_blank">免费注册</a>
+&nbsp;&nbsp;<a href="{maccms:userfindpasslink}" target="_blank">密码找回</a></p>
+</form>
+</center>

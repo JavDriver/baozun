@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    img{ position: absolute;}
+</style>
+<img src="../images/1.jpg" id="ts">
+<script>
+    var ts = document.getElementById('ts');
+  document.onmousemove = function(e){
+      e = e || window.event;
+      ts.style.left = e.pageX + 'px';
+      ts.style.top = e.pageY + 'px';
+
+  }
+
+
+</script>
+</body>
+</html>

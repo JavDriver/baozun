@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{margin:0;padding:0;}
+*{margin:0;padding:0;text-shadow:none;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box; }
+body{font-family: "微软雅黑",san-serif;background:#ffffff;margin:0 auto;overflow-x: hidden; background: #666666; }
+/*a:link,a:visited,a:hover{color:inherit;}*/
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+address,cite,code,em,th{font-weight:normal;font-style:normal;}
+input,button,textarea,select{font-family: "微软雅黑";vertical-align:middle;}
+ul, ol{list-style: none;}
+img,fieldset{vertical-align:top;border:0;height:auto;}
+.clear{height:0px;line-height:0px;font-size:0;clear:both;overflow:hidden;display:block;}
+.clearfix{zoom:1;}
+.clearfix:after{display:block;overflow:hidden;clear:both;height:0;visibility:hidden;content:".";}
+a{color:#666;text-decoration:none;}
+/*a:hover{color:#459ef2;text-decoration:none;}*/
+p{color:#000;font-weight:normal;word-wrap: break-word;/*word-break:break-all;*/}
+.fl{float:left;}
+.fr{float:right;}
+.mr{ margin-right: 0 !important;}
+.rel{position:relative;}
+.abs{position:absolute;}
+ul,li{list-style: none;}
+*:focus{ outline: none;}
+/*::-webkit-scrollbar{width:0px}*/
+/*造字工房刻宋*/
+@font-face {
+    font-family: 'MFKeSongRegular';
+    src: url('../font/MFKeSong.eot');
+    src: local('MFKeSong Regular'),
+    local('MFKeSong'),
+    url('../font/MFKeSong.woff') format('woff'),
+    url('../font/MFKeSong.ttf') format('truetype'),
+    url('../font/MFKeSong.svg#MFKeSong') format('svg');
+}
+/*victoriai*/
+@font-face {
+    font-family: 'victoriai';
+    src: url('../font/victoriai-webfont.eot');
+    src: local('victoriai webfont'),
+    local('victoriai'),
+    url('../font/victoriai-webfont.woff') format('woff'),
+    url('../font/victoriai-webfont.ttf') format('truetype'),
+    url('../font/victoriai-webfont.svg#victoriai-webfont') format('svg');
+}
+
+/*方正兰亭简黑*/
+@font-face {
+    font-family: 'fzltjh';
+    src: url('../font/fzltjh/FZLTHJW.eot');
+    src: local('fzltjh webfont'),
+    local('fzltjh'),
+    url('../font/fzltjh/FZLTHJW.woff') format('woff'),
+    url('../font/fzltjh/FZLTHJW.TTF') format('truetype'),
+    url('../font/fzltjh/FZLTHJW.svg#FZLTHJW-webfont') format('svg');
+}
+
+
+/*方正兰亭大黑*/
+@font-face {
+    font-family: 'fzltdh';
+    src: url('../font/fzltdh/FZLTDHJW.eot');
+    src: local('fzltdh webfont'),
+    local('fzltdh'),
+    url('../font/fzltdh/FZLTDHJW.woff') format('woff'),
+    url('../font/fzltdh/FZLTDHJW.TTF') format('truetype'),
+    url('../font/fzltdh/FZLTDHJW.svg#FZLTDHJW-webfont') format('svg');
+}
+
+/*方正兰亭准黑*/
+@font-face {
+    font-family: 'fzltzh';
+    src: url('../font/fzltdh/fzltzh.eot');
+    src: local('fzltzh webfont'),
+    local('fzltzh'),
+    url('../font/fzltzh/fzltzh.woff') format('woff'),
+    url('../font/fzltzh/fzltzh.TTF') format('truetype'),
+    url('../font/fzltzh/fzltzh.svg#fzltzh-webfont') format('svg');
+}
+
+
+/*TradeGothicLTPro-BdCn20*/
+
+@font-face {
+    font-family: 'TradeGothicLTPro-BdCn20';
+    src: url('../font/TradeGothicLTPro-BdCn20/TradeGothicLTPro-BdCn20.eot');
+    src: local('TradeGothicLTPro-BdCn20 webfont'),
+    local('TradeGothicLTPro-BdCn20'),
+    url('../font/TradeGothicLTPro-BdCn20/TradeGothicLTPro-BdCn20.woff') format('woff'),
+    url('../font/TradeGothicLTPro-BdCn20/TradeGothicLTPro-BdCn20.TTF') format('truetype'),
+    url('../font/TradeGothicLTPro-BdCn20/TradeGothicLTPro-BdCn20.svg#TradeGothicLTPro-BdCn20-webfont') format('svg');
+}
+
+/*PinkSans130*/
+
+@font-face {
+    font-family: 'PinkSans130';
+    src: url('../font/PinkSans130/PinkSans130.eot');
+    src: local('PinkSans130 webfont'),
+    local('PinkSans130'),
+    url('../font/PinkSans130/PinkSans130.woff') format('woff'),
+    url('../font/PinkSans130/PinkSans130.TTF') format('truetype'),
+    url('../font/PinkSans130/PinkSans130.svg#PinkSans130-webfont') format('svg');
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{page:name}_{maccms:name}</title>
+<meta name="keywords" content="{page:name}第{page:now}页{page:key}" />
+<meta name="description" content="{page:name}第{page:now}页{page:des}" />
+{maccms:include}
+</head>
+<body>
+{maccms:head}  
+<div class="layout mt10">
+	<div class="tbg10"></div>
+	<div class="mainArea px19">
+		<div class="position"><span class="listTotal">共有<em>{page:datacount}</em>部文章</span>您的位置：{page:textlink}</div>
+	</div>
+	<div class="bbg10"></div>
+</div>
+<div class="layout mt10">
+	<div class="tbg20"></div>
+	<div class="mainArea">
+		<ul class="textList">
+			<div id="text"></div>
+			{maccms:art pagesize=30 order=desc by=time}
+			<li><a href="[art:link]" target="_blank"><span>[art:time style=yy-m-d H:i:s]</span>[art:colorname]【作者：[art:author]】</a></li>
+			{/maccms:art}
+		</ul>
+		<div class="clear"></div>
+		<div class="pageNav px19">
+			<div class="pages">当前：{page:now} 页</div>
+			<div class="pageList">{maccms:pages len=5}</div>
+		</div>
+	</div>
+	<div class="bbg20"></div>
+</div>
+{maccms:foot} 
+ </body>
+</html>

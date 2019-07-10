@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    #box table{
+        border-collapse: collapse;
+        text-align: center;
+    }
+</style>
+<div id="box"></div>
+
+<script>
+    var arry = ['姓名','文胸','尺寸','操作']
+    var datas = [
+        {name:'zs',subject:'薄垫',score:'B'},
+        {name:'zs1',subject:'薄垫',score:'B'},
+        {name:'zs2',subject:'薄垫',score:'B'},
+        {name:'zs3',subject:'薄垫',score:'B'},
+        {name:'zs4',subject:'薄垫',score:'B'},
+        {name:'zs5',subject:'薄垫',score:'B'},
+    ]
+
+
+    var box = document.getElementById('box');
+    var table = document.createElement('table');
+    box.appendChild(table);
+    table.border = '1px';
+    table.style.width = '400px';
+    table.style.height = '40px';
+    table.style.backgroundColor = '#999999';
+    var tr = document.createElement('tr');
+    table.appendChild(tr);
+    for(var i = 0;i < arry.length;i++){
+        var td = document.createElement('td');
+        tr.appendChild(td);
+        td.innerHTML = arry[i];
+    };
+  for(var i = 0;i < datas.length;i++){
+       var data = datas[i];
+      var tr =document.createElement('tr');
+      table.appendChild(tr);
+      for(var j in data){
+          var td = document.createElement('td');
+          tr.appendChild(td);
+          td.innerHTML = data[j];
+      }
+      var td = document.createElement('td');
+      tr.appendChild(td);
+      var link = document.createElement('a');
+      td.appendChild(link);
+      link.href = "javascript:void(0)";
+      //link.setAttribute("href","javascript:void(0)");
+      link.innerHTML = '删除';
+      console.log(link);
+      link.onclick = reMo;
+  }
+
+   function reMo(){
+     var tr = this.parentNode.parentNode;
+     table.removeChild(tr);
+       return false;
+
+   }
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

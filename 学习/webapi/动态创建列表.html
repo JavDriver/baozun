@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="按钮" id="btn">
+<div id="box"></div>
+
+<script>
+    var datas = ['貂蝉' , '西施' , '杨玉环' , '王昭君']
+    var box = document.getElementById('box');
+    var btn = document.getElementById('btn');
+    btn.onclick = function() {
+        var ul = document.createElement('ul');
+        box.appendChild(ul);
+        for(var i = 0; i < datas.length;i++){
+            var data = datas[i];
+            var li = document.createElement('li');
+            ul.appendChild(li);
+            li.innerText = data;
+            li.onmousemove = liMove;
+            li.onmouseout = liOut;
+        }
+
+    }
+
+    function liMove(){
+        this.style.backgroundColor = "red";
+    }
+
+    function liOut(){
+        this.style.backgroundColor = "";
+    }
+
+</script>
+
+
+</body>
+</html>

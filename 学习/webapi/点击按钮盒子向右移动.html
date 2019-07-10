@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    #box{width: 100px;
+        height:100px;
+    background: #bc0006;}
+
+    #page #content .bz_zk {
+        margin-left: -620px;
+    }
+    .bz_th {
+        margin-left: -712px;
+    }
+
+    .bz_tj {
+        margin-left: -853px;
+    }
+
+    #page #content .bz_tk {
+        margin-left: -979px;
+    }
+
+    #page #content .bz_uw {
+        margin-left: -1098px;
+    }
+
+    #page #content .bz_nz {
+        margin-left: -1205px;
+    }
+
+    .bz_nvz {
+        margin-left: -1284px;
+    }
+
+
+</style>
+<input type="button" value="开始" id="btn">
+<div id="box" style="position: absolute;"></div>
+
+<script>
+var box = document.getElementById('box');
+    var btn = document.getElementById('btn');
+    btn.onclick = function(){
+ var target = 600;
+ var step = 6;
+ var timerId = setInterval(function(){
+      if(box.offsetLeft >= target){
+          clearInterval(timerId);
+          box.style.left = target + 'px'
+        return;
+      }
+      box.style.left = box.offsetLeft + step + 'px';
+
+  },30)
+
+    }
+
+
+</script>
+</body>
+</html>

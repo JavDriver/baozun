@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>商品图片生成页</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				outline: 0;
+			}
+			body{
+				width: 100%;
+				height: 100%;
+			}
+			.box{
+				align-items: center;
+			}
+			.horizontal-view{
+			    display: -webkit-box;
+			    display: -moz-box;
+			    display: -ms-flexbox;
+			    display: -webkit-flex;
+			    display: flex;
+			    -webkit-box-orient: horizontal;
+			    -webkit-box-direction: normal;
+			    -moz-box-orient: horizontal;
+			    -moz-box-direction: normal;
+			    -webkit-flex-direction: row;
+			    -ms-flex-direction: row;
+			    flex-direction: row;
+			}
+			
+			.vertical-view{
+			    display: -webkit-box;
+			    display: -moz-box;
+			    display: -ms-flexbox;
+			    display: -webkit-flex;
+			    display: flex;
+			    -webkit-box-orient: vertical;
+			    -webkit-box-direction: normal;
+			    -moz-box-orient: vertical;
+			    -moz-box-direction: normal;
+			    -webkit-flex-direction: column;
+			    -ms-flex-direction: column;
+			    flex-direction: column;
+			}
+			#app{
+				border: 3px solid salmon;
+				width: 300px;
+				height: 480px;
+				box-sizing: border-box;
+				float: left;
+			}
+			.product-bg{
+				width: 100%;
+				height: 300px;
+				/*background-image: url('img/demo.jpg');*/
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-origin:content-box;
+				background-position: center;	
+			}
+			.shop-name{
+				background-color: #ED2027;
+			}
+			.shop-name h1{
+				color: #FFFFFF;
+			}
+			.product-detail div{
+				display: inline-block;
+			}
+			.product-intro{
+				padding: 1rem 0rem 0 1rem;
+				text-align: left;
+			}
+			.product-intro p{
+				font-size: 16px;
+				color:#BBBBBB;	
+			}
+			.product-intro p:nth-child(2) span{
+				text-decoration: line-through;
+			}
+			.qrcode{
+				padding: 1rem;
+			}
+			#btn{
+				position: fixed;
+				right: 20%;
+				top: 50%;
+				width: 140px;
+				background-color:powderblue;
+				color:#ED2027;
+				text-align: center;
+				
+			}
+			#btn ul{
+				list-style: none;
+			}
+			#btn li{
+				padding: 10px;
+				border-bottom: 2px solid cadetblue;
+			}
+			#btn li a:hover{
+				color: coral;
+			}
+			#btn a{
+				text-decoration: none;
+				color: white;
+
+			}
+			
+			#createImg,#firstImg,#clipCanvas{
+				display: none;
+			}	
+			#result{
+				
+			}
+			#shift{
+				text-align: center;
+			}
+			.control{
+				width: 300px;
+				height: 480px;
+			}
+			
+			.progress{
+			    background:#2fa72e;
+			    width:160px;
+			    height:15px;
+			    -webkit-appearance: none;
+			    margin: 10px 10px;
+			    border-radius: 12px;
+			 }
+			::-webkit-progress-bar{
+			   background-color: #3BAAFF;
+			 }
+			::-webkit-progress-value{
+			    background-color: #FFCC00;
+			 }
+		</style>
+	</head>
+	<body>
+		<div id="btn">
+			<ul>
+				<li><a id="download">下载图片</a></li>
+				<li><a id="copyImg">复制图片</a></li>
+				<li><a id="copyWrite">复制文案</a></li>
+				<li><a id="copyAll">复制文案及图片</a></li>
+			</ul>
+		</div>
+		<div class="horizontal-view box">
+		<!-- canvas 网页截图区域    -->
+		<div id="app">
+			<article>
+				<!--  图片背景  -->
+				<div class="product-bg">
+<img src="http://10.88.83.17:8089/%E5%9B%BE%E7%89%87%E6%B1%87%E6%80%BB/0213%20%E5%8E%9F%E5%9B%BE/11046090-3X2I-2.jpg">
+                </div>
+				<!--  文字  -->
+				<div class="shop-name"><h1>北京稻花香米线旗舰店</h1></div>
+				<!-- 商品详情 -->
+				<div class="product-detail horizontal-view">
+					<div class="product-intro">
+						<p>北京稻花香米线惊爆价9.9 中秋送礼必备佳品！手慢无！</p>
+						<p>现价￥<span>19.9</span></p>
+						<p>劵后价￥9.9</p>
+					</div>
+					<div class="qrcode">	
+					</div>
+				</div>
+			</article>
+		</div>
+		<div id="shift">
+			文案转换===>图片<br />
+			<progress class="progress" value="0" max="100"></progress>
+		</div>
+		<!-- canvas转换及图片裁剪区域 -->
+		<div class="control">
+			<!-- 第一次生成canvas -->
+			<div id="createImg"></div>
+			<!-- 第一次生成图片 -->
+			<img id="firstImg" src="" />
+			<!-- 裁剪第一次生成canvas -->
+			<canvas id="clipCanvas"></canvas>
+			<!-- 裁剪完的生成的图片 -->
+			<div id="finish">
+				<img id="result" src="" />
+			</div>
+
+		</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.qrcode.js" ></script>
+		<script type="text/javascript" src="js/qrcode.js" ></script>
+		<script type="text/javascript" src="js/html2canvas.js" ></script>
+		<script type="text/javascript" src="js/canvas2image.js" ></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" ></script>
+		<script>
+			var progress = document.getElementsByClassName('progress')[0];
+			//生成二维码
+			$('.qrcode').qrcode({
+				 width: 110, //宽度 
+	    		 height:110, //高度 
+				text:"test.580ju.cn/zhx/index.htm"
+			})
+                                         
+            //生成图片
+	 		html2canvas(document.getElementById("app"),{
+                useCORS: true,
+                logging: false
+            }).then(function(canvas) {
+	 			canvas.id="icanvas";
+	 			progress.value=50;
+	 			$("#createImg").html(canvas);
+	 			var url = canvas.toDataURL();
+	 			$("#firstImg").attr('src',url);
+	 			
+	 			
+				
+	        }).then(function(){
+	        	//将base64签名后的canvas存为图片
+				var oldUrl = document.getElementById('icanvas').toDataURL();
+				var originImage = new Image();
+				originImage.src = oldUrl;
+				originImage.onload = function(){
+					var c = document.getElementById("clipCanvas");
+		 			c.width="300";
+		 			c.height="480";
+		 			var ctx= c.getContext("2d");
+		 			ctx.drawImage(originImage,0,0,300,480,0,0,300,480);
+		 			var newUrl = c.toDataURL("image/png");
+					document.getElementById("result").src = newUrl;
+               		//以下代码为下载此图片功能
+	            	var triggerDownload = $("#download").attr("href", newUrl).attr("download","product");
+	            	progress.value=100;
+				}
+
+	        })
+			
+			function bindCopy(){
+				var clipboard = new Clipboard('#copyImg', {
+			       target: function() {
+	                   return document.getElementById("finish");
+	              }
+			    });
+			
+			    clipboard.on('success', function(e) {
+			        console.log(e);
+			    }.bind(this));
+			
+			    clipboard.on('error', function(e) {
+			        console.log(e);
+			    }.bind(this));
+			   
+			    var clipboard_write = new Clipboard('#copyWrite', {
+	                target: function target() {
+	                    return document.getElementById("J-tpwd");
+	                }
+	            });
+	            var clipboardText = new Clipboard('#copyAll', {
+	                target: function target() {
+	                    return document.getElementById("J-text");
+	                }
+	            });
+	            
+	            clipboard_write.on('success', function (e) {
+		            console.log("复制淘口令成功",e);
+		        }.bind(this));
+		
+		        clipboard_write.on('error', function (e) {
+		            console.log("复制淘口令失败");
+		        }.bind(this));
+		
+		        clipboardText.on('success', function (e) {
+		            console.log("复制文案成功",e);
+		
+		        }.bind(this));
+		
+		        clipboardText.on('error', function (e) {
+		            console.log("复制文案失败");
+		        }.bind(this));
+			   
+			}
+			bindCopy();
+			
+		</script>
+
+
+
+	</body>
+
+</html>

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="renderer" content="webkit">
+<meta name="applicable-device" content="pc,mobile">
+<title>正在播放《[vod:name]》 - [vod:playname] - {maccms:name}</title>
+<meta name="Keywords" content="[vod:name][vod:playname]免费手机在线观看,[vod:name]剧情介绍,[vod:name]数据海报" />
+<meta name="description" content="{maccms:name}提供[vod:name][vod:playname]免费手机在线观看,[vod:name]剧情介绍,[vod:name]数据海报" />
+{maccms:include}
+
+
+</head>
+<body>
+
+<script>var SitePath='{maccms:path}',SiteAid='{maccms:siteaid}',SiteTid='{maccms:sitetid}',SiteId='{maccms:siteid}';</script>
+
+{maccms:head}
+
+	<div class="player mb"><div class="main">[vod:playerinfo][vod:player]</div></div>
+    <div class="main">
+			<div class="tab-title mb clearfix">
+    <ul>
+    	<li class="err">[vod:error] </li><li class="on">播放失败请刷新或切换播放地址</li>
+    </ul>
+  </div>
+  <!--/播放地址-->
+  <div id="stab1" class="tab-down mb clearfix">
+	<div class="playfrom tab8 clearfix">
+    <ul>
+     {maccms:play}   
+    <li id="tab8[play:num]" onClick="setTab('tab8','stab8',[play:num],[play:count])" {if-A:"[play:from]"= "[vod:playfrom]"} class="on" {endif-A}><i class="playerico ico-Azhan"></i> [play:show]</li>
+     {/maccms:play}   
+    </ul>
+  </div>
+
+{maccms:play}
+  <div id="stab8[play:num]" class="playlist clearfix" {if-A:"[play:num]"> "1"} style="display:none" {endif-A} >
+ 	  	<div class="h1 clearfix">
+  		<p class="intro"><font color="#f06000">[play:show]</font>[play:tip]</p>
+  		<p class="jj"><span id="vlink_[play:num]_s1"><em onClick="Order(1,'vlink_[play:num]',[play:num])">倒序↓</em></span><span id="vlink_[play:num]_s2"><em onClick="Order(0,'vlink_[play:num]',[play:num])" class="over">顺序↑</em></span></p>
+  	</div>
+	  <div id="vlink_[play:num]" class="videourl clearfix"><ul>
+	  {maccms:url order=asc}
+	  <li><a title='[url:name]' href='[url:link]' target="_self">[url:name]</a></li>
+	  {/maccms:url}
+	  </ul></div>
+  </div>
+    {/maccms:play} 
+  </div>
+
+<!--/播放地址结束-->
+   <!--/备用排列地址开始--> 
+ <!-- {maccms:play}
+  	<div class="playfrom tab8 clearfix">
+    <ul>     
+    <li id="tab81" onClick="setTab('tab8','stab8',1,1)" class="on"><i class="playerico ico-Azhan"></i> [play:from]</li>
+    </ul>
+  </div>
+  
+  <div id="stab81" class="playlist clearfix">
+  	<div class="h1 clearfix">
+  		<p class="intro">[play:tip]</p>
+  		<p class="jj"><span id="vlink_1_s1"><em onClick="Order(1,'vlink_1',1)">倒序↓</em></span><span id="vlink_1_s2"><em onClick="Order(0,'vlink_1',1)" class="over">顺序↑</em></span></p>
+  	</div>
+    
+	 <div id="vlink_1" class="videourl clearfix"><ul>
+	 {maccms:url order=asc} 
+	 <li><a title='[url:name]' href='[url:link]' target="_self">[url:name]</a></li>
+     {/maccms:url}
+	 </ul></div>  
+  </div>
+    {/maccms:play} 
+	<!--/播放地址结束-->	
+
+
+	<p><script src="{maccms:path_ads}960.js"></script></p>
+
+<div class="cont-banner"> 
+<a href="{maccms:link_gbook}" id="tudouWeixinID">点击这里给点宝贵的意见</a> 
+</div>
+
+   <div class="index-area clearfix">
+    <h1 class="title index-color">猜你喜欢</h1>
+    <ul>
+    {maccms:vod num=6 order=desc by=hits type={maccms:curvodtypeid} } 
+    <li class="p1 m1"><a class="link-hover" href="[vod:link]" title="[vod:name]"><img class="lazy" data-original="[vod:pic]" src="{maccms:path_tpl}Images/load.gif" alt="[vod:name]"><span class="video-bg"></span><span class="lzbz"><p class="name">[vod:name]</p><p class="actor">[vod:starring]</p><p class="actor">[vod:typename]</p><p class="actor">[vod:year]/[vod:area]</p></span><p class="other"><i>[vod:remarks]</i></p></a>
+    </li>
+    {/maccms:vod}
+    </ul>
+    </div>
+<!--评论-->
+
+</div>
+<!--/底部-->
+{maccms:foot}
+<!--/禁止右键-->
+<script type="text/javascript"> document.body.oncontextmenu=document.body.ondragstart= document.body.onselectstart=document.body.onbeforecopy=function(){return false;};
+document.body.onselect=document.body.oncopy=document.body.onmouseup=function(){document.selection.empty();}; </script>
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>近期上映{page:name}免费看 - 最新{page:name}免费下载 - {maccms:name}</title>
+<meta name="keywords" content="{page:name}免费看,{page:name}免费下载}"/>
+<meta name="description" content="{maccms:name}提供最近期上映{page:name}免费看，最新{page:name}免费下载，免费{page:name}看不停。"/>
+<link rel="alternate" media="only screen and(max-width: 640px)" href="{maccms:qq}{page:link}">
+{maccms:include}
+<link href="{maccms:path_tpl}css/index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+{maccms:head}
+<div class="hdpAndMbx">
+	<div class="hdpBox">
+		<div class="slider">
+			<div class="bd">
+				<ul>
+					<li>
+            {maccms:vod num=4 type={maccms:curvodtypeid} start=1 order=desc by=time level=1}
+					<div class="zu01">
+						<a target="_blank" href="[vod:link]" title="[vod:name]"><img src="[vod:pic]" alt="[vod:name]"/></a>
+						<div class="tit_img">
+							<div class="tit_img_text">
+								<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+							</div>
+							<div class="tit_img_time">
+								{if-A:not isN("[vod:remarks]")}
+   [vod:remarks]
+{elseif-A:[vod:state]=0}
+   [完结]
+{elseif-A:[vod:state]>0}
+	{if-B:[vod:state]>10000}
+		[连载[vod:state]]期
+	{else-B}
+		[连载[vod:state]]集
+	{endif-B}
+{else-A}
+{endif-A}
+							</div>
+						</div>
+						<div class="bg_tit">
+						</div>
+					</div>
+    {/maccms:vod}  
+					</li>
+					<li>
+            {maccms:vod num=4 type={maccms:curvodtypeid} start=5 order=desc by=time level=1}
+					<div class="zu01">
+						<a target="_blank" href="[vod:link]" title="[vod:name]"><img src="[vod:pic]" alt="[vod:name]"/></a>
+						<div class="tit_img">
+							<div class="tit_img_text">
+								<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+							</div>
+							<div class="tit_img_time">
+								{if-A:not isN("[vod:remarks]")}
+   [vod:remarks]
+{elseif-A:[vod:state]=0}
+   [完结]
+{elseif-A:[vod:state]>0}
+	{if-B:[vod:state]>10000}
+		[连载[vod:state]]期
+	{else-B}
+		[连载[vod:state]]集
+	{endif-B}
+{else-A}
+{endif-A}
+							</div>
+						</div>
+						<div class="bg_tit">
+						</div>
+					</div>
+    {/maccms:vod}  
+					</li>
+					<li>
+            {maccms:vod num=4 type={maccms:curvodtypeid} start=9 order=desc by=time level=1}
+					<div class="zu01">
+						<a target="_blank" href="[vod:link]" title="[vod:name]"><img src="[vod:pic]" alt="[vod:name]"/></a>
+						<div class="tit_img">
+							<div class="tit_img_text">
+								<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+							</div>
+							<div class="tit_img_time">
+								{if-A:not isN("[vod:remarks]")}
+   [vod:remarks]
+{elseif-A:[vod:state]=0}
+   [完结]
+{elseif-A:[vod:state]>0}
+	{if-B:[vod:state]>10000}
+		[连载[vod:state]]期
+	{else-B}
+		[连载[vod:state]]集
+	{endif-B}
+{else-A}
+{endif-A}
+							</div>
+						</div>
+						<div class="bg_tit">
+						</div>
+					</div>
+    {/maccms:vod}  
+					</li>
+					<li>
+{maccms:vod num=4 type={maccms:curvodtypeid} start=13 order=desc by=time level=1}
+					<div class="zu01">
+						<a target="_blank" href="[vod:link]" title="[vod:name]"><img src="[vod:pic]" alt="[vod:name]"/></a>
+						<div class="tit_img">
+							<div class="tit_img_text">
+								<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+							</div>
+							<div class="tit_img_time">
+{if-A:not isN("[vod:remarks]")}
+   [vod:remarks]
+{elseif-A:[vod:state]=0}
+   [完结]
+{elseif-A:[vod:state]>0}
+	{if-B:[vod:state]>10000}
+		[连载[vod:state]]期
+	{else-B}
+		[连载[vod:state]]集
+	{endif-B}
+{else-A}
+{endif-A}
+							</div>
+						</div>
+						<div class="bg_tit">
+						</div>
+					</div>
+    {/maccms:vod}  
+					</li>
+				</ul>
+			</div>
+			<div class="hd">
+				<ul>
+				</ul>
+			</div>
+			<div class="pnBtn prev">
+				<span class="blackBg"></span><a class="arrow" href="javascript:void(0)" rel="nofollow"></a>
+			</div>
+			<div class="pnBtn next">
+				<span class="blackBg"></span><a class="arrow" href="javascript:void(0)" rel="nofollow"></a>
+			</div>
+		</div>
+		<script type="text/javascript">
+        jQuery(".slider .bd li").first().before( jQuery(".slider .bd li").last() );
+        jQuery(".slider").hover(function(){ jQuery(this).find(".arrow").stop(true,true).fadeIn(300) },function(){ jQuery(this).find(".arrow").fadeOut(300) });				
+        jQuery(".slider").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"leftLoop",autoPlay:true, vis:3,autoPage:true, trigger:"click"});
+        </script>
+	</div>
+	<div class="mbxBox">
+		<div class="nation">
+			<span class="nation_tit">按排行</span>
+			<div class="nation_i">
+				<a href="/vod-list-id-{maccms:curvodtypeid}-pg-1-order-desc-by-dayhits" title="今日最热" target="_blank">今日最热</a>
+				<a href="/vod-list-id-{maccms:curvodtypeid}-pg-1-order-desc-by-weekhits" title="一周最热<" target="_blank">一周最热</a>
+				<a href="{page:linkbyhits}" title="一月最热" target="_blank">一月最热</a>
+				<a href="{page:linkbytime}" title="今日更新" target="_blank">今日更新</a>
+				<a href="/vod-list-id-{maccms:curvodtypeid}-pg-1-order-desc-by-addtime" title="最新添加" target="_blank">最新添加</a>
+				<a href="{page:linkbyscore}" title="用户好评" target="_blank">用户好评</a>
+			</div>
+		</div>
+		<div class="fgx">
+		</div>
+		<div class="nation">
+			<span class="nation_tit">按类型</span>
+			<div class="nation_i">
+{maccms:menu type=child order=asc table=vod parent={maccms:curvodtypeid}}
+				<a href="[menu:link]" title="[menu:name]" target="_blank">[menu:name]</a>
+{/maccms:menu}
+			</div>
+		</div>
+		<div class="fgx">
+		</div>
+		<div class="nation">
+			<span class="nation_tit">按地区</span>
+			<div class="nation_i">
+{maccms:area order=asc type=auto num=4}
+				<a href="[area:link]" title="[area:name]{page:name}" target="_blank">[area:name]</a>
+{/maccms:area}
+			</div>
+		</div>
+		<div class="fgx">
+		</div>
+		<div class="nation">
+			<span class="nation_tit">按年代</span>
+			<div class="nation_i">
+{maccms:year order=desc type=auto start=2006 end=2015}
+				<a href="[year:link]" title="[year:name]{page:name}" target="_blank">[year:name]</a>
+{/maccms:year}
+			</div>
+		</div>
+	</div>
+	<div style="margin:5px auto; width:1000px;">
+		<script src="{maccms:path_ads}960x90-2.js"></script>
+	</div>
+	<div class="mainBox">
+		<div class="hydpBox">
+			<div class="hy_contBox">
+				<div class="hyBox_L">
+					<div class="tit_navBox">
+						<div class="hy_tit">
+							<strong>近期上映{page:name}</strong>
+						</div>
+					</div>
+					<div>
+						<ul class="cont_L">
+                 {maccms:vod num=4 type={maccms:curvodtypeid} order=desc by=time}
+							<li>
+							<a title="[vod:name]" target="_blank" href="[vod:link]"><img style="height: 247px;" src="[vod:pic]" alt="[vod:name]"/></a>
+							<div class="img_tit">
+								<a title="[vod:name]" target="_blank" href="[vod:link]">[vod:name]</a>
+							</div>
+							</li>
+{/maccms:vod}
+						</ul>
+					</div>
+				</div>
+				<div class="phbBox_R">
+					<div class="phb_tit">
+						<strong>{page:name}排行榜</strong>
+					</div>
+					<ul class="phb_list">
+                {maccms:vod num=3 type={maccms:curvodtypeid} start=1  order=desc by=hits}
+						<li>
+						<div class="nunber number_tj">
+							[vod:numjoin]
+						</div>
+						<div class="phb_name">
+							<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+						</div>
+						<div class="fwl">
+							[vod:score]
+						</div>
+						</li>
+{/maccms:vod}
+ {maccms:vod num=7 type={maccms:curvodtypeid} start=4  order=desc by=hits}
+						<li>
+						<div class="nunber">
+							[vod:numjoin]
+						</div>
+						<div class="phb_name">
+							<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+						</div>
+						<div class="fwl">
+							[vod:score]
+						</div>
+						</li>
+{/maccms:vod}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mainBox">
+		<div class="hydpBox">
+			<div class="hy_contBox">
+				<div class="hyBox_L">
+					<div class="tit_navBox">
+						<div class="hy_tit">
+							<strong>华语{page:name}</strong>
+						</div>
+					</div>
+					<div>
+						<ul class="cont_L">
+                 {maccms:vod num=4 type={maccms:curvodtypeid} area=大陆 order=desc by=time}
+							<li>
+							<a title="[vod:name]" target="_blank" href="[vod:link]"><img style=" height: 247px;" src="[vod:pic]" alt="[vod:name]"/></a>
+							<div class="img_tit">
+								<a title="[vod:name]" target="_blank" href="[vod:link]">[vod:name]</a>
+							</div>
+							</li>
+{/maccms:vod}
+						</ul>
+					</div>
+				</div>
+				<div class="phbBox_R">
+					<div class="phb_tit">
+						<strong>华语{page:name}排行榜</strong>
+					</div>
+					<ul class="phb_list">
+                {maccms:vod num=3 type={maccms:curvodtypeid} start=1 area=大陆 order=desc by=monthhits}
+						<li>
+						<div class="nunber number_tj">
+							[vod:numjoin]
+						</div>
+						<div class="phb_name">
+							<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+						</div>
+						<div class="fwl">
+							[vod:score]
+						</div>
+						</li>
+{/maccms:vod}
+ {maccms:vod num=7 type={maccms:curvodtypeid} start=4 area=大陆 order=desc by=monthhits}
+						<li>
+						<div class="nunber">
+							[vod:numjoin]
+						</div>
+						<div class="phb_name">
+							<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+						</div>
+						<div class="fwl">
+							[vod:score]
+						</div>
+						</li>
+{/maccms:vod}
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hydpBox">
+			<div class="hy_contBox">
+				<div class="hyBox_L">
+					<div class="tit_navBox">
+						<div class="hy_tit">
+							<strong>香港{page:name}</strong>
+						</div>
+					</div>
+					<div>
+						<ul class="cont_L">
+                 {maccms:vod num=4 type={maccms:curvodtypeid} area=香港 order=desc by=time}
+							<li>
+							<a title="[vod:name]" target="_blank" href="[vod:link]"><img style=" height: 247px;" src="[vod:pic]" alt="[vod:name]"/></a>
+							<div class="img_tit">
+								<a title="[vod:name]" target="_blank" href="[vod:link]">[vod:name]</a>
+							</div>
+							</li>
+{/maccms:vod}
+						</ul>
+					</div>
+				</div>
+				<div class="phbBox_R">
+					<div class="phb_tit">
+						<strong>香港{page:name}排行榜</strong>
+					</div>
+					<ul class="phb_list">
+                {maccms:vod num=3 type={maccms:curvodtypeid} start=1 area=香港 order=desc by=monthhits}
+						<li>
+						<div class="nunber number_tj">
+							[vod:numjoin]
+						</div>
+						<div class="phb_name">
+							<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+						</div>
+						<div class="fwl">
+							[vod:score]
+						</div>
+						</li>
+{/maccms:vod}
+ {maccms:vod num=7 type={maccms:curvodtypeid} start=4  area=香港 order=desc by=monthhits}
+						<li>
+						<div class="nunber">
+							[vod:numjoin]
+						</div>
+						<div class="phb_name">
+							<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+						</div>
+						<div class="fwl">
+							[vod:score]
+						</div>
+						</li>
+{/maccms:vod}
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hydpBox">
+			<div class="hy_contBox">
+				<div class="hyBox_L">
+					<div class="tit_navBox">
+						<div class="hy_tit">
+							<strong>韩国{page:name}</strong>
+						</div>
+					</div>
+					<div>
+						<ul class="cont_L">
+                 {maccms:vod num=4 type={maccms:curvodtypeid} area=韩国 order=desc by=time}
+							<li>
+							<a title="[vod:name]" target="_blank" href="[vod:link]"><img style=" height: 247px;" src="[vod:pic]" alt="[vod:name]"/></a>
+							<div class="img_tit">
+								<a title="[vod:name]" target="_blank" href="[vod:link]">[vod:name]</a>
+							</div>
+							</li>
+{/maccms:vod}
+						</ul>
+					</div>
+				</div>
+				<div class="phbBox_R">
+					<div class="phb_tit">
+						<strong>韩国{page:name}排行榜</strong>
+					</div>
+					<ul class="phb_list">
+                {maccms:vod num=3 type={maccms:curvodtypeid} start=1 area=韩国 order=desc by=monthhits}
+						<li>
+						<div class="nunber number_tj">
+							[vod:numjoin]
+						</div>
+						<div class="phb_name">
+							<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+						</div>
+						<div class="fwl">
+							[vod:score]
+						</div>
+						</li>
+{/maccms:vod}
+ {maccms:vod num=7 type={maccms:curvodtypeid} start=4  area=韩国 order=desc by=monthhits}
+						<li>
+						<div class="nunber">
+							[vod:numjoin]
+						</div>
+						<div class="phb_name">
+							<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+						</div>
+						<div class="fwl">
+							[vod:score]
+						</div>
+						</li>
+{/maccms:vod}
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hydpBox">
+			<div class="hy_contBox">
+				<div class="hyBox_L">
+					<div class="tit_navBox">
+						<div class="hy_tit">
+							<strong>美国{page:name}</strong>
+						</div>
+					</div>
+					<div>
+						<ul class="cont_L">
+                 {maccms:vod num=4 type={maccms:curvodtypeid} area=美国 order=desc by=time}
+							<li>
+							<a title="[vod:name]" target="_blank" href="[vod:link]"><img style=" height: 247px;" src="[vod:pic]" alt="[vod:name]"/></a>
+							<div class="img_tit">
+								<a title="[vod:name]" target="_blank" href="[vod:link]">[vod:name]</a>
+							</div>
+							</li>
+{/maccms:vod}
+						</ul>
+					</div>
+				</div>
+				<div class="phbBox_R">
+					<div class="phb_tit">
+						<strong>美国{page:name}排行榜</strong>
+					</div>
+					<ul class="phb_list">
+                {maccms:vod num=3 type={maccms:curvodtypeid} start=1 area=美国 order=desc by=monthhits}
+						<li>
+						<div class="nunber number_tj">
+							[vod:numjoin]
+						</div>
+						<div class="phb_name">
+							<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+						</div>
+						<div class="fwl">
+							[vod:score]
+						</div>
+						</li>
+{/maccms:vod}
+ {maccms:vod num=7 type={maccms:curvodtypeid} start=4  area=美国 order=desc by=monthhits}
+						<li>
+						<div class="nunber">
+							[vod:numjoin]
+						</div>
+						<div class="phb_name">
+							<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+						</div>
+						<div class="fwl">
+							[vod:score]
+						</div>
+						</li>
+{/maccms:vod}
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hydpBox">
+			<div class="hy_contBox">
+				<div class="hyBox_L">
+					<div class="tit_navBox">
+						<div class="hy_tit">
+							<strong>日本{page:name}</strong>
+						</div>
+					</div>
+					<div>
+						<ul class="cont_L">
+                 {maccms:vod num=4 type={maccms:curvodtypeid} area=日本 order=desc by=time}
+							<li>
+							<a title="[vod:name]" target="_blank" href="[vod:link]"><img style=" height: 247px;" src="[vod:pic]" alt="[vod:name]"/></a>
+							<div class="img_tit">
+								<a title="[vod:name]" target="_blank" href="[vod:link]">[vod:name]</a>
+							</div>
+							</li>
+{/maccms:vod}
+						</ul>
+					</div>
+				</div>
+				<div class="phbBox_R">
+					<div class="phb_tit">
+						<strong>日本{page:name}排行榜</strong>
+					</div>
+					<ul class="phb_list">
+                {maccms:vod num=3 type={maccms:curvodtypeid} start=1 area=日本 order=desc by=monthhits}
+						<li>
+						<div class="nunber number_tj">
+							[vod:numjoin]
+						</div>
+						<div class="phb_name">
+							<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+						</div>
+						<div class="fwl">
+							[vod:score]
+						</div>
+						</li>
+{/maccms:vod}
+ {maccms:vod num=7 type={maccms:curvodtypeid} start=4  area=日本 order=desc by=monthhits}
+						<li>
+						<div class="nunber">
+							[vod:numjoin]
+						</div>
+						<div class="phb_name">
+							<a href="[vod:link]" title="[vod:name]" target="_blank">[vod:name]</a>
+						</div>
+						<div class="fwl">
+							[vod:score]
+						</div>
+						</li>
+{/maccms:vod}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+ </div>
+{maccms:foot}
+	</body>
+	</html>

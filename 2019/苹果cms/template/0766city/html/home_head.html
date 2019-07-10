@@ -1,0 +1,119 @@
+﻿<div class="header-all">
+  <div class="top clearfix">
+    <ul class="logo"><a href="{maccms:path}"><img src="{maccms:path_tpl}Images/logo.png" title="{maccms:name}"></a></ul>
+    <ul class="top-nav">
+      <li><a class="now" href="{maccms:path}" {if-A:{maccms:siteaid}=10} class="on"{endif-A}>首页</a></li>
+      <!--导航-->
+      {maccms:menu type=parent order=asc num=5}
+      <li class="" _t_nav="topnav-[menu:num]"><a href="[menu:link]" {if-A:{maccms:curvodtypeid}=[menu:id]} class="on"{endif-A}>[menu:name]<i class="sjbgs"></i><i class="sjbgx"></i></a></li>
+      {/maccms:menu}
+	  <li class="" _t_nav="topnav-news"> <a href="{maccms:link_index_art}"> 美女图 <i class="sjbgs"> </i> <i class="sjbgx"> </i> </a> </li>
+      <li><a href="{maccms:getlink zhibo.html}"target="_blank">直播</a></li>   
+       <li><a href="{maccms:link_gbook}"target="_blank">留言</a></li>
+</ul>
+    </ul>
+	    <ul class="search so">
+<form action="{maccms:link_search_vod}" method="post">
+        <input type="text" id="wd" name="wd" class="input" onblur="if(this.value==''){ this.value='请输入影片或演员名';this.style.color='#cfcdcd';}" onfocus="if(this.value=='请输入影片或演员名'){this.value='';this.style.color='';}" value="请输入影片或演员名" />
+		  <div class="so-key">	
+		  <!--搜索显示推荐-->
+		  {maccms:vod num=6 order=desc by=time type=all} 
+		  <a href='[vod:link]'>[vod:name len=6]</a> 
+          {/maccms:vod} 
+		  </div>
+        <input type="submit" name="submit" class="imgbt" value="" />
+      </form>
+    </ul>
+    <ul class="nav-qt aa">
+     <!-- <li class="bb">
+	  <a href="#" onclick="window.external.AddFavorite(&quot;http://{maccms:url}&quot;,&quot;{maccms:name}电影网&quot;)"><i class="jl"></i>加入收藏</a>
+      </li>-->
+      <li class="bb"><strong class="ma"><i class="mabg"></i>手机观看</strong>
+      <div class="cc maw"><i class="ewmbg"></i><p>扫描二维码用手机观看</p></div>  
+<!--<li class="bb member"><strong class="ma"><i class="mbbg"></i></strong><div class="cc mbp"></div> </li>--></ul>
+<ul class="sj-search"><li class="sbtn2"><i class="sjbg-search"></i></li></ul>
+<ul class="sj-nav"><li class="sbtn1"><i class="sjbg-nav"></i></li></ul>
+<ul class="sj-navhome"><li><a href="/"><i class="sjbg-home"></i></a></li></ul>  </div>
+  <!--分类子目录-->
+<div class="nav-down clearfix">
+<div id="topnav-1" class="nav-down-1" style="display:none;" _t_nav="topnav-1">
+<div class="nav-down-2 clearfix"><ul>
+{maccms:menu  order=asc parent=1 }    
+      <li><a href="[menu:link]">[menu:name]</a></li>
+       {/maccms:menu} 
+</ul></div></div>
+<div id="topnav-2" class="nav-down-1" style="display:none;" _t_nav="topnav-2">
+<div class="nav-down-2 clearfix">
+<ul>
+{maccms:menu  order=asc parent=2 }    
+      <li><a href="[menu:link]">[menu:name]</a></li>
+       {/maccms:menu}    
+</ul></div></div><div id="topnav-3" class="nav-down-1" style="display:none;" _t_nav="topnav-3">
+<div class="nav-down-2 clearfix"><ul>
+{maccms:menu  order=asc parent=3}    
+      <li><a href="[menu:link]">[menu:name]</a></li>
+       {/maccms:menu}     
+</ul></div></div>
+<div id="topnav-4" class="nav-down-1" style="display:none;" _t_nav="topnav-4">
+<div class="nav-down-2 clearfix"><ul>
+{maccms:menu  order=asc parent=4 }    
+      <li><a href="[menu:link]">[menu:name]</a></li>
+       {/maccms:menu} 
+</ul></div></div>
+<div id="topnav-5" class="nav-down-1" style="display:none;" _t_nav="topnav-5">
+<div class="nav-down-2 clearfix"><ul>
+{maccms:menu  order=asc parent=0 }    
+      <li><a href="[menu:link]">[menu:name]</a></li>
+       {/maccms:menu} 
+</ul></div></div>
+ <div id="topnav-6" class="nav-down-1" style="display:none;" _t_nav="topnav-6">
+<div class="nav-down-2 clearfix"><ul>
+{maccms:menu  order=asc parent=0 }    
+      <li><a href="[menu:link]">[menu:name]</a></li>
+       {/maccms:menu}   
+        </ul>
+      </div>
+    </div>
+   <!--美女图结束-->
+    <!--美女图片-->
+      <div id="topnav-news" class="nav-down-1" style="display:none;" _t_nav="topnav-news">
+      <div class="nav-down-2 clearfix">
+        <ul>
+          {maccms:matrix type=child table=art type=0} 
+          <li> <a href="[matrix:link]">[matrix:name] </a> </li>
+           {/maccms:matrix}         
+        </ul>
+      </div>
+    </div>
+   <!--美女图结束-->
+<!--手机版导航-->
+  <div id="sj-nav-1" class="nav-down-1 sy1 sj-noover" style="display:none;" _s_nav="sj-nav-1">
+    <div class="nav-down-2 sj-nav-down-2 clearfix">
+    <ul> 
+      <li><a href="{maccms:path}"{if-A:{maccms:siteaid}=10} class="on"{endif-A}>首页</a></li>
+       {maccms:menu type=parent order=asc } 
+      <li><a href="[menu:link]"{if-A:{maccms:curvodtypeid}=[menu:id]} class="on"{endif-A}>[menu:name]</a></li>
+       {/maccms:menu}
+	   {maccms:menu type=child order=asc  }
+      <li><a href="[menu:link]"{if-A:{maccms:curvodtypeid}=[menu:id]} class="on"{endif-A}>[menu:name]</a></li>
+        {/maccms:menu}
+      <li><a href="{maccms:link_index_art}">美女图</a></li>
+      <li><a href="{maccms:link_gbook}">留言</a></li>
+    </ul>
+    </div>
+  </div>
+  <div id="sj-nav-search" class="nav-down-1 sy2 sj-noover" style="display:none;" _t_nav1="sj-nav-search">
+    <div class="nav-down-2 sj-nav-down-search clearfix">
+<form action="{maccms:link_search_vod}" method="post">
+        <input type="text" id="wd" name="wd" class="input" onblur="if(this.value==''){ this.value='输入关键词';this.style.color='#cfcdcd';}" onfocus="if(this.value=='输入关键词'){this.value='';this.style.color='';}" value="输入关键词" />
+        <input type="submit" name="submit" class="imgbt" value="搜 索" />
+      </form>
+</form></div></div></div></div>
+<div class="topone clearfix"></div>
+<div class="leaveNavInfo">
+<h3><span id="adminleaveword"></span>请记住本站网址：hzj.aaasai.com</h3></div>
+
+<div class="main">
+
+<!--/麒麟点击广告-->
+</div>

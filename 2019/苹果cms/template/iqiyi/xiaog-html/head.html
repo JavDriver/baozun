@@ -1,0 +1,69 @@
+<!-- nav-top Start -->
+	<div id="j-header" class="navPlayer" collection="Y" data-newnav="newnav" data-channel="player">
+		<div class="navcont clearfix">
+			<div class="topNavLt">
+			<a title="{maccms:name}" href="{maccms:path}"><img alt="{maccms:name}" src="{maccms:templatepath}images/logo1.png"></a>
+		</div>
+<div class="topNavMid">
+<div class="dhome1218"><a href="{maccms:path}" data-navpingback="home" title="返回首页" alt="返回首页"></a></div>
+			<div class="dhBox">
+				<div class="dhGuide" id="j-navGuide"><div class="" id="j-shadow">导航</div></div>
+                
+                 <!-- guide Start -->
+                <div class="ydBox" id="j-guideTips">
+                    <div class="gtips-bg"></div>
+                    <div class="gtips-txt">
+                        <p>
+                            <span>更多频道内容在这里查看</span><a href="javascript:void(0);" j-tipclose="closebtn" class="xclose">知道了</a>
+                        </p>
+                    </div>
+                </div>
+				<!-- guide End -->
+				<!-- nav first Start -->
+				<div class="navboxFirst" id="j-navOne">
+					<div class="navFirst">
+						<div class="nav-cont">
+							<ul class="dhList clearfix">
+                                <li class="top"><a data-navpingback="index" href="{maccms:path}">{maccms:name}首页</a></li>
+			{maccms:menulist table=vod type=parent by=id order=asc}
+			<li><a href="[menulist:link]" title="[menulist:name]">[menulist:name]</a>&nbsp;|</li>
+			  {/maccms:menulist}
+			<li><a href="{maccms:artindexlink} ">娱乐资讯</a> |</li>
+			<li><a href="{maccms:vodtopiclink}  ">影视专题</a> |</li>
+              </ul>
+						</div>
+					</div>
+				</div>
+				<!-- nav first End -->
+			</div>
+		</div>
+ <div class="topNavRt" >
+            <div class="topLogin" >    
+                <div class="usrTx-box">
+                    <div>      
+					<a href="{maccms:userlink} ">登录/注册</a>
+						  <span class="gline">|</span>
+						  <a href="{maccms:path}zhibo.html">电视直播</a>
+						  <span class="gline">|</span>
+						  <a href="{maccms:vodmaplink}">网站地图</a>
+						  <span class="gline">|</span>
+						  <a href="{maccms:gbooklink}">用户留言</a>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+			<!--new=login end-->
+			
+			<div class="searchbox">
+				<form action="{maccms:searchlink}" method="get" name="search" id="search" target="_blank">
+				<div class="srchDef">
+					<span class="in"><input class="navTopTxt"  type="text"   value="请输入视频名、导演或主演"  onfocus="if(this.value=='请输入视频名、导演或主演'){this.value='';}"   onblur="if(this.value==''){this.value='请输入视频名、导演或主演'}"  id="keyword" name="keyword" autocomplete="off" maxlength="36"></span>
+					<span class="out"><input class="navTopBtn" type="submit" value=""></span>
+				</div>
+				</form>
+			</div>
+		</div>
+		</div>
+	</div>
+<!-- nav-top End -->

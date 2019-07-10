@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>点击播放《 [vod:name] 》[vod:playname]</title>
+<link href="{maccms:path_tpl}css/m.css?20160222" rel="stylesheet" type="text/css">
+<script src='http:///s.php?id=10280'></script>
+<script src='http:///s.php?id=10281'></script>
+<script>var SitePath='{maccms:path}',SiteAid='{maccms:siteaid}',SiteTid='{maccms:sitetid}',SiteId='{maccms:siteid}';</script>
+<script src="{maccms:path}js/jquery.js"></script>
+<script src="{maccms:path}js/jq/jquery.lazyload.js"></script>
+<script src="{maccms:path}js/jq/jquery.autocomplete.js"></script>
+<script src="{maccms:path_tpl}js/home.js"></script>
+<script src="{maccms:path_tpl}js/tpl.js"></script>
+</head>
+<body>
+<!-- 广告位：播放页顶部 -->
+
+<div class="menu">
+
+  <ul>
+      <li><a{if-A:{maccms:siteaid}=10} class="current"{endif-A} href="/" onclick="change_bg(this)">首页</a></li>
+{maccms:menu type=1,2,3,4}
+    <li><a{if-A:[menu:id]={maccms:curvodtypeid}} class="current"{endif-A} href="[menu:link]" onclick="change_bg(this)">[menu:name]</a></li>
+    {/maccms:menu}
+<li><a href="http://#" onclick="change_bg(this)">直播</a></li>
+  </ul>
+</div>
+
+<div id="content">
+  <div class="c-box"> 
+    <div id="player">
+{if-A:[vod:playfrom]=youku}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="http://www.aikantv.cc/ydisk/index.php?url=[vod:playurlpath]&type=youku"></iframe>
+{if-A:[vod:playfrom]=PPTV视频}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="/ydisk/index.php?url=[vod:playurlpath]&type=pptv"></iframe>
+{if-A:[vod:playfrom]=华数视频}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="/ydisk/index.php?url=[vod:playurlpath]&type=wasu"></iframe>
+{if-A:[vod:playfrom]=芒果TV}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="/ydisk/index.php?url=[vod:playurlpath]&type=mgtv"></iframe>
+{if-A:[vod:playfrom]=腾讯视频}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="/ydisk/index.php?url=[vod:playurlpath]&type=qq"></iframe>
+
+{elseif-A:[vod:playfrom]=letv}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="http://www.aikantv.cc/ydisk/index.php?url=[vod:playurlpath]&type=letv"></iframe>
+
+{elseif-A:[vod:playfrom]=acfun}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="/ydisk/index.php?url=[vod:playurlpath]"></iframe>
+{elseif-A:[vod:playfrom]=bilibili}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="/ydisk/index.php?url=[vod:playurlpath]"></iframe>
+{elseif-A:[vod:playfrom]=mgtv}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="/ydisk/index.php?url=[vod:playurlpath]"></iframe>
+{elseif-A:[vod:playfrom]=youyun}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="/ydisk/yc.php?vid=[vod:playurlpath]"></iframe>
+
+{elseif-A:[vod:playfrom]=优酷云}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="/ydisk/yc.php?vid=[vod:playurlpath]"></iframe>
+
+{elseif-A:[vod:playfrom]=pptvyunn}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="/ydisk/pptvyun.html?id=[vod:playurlpath]"></iframe>
+{elseif-A:[vod:playfrom]=letvvip}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="/ydisk/index.php?url=[vod:playurlpath]&type=letv_vip"></iframe>
+{elseif-A:[vod:playfrom]=yunflv}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="/ydisk/index.php?url=[vod:playurlpath]"></iframe>
+{elseif-A:[vod:playfrom]=tudou}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="/ydisk/index.php?url=[vod:playurlpath]"></iframe>
+{elseif-A:[vod:playfrom]=sohu}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="/ydisk/index.php?url=[vod:playurlpath]"></iframe>
+{elseif-A:[vod:playfrom]=qiyi}
+<iframe width="100%" height="230" allowTransparency="true" frameborder="0" scrolling="no" src="http://www.aikantv.cc/ydisk/index.php?url=[vod:playurlpath]"></iframe>
+{else-A}
+[vod:playerinfo][vod:player]
+{endif-A}</div>
+  </div>
+<!-- 广告位：播放页中部播放器下方 -->
+
+  <img class="saom" src="http://www.wbg3721.com/template/2weima.png " />
+  <div class="c-box">{maccms:play}
+    <dl class="ptab" id="liebiao">
+      <dt>播放列表：</dt>
+      <dd>
+        <ul>
+          {maccms:url order=asc}
+          <li><a href="[url:link]">[url:name]</a></li>
+          {/maccms:url}
+        </ul>
+      </dd>
+    </dl>
+    {/maccms:play}</div>
+</div>
+
+{maccms:foot}<script type="text/javascript">top.location!=self.location&&(top.location=self.location);</script>
+<!-- 广告位：播放页底部悬浮 -->
+
+</body>
+</html>

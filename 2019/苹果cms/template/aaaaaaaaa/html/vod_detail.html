@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>《[vod:name]》百度影音电影-[vod:remarks]下载-[vod:from]在线观看 - [vod:typename] - {maccms:name}</title>
+<meta name="keywords" content="《[vod:name]》高清下载,《[vod:name]》在线观看,《[vod:name]》百度影音" />
+<meta name="description" content="[vod:name]剧情:[vod:contenttext len=60]" />
+{maccms:include}
+[vod:history]
+</head>
+<body>
+{maccms:head}
+<div class="layout mt10">
+	<div class="tbg10"></div>
+	<div class="mainArea px19">
+		<div class="position"><span class="playerTip"><a href="/help/index.html" target="_blank" class="white">提示：如果無法播放，點擊獲取更多幫助！</a></span>当前位置：[vod:textlink]</div>
+	</div>
+	<div class="bbg10"></div>
+</div>
+<div class="layout mt10">
+	<div class="tbg20"></div>
+	<div class="mainArea">
+		<div class="movieInfo">
+			<div class="poster"><img src="{maccms:path_tpl}images/grey.jpg" data-original="[vod:pic]"/></div>
+			<ul class="movieInfoList">
+				<li class="title">[vod:name]</li>
+				<li><em>類型：</em><a href="[vod:typelink]" target="_blank">[vod:typename] </a></li>
+				<li><em>更新：</em>[vod:time style=yy-m-d H:i:s]</li>
+                <li><em>总播放量：</em>[vod:hits]</li>
+                <li><em>今日播放量：</em>[vod:dayhits]</li>
+                <li><em>总评分数：</em>[vod:scoreall]</li>
+                <li><em>评分次数：</em>[vod:scorenum]</li>
+				<li><div class="bdsharebuttonbox">
+				<a href="#" class="bds_more" data-cmd="more"></a>
+				<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+				<a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+				<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+				<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+				<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+				<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+				<a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+				</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["weixin","sqq","qzone","tqq","tsina","renren","copy"],"viewText":"分享到：","viewSize":"32"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["weixin","sqq","qzone","tqq","tsina","renren","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</li>
+
+			</ul>
+			<div class="movieInfoRight"><script type="text/javascript" language="javascript" src="{maccms:path_ads}300x300.js"></script></div>
+		</div>
+		{maccms:play}
+		<div class="playBar">
+		<span><strong>[vod:name][play:show]在线观看<span>[[play:tip]]</span></span> 
+		{maccms:url order=asc}<ul><li><a title='手机迅雷' href='[url:link]' target="_blank">[url:name]</a></li></ul>{/maccms:url}
+			<div class="clear"></div>
+		</div>
+		{/maccms:play}
+<div style="padding:20px;overflow:visible;">[vod:content]
+		</div>
+<div class="moviePic">
+           <font color="red" style="font-size:16px">注：在线观看请用吉吉或者肥佬，也可用BT进行下载，手机用户请下载手机迅雷，点击官方本地下载！</font>
+		</div>
+	</div>
+	<div class="bbg20"></div>
+</div>
+{maccms:foot}
+<script type="text/javascript">
+$(function() {
+	$("img").lazyload({
+		effect : "fadeIn"
+	});
+});
+</script>
+</body>
+</html>

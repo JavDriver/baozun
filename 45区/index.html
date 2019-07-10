@@ -1,0 +1,211 @@
+
+{dede:include filename='head.htm'/}
+<div class="conter w1120 clearfix">
+    <div class="conter-left clearfix">
+        <div class="banner">
+            <div class="swiper-container bannerc">
+                <div class="swiper-wrapper">
+                    {dede:arclist row=3 titlelen=50 flag ='f' orderby='pubdate' limit='0,3'}
+                    <div class="swiper-slide" style="width: 750px; height: 380px;">
+
+                        <a href="[field:arcurl/]" title="[field:fulltitle/]"><img src="[field:litpic/]" alt="[field:fulltitle/]" title="[field:fulltitle/]" style="width: 100%;">
+                    <span class="banner1">
+                        <h3>[field:title/]</h3>
+                        <p>[field:description function='cn_substr(@me,130)'/]</p>
+                    </span>
+                    </a></div>
+
+                    {/dede:arclist}
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+
+            <script>
+                var swiper = new Swiper('.bannerc', {
+                    pagination: '.swiper-pagination',
+                    paginationElement: 'li',
+                    paginationClickable: true,
+
+                    //mousewheelControl: true,
+                    //centeredSlides: true,
+                    slidesPerView: 1,
+                    autoplay: 5000,
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    autoplayDisableOnInteraction: false
+                });
+            </script>
+        </div>
+
+        <div class="index1 clearfix">
+            <h3><img src="images/index01.png">爆文推荐
+                {dede:arclist typeid =1 row=1 titlelen=60  orderby='pubdate' limit='0,1'}
+                <span>
+               <a href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank">[field:title/]</a></span>
+                {/dede:arclist}
+            </h3>
+            <ul class="clearfix">
+                {dede:arclist typeid =1 row=1 titlelen=60  flag ='p' orderby='pubdate' limit='0,4'}
+                <li><a href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank">
+                    <div class="index11"><img src="[field:litpic/]" alt="[field:fulltitle/]" title="[field:fulltitle/]" width="360" height="220" >
+                        <p>[field:description function='cn_substr(@me,130)'/] </p></div>
+                    <h4 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">[field:title/]</h4></a></li>
+                {/dede:arclist}
+            </ul>
+        </div>
+        <div class='tabs clearfix' id="tabs">
+            <ul class='horizontal clearfix'>
+                <li rel="tab-1" class="selectActive">热点</li>
+                <li rel="tab-2">财经</li>
+                <li rel="tab-3">体育</li>
+                <li rel="tab-4">娱乐</li>
+                <li rel="tab-5">国际新闻</li>
+                <li rel="tab-6">军事</li>
+            </ul>
+            <div rel='tab-1' class="tabs1 content clearfix">
+                <div class="lists">
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                </div>
+            </div>
+            <div rel='tab-2' class="tabs1 clearfix">
+                <div class="lists">
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+
+                </div>
+            </div>
+            <div rel='tab-3' class="tabs1 clearfix">
+                <div class="lists">
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                </div>
+            </div>
+            <div rel='tab-4' class="tabs1 clearfix">
+                <div class="lists">
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                </div>
+            </div>
+            <div rel='tab-5' class="tabs1 clearfix">
+                <div class="lists">
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                </div>
+            </div>
+
+            <div rel='tab-6' class="tabs1 clearfix">
+                <div class="lists">
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                    <a href="#1"><dl class="clearfix"><dt><img src="/images/index21.jpg" alt=""> </dt><dd><h3>2017年度人工智能报告：7大行业应用，100个初创企业</h3><em>SelfSell引发的，不仅仅是金融革新。</em><span>高小倩 · 1小时前    <img src="images/index2a.jpg">游戏，大公司<i>5收藏</i></span></dd></dl></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    {dede:include filename='right.htm'/}
+</div>
+
+
+{dede:include filename='footer.htm'/}
+
+
+<script type="text/javascript" src="js/tags.js"></script>
+<!--搜索-->
+<header class="clearfix isearch" style="display:none;" id="loginmodal">
+    <div class="w1120 clearfix">
+        <div class="logo"><img src="images/logo.png"></div>
+        <div class="search1">
+            <img src="images/heard01.png">
+            <form id="searchForm" method="post" name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php" onsubmit="return search();">
+                <input type="hidden" name="kwtype" value="0" />
+                <input class="text" maxlength="20" id="keys" name="q" value="请输入关键字" onfocus="javascript:if(document.getElementById(&quot;keys&quot;).value == &quot;请输入关键字&quot;)document.getElementById(&quot;keys&quot;).value = &quot;&quot;;" onblur="javascript:if(document.getElementById(&quot;keys&quot;).value == &quot;&quot;)document.getElementById(&quot;keys&quot;).value = &quot;请输入关键字&quot;;jtips.hideKeySearch()" type="text" autocomplete="off" onclick="keyPressSearch(this, 'Keyword')">
+
+            </form>
+        </div>
+        <a href="javascript:" class="search1a hidemodal1"><img src="images/close2.png"> </a>
+    </div>
+</header>
+
+<script type="text/javascript">
+    tabs_takes.init("tabs");
+</script>
+
+<script>
+    $(function () {
+        var counter = 0;
+        // 每页展示4个
+        var num = 4;
+        var pageStart = 0, pageEnd = 0;
+
+        // dropload
+        $('.content').dropload({
+            scrollArea: window,
+            loadDownFn: function (me) {
+                $.ajax({
+                    type: 'GET',
+                    url: 'json/more.json',
+                    dataType: 'json',
+                    success: function (data) {
+                        var result = '';
+                        counter++;
+                        pageEnd = num * counter;
+                        pageStart = pageEnd - num;
+
+                        for (var i = pageStart; i < pageEnd; i++) {
+                            result += '<a href="' + data.lists[i].link + '">'
+                                    + '<dl class="clearfix">'
+                                    + '<dt><img src="' + data.lists[i].pic + '" alt=""> </dt>'
+                                    + '<dd><h3>' + data.lists[i].title + '</h3>'
+                                    + '<em>' + data.lists[i].info + '</em>'
+                                    + '<span>' + data.lists[i].name + ' · ' + data.lists[i].date + '    <img src="images/index2a.jpg" >' + data.lists[i].lable + '<i>' + data.lists[i].Collection + '收藏</i></span>'
+                                    + '</dd>'
+                                    + '</dl>'
+                                    + '</a>';
+                            if ((i + 1) >= data.lists.length) {
+                                // 锁定
+                                me.lock();
+                                // 无数据
+                                me.noData();
+                                break;
+                            }
+                        }
+                        // 为了测试，延迟1秒加载
+                        setTimeout(function () {
+                            $('.lists').append(result);
+                            // 每次数据加载完，必须重置
+                            me.resetload();
+                        }, 1000);
+                    },
+                    error: function (xhr, type) {
+                        alert('Ajax error!');
+                        // 即使加载出错，也得重置
+                        me.resetload();
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+
+</body>
+</html>

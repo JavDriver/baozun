@@ -1,0 +1,1 @@
+document.writeln('<img name="ad" src="" width="700" height="90" alt="vodlist700x90-1" style="background-color: #CCCCCC" />');

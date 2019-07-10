@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <title>45区</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/comment.css">
+    <link type="text/css" rel="stylesheet" href="css/demo.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/dropload.css">
+    <link href="css/base.css" rel="stylesheet" type="text/css"/>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/global_hzj.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+    <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+    <script src="js/dropload.min.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+
+    var $orgMenu, $menu, $html;
+
+
+
+    $(function() {
+
+        $html = $('html');
+
+        $orgMenu = $('nav#menu').detach();
+
+        updateMenu({});
+
+    });
+
+
+
+    function updateMenu( opts )
+
+    {
+
+        var opened = false;
+
+        var createMenu = function()
+
+        {
+
+            if ( $menu )
+
+            {
+
+                $menu.remove();
+
+            }
+
+            $menu = $orgMenu.clone().prependTo( 'body' ).mmenu( opts );
+
+            if ( opened )
+
+            {
+
+                $menu.trigger( 'open.mm' );
+
+            }
+
+        }
+
+
+
+        if ( $menu )
+
+        {
+
+            if ( $html.hasClass( 'mm-opened' ) )
+
+            {
+
+                opened = true;
+
+                $menu
+
+                        .on( 'closed.mm', createMenu )
+
+                        .trigger( 'close.mm' );
+
+            }
+
+            else
+
+            {
+
+                createMenu();
+
+            }
+
+        }
+
+        else
+
+        {
+
+            createMenu();
+
+        }
+
+
+
+    }
+
+</script>
+<header class="clearfix heec">
+    <div class="w1120 clearfix">
+        <div class="header-left clearfix">
+            <div class="logo"><img src="images/logo.png"></div>
+            <div class="nav clearfix">
+                <a  href="#">首页</a>
+                <a class="navactive" href="#">深度阅读</a>
+                <a href="#">作弊手册</a>
+                <a href="#">早知道</a>
+                <a href="#">关于我们</a>
+                <a href="#">找工作</a>
+            </div>
+        </div>
+        <div class="header-right clearfix">
+            <a class="header-right01 modaltrigger" href="#loginmodal"><img src="images/heard01.png">搜索</a>
+            <a class="header-right01" href="#"><img src="images/heard02.png">登录</a>
+            <a class="header-right01" href="#"><img src="images/heard03.png">注册</a>
+            <a class="header-right02" href="#">投稿</a>
+            <div class="header-right03"><img src="images/heard04.png">
+                <div class="header-right031">
+                    <img src="images/rwm.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="page">
+
+    <div class="header">
+
+        <a href="#menu">
+        </a>
+        45区
+
+    </div>
+
+
+
+    <nav id="menu" >
+
+        <ul>
+
+            <li><a href="#">首页 </a></li>
+            <li><a href="#">深度阅读</a></li>
+            <li><a href="#">作弊手册</a> </li>
+            <li><a href="#">早知道</a> </li>
+            <li><a href="#">关于我们</a> </li>
+            <li><a  href="#">找工作</a> </li>
+            <li><a  href="#">搜索</a> </li>
+            <li><a href="#">登录</a> </li>
+            <li><a href="#">注册</a> </li>
+
+
+        </ul>
+
+    </nav>
+
+</div>
+
+
+
+<div class="conter w1120 clearfix">
+    <div class="conter-left clearfix">
+ <div class="sdydxq clearfix">
+    <div class="sdydxq1 clearfix">
+        <h3>为什么说，世界欠中本聪一个诺贝尔经济学奖？</h3>
+        <h4>2017-10-10 17:28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收藏44&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评论4<em><img src="images/index2a.jpg"> 游戏，大公司</em></h4>
+    </div>
+
+     <div class="sdydxq2 clearfix">
+         <div class="sdydxq22 clearfix">
+         <img src="images/ydxq01.jpg">
+         <div>10月9日。门吱呀一声开了。<div class="sdydxq31">瑞典皇家科学院
+         <div class="sdydxq3"><img src="images/ydxq08.png"><span>         瑞典皇家科学院于1739年奉瑞典国王弗雷德里克之命，仿效当时的伦敦皇家自然科学促进学会和巴黎皇家科学院成立，是14个瑞典皇家学会团体之一。</span></div></div>
+        秘书长戈兰·汉森盛装走出，他手里的小纸片上写着理查德·塞勒的名字。</div>
+         <div>今年，这位总是顶着一头乱糟糟卷发的新晋诺贝尔经济学奖得主，研究领域是心理学和经济学的关系，和以往数学在这一奖项中的含金量比，这听起来多少有点“软”。</div>
+         <div>诺奖总是将目光聚焦那些有开创性的天才，并不吝啬将奖金颁给坚守在学术角落里的人。</div>
+         <div>今年，这位总是顶着一头乱糟糟卷发的新晋诺贝尔经济学奖得主，研究领域是心理学和经济学的关系，和以往数学在这一奖项中的含金量比，这听起来多少有点“软”。</div>
+         <div>诺奖总是将目光聚焦那些有开创性的天才，并不吝啬将奖金颁给坚守在学术角落里的人。</div>
+         <div>今年，这位总是顶着一头乱糟糟卷发的新晋诺贝尔经济学奖得主，研究领域是心理学和经济学的关系，和以往数学在这一奖项中的含金量比，这听起来多少有点“软”。</div>
+         <div>诺奖总是将目光聚焦那些有开创性的天才，并不吝啬将奖金颁给坚守在学术角落里的人。</div> <div>今年，这位总是顶着一头乱糟糟卷发的新晋诺贝尔经济学奖得主，研究领域是心理学和经济学的关系，和以往数学在这一奖项中的含金量比，这听起来多少有点“软”。</div>
+         <div>诺奖总是将目光聚焦那些有开创性的天才，并不吝啬将奖金颁给坚守在学术角落里的人。</div> <div>今年，这位总是顶着一头乱糟糟卷发的新晋诺贝尔经济学奖得主，研究领域是心理学和经济学的关系，和以往数学在这一奖项中的含金量比，这听起来多少有点“软”。</div>
+         <div>诺奖总是将目光聚焦那些有开创性的天才，并不吝啬将奖金颁给坚守在学术角落里的人。</div> <div>今年，这位总是顶着一头乱糟糟卷发的新晋诺贝尔经济学奖得主，研究领域是心理学和经济学的关系，和以往数学在这一奖项中的含金量比，这听起来多少有点“软”。</div>
+         <div>诺奖总是将目光聚焦那些有开创性的天才，并不吝啬将奖金颁给坚守在学术角落里的人。</div> <div>今年，这位总是顶着一头乱糟糟卷发的新晋诺贝尔经济学奖得主，研究领域是心理学和经济学的关系，和以往数学在这一奖项中的含金量比，这听起来多少有点“软”。</div>
+         <div>诺奖总是将目光聚焦那些有开创性的天才，并不吝啬将奖金颁给坚守在学术角落里的人。</div> <div>今年，这位总是顶着一头乱糟糟卷发的新晋诺贝尔经济学奖得主，研究领域是心理学和经济学的关系，和以往数学在这一奖项中的含金量比，这听起来多少有点“软”。</div>
+         <div>诺奖总是将目光聚焦那些有开创性的天才，并不吝啬将奖金颁给坚守在学术角落里的人。</div>
+         <div>今年，这位总是顶着一头乱糟糟卷发的新晋诺贝尔经济学奖得主，研究领域是心理学和经济学的关系，和以往数学在这一奖项中的含金量比，这听起来多少有点“软”。</div>
+         <div>诺奖总是将目光聚焦那些有开创性的天才，并不吝啬将奖金颁给坚守在学术角落里的人。</div> <div>今年，这位总是顶着一头乱糟糟卷发的新晋诺贝尔经济学奖得主，研究领域是心理学和经济学的关系，和以往数学在这一奖项中的含金量比，这听起来多少有点“软”。</div>
+         <div>诺奖总是将目光聚焦那些有开创性的天才，并不吝啬将奖金颁给坚守在学术角落里的人。</div>
+         </div>
+
+<div class="sdydxq23 clearfix">
+    <h3>推荐阅读</h3>
+    <ul>
+        <li><img src="images/ydxq09.jpg">
+        <p>2017年度人工智能报告：7大行业应用，100个初创企业</p>
+        </li>
+        <li><img src="images/ydxq09.jpg">
+            <p>2017年度人工智能报告：7大行业应用，100个初创企业</p>
+        </li>
+        <li><img src="images/ydxq09.jpg">
+            <p>2017年度人工智能报告：7大行业应用，100个初创企业</p>
+        </li>
+
+
+    </ul>
+
+
+</div>
+
+         <div class="sdydxq24 clearfix" id="plc">
+             <h3>评论文章</h3>
+             <!-- UY BEGIN -->
+             <div class="commentAll">
+                 <!--评论区域 begin-->
+                 <div class="reviewArea clearfix">
+                     <div class="no-login-box ">
+                         <a class="js-login">登录</a>后参与评论
+                     </div>
+                     <textarea class="content comment-input" placeholder="Please enter a comment&hellip;" onkeyup="keyUP(this)"></textarea>
+                     <a href="javascript:;" class="plBtn">发表</a>
+                 </div>
+                 <!--评论区域 end-->
+                 <h3>热门评论</h3>
+                 <!--回复区域 begin-->
+                 <div class="comment-show">
+                     <div class="comment-show-con clearfix">
+                         <div class="comment-show-con-img pull-left"><img src="images/header-img-comment_03.png" alt=""></div>
+
+                         <div class="comment-show-con-list pull-left clearfix">
+                             <div class="pl-text clearfix">
+                                 <a href="#" class="comment-size-name">张三</a>
+                                 <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
+                                 <a href="javascript:;" class="date-dz-z pull-right"><i class="date-dz-z-click-red"></i><i class="z-num">666</i></a>
+                             </div>
+
+
+                         </div>
+                         <div class="clear"></div>
+                         <div class="my-pl-con">&nbsp;来啊 造作啊!</div>
+                         <div class="date-dz">
+
+                             <div class="date-dz-right pull-left comment-pl-block">
+                                 <a href="javascript:;" class="date-dz-pl pl-hf hf-con-block pull-left"><img src="images/dp01.png"> 我要点评</a>
+                                 <a href="javascript:;" class="removeBlock">删除</a>
+
+                             </div>
+                         </div>
+                         <div class="hf-list-con"></div>
+
+                     </div>
+                 </div>
+                 <!--回复区域 end-->
+             </div>
+
+
+             <!--PC和WAP自适应版-->
+
+
+         </div>
+
+
+     </div>
+
+ </div>
+
+
+
+        <!--文章内容页-->
+        <div class="article-left-btn-group is-sticky">
+            <ul data-id="227583">
+                <!--普通文章分享微博-->
+                <li>
+                    <a href="">
+                        <i class="icon icon-article icon-article-wb js-weibo js-share-article" data-location="article" data-f="pc-weibo-article" aid="227583"></i>
+                    </a>
+                </li>
+                <!--普通文章分享微信-->
+                <li class="weixin">
+                    <div class="weixin-Qr-code js-wx-Qr-code"> <div class="output"></div></div>
+                    <a class="js-weixin" data-f="pc-friends-article"><i class="icon icon-article icon-article-pyq" ></i></a>
+                </li>
+                <!--普通文章分享支付宝 -->
+                <li class="zhifubao">
+                    <div class="zhifubao-Qr-code js-zhifubao-Qr-code"> <div class="output"></div></div>
+                    <a class="js-zhifubao" data-f="pc_alipay_article"><i class="icon icon-article icon-article-zfb" ></i></a>
+                </li>
+                <!--普通文章分享qq空间 -->
+                <li><a href=""><i class="icon icon-article icon-article-qzone js-qzone js-share-article" data-location="article" data-f="pc-qzone-article" aid="227583"></i></a></li>
+
+
+
+                <li><a href="#plc" class="js-article-pl-anchor"><i class="icon icon-article icon-article-pl">评论</i></a></li>
+
+                <!--普通文章收藏-->
+                <li><a class="js-collection-article"><i class="icon icon-article icon-article-col">收藏</i></a></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="conter-right clearfix">
+        <div class="ydxq1 clearfix">
+            <h3><img src="images/ydxq12.png"> 作者介绍</h3>
+            <dl class="clearfix">
+                <dt><img src="images/ydxq13.png" ></dt>
+                <dd>
+                    <h4>高小倩 <span>资深作者</span></h4>
+                    <p>群众的智慧是无穷的~欢迎一线的创业者和投资者分享你们的观察和看法 </p>
+                    <em><i></i>共发表5767篇</em>
+                </dd>
+
+            </dl>
+        </div>
+        <div class="conter-right1">
+            <h3><img src="images/ydxq11.png"> 作者文章推荐</h3>
+            <dl class="clearfix">
+                <dt><img src="images/index32.png"></dt>
+                <dd><h4>互联网及电话订火车票预售期恢复30天，元旦车票明日开抢</h4>
+                    <p class="conter-right11"><i><img src="images/index33.png"></i><span>据TechWeb报道，研究机构IDC预测称，2018年全球对物联网的支出将达到7725亿美元，比2017的收入增长14.6%。IDC分析称，硬件将在2018成为“最大的技术类别”，其中2390亿美元主要投资于模块和传感器，以及在基础设施和安全方面；服务业将成为第二大技术类别，软件将成为增长最快的技术领域，其年复合增长率为16.1%。到2021年底，超过55%的物联网项目的支出将用于软件和服务。</span>
+                    </p>
+                    <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                        <div class="panel-weixin">
+                            <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                            </section>
+                            <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                    </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+
+                    </cite>
+                </dd>
+
+            </dl>
+
+            <dl class="clearfix">
+                <dt><img src="images/index32.png"></dt>
+                <dd><h4>互联网及电话订火车票预售期恢复30天，元旦车票明日开抢</h4>
+                    <p class="conter-right11"><i><img src="images/index33.png"></i><span>据TechWeb报道，研究机构IDC预测称，2018年全球对物联网的支出将达到7725亿美元，比2017的收入增长14.6%。IDC分析称，硬件将在2018成为“最大的技术类别”，其中2390亿美元主要投资于模块和传感器，以及在基础设施和安全方面；服务业将成为第二大技术类别，软件将成为增长最快的技术领域，其年复合增长率为16.1%。到2021年底，超过55%的物联网项目的支出将用于软件和服务。</span>
+                    </p>
+                    <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                        <div class="panel-weixin">
+                            <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                            </section>
+                            <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                    </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+
+                    </cite>
+                </dd>
+
+            </dl>
+
+
+            <dl class="clearfix">
+                <dt><img src="images/index32.png"></dt>
+                <dd><h4>互联网及电话订火车票预售期恢复30天，元旦车票明日开抢</h4>
+                    <p class="conter-right11"><i><img src="images/index33.png"></i><span>据TechWeb报道，研究机构IDC预测称，2018年全球对物联网的支出将达到7725亿美元，比2017的收入增长14.6%。IDC分析称，硬件将在2018成为“最大的技术类别”，其中2390亿美元主要投资于模块和传感器，以及在基础设施和安全方面；服务业将成为第二大技术类别，软件将成为增长最快的技术领域，其年复合增长率为16.1%。到2021年底，超过55%的物联网项目的支出将用于软件和服务。</span>
+                    </p>
+                    <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                        <div class="panel-weixin">
+                            <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                            </section>
+                            <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                    </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+
+                    </cite>
+                </dd>
+
+            </dl>
+
+            <dl class="clearfix">
+                <dt><img src="images/index32.png"></dt>
+                <dd><h4>互联网及电话订火车票预售期恢复30天，元旦车票明日开抢</h4>
+                    <p class="conter-right11"><i><img src="images/index33.png"></i><span>据TechWeb报道，研究机构IDC预测称，2018年全球对物联网的支出将达到7725亿美元，比2017的收入增长14.6%。IDC分析称，硬件将在2018成为“最大的技术类别”，其中2390亿美元主要投资于模块和传感器，以及在基础设施和安全方面；服务业将成为第二大技术类别，软件将成为增长最快的技术领域，其年复合增长率为16.1%。到2021年底，超过55%的物联网项目的支出将用于软件和服务。</span>
+                    </p>
+                    <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                        <div class="panel-weixin">
+                            <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                            </section>
+                            <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                    </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+
+                    </cite>
+                </dd>
+
+            </dl>
+
+            <dl class="clearfix">
+                <dt><img src="images/index32.png"></dt>
+                <dd><h4>互联网及电话订火车票预售期恢复30天，元旦车票明日开抢</h4>
+                    <p class="conter-right11"><i><img src="images/index33.png"></i><span>据TechWeb报道，研究机构IDC预测称，2018年全球对物联网的支出将达到7725亿美元，比2017的收入增长14.6%。IDC分析称，硬件将在2018成为“最大的技术类别”，其中2390亿美元主要投资于模块和传感器，以及在基础设施和安全方面；服务业将成为第二大技术类别，软件将成为增长最快的技术领域，其年复合增长率为16.1%。到2021年底，超过55%的物联网项目的支出将用于软件和服务。</span>
+                    </p>
+                    <cite>8分钟前<em>分享至<a class="wx" href="#"><span><img src="images/wx.png"></span>
+                        <div class="panel-weixin">
+                            <section class="weixin-section"><p><img src="http://s.jiathis.com/qrcode.php?url=http://36kr.com/newsflashes/95654" alt=""></p>
+                            </section>
+                            <h3>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h3></div>
+                    </a> <a href="#" class="wb"><span><img src="images/wb.png"> </span></a> </em>
+
+                    </cite>
+                </dd>
+
+            </dl>
+
+        </div>
+        <div class="conter-right2 clearfix">
+            <h3><img src="images/index41.png"> 热点标签</h3>
+            <div id="tagsList">
+
+                <a class="tagsListact" href="#/Article.aspx?kid=1" title="星级评分">星级评分</a>
+
+                <a href="#/Article.aspx?kid=2" title="层特效">层特效</a>
+
+                <a class="tagsListact" href="#/Article.aspx?kid=3" title="关键字">关键字</a>
+
+                <a href="#/Article.aspx?kid=4" title="拖拽">拖拽</a>
+
+                <a href="#/Article.aspx?kid=5" title="分页插件">分页插件</a>
+
+                <a href="#/Article.aspx?kid=6" title="时间插件">时间插件</a>
+
+                <a href="#/Article.aspx?kid=7" title="弹出层">弹出层</a>
+
+                <a href="#/Article.aspx?kid=8" title="数据统计">数据统计</a>
+
+                <a class="tagsListact" href="#/Article.aspx?kid=9" title="HTML5">HTML5</a>
+
+                <a href="#/Article.aspx?kid=10" title="置顶特效">置顶特效</a>
+
+                <a href="#/Article.aspx?kid=11" title="选项卡">选项卡</a>
+
+                <a href="#/Article.aspx?kid=12" title="导航菜单">导航菜单</a>
+
+                <a href="#/Article.aspx?kid=13" title="原创">原创</a>
+
+                <a href="#/Article.aspx?kid=14" title="动画插件">动画插件</a>
+
+                <a href="#/Article.aspx?kid=15" title="实用特效">实用特效</a>
+
+                <a href="#/Article.aspx?kid=16" title="table插件">table插件</a>
+
+                <a class="tagsListact" href="#/Article.aspx?kid=17" title="文字特效">文字特效</a>
+
+                <a href="#/Article.aspx?kid=18" title="图片特效">图片特效</a>
+
+                <a href="#/Article.aspx?kid=19" title="在线客服">在线客服</a>
+
+                <a href="#/Article.aspx?kid=20" title="瀑布流">瀑布流</a>
+
+                <a href="#/Article.aspx?kid=21" title="网友蘑菇">网友蘑菇</a>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="foot clearfix">
+    <div class="clearfix w1120">
+        <div class="foot1 clearfix">
+
+            <div class="foot11 clearfix">
+                <h3>我们的产品</h3>
+                <dl class="clearfix">
+                    <dt><img src="images/foot1.png"></dt>
+                    <dd><span>渡渡鸟访谈</span>让一部分人先看到未来</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt><img src="images/foot2.png"></dt>
+                    <dd><span>45区媒体</span>让一部分人先看到未来</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt><img src="images/foot3.png"></dt>
+                    <dd><span>作弊手册</span>让一部分人先看到未来</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt><img src="images/foot4.png"></dt>
+                    <dd><span>研究院</span>让一部分人先看到未来</dd>
+                </dl>
+            </div>
+            <div class="foot12 clearfix">
+                <h3>日常</h3>
+                <a href="#">关于我们</a>
+                <a href="#">我要投稿</a>
+                <a href="#">找工作</a>
+            </div>
+
+            <div class="foot13">
+                <h3>45区微信公众号</h3>
+                <img src="images/rwm.png">
+                <em>扫一扫，关注45区</em>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="footer-logo"><a href=""> <img src="images/footlogo.png" alt=""> </a></div>
+            <div class="copyright"><span class="mobile-hide">本站由 <a href="http://www.aliyun.com" rel="nofollow" target="_blank">
+                <img src="images/aly.png" alt="阿里云" ></a><em>提供计算与安全服务</em>   </span>
+                <span class="law">Copyright ©  45区   京ICP备12013432号-1 <img src="images/wj.png"> 京公网安备 11010102001402号  技术支持：            <span
+                        class="mobile-hide">| <a href="" target="_blank">司慧网络 </a></span></span>
+
+                <br></div>
+            <div class="share"><a class="iconfooter-weibo" href="" target="_blank" rel="nofollow"></a>
+                <a class="iconfooter-qq" href="" target="_blank" rel="nofollow"></a>
+                <a class="iconfooter-txwb" href="" target="_blank" rel="nofollow"></a>
+                <a class="iconfooter-rss" href="" target="_blank" rel="nofollow"></a>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script type="text/javascript" src="js/tags.js"></script>
+<!--搜索-->
+<header class="clearfix isearch" style="display:none;" id="loginmodal">
+    <div class="w1120 clearfix">
+        <div class="logo"><img src="images/logo.png"></div>
+        <div class="search1">
+            <img src="images/heard01.png">
+            <form action="" class="">
+                <input type="text" placeholder="搜索" class="" tabindex="-1">
+            </form>
+        </div>
+        <a href="javascript:" class="search1a hidemodal1"><img src="images/close2.png"> </a>
+    </div>
+</header>
+
+<script type="text/javascript" src="js/jquery.flexText.js"></script>
+<!--textarea高度自适应-->
+<script type="text/javascript">
+    $(function () {
+        $('.content').flexText();
+    });
+</script>
+<!--textarea限制字数-->
+<script type="text/javascript">
+    function keyUP(t){
+        var len = $(t).val().length;
+        if(len > 139){
+            $(t).val($(t).val().substring(0,140));
+        }
+    }
+</script>
+<!--点击评论创建评论条-->
+<script type="text/javascript">
+    $('.commentAll').on('click','.plBtn',function(){
+        var myDate = new Date();
+        //获取当前年
+        var year=myDate.getFullYear();
+        //获取当前月
+        var month=myDate.getMonth()+1;
+        //获取当前日
+        var date=myDate.getDate();
+        var h=myDate.getHours();       //获取当前小时数(0-23)
+        var m=myDate.getMinutes();     //获取当前分钟数(0-59)
+        if(m<10) m = '0' + m;
+        var s=myDate.getSeconds();
+        if(s<10) s = '0' + s;
+        var now=year+'-'+month+"-"+date+" "+h+':'+m+":"+s;
+        //获取输入内容
+        var oSize = $(this).siblings('.flex-text-wrap').find('.comment-input').val();
+        console.log(oSize);
+        //动态创建评论模块
+        oHtml = '<div class="comment-show-con clearfix">' +
+                '<div class="comment-show-con-img pull-left">' +
+                '<img src="images/header-img-comment_03.png" alt="">' +
+                '</div>' +
+                '<div class="comment-show-con-list pull-left clearfix">' +
+                '<div class="pl-text clearfix">' +
+                '<a href="#" class="comment-size-name">David Beckham :</a>' +
+                '<span class="date-dz-left pull-left comment-time">'+now+'</span>' +
+                '<a href="javascript:;" class="date-dz-z pull-right">' +
+                '<i class="date-dz-z-click-red"></i><i class="z-num">666</i></a>' +
+                '</div>' +
+                '</div>' +
+                '<div class="clear"></div>'+
+                '<div class="my-pl-con">&nbsp;'+ oSize +'</div>' +
+                '<div class="date-dz">' +
+                '<div class="date-dz-right pull-left comment-pl-block">' +
+                '<a href="javascript:;" class="date-dz-pl pl-hf hf-con-block pull-left"><img src="images/dp01.png">我要点评</a>' +
+                '<a href="javascript:;" class="removeBlock">删除</a>' +
+                '</div>' +
+                '</div>' +
+                '<div class="hf-list-con">' +
+                '</div>' +
+                '</div>';
+        if(oSize.replace(/(^\s*)|(\s*$)/g, "") != ''){
+            $(this).parents('.reviewArea ').siblings('.comment-show').prepend(oHtml);
+            $(this).siblings('.flex-text-wrap').find('.comment-input').prop('value','').siblings('pre').find('span').text('');
+        }
+    });
+</script>
+<!--点击回复动态创建回复块-->
+<script type="text/javascript">
+    $('.comment-show').on('click','.pl-hf',function(){
+        //获取回复人的名字
+        var fhName = $(this).parents('.date-dz-right').parents('.date-dz').siblings('.pl-text').find('.comment-size-name').html();
+        //回复@
+        var fhN = '回复@'+fhName+':';
+        //var oInput = $(this).parents('.date-dz-right').parents('.date-dz').siblings('.hf-con');
+        var fhHtml = '<div class="hf-con pull-left"> <textarea class="content comment-input hf-input" placeholder="" onkeyup="keyUP(this)"></textarea> <a href="javascript:;" class="hf-pl">评论</a></div>';
+        //显示回复
+        if($(this).is('.hf-con-block')){
+            $(this).parents('.date-dz-right').parents('.date-dz').append(fhHtml);
+            $(this).removeClass('hf-con-block');
+            $('.content').flexText();
+            $(this).parents('.date-dz-right').siblings('.hf-con').find('.pre').css('padding','6px 15px');
+            //console.log($(this).parents('.date-dz-right').siblings('.hf-con').find('.pre'))
+            //input框自动聚焦
+            $(this).parents('.date-dz-right').siblings('.hf-con').find('.hf-input').val('').focus().val(fhN);
+        }else {
+            $(this).addClass('hf-con-block');
+            $(this).parents('.date-dz-right').siblings('.hf-con').remove();
+        }
+    });
+</script>
+<!--评论回复块创建-->
+<script type="text/javascript">
+    $('.comment-show').on('click','.hf-pl',function(){
+        var oThis = $(this);
+        var myDate = new Date();
+        //获取当前年
+        var year=myDate.getFullYear();
+        //获取当前月
+        var month=myDate.getMonth()+1;
+        //获取当前日
+        var date=myDate.getDate();
+        var h=myDate.getHours();       //获取当前小时数(0-23)
+        var m=myDate.getMinutes();     //获取当前分钟数(0-59)
+        if(m<10) m = '0' + m;
+        var s=myDate.getSeconds();
+        if(s<10) s = '0' + s;
+        var now=year+'-'+month+"-"+date+" "+h+':'+m+":"+s;
+        //获取输入内容
+        var oHfVal = $(this).siblings('.flex-text-wrap').find('.hf-input').val();
+        console.log(oHfVal)
+        var oHfName = $(this).parents('.hf-con').parents('.date-dz').siblings('.pl-text').find('.comment-size-name').html();
+        var oAllVal = '回复@'+oHfName;
+        if(oHfVal.replace(/^ +| +$/g,'') == '' || oHfVal == oAllVal){
+
+        }else {
+            $.getJSON("json/pl.json",function(data){
+                var oAt = '';
+                var oHf = '';
+                $.each(data,function(n,v){
+                    delete v.hfContent;
+                    delete v.atName;
+                    var arr;
+                    var ohfNameArr;
+                    if(oHfVal.indexOf("@") == -1){
+                        data['atName'] = '';
+                        data['hfContent'] = oHfVal;
+                    }else {
+                        arr = oHfVal.split(':');
+                        ohfNameArr = arr[0].split('@');
+                        data['hfContent'] = arr[1];
+                        data['atName'] = ohfNameArr[1];
+                    }
+
+                    if(data.atName == ''){
+                        oAt = data.hfContent;
+                    }else {
+                        oAt = '回复<a href="#" class="atName">@'+data.atName+'</a> : '+data.hfContent;
+                    }
+                    oHf = data.hfName;
+                });
+
+                var oHtml = '<div class="all-pl-con">' +
+                        '<div class="pl-text hfpl-text clearfix">' +
+                        '<a href="#" class="comment-size-name plhs">我的名字</a>' +
+                        '<span class="date-dz-left pull-left comment-time plhs">'+now+'</span>' +
+                        '<span class="my-pl-con plhs1">'+oAt+'</span>' +
+                        '</div><div class="date-dz">' +
+                        '<div class="date-dz-right pull-right comment-pl-block plhs2">' +
+                        '<a href="javascript:;" class="removeBlock">删除</a>' +
+                        '<a href="javascript:;" class="date-dz-pl pl-hf hf-con-block pull-left plhs3">回复TA</a>' +
+                        '<a href="javascript:;" class="date-dz-z pull-left">' +
+                        '<i class="date-dz-z-click-red"></i><i class="z-num">666</i></a>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>';
+                oThis.parents('.hf-con').parents('.comment-show-con').find('.hf-list-con').css('display','block').prepend(oHtml) && oThis.parents('.hf-con').siblings('.date-dz-right').find('.pl-hf').addClass('hf-con-block') && oThis.parents('.hf-con').remove();
+            });
+        }
+    });
+</script>
+<!--删除评论块-->
+<script type="text/javascript">
+    $('.commentAll').on('click','.removeBlock',function(){
+        var oT = $(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con');
+        if(oT.siblings('.all-pl-con').length >= 1){
+            oT.remove();
+        }else {
+            $(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con').parents('.hf-list-con').css('display','none')
+            oT.remove();
+        }
+        $(this).parents('.date-dz-right').parents('.date-dz').parents('.comment-show-con').remove();
+
+    })
+</script>
+<!--点赞-->
+<script type="text/javascript">
+    $('.comment-show').on('click','.date-dz-z',function(){
+        var zNum = $(this).find('.z-num').html();
+        if($(this).is('.date-dz-z-click')){
+            zNum--;
+            $(this).removeClass('date-dz-z-click red');
+            $(this).find('.z-num').html(zNum);
+            $(this).find('.date-dz-z-click-red').removeClass('red');
+        }else {
+            zNum++;
+            $(this).addClass('date-dz-z-click');
+            $(this).find('.z-num').html(zNum);
+            $(this).find('.date-dz-z-click-red').addClass('red');
+        }
+    })
+</script>
+<script src="js/jquery.qrcode.min.js"></script>
+<script type="text/javascript">
+    function utf16to8(str) {
+        var out, i, len, c;
+        out = "";
+        len = str.length;
+        for (i = 0; i < len; i++) {
+            c = str.charCodeAt(i);
+            if ((c >= 0x0001) && (c <= 0x007F)) {
+                out += str.charAt(i);
+            } else if (c > 0x07FF) {
+                out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));
+                out += String.fromCharCode(0x80 | ((c >> 6) & 0x3F));
+                out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+            } else {
+                out += String.fromCharCode(0xC0 | ((c >> 6) & 0x1F));
+                out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+            }
+        }
+        return out;
+    }
+    content = utf16to8('手机扫一扫，45区精彩随身带！');
+    $('.output').qrcode({
+        width: 100,
+        height: 100,
+        render: "canvas",
+        correctLevel: 0,
+        text: content
+    });
+</script>
+
+</body>
+</html>

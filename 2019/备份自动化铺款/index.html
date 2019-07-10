@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>自动化铺款</title>
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+    <link href="css/froala_editor.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>-->
+    <script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="https://cdn.staticfile.org/html2canvas/0.5.0-beta4/html2canvas.js"></script>-->
+    <script type="text/javascript" src="js/jquery.dragsort-0.5.2.min.js"></script>
+    <script src="js/cicn.js"></script>
+    <script type="text/javascript">
+        function startUpload() {
+            document.getElementById('processing').innerHTML = 'loding...';
+            return true;
+        }
+        function stopUpload(rel){
+            var msg;
+            switch (rel) {
+                case 0:
+                    msg = "上传成功";
+                    break;
+                case 1:
+                    msg = "上传的文件超过限制";
+                    break;
+                case 2:
+                    msg = "只能上传csv文件";
+                    break;
+                default:
+                    msg = "上传文件失败";
+            }
+            document.getElementById('processing').innerHTML = msg;
+        }
+    </script>
+
+</head>
+
+<body  class="demo-1">
+
+<div class="cenwen">
+<div class="centop">
+    <div id="processing"></div>
+    <form action="upload.php" method="post" enctype="multipart/form-data" target="form-target" onsubmit="startUpload();">
+        <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+        <input class="cof" type="file" name="myfile" />
+        <input type="submit" name="sub" value="上传" />
+    </form>
+    <iframe style="width:0; height:0; border:0;" name="form-target"></iframe>
+</div>
+
+
+<div class="wenben cof">
+    请输入条数：
+    <input  type="text" id='btn' disable='disable' placeholder="请输入尺码表条数">
+    <p style="display: none;" id="title"></p><a href="javascript:loadScript('js/gus.js');" class="btn ps-cs6" style=" color: #ffffff">点击确认</a>
+    <a href="javascript:loadScript('js/hh.js');" class="btn" style=" color: #ffffff">再次点击</a>
+</div>
+
+    <div class="selectBigWidth cof">
+        请选择宽度:
+        <select name="selectwidth" id="selectbig">
+            <option>--宽度--</option>
+            <option>750</option>
+            <option>990</option>
+            <option>1200</option>
+            <!--<option>1430</option>-->
+            <!--<option>1600</option>-->
+            <!--<option>1920</option>-->
+        </select>
+        请选择列数:
+     <select name="rownumber" id="selectsmall">
+         <option>--列数--</option>
+         <option>2</option>
+         <option>4</option>
+         <option>5</option>
+         <!--<option>6</option>-->
+     </select>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+<div id="btn1">
+    <ul>
+        <li><a href="javascript:loadScript('js/fd.js');">放大移动</a></li>
+        <li><a id="btn-destroy" href="#" class="r-btn highlight text-small">关闭</a></li>
+        <li><a id="btn-init" href="#" class="r-btn text-small">开启</a></li>
+        <li><a class="sport" href="javascript:" >运动字体</a></a></li>
+        <li><a class="pink" href="javascript:" >pink字体</a></a></li>
+        <li><a class="qg" href="javascript:" >零点抢购</a></a></li>
+        <li><a href="javascript:loadScript('js/tp.js');" >生成图片</a></a></li>
+        <li><a href="javascript:loadScript('js/ydtp.js');" >移动模块</a></a></li>
+        <li><a id="download">下载图片</a></li>
+    </ul>
+</div>
+<script>
+    var oBtn = document.getElementById('btn');
+    var oTi = document.getElementById('title');
+    if('oninput' in oBtn){
+        oBtn.addEventListener("input",getWord,false);
+    }else{
+        oBtn.onpropertychange = getWord;
+    }
+    function getWord(){
+        oTi.innerHTML = oBtn.value;
+    }
+
+</script>
+<script type="text/javascript">
+    function loadScript(url,callback){
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = url;
+        if (script.readyState){//IE
+            script.onreadystatechange = function(){
+                if (script.readyState ==  "loaded" || script.readyState == "complete"){
+                    script.onreadystatechange = null;
+                    eval(callback + '()');
+                }
+            };
+        } else { //Others: Firefox, Safari, Chrome, and Opera
+            script.onload = function(){
+                eval(callback + '()');
+            };
+        }
+        document.body.appendChild(script);
+    }
+</script>
+
+<div class="horizontal-view box" >
+    <section id="editor">
+        <div id='edit'>
+    <div class="conten" id="app">
+        <h3 contenteditable="true">文胸</h3>
+        <h4 contenteditable="true">bras&bralettes</h4>
+        <ul id="list1" class="clearfix">
+            <li>
+                <div>
+                <span>
+                    <img class="dragAble fr-fir" src="images/21.jpg" >
+                </span>
+                <p contenteditable="true">光面无痕无钢圈无衬垫文胸</p>
+                <em>立即购买 ></em>
+                </div>
+            </li>
+            <li>
+                <div>
+                <span>
+                    <img class="dragAble fr-fir" src="images/22.jpg" >
+                </span>
+                <p contenteditable="true">光面无痕无钢圈无衬垫文胸</p>
+                <em>立即购买 ></em>
+                    </div>
+            </li>
+
+            <li>
+                <div>
+                <span>
+                    <img class="dragAble fr-fir" src="images/23.jpg" >
+                </span>
+                <p contenteditable="true">光面无痕无钢圈无衬垫文胸</p>
+                <em>立即购买 ></em>
+                    </div>
+            </li>
+            <li>
+                <div>
+                <span>
+                    <img class="dragAble fr-fir" src="images/24.jpg" >
+                </span>
+                <p contenteditable="true">光面无痕无钢圈无衬垫文胸</p>
+                <em>立即购买 ></em>
+                    </div>
+
+            </li>
+            <li>
+                <div>
+                <span>
+                    <img class="dragAble fr-fir" src="images/25.jpg" >
+                </span>
+                <p contenteditable="true">光面无痕无钢圈无衬垫文胸</p>
+                <em>立即购买 ></em>
+                    </div>
+            </li>
+            <li>
+                <div>
+                <span>
+                    <img class="dragAble fr-fir" src="images/26.png" >
+                </span>
+                <p contenteditable="true">光面无痕无钢圈无衬垫文胸</p>
+                <em>立即购买 ></em>
+                    </div>
+            </li>
+            <li>
+                <div>
+                <span>
+                    <img class="dragAble fr-fir" src="images/27.jpg" >
+                </span>
+                <p contenteditable="true">光面无痕无钢圈无衬垫文胸</p>
+                <em>立即购买 ></em>
+                    </div>
+            </li>
+            <li>
+                <div>
+                <span>
+                    <img class="dragAble fr-fir" src="images/28.jpg" >
+                </span>
+                <p contenteditable="true">光面无痕无钢圈无衬垫文胸</p>
+                <em>立即购买 ></em>
+                    </div>
+            </li>
+        </ul>
+        <h2>全部文胸<em>></em></h2>
+    </div>
+</div>
+
+    </section>
+
+    <div id="shift">
+    文案转换===>图片<br />
+    <progress class="progress" value="0" max="100"></progress>
+</div>
+<!-- canvas转换及图片裁剪区域 -->
+<div class="control">
+    <!-- 第一次生成canvas -->
+    <div id="createImg"></div>
+    <!-- 第一次生成图片 -->
+    <img id="firstImg" src=""  style="display: none" />
+    <!-- 裁剪第一次生成canvas -->
+    <canvas id="clipCanvas" style="display: none"></canvas>
+    <!-- 裁剪完的生成的图片 -->
+    <div id="finish" style="display: none">
+        <img id="result" src="" />
+    </div>
+
+</div>
+</div>
+
+
+
+<script src='js/anime.min.js'></script>
+<script src='js/particles.js'></script>
+<script src='js/demo.js'></script>
+
+
+
+<script type="text/javascript" src="canvas2image.js"></script>
+<script type="text/javascript" src="d.js"></script>
+
+
+<!---->
+
+<script type="text/javascript" src="canvas/jquery.qrcode.js" ></script>
+<script type="text/javascript" src="canvas/qrcode.js" ></script>
+<script type="text/javascript" src="css/html2canvas.js" ></script>
+<script type="text/javascript" src="canvas/canvas2image.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" ></script>
+<!--<div class="wblj">-->
+    <!--更改图片:-->
+    <!--<input class="wblj1" type="text" name="src">-->
+    <!--<input type="submit" id="wblj2" value="确认">-->
+<!--</div>-->
+
+
+
+<script src="wb/froala_editor.min.js"></script>
+<!--[if lt IE 9]>
+<script src="../wb/froala_editor_ie8.min.js"></script>
+<![endif]-->
+<script src="wb/plugins/tables.min.js"></script>
+<script src="wb/plugins/lists.min.js"></script>
+<script src="wb/plugins/colors.min.js"></script>
+<script src="wb/plugins/media_manager.min.js"></script>
+<script src="wb/plugins/font_family.min.js"></script>
+<script src="wb/plugins/font_size.min.js"></script>
+<script src="wb/plugins/letter-spacing.min.js"></script>
+<script src="wb/plugins/block_styles.min.js"></script>
+<script src="wb/plugins/video.min.js"></script>
+
+<script>
+
+
+
+
+//    $(function(){
+//        $('#edit').editable('destroy');
+//    });
+//
+//
+    // Destroy action.
+    $('#btn-destroy').on('click', function (e) {
+        e.preventDefault();
+
+        if ($('#edit').data('fa.editable')) {
+            $('#edit').editable('destroy');
+        }
+    });
+
+    // Initialize action.
+    $('#btn-init').on('click', function (e) {
+        e.preventDefault();
+
+        if (!$('#edit').data('fa.editable')) {
+            $('#edit').editable({
+                inlineMode: false,
+                alwaysBlank: true,
+                buttons: ['bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'fontFamily','LetterSpacing' ,'fontSize','formatBlock','align','color', 'blockStyle', 'inlineStyle', 'undo', 'redo',  'uploadFile', 'removeFormat', 'fullscreen']
+
+
+
+
+            });
+        }
+    });
+
+
+
+
+
+
+
+
+
+
+$(function() {
+  $('div#eg-custom-image-buttons').editable({
+    inlineMode: false,
+
+    // Set image buttons, including the name
+    // of the buttons defined in customImageButtons.
+    imageButtons: ['display', 'align', 'linkImage', 'info', 'removeImage'],
+
+    // Define custom image buttons.
+    customImageButtons: {
+      info: {
+        title: 'Image source',
+        icon: {
+          type: 'font',
+          value: 'fa fa-info'
+        },
+        callback: function ($img){
+          alert ($img.attr('src'));
+        },
+        refresh: function ($img) {
+          console.log ('Refresh image button');
+          console.log ($img);
+        }
+      }
+    }
+
+
+
+
+
+  })
+});
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+<!-- 模板 -->
+<script type="text/html" id="tmp">
+    <h3 contenteditable="true">{{product}}</h3>
+        <h4 contenteditable="true">{{english}}</h4>
+        <ul id="list1" class="clearfix">
+    {{each list as v i}}
+    <li>
+        <div>
+    <span>
+        <img class="dragAble" id="buitie" src="{{v.b}}" >
+    </span>
+    <p contenteditable="true">{{v.a}}</p>
+    <em>立即购买 ></em>
+        </div>
+    </li>
+ {{/each}}
+</ul>
+    <h2>全部文胸<em>></em></h2>
+</script>
+
+
+<script src="./js/template-web.js"></script>
+
+
+
+
+
+</html>

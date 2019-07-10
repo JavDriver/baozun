@@ -1,0 +1,1 @@
+document.writeln("300x250-2");

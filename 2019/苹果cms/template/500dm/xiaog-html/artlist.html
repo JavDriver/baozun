@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>最新电视。电影。娱乐，新闻资讯,{maccms:name},{maccms:name}电视,花絮,视频,资讯,动态,内地电视剧,港台电视剧,欧美电视剧,亚洲电视剧</title>
+<meta name="keywords" content="最新电视。电影。娱乐，新闻资讯,{maccms:name},{maccms:name}电视,花絮,视频,资讯,动态,内地电视剧,港台电视剧,欧美电视剧,亚洲电视剧" />
+<meta name="description" content="{maccms:name}综艺娱乐资讯全面展现每日最新综艺娱乐资讯新闻，最新电视人物新闻，最新电视剧视频片花。想了解电视剧最新动态，上{maccms:name}电视频道。" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="{maccms:templatepath}images/base.css" type="text/css" rel="stylesheet" />
+<script src="{maccms:templatepath}images/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="{maccms:templatepath}images/base.js" type="text/javascript"></script>
+<script src="{maccms:templatepath}images/log.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/all.css" />
+<link rel="shortcut icon" href="/favicon.ico" /> 
+<Style type="text/css"> 
+.gap_l {
+height: 0;
+overflow: hidden;
+line-height: 0;
+border-top: 2px solid #DBDBDB;
+margin: 10px 0;
+font-size: 0;
+clear: both;
+}
+</Style>
+ 
+</head>
+ 
+{maccms:head}
+<div class="wrapper">
+  <div id="side">
+  <div class="submenu">
+        <div class="boxTt nol">
+          <h2>资讯分类</h2>
+        </div>
+        <div class="boxCon">
+          <ul class="subList">
+		  {maccms:menulist table=art type=all}
+			<li class="[menulist:num]"><a href="[menulist:link]" title="[menulist:name]" target="_self">[menulist:name]</a><b></b></li> 
+			
+{/maccms:menulist}
+	</ul>
+        </div>
+      </div>
+	      
+      <div class="submenu">
+      <div class="boxTt top">
+        <h2>每日资讯排行</h2>
+      </div>
+      <div class="boxCon">
+        <div class="reboList rL nrL">
+          <ul>
+		    {maccms:artlist num=15  type=current by=dayhits}
+ 
+            <li>
+			  <em>
+            [artlist:numjoin]                        
+			</em><a href="[artlist:newslink] " title="[artlist:colortitle] ">[artlist:colortitle]</a>
+              </li>{/maccms:artlist}
+	  </ul>
+        </div>
+      </div>
+    </div>
+ <div class="submenu">
+      <div class="boxTt top">
+        <h2>每月资讯排行</h2>
+      </div>
+      <div class="boxCon">
+        <div class="reboList rL nrL">
+          <ul>
+ {maccms:artlist num=15 type=current by=weekhits}
+ 
+            <li>
+			  <em>
+            [artlist:numjoin]                        
+			</em><a href="[artlist:newslink] " title="[artlist:colortitle] ">[artlist:colortitle]</a>
+              </li>{/maccms:artlist}
+	  </ul>
+        </div>
+      </div>
+    </div>
+	<div class="leftAd">
+ad    </div>
+ 
+ <div class="submenu">
+      <div class="boxTt top">
+        <h2>资讯总排行</h2>
+      </div>
+      <div class="boxCon">
+        <div class="reboList rL nrL">
+          <ul>
+		    {maccms:artlist num=15 type=current by=all}
+ 
+            <li>
+			  <em>
+            [artlist:numjoin]                        
+			</em><a href="[artlist:newslink] " title="[artlist:colortitle] ">[artlist:colortitle]</a>
+              </li>{/maccms:artlist}
+	  </ul>
+        </div>
+      </div>
+    </div> 
+ </div>
+ 
+      <div class="submenu">
+ 
+           
+    </div>
+<!--判断是否有小类 -->  
+  <div class="dLeft ndl">
+    <div class="ibox iboxText playBox">
+      <div class="boxTt top">
+ <h2>{typepage:textlink} </h2>
+   </div>
+      <ul class="newsList">
+	  {maccms:artpagelist size=15}
+ 
+         <li>
+          <div class="ntt">[<a href="[pagelist:typelink]" title="[pagelist:typename]">[pagelist:typename]</a>]&nbsp; &nbsp; &nbsp;<a href="[pagelist:link]" title="[pagelist:title]">[pagelist:title]</a><span><font color="red"> [pagelist:time yyyy-mm-dd]</font></span></div>
+          <div class="ntext">
+    
+[pagelist:contenttext len=150]</a></div>
+          </li>{/maccms:artpagelist}
+  </ul>
+ 	<div class="gap_l"></div>
+<div class="pages">共{maccms:pagedata}篇文章 当前:{maccms:pagenow}/{maccms:pagecount}  页 
+ 
+<span>共{maccms:pagedata}条记录</span>
+<a href="{maccms:pagefirst}">首页</a><a href="{maccms:pagepre}">上一页</a>
+<a href="{maccms:pagenext}">下一页</a>
+<a href="{maccms:pagelast}">尾页</a>
+</div>
+            </div>
+ 
+  </div> </div>
+</div>
+ 
+ 
+{maccms:foot}
+</body>
+</html>

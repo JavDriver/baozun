@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    #box{width: 300px;
+        height:300px;
+    background: #000000;
+    }
+    .sild{ display: block;}
+    .hidden{display: none;}
+
+</style>
+<input id="bth" type="button" value="隐藏">
+<br>
+<div id="box" class="sild">
+
+</div>
+
+<script>
+    var bth = document.getElementById('bth');
+    var box = document.getElementById('box');
+    bth.onclick = function(){
+       if (box.className == 'sild'){
+           box.className = 'hidden';
+           bth.value = '显示';
+       }else {
+           box.className = 'sild';
+           bth.value = '隐藏';
+       }
+
+    }
+console.log(box.className)
+
+</script>
+
+</body>
+</html>

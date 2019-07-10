@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span id="day">00</span><span>天</span>
+<span id="hour">00</span><span>时</span>
+<span id="minute">00</span><span>分</span>
+<span id="second">00</span><span>秒</span>
+<script>
+ var spanDay = document.getElementById('day');
+ var spanHour = document.getElementById('hour');
+ var spanMinute = document.getElementById('minute');
+ var spanSecond = document.getElementById('second');
+
+ var endDate = new Date('2019-11-11');
+ setInterval(getSometime,1000);
+ getSometime();
+
+ function getSometime(){
+   var interval = new Date();
+     var starDate = countDown(interval,endDate);
+     spanDay.innerHTML = starDate.day;
+     spanHour.innerHTML = starDate.hour;
+     spanMinute.innerHTML = starDate.minute;
+     spanSecond.innerHTML = starDate.second;
+ }
+
+
+ function countDown(start,end){
+     var interval = end - start;
+     var day,hour, minute, second;
+     interval /= 1000;
+
+     day = Math.round(interval / 60 / 60 / 24);
+     hour = Math.round(interval / 60 / 60 % 24);
+     minute = Math.round(interval / 60 % 60);
+     second = Math.round(interval % 60);
+      return{
+          day: day,
+          hour: hour,
+          minute: minute,
+          second: second
+      }
+
+ }
+
+</script>
+</body>
+</html>

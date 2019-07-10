@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="format-detection" content="telephone=no"/>
+    <title>济数</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css"/>
+  <link rel='stylesheet' id='main-styles-css'  href='css/style.css' type='text/css' media='all' />
+  <link href="css/base.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <script src='js/jquery.min.js'></script>
+  <script src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/zepto.js"></script>
+  <script type="text/javascript" src="js/tabslider.js"></script>
+  <script type='text/javascript' src='js/modernizr.js'></script>
+</head>
+<body>
+<!--header-->
+<div class="mobile">
+  <div class="mobile-inner">
+    <div class="mobile-inner-header">
+      <div class="logoLeft"><img src="images/logo.png"> </div>
+      <div class="mobile-inner-header-icon mobile-inner-header-icon-out"><span></span><span></span></div>
+    </div>
+    <div class="mobile-inner-nav">
+      <a href="#">首页</a>
+      <a href="#">关于我们</a>
+      <a href="#">产品介绍</a>
+      <a href="#">解决方案</a>
+      <a href="#">新闻中心</a>
+    </div>
+
+
+  </div>
+</div>
+<!--video-->
+<div class="indexVidoe clearfix">
+<video id="video1" class="indexBanner" autoplay> </video>
+<header class="clearfix">
+  <div class="w1200 clearfix">
+    <div class="logoLeft">
+      <a href="#">
+        <img src="images/logo.png">
+      </a>
+    </div>
+    <div class="headerRight">
+      <a href="#">登录Demo</a>
+    </div>
+    <div class="nav clearfix">
+      <ul class="clearfix">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">产品介绍</a></li>
+        <li><a href="#">解决方案</a></li>
+        <li><a href="#">新闻中心</a></li>
+      </ul>
+    </div>
+
+  </div>
+</header>
+
+  <canvas id="c" width="640" height="744"></canvas>
+
+  <script src='js/dat.gui.min.js'></script>
+  <script src="js/index.js"></script>
+
+<div class="videoZz">
+<div class="w1200 clearfix">
+  <a href="#"><img class="videoZz1 animated-content move_up1" src="images/index02.png"> </a>
+</div>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+  var vList = [ 'video/night.mp4', 'video/night.mp4' ]; // 初始化播放列表 var
+  vLen = vList.length; // 播放列表的长度
+  var curr = 0; // 当前播放的视频
+  var video = document.getElementById("video1");
+  video.addEventListener('ended', play);
+  play();
+  function play() {
+    var video = document.getElementById("video1");
+    video.src = vList[curr];
+    video.load(); //如果短的话，可以加载完成之后再播放，监听 canplaythrough 事件即可
+
+    curr++;
+    if (curr >= vLen)
+      curr = 0; // 播放完了，重新播放
+  }
+</script>
+</div>
+
+
+
+
+
+<!--内容-->
+<div class="index1 clearfix ">
+<div class="index11 w1200 clearfix">
+  <dl class="clearfix animated-content move_left">
+    <dt><img src="images/index11.png"> </dt>
+    <dd><h3>私有云部署</h3>
+    <p>企业内网部署，绝对保障数据安全</p></dd>
+  </dl>
+  <dl class="clearfix animated-content move_left">
+    <dt><img src="images/index12.png"> </dt>
+    <dd><h3>数据全面可视化</h3>
+      <p>深度挖掘数据，洞察数据规律</p></dd>
+  </dl>
+  <dl class="clearfix animated-content move_left">
+    <dt><img src="images/index13.png"> </dt>
+    <dd><h3>打造医疗敏捷BI</h3>
+      <p>即席式分析，建立企业智能决策中心</p></dd>
+  </dl>
+  <dl class="clearfix animated-content move_left">
+    <dt><img src="images/index14.png"> </dt>
+    <dd><h3>天道至简，体验为王</h3>
+      <p>简单的操作，极致的体验</p></dd>
+  </dl>
+</div>
+
+</div>
+
+
+<div class="w1200 index21 animated-content move_up1">
+<h2>轻量级医疗SEM大数据集成分析系统</h2>
+<p>医疗数据分析首选工具，前所未有的效率提升</p>
+<img src="images/index211.png">
+</div>
+
+<div class="index22 w1200 clearfix animated-content move_up1">
+ <ul class="clearfix">
+   <li><span></span>
+   <h3>驾驶仓</h3>
+     <p>数据汇总中心，集合多种数据视图，丰富而深入，从不同角度展示数据，简单易用，随意切换，给您极致的视觉享受。</p>
+   </li>
+   <li><span></span>
+     <h3>客服中心</h3>
+     <p>依托于强大的数据处理能力，提供行业
+       内最科学的管理理念，帮助企业实现智
+       能化、标准化的人员管理。</p>
+   </li>
+   <li><span></span>
+     <h3>数据报表</h3>
+     <p>多种核心报表自动生成，摒弃传统手工
+       报表费时、费力的弊端，提供工作效率
+       降低企业成本。</p>
+   </li>
+   <li><span></span>
+     <h3>逻辑设置</h3>
+     <p>覆盖医疗项目整体运营逻辑的设置，全
+       面的核心逻辑关联，为企业打造医疗营
+       销领域的敏捷BI系统。</p>
+   </li>
+   <li><span></span>
+     <h3>数据分析</h3>
+     <p>融合交互式自助BI、数据深度挖掘、数
+       据建模等多种分析方法，实现数据的可
+       视化探索与深度分析。</p>
+   </li>
+   <li><span></span>
+     <h3>驾系统服务驶仓</h3>
+     <p>为企业内不同级别的管理人员提供全面
+       的数据信息，帮助他们快速理解和运用
+       数据，做出明智的决策。</p>
+   </li>
+
+ </ul>
+
+</div>
+
+
+
+
+
+
+<div class="index31 clearfix">
+  <div class="w1200 clearfix">
+    <div id="tabSlider1" class="tabSlider">
+
+
+      <div class="tabSlider-bd">
+
+        <div class="tabSlider-wrap">
+
+          <div class="tabSlider-box curr">
+<dl class="clearfix">
+  <dd  class="animated-content move_up2"><h3>可视界面</h3>
+  <p>一键接入各大引擎推广平台，直接生成多
+    种图表并展示 ,使靠代码才能实现的业务
+    需求，通过简单操作即可实现，轻松制出
+    数据报表。</p>
+    <a href="#"><div class="anim"></div>了解更多...</a>
+  </dd>
+<dt>	<div class="movie animated-content move_right">
+  <div class="movie__card">
+    <div class="layer-3"><img src="images/index311.png"></div>
+  </div>
+</div></dt>
+</dl>
+
+          </div>
+
+          <div class="tabSlider-box">
+            <dl class="clearfix">
+              <dd><h3>智能关联</h3>
+                <p>强大的系统逻辑设置功能，覆盖整体医疗
+                  运营项目，全面的核心数据关联，让管理
+                  者轻松掌握项目全局，从而合理分配资源。</p>
+                <a href="#"><div class="anim"></div>了解更多...</a>
+              </dd>
+              <dt><div class="movie">
+              <div class="movie__card">
+                <div class="layer-3"><img src="images/index312.png"></div>
+              </div>
+            </div></dt>
+            </dl>
+          </div>
+
+          <div class="tabSlider-box">
+            <dl class="clearfix">
+              <dd><h3>维度分析</h3>
+                <p>整体分析，逐一对比，从渠道、地区、病
+                  种等多个指标绘制消费趋势，并根据分析
+                  结果调整业务方向，建立持久健康的决策
+                  模式。</p>
+                <a href="#"><div class="anim"></div>了解更多...</a>
+              </dd>
+              <dt><div class="movie animated-content move_right">
+              <div class="movie__card">
+                <div class="layer-3"><img src="images/index313.png"></div>
+              </div>
+            </div></dt>
+            </dl>
+          </div>
+
+          <div class="tabSlider-box">
+            <dl class="clearfix">
+              <dd><h3>预测分析</h3>
+                <p>高效快速处理数据，保证数据精准的同时
+                  更注重数据处理效率，深度分析每个指标
+                  的运营趋势，帮助管理人员提高决策效率。</p>
+                <a href="#"><div class="anim"></div>了解更多...</a>
+              </dd>
+              <dt><div class="movie animated-content move_right">
+              <div class="movie__card">
+                <div class="layer-3"><img src="images/index314.png"></div>
+              </div>
+            </div></dt>
+            </dl>
+          </div>
+          <div class="tabSlider-box">
+            <dl class="clearfix">
+              <dd><h3>导入导出</h3>
+                <p>支持 PC 端与移动端的数据分析，用户可
+                  以随时随地查看数据，同时每个图表都支
+                  持下载，只要有网就有数据，让数据无处
+                  不在。</p>
+
+                <a href="#"><div class="anim"></div>了解更多...</a>
+              </dd>
+              <dt><div class="movie animated-content move_right">
+              <div class="movie__card">
+                <div class="layer-3"><img src="images/index315.png"></div>
+              </div>
+            </div></dt>
+            </dl>
+          </div>
+          <div class="tabSlider-box">
+            <dl class="clearfix">
+              <dd><h3>数据管理</h3>
+                <p>整合数据资源，消除“数据孤岛”，强大
+                  的处理技术，可将数十万包含计算公式的
+                  数据快速导出为 Excel 文件，轻松处理海
+                  量数据。</p>
+                <a href="#"><div class="anim"></div>了解更多...</a>
+              </dd>
+              <dt><div class="movie animated-content move_right">
+              <div class="movie__card">
+                <div class="layer-3"><img src="images/index316.png"></div>
+              </div>
+            </div></dt>
+            </dl>
+          </div>
+
+
+
+        </div>
+
+      </div>
+      <ul class="tabSlider-hd">
+        <li class="curr"><span></span>可视界面</li>
+        <li><span></span>智能关联</li>
+        <li><span></span>维度分析</li>
+        <li><span></span>预测分析</li>
+        <li><span></span>导入导出</li>
+        <li><span></span>数据管理</li>
+      </ul>
+
+    </div>
+
+
+
+  </div>
+</div>
+
+<div class="index41 w1200 animated-content move_up1">
+  <h3>追求创新与高效的医疗企业都在使用济术MVP</h3>
+  <p>“知而不行，是为不知，行而不知，可以致知”，济术MVP，一款专注于医疗营销大数据集成智能分析管理系统，具备高强度、多维度的可视化数据处理、分析、管理能力
+    给传统的思维与报表，重新定义概念，济术MVP致力于打造医疗界的BI。</p>
+</div>
+
+<div class="index42 clearfix w1200 animated-content move_up3">
+<ul class="clearfix">
+<li><a href="#"><img src="images/inedx4_1.jpg"/> </a></li>
+  <li><a href="#"><img src="images/inedx4_2.jpg"/> </a></li>
+  <li><a href="#"><img src="images/inedx4_3.jpg"/> </a></li>
+  <li><a href="#"><img src="images/inedx4_4.jpg"/> </a></li>
+  <li><a href="#"><img src="images/inedx4_5.jpg"/> </a></li>
+  <li><a href="#"><img src="images/inedx4_6.jpg"/> </a></li>
+  <li><a href="#"><img src="images/inedx4_7.jpg"/> </a></li>
+  <li><a href="#"><img src="images/inedx4_8.jpg"/> </a></li>
+
+</ul>
+
+</div>
+
+<div class="index51 clearfix">
+ <div class="w1200 clearfix">
+   <div class="index52 animated-content move_up3">
+<h3>人们都在说什么？</h3>
+<p>89%的业内人士认为，MVP是开创全新医疗营销模式的机遇</p>
+     <img src="images/index211.png">
+ </div>
+   <div class="index53 animated-content move_up3">
+     <div class="banner">
+       <div class="swiper-container bannerc">
+         <div class="swiper-wrapper">
+           <div class="swiper-slide">
+            <dl class="clearfix">
+              <dt><img src="images/index51.png" ></dt>
+              <dd><h4>某某院长</h4>
+<p>济术为非常有潜力的创新型科技企业，以强大的数据分析能力和企业信息化基础设施的构建能力，能够助力企业提高智能化决策效率；基于公司团队多年行业经验提供
+  的定制化服务专业、及时、认真、贴心，能够精准化触达用户目标，帮助用户在关键阶段出奇制胜。</p>
+              </dd>
+            </dl>
+
+           </div>
+
+           <div class="swiper-slide">
+             <dl class="clearfix">
+               <dt><img src="images/index51.png" ></dt>
+               <dd><h4>某某院长</h4>
+                 <p>济术为非常有潜力的创新型科技企业，以强大的数据分析能力和企业信息化基础设施的构建能力，能够助力企业提高智能化决策效率；基于公司团队多年行业经验提供
+                   的定制化服务专业、及时、认真、贴心，能够精准化触达用户目标，帮助用户在关键阶段出奇制胜。</p>
+               </dd>
+             </dl>
+
+           </div>
+
+           <div class="swiper-slide">
+             <dl class="clearfix">
+               <dt><img src="images/index51.png" ></dt>
+               <dd><h4>某某院长</h4>
+                 <p>济术为非常有潜力的创新型科技企业，以强大的数据分析能力和企业信息化基础设施的构建能力，能够助力企业提高智能化决策效率；基于公司团队多年行业经验提供
+                   的定制化服务专业、及时、认真、贴心，能够精准化触达用户目标，帮助用户在关键阶段出奇制胜。</p>
+               </dd>
+             </dl>
+
+           </div>
+
+         </div>
+         <!-- Add Pagination -->
+         <div class="swiper-pagination"></div>
+         <!-- Add Arrows -->
+
+       </div>
+
+       <script>
+         var swiper = new Swiper('.bannerc', {
+           pagination: '.swiper-pagination',
+           paginationElement: 'li',
+           paginationClickable: true,
+
+           //mousewheelControl: true,
+           //centeredSlides: true,
+           slidesPerView: 1,
+           autoplay: 5000,
+           autoplayDisableOnInteraction: false
+         });
+       </script>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+<div class="index6 clearfix">
+  <div class="w1200">
+<div class="index6Left animated-content move_left">
+  <h3>产品动态</h3>
+  <div class="index61 clearfix">
+<img src="images/index61.jpg">
+<ul class="clearfix">
+  <li><a href="#"><span></span>【产品动态】买了没开门麦科勒姆来了没了吗...<em>2018-07-30</em></a></li>
+  <li><a href="#"><span></span>【产品动态】买了没开门麦科勒姆来了没了吗...<em>2018-07-30</em></a></li>
+  <li><a href="#"><span></span>【产品动态】买了没开门麦科勒姆来了没了吗...<em>2018-07-30</em></a></li>
+  <a class="index62" href="#">查看更多</a>
+</ul>
+  </div>
+</div>
+    <div class="index6Right animated-content move_right">
+      <h3>公司新闻</h3>
+      <div class="index61 clearfix">
+        <img src="images/index61.jpg">
+        <ul class="clearfix">
+          <li><a href="#"><span></span>【产品动态】买了没开门麦科勒姆来了没了吗...<em>2018-07-30</em></a></li>
+          <li><a href="#"><span></span>【产品动态】买了没开门麦科勒姆来了没了吗...<em>2018-07-30</em></a></li>
+          <li><a href="#"><span></span>【产品动态】买了没开门麦科勒姆来了没了吗...<em>2018-07-30</em></a></li>
+          <a class="index62" href="#">查看更多</a>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="index7 clearfix">
+  <div class="w1200 index771 animated-content move_up3">
+    <h3>进一步了解MVP大数据</h3>
+    <p>如需更深入了解MVP大数据，请填写以下信息，我们会尽快安排专业人员与你沟通，帮助你快速建立企业数据解决方案</p>
+    <ul class="clearfix">
+      <li><input type="text" placeholder="姓名"></li>
+      <li><input type="text" placeholder="公司名称"></li>
+      <li><input type="text" placeholder="职位"></li>
+      <li><input type="tel" placeholder="联系电话"></li>
+    </ul>
+    <input type="submit" class="index71" value="立即提交">
+  </div>
+</div>
+
+
+<div class="footer clearfix">
+  <div class="w1200 footer1 clearfix">
+  <ul class="clearfix animated-content move_left">
+    <li>
+      <h4>关于我们</h4>
+      <a href="#">企业文化</a>
+      <a href="#">企业发展</a>
+      <a href="#">企业服务</a>
+      <a href="#">媒体报道</a>
+    </li>
+    <li>
+      <h4>产品方案</h4>
+      <a href="#">驾驶仓</a>
+      <a href="#">数据报表</a>
+      <a href="#">客服中心</a>
+      <a href="#">数据分析</a>
+      <a href="#">项目预设</a>
+      <a href="#">系统设置</a>
+    </li>
+    <li>
+      <h4>新闻中心</h4>
+      <a href="#">行业新闻</a>
+      <a href="#">产品动态</a>
+    </li>
+    <li>
+      <h4>联系我们</h4>
+      <a href="#">地址：上海市宝山区上大路678号</a>
+      <a href="#">电话：021-452152256</a>
+      <a href="#">手机：15423695742</a>
+      <a href="#">网址：www.baidu.com</a>
+      <a href="#">邮箱：4521785412@.com</a>
+    </li>
+  </ul>
+
+<img class="animated-content move_right" src="images/foot01.png">
+
+
+  </div>
+
+</div>
+
+
+<div class="bottom">
+  Copyright © 上海济术网络科技有限公司      All Rights Reserved.     技术支持：上海济术    沪ICP备18011127号
+</div>
+
+
+<script type="text/javascript">
+
+  $(function(){
+    app.TabSlider('#tabSlider1');
+  });
+
+</script>
+
+
+
+<script src="js/jquery.hover3d.js" ></script>
+<script>
+  $(document).ready(function(){
+    $(".movie").hover3d({
+      selector: ".movie__card",
+      shine: true,
+      sensitivity: 20,
+    });
+  });
+
+</script>
+<script>
+  $(window).load(function () {
+    $(".mobile-inner-header-icon").click(function(){
+      $(this).toggleClass("mobile-inner-header-icon-click mobile-inner-header-icon-out");
+      $(".mobile-inner-nav").slideToggle(250);
+    });
+    $(".mobile-inner-nav a").each(function( index ) {
+      $( this ).css({'animation-delay': (index/10)+'s'});
+    });
+  });
+</script>
+
+
+<script type='text/javascript' src='js/main.js'></script>
+</body>
+</html>

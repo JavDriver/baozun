@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>2016年必看热门影片推荐，全部免费在线观看！火速收藏！</title>
+<link href="{maccms:path_tpl}/css/ms.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+{maccms:head}
+<div id="content">
+  <div class="c-box">
+    <div class="title">
+      <h2>以下是搜索结果：温馨提示本站内容不断完善中</h2>
+    </div>
+    <div class="plist">
+      <ul>
+        {maccms:vod pagesize=10 order=desc by=time}
+        <li>
+          <div class="video"><a href="[vod:playlink]" class="pic"><img src="[vod:pic]" alt="[vod:name]"></a><a href="[vod:playlink]" class="set">[vod:remarks]</a></div>
+          <a href="[vod:playlink]">[vod:name]</a></li>
+        {/maccms:vod}
+      </ul>
+    </div>
+  </div>
+</div>
+{maccms:foot}<!--这里是尾巴-->
+</body>
+</html>

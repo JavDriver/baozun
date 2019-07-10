@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{maccms:name}-中国第一影视门户 高清影视剧、网络视频在线观看</title>
+<meta name="description" content="{maccms:name}（{maccms:url}）是最具价值的网络视频播放平台;是国内首家专注于提供免费、高清网络视频服务的大型专业网站.">
+<meta name="keywords" content="最新高清电影网,百度影音电影下载,快播电影下载,免费电影,2013热门最新电影,小俊影视电影,最新电影,小俊影视,免费电影,小俊模板,高清电影,免费高清电影,热门电影,快播热门电影,热门电影下载">
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/index_20121227.css">
+ <link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/tv/global_index.css" media="all">
+</head>
+<body class="qs">
+<div class="tool-box">
+  <!-- 标准导航 -->
+<!-- nav-top Start -->
+<div class="navTopNew1">
+	<div class="navMid1 clearfix">
+		<div class="topNavLt">
+				<div class="topLogo">
+		<a href="{maccms:path}"><img src="{maccms:templatepath}images/logo.png" title="{maccms:name}" alt="{maccms:name}">
+		</a>
+	</div>
+			<div class="topDot">
+				<h2>好影视</h2>
+			</div>
+		</div>
+		<div class="topNavMid">
+		</div>
+ <div class="topNavRt">
+            <div class="topLogin"> 
+                <div class="usrTx-box">
+                    <div>			
+                          <a href="{maccms:userlink} ">登录/注册</a>
+						  <span class="gline">|</span>					
+						  <a href="{maccms:path}zhibo.html">电视直播</a>
+						  <span class="gline">|</span>
+						  <a href="{maccms:vodmaplink}">网站地图</a>
+						  <span class="gline">|</span>
+						  <a href="{maccms:gbooklink}">用户留言</a>		
+                    </div>             
+                </div>
+            </div>
+			<!--new=login end-->
+			<div class="searchbox">
+				<form name="" action="{maccms:searchlink}" method="get" action="{maccms:searchlink}" method="get" name="search" id="search" target="_blank">
+				<div class="srchDef">
+					<span class="in"><input type="text" class="navTopTxt" value="请输入视频名、导演或主演"  onfocus="if(this.value=='请输入视频名、导演或主演'){this.value='';}"   onblur="if(this.value==''){this.value='请输入视频名、导演或主演'}"  id="keyword" name="keyword" autocomplete="off" maxlength="36"></span>
+					<span class="out"><input class="navTopBtn" type="submit" value=""></span>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- nav-top End -->
+</div>
+<div style="height:5px"></div>
+<!-- nav second Start -->
+<div class="second_newmenu">
+	<div class="navboxSecond">
+		<div class="subNav">
+			<div class="navLt">
+				<a href="{maccms:path}" class="selected">首页</a>|
+				{maccms:menulist table=vod parent=0 order=asc}
+				<a alt="[menulist:name]" title="[menulist:name]" href="[menulist:link]">[menulist:name]</a>|
+				{/maccms:menulist}
+				<a href="{maccms:path}zhibo.html">网络直播</a>|
+                <a href="{maccms:artindexlink}">娱乐资讯</a>|
+			    <a href="{maccms:vodtopiclink}">影视专题</a>|
+			</div>
+			<div class="navRt">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="newNav">
+{label:huandeng.html}
+</div>
+<!-- nav second End -->
+<div class="wrap">
+  <div align="center">
+  <script src="{maccms:templatepath}ads/index980x90-1.js"></script>
+  </div>
+  <div class="layout">
+    <div class="l_bd">
+      <!--left-->   
+      <div class="tainment660">
+                <!--通用标题_START-->
+                <div class="box_tt" data-widget="addunderline">
+                    <h2 class="title_1"><a style="text-decoration: none;" data-textdecoration="none" class="ui-droppable" title="推荐5数据" href="#">推荐5数据</a></h2>
+<div class="extend"> </div>
+                </div>
+ 
+                <!--通用标题_END-->
+                <!--con1-->
+                <div class="partA">
+                   <!--图片轮播-->
+                     <div class="partA_a">
+                        {maccms:vodlist num=1 type=all level=5 by=time order=desc}
+                        <div class="pic_title">                           
+ <h2> <a class="ui-droppable" href="[vodlist:playlink]" target="_self"><img title="[vodlist:name]" alt="[vodlist:name]" height="169" width="300" src="[vodlist:pic]" onerror="src='{maccms:templatepath}images/nopic.gif'"></a><a class="ui-droppable" title="[vodlist:name]" href="[vodlist:playlink]"></a> 
+          </h2>
+					    </div>
+						{/maccms:vodlist}
+                    </div>
+                    <!--图片轮播_end-->
+                  <!--头条-->
+			<div class="headline">
+				<ul>
+{maccms:vodlist num=1 type=all level=5 start=2 by=time order=desc}
+<li><h2><a class="ui-droppable" href="[vodlist:typelink]">
+<span class="ui-droppable"><b>[头条]</b></span></a>
+<a style="font-weight: bold;" class="ui-droppable" title="[vodlist:name]" href="[vodlist:link]">[vodlist:name len=18]</a>
+</h2> 
+相关分类:<a class="ui-droppable" title="[vodlist:typename]" href="[vodlist:link]">[vodlist:typename]
+</li>
+{/maccms:vodlist}
+{maccms:vodlist num=3 type=all level=5 start=3 by=time order=desc}
+<li {if:[vodlist:num] < 2 }style="display:none;"{end if}><h2>
+<a style="font-weight: bold;" class="ui-droppable" title="[vodlist:name]" href="[vodlist:link]">[vodlist:name len=18]</a> </h2>
+<p>相关分类:<a class="ui-droppable" title="[vodlist:typename]" href="[vodlist:link]">[vodlist:typename]</p>
+</li>
+{/maccms:vodlist}
+              </ul>
+                    </div>
+                    <!--头条_END-->
+                </div>
+                <!--con1-->
+                <!--con2-->
+                <div class="partB">
+                    <ul class="movielist">
+					 {maccms:vodlist num=5 type=all level=5 start=9 by=time order=desc}
+<li {if:[vodlist:num] < 2 }style="display:none;"{end if}><a href="[vodlist:link]" class="pic"><img  src="[vodlist:pic]" alt="[vodlist:name]" title="[vodlist:name]" height="81" width="130"></a>
+<p class="movielist_tt"><a title="[vodlist:name]" class="" href="[vodlist:link]">[vodlist:name len=10]</a></p>
+</li>
+                     {/maccms:vodlist}   
+                    </ul>
+                </div>
+                <!--con2-->
+            </div>
+ 
+      <!--end-->
+      <!--right-->
+      <div class="ty_right">
+        <!--C-->
+        <div class="mb5">
+                    <!--通用标题2-->
+                    <div class="box_t2"> <a href="{maccms:vodtopiclink}" class="s4_1 zhuanti ui-droppable">更多<em></em></a> <a href="{maccms:vodtopiclink}" class="s1 ui-droppable">明星专题</a></div>
+                    <!--通用标题2-->
+                    <ul class="stroll_list">
+                    {maccms:topiclist num=2 order=desc by=id table=vod}
+                          <li><a href="[topiclist:link]" title="[topiclist:name]" class="pic_0 ui-droppable"> <img title="[topiclist:name]" data-lazy="[topiclist:pic]" alt="[topiclist:name]" height="60" width="130" src="[topiclist:pic]"></a>
+                            <p class="textlist"> <a class="ui-droppable" href="[topiclist:link]" title="[topiclist:name]">[topiclist:name len=10]</a></p>
+                        </li>
+					{/maccms:topiclist}	
+                        </ul>
+                </div>       
+<strong></strong>
+ 
+        <!--END-->
+        <!--D-->      
+        <div class="partD" collection="Y">
+<!--通用标题2-->
+<div class="box_t2"> <a class="s2" href="#">热门风云榜</a> </div>
+<!--通用标题2-->
+<!--ranking-->
+<ul class="Ranking_list">
+{maccms:vodlist num=8 type=all by=weekhits order=desc}
+		<li> <em>[vodlist:num]</em> <a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]">[vodlist:name len=18]</a></li>
+{/maccms:vodlist}
+</ul>
+<!--end-->
+</div>
+        <!--END-->
+      </div>
+      <!--end-->
+    </div>
+	
+    <div class="l_ft"></div>
+  </div>
+  <!--广告-->
+  <div align="center">
+  <script src="{maccms:templatepath}ads/index980x90-2.js"></script>
+  </div>
+  <!--广告-->
+  {maccms:typematrix type=1 table=vod}
+  <!--电影_start-->  <div class="layout">
+    <div class="l_hd"></div><div class="l_bd">
+      <!--left-->
+      <div class="tainment660" collection="Y">
+        <div class="box_tt" data-widget="addunderline">
+          <h2 class="title_2">
+	  <a title="电影" href="[typematrix:link]" data-textdecoration="none" style="text-decoration: initial;">电影</a></h2>
+          <div class="extend"> 
+		  {maccms:menulist table=vod parent=[typematrix:id] order=asc}
+		  <a alt="[menulist:name]" title="[menulist:name]" href="[menulist:link]">[menulist:name]</a>
+		  {/maccms:menulist}
+          </div>
+          <a href="[typematrix:link]" class="s4_1 shishang ui-droppable" data-textdecoration="none" style="text-decoration: initial;">更多<em></em></a> </div>
+        
+	<div class="partE">
+          <ul class="movielist movielist_b mb_15">
+	    {maccms:vodlist num=10 type=[typematrix:id] by=time order=desc}
+	    <li> <a href="[vodlist:link]" class="pic"><img src="[vodlist:pic]" onerror="src='{maccms:templatepath}images/nopic.gif'" alt="[vodlist:name]" title="[vodlist:name]" j-dlgbubble="true" height="149" width="112"> <span class="cqBg"></span><span class="movbg"></span> <span class="movtxt">[vodlist:remarks]</span> </a>
+              <p class="movielist_tt"><a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]" j-delegate="loction2Watched">[vodlist:name len=8]</a></p>
+            </li>
+		{/maccms:vodlist}
+          </ul>
+        </div>
+      </div>
+ 
+      <!--end-->
+      <!--right-->
+      <div class="ty_right">
+        <!--分类搜索-->
+        <div class="partC">
+          <div class="sou-panel"> <span class="souIn">
+		  <form action="{maccms:searchlink}" method="get" name="search" id="search" target="_blank">
+            <input type="text"value="请输入视频名、导演或主演"  onfocus="if(this.value=='请输入视频名、导演或主演'){this.value='';}"   onblur="if(this.value==''){this.value='请输入视频名、导演或主演'}"  id="keyword" name="keyword" autocomplete="off" maxlength="36" class="souTxt">
+            </span> <span class="souOut">
+            <input type="hidden" name="type" value="1" />
+			<input class="souBtn" type="submit" value="">
+			</form>	
+            </span> </div>
+          <p class="retrieve">
+		  {maccms:menulist table=vod parent=1 order=asc}
+		  <a alt="[menulist:name]" title="[menulist:name]" href="[menulist:link]">[menulist:name]</a>
+		  {/maccms:menulist}
+	      </p>
+        </div>
+ 
+        <!--end-->
+        <!--最新片花-->
+        <div class="partC partH">
+          <div class="box_t2"><a href="" title="最新更新电影" class="s4">最新更新</a></div>
+		  <!--最新添加-->     
+         <div class="clearfix">		 
+			{maccms:vodlist num=10 type=1 by=time order=desc}
+            <div class="zhuanqu">
+              <div class="common_t"><span class="ui-droppable"><a href="[vodlist:typelink]" title="[vodlist:typename]" class="ui-droppable">[vodlist:typename]</a></span><b>|</b><a href="[vodlist:link]" title="[vodlist:name]" class="ui-droppable">[vodlist:name len=7]</a></div>
+            </div>
+			{/maccms:vodlist}
+          </div>
+        <!--end-->
+        </div>
+        <!--end-->
+        <!--电视风云榜-->
+        <div class="partD" collection="Y">
+<!--通用标题2-->
+<div class="box_t2"><a class="s6" href="[typematrix:link]">电影风云榜</a> </div>
+<!--通用标题2-->
+<!--ranking-->
+<div class="tvbox">
+<ul class="Ranking_list">
+        {maccms:vodlist num=6 type=1 by=monthhits order=desc}
+		<li> <em>[vodlist:num]</em> <a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]">[vodlist:name]</a></li>
+        {/maccms:vodlist}</ul>
+<ul class="Ranking_list">
+        {maccms:vodlist num=12 type=1 by=monthhits order=desc}
+		<li {if:[vodlist:num] < 7 }style="display:none;"{end if}> <em>[vodlist:num]</em> <a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]">[vodlist:name]</a></li>
+        {/maccms:vodlist}
+</ul>
+</div>
+<!--end-->
+</div>
+ 
+        <!--电视风云榜_END-->
+      </div>
+      <!--end-->
+    </div>
+    <div class="l_ft"></div>
+  </div>
+  <!--电视剧_end-->
+  {/maccms:typematrix}
+  <!--adv-->
+  <div align="center">
+  <script src="{maccms:templatepath}ads/index980x90-3.js"></script>
+  </div>
+  <!--end-->
+  {maccms:typematrix type=2 table=vod}
+  <!--电视剧_start-->  <div class="layout">
+    <div class="l_hd"></div><div class="l_bd">
+      <!--left-->
+      <div class="tainment660" collection="Y">
+        <div class="box_tt" data-widget="addunderline">
+          <h2 class="title_3">
+	  <a title="电视剧" href="[typematrix:link]" data-textdecoration="none" style="text-decoration: initial;">电视剧</a></h2>
+          <div class="extend"> 
+		  {maccms:menulist table=vod parent=[typematrix:id] order=asc}
+		  <a alt="[menulist:name]" title="[menulist:name]" href="[menulist:link]">[menulist:name]</a>
+		  {/maccms:menulist}
+          </div>
+          <a href="[typematrix:link]" class="s4_1 shishang ui-droppable" data-textdecoration="none" style="text-decoration: initial;">更多<em></em></a> </div>
+        
+	<div class="partE">
+          <ul class="movielist movielist_b mb_15">
+	    {maccms:vodlist num=10 type=[typematrix:id] by=time order=desc}
+	    <li> <a href="[vodlist:link]" class="pic"><img src="[vodlist:pic]" onerror="src='{maccms:templatepath}images/nopic.gif'" alt="[vodlist:name]" title="[vodlist:name]" j-dlgbubble="true" height="149" width="112"> <span class="cqBg"></span><span class="movbg"></span> <span class="movtxt">[vodlist:remarks]</span> </a>
+              <p class="movielist_tt"><a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]" j-delegate="loction2Watched">[vodlist:name len=10]</a></p>
+            </li>
+		{/maccms:vodlist}
+          </ul>
+        </div>
+      </div>
+ 
+      <!--end-->
+      <!--right-->
+      <div class="ty_right">
+        <!--分类搜索-->
+        <div class="partC">
+          <div class="sou-panel"> <span class="souIn">
+		  <form action="{maccms:searchlink}" method="get" name="search" id="search" target="_blank">
+            <input type="text"value="请输入视频名、导演或主演"  onfocus="if(this.value=='请输入视频名、导演或主演'){this.value='';}"   onblur="if(this.value==''){this.value='请输入视频名、导演或主演'}"  id="keyword" name="keyword" autocomplete="off" maxlength="36" class="souTxt">
+            </span> <span class="souOut">
+            <input type="hidden" name="type" value="2" />
+			<input class="souBtn" type="submit" value="">
+			</form>	
+            </span> </div>
+          <p class="retrieve">
+		  {maccms:menulist table=vod parent=2 order=asc}
+		  <a alt="[menulist:name]" title="[menulist:name]" href="[menulist:link]">[menulist:name]</a>
+		  {/maccms:menulist}
+	      </p>
+        </div>
+ 
+        <!--end-->
+        <!--最新片花-->
+        <div class="partC partH">
+          <div class="box_t2"><a href="" title="最新更新电视剧" class="s4">最新更新</a></div>
+		  <!--最新添加-->     
+         <div class="clearfix">		 
+			{maccms:vodlist num=10 type=2 by=time order=desc}
+            <div class="zhuanqu">
+              <div class="common_t"><span class="ui-droppable"><a href="[vodlist:typelink]" title="[vodlist:typename]" class="ui-droppable">[vodlist:typename]</a></span><b>|</b><a href="[vodlist:link]" title="[vodlist:name]" class="ui-droppable">[vodlist:name len=7]</a></div>
+            </div>
+			{/maccms:vodlist}
+          </div>
+        <!--end-->
+        </div>
+        <!--end-->
+        <!--电视风云榜-->
+        <div class="partD" collection="Y">
+<!--通用标题2-->
+<div class="box_t2"><a class="s6" href="[typematrix:link]">电视剧风云榜</a> </div>
+<!--通用标题2-->
+<!--ranking-->
+<div class="tvbox">
+<ul class="Ranking_list">
+        {maccms:vodlist num=6 type=2 by=monthhits order=desc}
+		<li> <em>[vodlist:num]</em> <a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]">[vodlist:name]</a></li>
+        {/maccms:vodlist}</ul>
+<ul class="Ranking_list">
+        {maccms:vodlist num=12 type=2 by=monthhits order=desc}
+		<li {if:[vodlist:num] < 7 }style="display:none;"{end if}> <em>[vodlist:num]</em> <a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]">[vodlist:name]</a></li>
+        {/maccms:vodlist}
+</ul>
+</div>
+<!--end-->
+</div>
+ 
+        <!--电视风云榜_END-->
+      </div>
+      <!--end-->
+    </div>
+    <div class="l_ft"></div>
+  </div>
+  <!--电视剧_end-->
+  {/maccms:typematrix}
+  <!--adv-->
+  <div align="center">
+  <script src="{maccms:templatepath}ads/index980x90-4.js"></script>
+  </div>
+  <!--end-->
+  {maccms:typematrix type=3 table=vod}
+  <!-- zongyi Start -->  <div class="layout">
+    <div class="l_hd"></div><div class="l_bd clearfix">
+      <!--left-->
+      <div class="tainment660" collection="Y">
+                <div class="box_tt" data-widget="addunderline"> 
+                    <h2 class="title_4"><a style="text-decoration: none;" data-textdecoration="none" class="ui-droppable" title="综艺" href="[typematrix:link]">综艺</a></h2>          
+<a style="text-decoration: none;" data-textdecoration="none" href="[typematrix:link]" class="s4_1 shishang ui-droppable">更多<em></em></a>
+                </div>
+                <ul class="movielist artsList">                              
+                    {maccms:vodlist num=8 type=[typematrix:id] by=time order=desc}
+                    <li> <a href="[vodlist:link]" class="pic ui-droppable"> 
+                    <img src="[vodlist:pic]" onerror="src='{maccms:templatepath}images/nopic.gif'" alt="[vodlist:name]" title="[vodlist:name]" height="81" width="130"><span class="cqBg ui-droppable"></span>
+                    <span class="movbg ui-droppable"></span> <span class="movtxt ui-droppable">[vodlist:remarks]</span> </a>
+                    <p class="movielist_tt"><a class="ui-droppable" title="[vodlist:name]" href="[vodlist:link]">[vodlist:name len=10]</a></p>
+                    <p class="tj">[vodlist:from]</p>
+                    </li>    
+                {/maccms:vodlist}                 
+                </ul>
+      </div>
+      <!--end-->
+      <!--right-->
+      <div class="ty_right">
+        <div class="partC">
+          <div class="sou-panel"> <span class="souIn ui-droppable">
+		  <form action="{maccms:searchlink}" method="get" name="search" id="search" target="_blank">
+            <input type="text"value="请输入视频名、导演或主演"  onfocus="if(this.value=='请输入视频名、导演或主演'){this.value='';}"   onblur="if(this.value==''){this.value='请输入视频名、导演或主演'}"  id="keyword" name="keyword" autocomplete="off" maxlength="36" class="souTxt">
+            </span> <span class="souOut">  
+            <input type="hidden" name="type" value="3" />
+			<input class="souBtn" type="submit" value="">
+			</form>	
+            </span> </div>
+          <p class="retrieve"> 
+		  {maccms:vodlist num=6 type=[typematrix:id] level=all by=time order=desc}
+		  <a class="ui-droppable" href="[vodlist:link]" title="[vodlist:name]">[vodlist:name len=8]</a>
+		   {/maccms:vodlist}		   
+        </div>
+  
+        <!--综艺风云榜-->
+        <div class="partD" collection="Y">
+<!--通用标题2-->
+<div class="box_t2"> <a class="s6" href="[typematrix:link]">综艺风云榜</a> </div>
+<!--通用标题2-->
+<!--ranking-->
+<ul class="Ranking_list">
+        {maccms:vodlist num=7 type=[typematrix:id] by=hits order=desc}
+		<li><em>[vodlist:num]</em> <a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]">[vodlist:name len=10]</a></li>
+		{/maccms:vodlist}
+</ul>
+<!--end-->
+</div>
+ 
+        <!--综艺风云榜_END-->
+ 
+ 
+      </div>
+      <!--end-->
+    </div>
+    <div class="l_ft"></div>
+  </div>
+  <!-- zongyi End -->
+{/maccms:typematrix}
+ <div align="center">
+ <script src="{maccms:templatepath}ads/index980x90-5.js"></script>
+  </div>
+{maccms:typematrix type=4 table=vod}
+  <!-- cartoon Start -->  <div class="layout">
+    <div class="l_hd"></div><div class="l_bd clearfix">
+      <div class="tainment660" collection="Y">
+        <div class="box_tt" data-widget="addunderline">
+         <h2 class="title_5"><a class="ui-droppable" title="动漫" href="[typematrix:link]" data-textdecoration="none" style="text-decoration: none; ">动漫</a></h2>
+                    <a href="[typematrix:link]" class="s4_1 shishang ui-droppable" data-textdecoration="none" style="text-decoration: none; ">更多<em></em></a>
+        </div>
+                <ul class="movielist artsList">
+				 {maccms:vodlist num=8 type=[typematrix:id] by=time order=desc}
+                    <li> <a href="[vodlist:link]" class="pic ui-droppable"> <img src="[vodlist:pic]" onerror="src='{maccms:templatepath}images/nopic.gif'" alt="[vodlist:name]" title="[vodlist:name]" height="81" width="130"> </a>
+                        <p class="movielist_tt"><a class="ui-droppable" title="[vodlist:name]" href="[vodlist:link]">[vodlist:name len=10]</a></p>
+                    </li>
+				 {/maccms:vodlist}	
+                </ul>
+      </div>
+ 
+      <div class="ty_right">
+        <!--分类搜索-->
+        <div class="partC">
+          <div class="sou-panel"> <span class="souIn">
+		  <form action="{maccms:searchlink}" method="get" name="search" id="search" target="_blank">
+            <input type="text"value="请输入视频名、导演或主演"  onfocus="if(this.value=='请输入视频名、导演或主演'){this.value='';}"   onblur="if(this.value==''){this.value='请输入视频名、导演或主演'}"  id="keyword" name="keyword" autocomplete="off" maxlength="36" class="souTxt">
+            </span> <span class="souOut">  
+            <input type="hidden" name="type" value="4" />
+			<input class="souBtn" type="submit" value="">
+			</form>	
+            </span> </div>
+          <p class="retrieve">
+		  {maccms:vodlist num=6 type=[typematrix:id] by=level order=desc}
+		  <a class="ui-droppable" href="[vodlist:link]" title="[vodlist:name]">[vodlist:name len=8]</a>
+		   {/maccms:vodlist}</p>
+          <p class="retrieve mt5"><span>地区</span>
+		  <a href="{maccms:searchlink}?area=大陆&type=4">国内</a>
+		  <a href="{maccms:searchlink}?area=日本&type=4">日本</a>
+		  <a href="{maccms:searchlink}?area=美国&type=4">美国</a>
+		  </p>
+        </div>
+ 
+        <!--end-->
+        <!--动漫风云榜-->
+        <div class="partD" collection="Y">
+<!--通用标题2-->
+<div class="box_t2">
+ <a href="[typematrix:link]" class="s6">动漫风云榜</a> </div>
+<!--通用标题2-->
+<!--ranking-->
+<div class="tvbox">
+<ul class="Ranking_list">
+        {maccms:vodlist num=5 type=[typematrix:id] by=monthhits order=desc}
+		<li> <em>[vodlist:num]</em> <a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]">[vodlist:name]</a></li>
+        {/maccms:vodlist}
+</ul>
+<ul class="Ranking_list">
+        {maccms:vodlist num=10 type=[typematrix:id] by=monthhits order=desc}
+		<li {if:[vodlist:num] < 6 }style="display:none;"{end if}> <em>[vodlist:num]</em> <a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]">[vodlist:name]</a></li>
+        {/maccms:vodlist}
+</ul>
+</div>
+<!--end-->
+</div>
+ 
+        <!--动漫风云榜_END-->
+      </div>
+    </div>
+    <div class="l_ft"></div>
+  </div>
+  <!-- cartoon End -->
+  {/maccms:typematrix}
+  <!--adv-->
+  <div align="center">
+  <script src="{maccms:templatepath}ads/index980x90-6.js"></script>
+  </div>
+  <!--end-->
+  
+ 
+  
+  
+  <!--partner,news-->
+  <div class="mt25 clearfix" style="height:130px; overflow:hidden;">
+    <div class="com490 bgline0" collection="Y">
+      <div class="box_tt">
+        <h2 class="title_10"><a class="ui-droppable" href="{maccms:gbooklink}" title="合作伙伴">合作伙伴</a></h2>
+      </div>
+      <div class="partK">
+        <ul class="list_p">
+          <li> <a class="ui-droppable" target="_blank" href="http://www.xiaog.cc/"> 小俊工作室 </a> | </li>
+				{maccms:linklist type=all by=sort order=asc}
+	      <li> <a class="ui-droppable" target="_blank" href="[linklist:link]"  sdevindex="46"> [linklist:name] </a> | </li>
+				{/maccms:linklist}	
+ 
+        </ul>
+      </div>
+    </div>
+    <div class="right_part" collection="Y">
+      <div class="box_tt">
+        <h2 class="title_11"><a class="ui-droppable" href="{maccms:artindexlink}" title="{maccms:name}动态">{maccms:name}动态</a></h2>
+      </div>
+      <div class="partK">
+        <ul class="zhuanqu_list">
+           {maccms:artlist num=6 type=all order=desc by=time}
+          <li><a title="[artlist:title]" class="" href="[artlist:link]" alt="[artlist:title]">[artlist:title len=15]</a></li>
+		  {/maccms:artlist}
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+  <!--end-->
+  <!--begin_footer-->
+  <div class="newFooter">
+    <p class="footmenu">     
+             <a href="{maccms:gbooklink}">关于我们</a>
+        <a href="{maccms:gbooklink}">联系方式</a>
+        <a href="{maccms:gbooklink}">版权声明</a>
+		<a href="{maccms:artindexlink}">新闻动态</a>
+        <a href="{maccms:gbooklink}">帮助中心</a>
+        <a href="{maccms:gbooklink}">友情链接</a>
+    </p>
+    <div class="ftcont">
+    <div class="lastLine">
+	<p>Copyright @2010-2013 站长QQ：{maccms:qq} 版权所有{maccms:visits}</p>
+    </div>
+</div>
+  <!--end_footer-->
+</div>
+
+</body>
+</html>

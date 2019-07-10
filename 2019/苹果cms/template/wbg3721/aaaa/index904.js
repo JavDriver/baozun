@@ -1,0 +1,1 @@
+﻿document.writeln("<a href=\"https:\/\/www.p7yy.com/web/7777777.htm\" title=\"舞帝影院www.wudiyy.com\" ><img src=\'http:\/\/www.wudiyy.com\/template\/paody\/images\/成人直播(推荐必看).gif\' \/><\/a>");

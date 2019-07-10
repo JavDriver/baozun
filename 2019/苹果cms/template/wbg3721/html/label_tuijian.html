@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>电影云标签</title>
+<link href="{maccms:path_tpl}css/m.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.yuntab {
+	height:90px;
+	overflow:hidden;
+}
+.yuntab a {
+	background-color: #444;
+    color: #EEEEEE;
+    width: 31%;
+    float: left;
+    height: 30px;
+    overflow: hidden;
+    line-height: 28px;
+    text-align: center;
+    font-size: 0.80667rem;
+    margin-bottom: 1px;
+    margin-left: 0.3%;
+}
+.rmdy{
+	word-wrap: break-word;
+    height: 90px;
+    width: 6%;
+    background-color: #333;
+    color: #fff;
+    display: block;
+    float: left;
+    text-align: center;
+    padding-top: 6px;
+}
+</style>
+</head><body>
+<div class="yuntab"><span class="rmdy">热门影片</span> 
+{maccms:vod num=9 order=desc by=dayhits type=all}
+<a href="[vod:playlink]">[vod:colorname]</a>
+{/maccms:vod}
+</div>
+</body>
+</html>

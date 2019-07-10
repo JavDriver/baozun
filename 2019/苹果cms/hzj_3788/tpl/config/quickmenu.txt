@@ -1,0 +1,7 @@
+网站设置,?m=system-config
+视频管理,?m=vod-list
+七夏资源,vip_7xzy.html
+七彩资源,union-qicaicms.html
+电影下载资源,union-dyxz.html
+DYXZ离线资源,vip_dyxz_net.html
+精信影视资源,free.html

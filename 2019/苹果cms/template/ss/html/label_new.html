@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>最新更新的100个电视剧、电影、动漫、综艺节目 - {maccms:name}</title>
+<meta name="keywords" content="最新,电视剧排行榜,电视剧大全,好看的电视剧,2014最新电影,好看的电影">
+<meta name="keywords" content="{maccms:keywords}" />
+<meta name="description" content="{maccms:description}" />
+{maccms:include}
+</head>
+<body>
+{maccms:head}
+<div class="wz"><span>您当前的位置：</span><a href="
+{maccms:path}">首页</a><a class="current" href="#">最近更新</a></div>
+<div class="ad980">
+<script src="{maccms:path_ads}h960x90.js"></script>
+</div>
+<div class="datnew w1000">
+<div class="new-title">
+<h2>最近100个更新</h2>
+  <div class="lasted-time aright">更新时间</div>
+  <div class="lasted-tags aright">主演</div>
+  <div class="lasted-type aright">类型</div>
+</div>
+<div class="ui-cnt">
+<ul class="lasted-list fn-clear"> 
+{maccms:vod num=150 by=time order=desc}
+<li>
+  <div class="lasted-num aleft">∷</div>
+  <div class="lasted-tit aleft">
+    <h3 class="show-title"><a href="[vod:link]" title="[vod:name]">[vod:name]</a><em>/</em>[vod:remarks]</h3>
+    <div class="tipInfo">
+<img class="loading" src="{maccms:path_tpl}images/blank.png" data-lazyload-src="[vod:pic]" data-lazyload-type="auto"/>
+<dl>
+<dd><strong>[vod:name]</strong></dd><dd>主演：[vod:starring]</dd>
+<dd class="jq">剧情：[vod:contenttext len=20]…</dd>
+<dd class="bg">[vod:remarks]</dd>
+<dd class="bg">更新时间：[vod:time style=y-m-d]</dd>
+</dl>
+    </div>
+  </div>
+  <div class="lasted-type aleft"><h2><a href="[vod:typelink]" target="_blank">[vod:typename]</a></h2></div>
+  <div class="lasted-tags aleft">[vod:starringlink]</div>
+  <div class="lasted-time fn-right">[vod:time style=y-m-d]</div>
+</li>
+{/maccms:vod}
+</ul></div> </div>
+   
+{maccms:foot}
+
+<script src="{maccms:path_tpl}js/main.js" type="text/javascript"></script>
+<script type="text/javascript" src="{maccms:path_tpl}js/IE6Top.js"></script>
+<div class="back-to-top" id="back-to-top"><a href="javascript:window.scrollTo(0, 0);" target="_self">Back to Top</a></div></body>
+</html>

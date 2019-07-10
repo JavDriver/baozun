@@ -1,0 +1,321 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<title>[vod:name]西瓜影音免费在线观看-[vod:typepname]迅雷下载-{if-B:[vod:year]>0}([vod:year]){endif-B}[vod:typename]-{maccms:name}</title>
+		<meta name="keywords" content="[vod:name],[vod:name]西瓜影音,[vod:name]迅雷下载"/>
+		<meta name="description" content="{maccms:name}收录最新[vod:name]演员表、海报、剧情简介和《[vod:name]》西瓜影音地址、[vod:name]迅雷下载地址，[vod:name]剧情介绍：[vod:contenttext len=120]"/>
+		<link rel="alternate" media="only screen and(max-width: 640px)" href="{maccms:qq}[vod:link]">
+		<meta property="og:type" content="videolist"/>
+		<meta property="og:title" content="[vod:name]"/>
+		<meta property="og:description" content="[vod:contenttext len=130]"/>
+		<meta property="og:image" content="[vod:pic]"/>
+		<meta property="og:url" content="http://{maccms:url}[vod:link]"/>
+		<meta property="og:video" content="http://{maccms:url}[vod:link]"/>
+		<meta property="og:video:actor" content="[vod:starring]"/>
+		<meta property="og:video:director" content="[vod:directed]"/>
+		<meta property="og:video:release_date" content="[vod:year]"/>
+		<meta property="og:video:update_date" content="[vod:time]"/>
+		<meta property="og:video:area" content="[vod:area]"/>
+		<meta property="og:video:score" content="[vod:score]"/>
+		<meta property="og:video:base_score" content="10"/>
+		<meta property="og:video:class" content="[vod:typename]"/>
+		<meta property="og:video:language" content="[vod:lang]"/>
+		{maccms:include}
+		<link href="{maccms:path_tpl}css/detail.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="{maccms:path_tpl}js/packed.js"></script>
+	</head>
+	<body>
+		{maccms:head}
+		<div class="mainBox">
+			<div class="mbxAndotherBox">
+				<div class="mbx_nav">
+					<span class="current_position">
+						您当前的位置：
+					</span>
+					[vod:textlink]
+				</div>
+				<div class="other">
+					<a href="[vod:link]" class="cur" title="[vod:name]影片首页">
+						影片首页
+					</a>
+					<a href="[vod:link]#play" title="[vod:name]在线观看">
+						在线观看
+					</a>
+					{maccms:down}{if-B:[down:num]=1}
+					<a href="[vod:downlink]" title="[vod:name]迅雷下载">
+						迅雷下载
+					</a>
+					{endif-B}{/maccms:down}
+					<a href="#jq" title="[vod:name]剧情简介">
+						剧情简介
+					</a>
+					<a href="#SOHUCS" title="[vod:name]影片评论">
+						影片评论
+					</a>
+				</div>
+			</div>
+			<div class="contBox">
+				<div class="zxgk_pindaoBox">
+					<div class="main_width">
+						<div class="pindao_L">
+							<a href="[vod:link]">
+								<img src="[vod:pic]" alt="[vod:name]海报" />
+								<i class="touying">
+									&nbsp;
+								</i>
+							</a>
+						</div>
+						<div class="pindao_R">
+							<div class="pindao_titBox">
+								<div class="pindao_tit">
+									<h1>
+										[vod:name]
+									</h1>
+									<span>
+										( [vod:year] )
+									</span>
+								</div>
+								<div class="sy_time">
+									<span>
+										状态：{if-A:not isN("[vod:remarks]")}[vod:remarks]{elseif-A:[vod:state]=0}[完结]{elseif-A:[vod:state]>0}{if-B:[vod:state]>10000}[连载[vod:state]]期{else-B}[连载[vod:state]]集{endif-B}{else-A}{endif-A}
+								</div>
+							</div>
+							<ul class="pindao_xg">
+								<li>
+									<span>
+										类型：
+									</span>
+									<a href="[vod:typelink]">
+										[vod:typename]
+									</a>
+								</li>
+								<li>
+									<span>
+										地区：
+									</span>
+									[vod:arealink]
+								</li>
+								<li>
+									<span>
+										语言：
+									</span>
+									[vod:lang]
+								</li>
+								<li>
+									<span>
+										导演：
+									</span>
+									[vod:directedlink]
+								</li>
+								<li>
+									<span>
+										标签：
+									</span>
+									[vod:taglink]
+								</li>
+								<li>
+									<span>
+										人气：
+									</span>
+									[vod:hits]
+								</li>
+							</ul>
+							<div class="pbtn">
+								<a href="#play" class="xiazai" title="[vod:name]观看地址">
+									观看地址
+								</a>
+								{maccms:down} {if-B:[down:num]=1}
+								<a href="[vod:downlink]" class="xiazai" title="[vod:name]迅雷下载">
+									迅雷下载
+								</a>
+								{endif-B} {/maccms:down}
+							</div>
+							<div class="share">
+								<script type="text/javascript">
+									Share();
+								</script>
+							</div>
+						</div>
+					</div>
+					<div class="bg_fff">
+					</div>
+				</div>
+				<div style=" margin:0 auto;padding-top:30px; width:1000px;">
+					<script src="{maccms:path_ads}960x90-2.js">
+					</script>
+				</div>
+				<div class="main_width">
+					<dl class="jishuzhe_yyb">
+						<dt>
+							<strong>
+								[vod:name]演员表
+							</strong>
+						</dt>
+						<dd>
+							[vod:starringlink]
+						</dd>
+					</dl>
+					<div class="jq_jj" id="jq">
+						<div class="jq_tit">
+							<strong>
+								[vod:name]剧情介绍
+							</strong>
+						</div>
+						<div class="jq_text">
+							[vod:contenttext]
+						</div>
+					</div>
+					<div class="playBox" id="play">
+						<div class="paly_nav" id="m_tab_1">
+							{maccms:play}{if-A:[play:num]==1}
+							<span class="movie_cur" onmouseover="ShowTab(1,0)">
+								[play:show]
+							</span>
+							{endif-A}{/maccms:play}{maccms:play}{if-A:[play:num]==2}
+							<span class="" onmouseover="ShowTab(1,1)">
+								[play:show]
+							</span>
+							{endif-A}{/maccms:play}{maccms:play}{if-A:[play:num]==3}
+							<span class="" onmouseover="ShowTab(1,2)">
+								[play:show]
+							</span>
+							{endif-A}{/maccms:play}{maccms:play}{if-A:[play:num]==4}
+							<span class="" onmouseover="ShowTab(1,3)">
+								[play:show]
+							</span>
+							{endif-A}{/maccms:play}{maccms:play}{if-A:[play:num]==5}
+							<span class="" onmouseover="ShowTab(1,4)">
+								[play:show]
+							</span>
+							{endif-A}{/maccms:play}{maccms:play}{if-A:[play:num]==6}
+							<span class="" onmouseover="ShowTab(1,5)">
+								[play:show]
+							</span>
+							{endif-A}{/maccms:play}{maccms:play}{if-A:[play:num]==7}
+							<span class="" onmouseover="ShowTab(1,6)">
+								[play:show]
+							</span>
+							{endif-A}{/maccms:play}{maccms:play}{if-A:[play:num]==8}
+							<span class="" onmouseover="ShowTab(1,7)">
+								[play:show]
+							</span>
+							{endif-A}{/maccms:play}
+						</div>
+						<div id="m_cont_1">
+							{maccms:play}{if-A:[play:num]==1}
+							<ul class="ygp_cont">
+								<li>
+									{maccms:url order=desc}
+									<a href="[url:link]" title="[url:name]" target="_blank">
+										[url:name]
+									</a>
+									{/maccms:url}
+								</li>
+							</ul>
+							{endif-A}{/maccms:play}{maccms:play}{if-A:[play:num]>1}
+							<ul class="ygp_cont" style="display:none">
+								<li>
+									{maccms:url order=desc}
+									<a href="[url:link]" title="[url:name]" target="_blank">
+										[url:name]
+									</a>
+									{/maccms:url}
+								</li>
+							</ul>
+							{endif-A}{/maccms:play}
+						</div>
+					</div>
+				</div>
+				<div class="cl">
+				</div>
+				<div id="wrapper">
+					<div class="movie_sy_table">
+						<strong>
+							猜你喜欢
+						</strong>
+					</div>
+					<div id="carousel">
+						<ul>
+							{maccms:vod type=current num=15 order=desc by=time}
+							<li>
+								<div class="xuxian">
+								</div>
+								<div class="jijiang_time">
+									<div class="jijiang_time_tit">
+										[vod:time style=yy/m/d]
+									</div>
+									<span>
+										更新
+									</span>
+								</div>
+								<div class="movie_cont">
+									<a href="[vod:link]" title="[vod:name]" target="_blank" class="cont_L">
+										<img src="[vod:pic]" alt="[vod:name]" />
+									</a>
+									<div class="cont_R">
+										<div class="cont_tit">
+											<a href="[vod:link]" title="[vod:name]" target="_blank">
+												[vod:name]
+											</a>
+										</div>
+										<div class="want_kan">
+											[vod:typename]
+										</div>
+										<div class="daoyan">
+											导演：[vod:directed]
+										</div>
+										<div class="yugaopian">
+											{if-A:"[vod:remarks]"
+											<>
+												""}[vod:remarks]{else-A}{if-B:[vod:state]>0}第[vod:state]集{else-B}完结{endif-B}{endif-A}
+												<a href="/dy2013/201507/2566_yg.shtml" title="[vod:name]" class="yugao_btn">
+													<i class="yugao_btn_icon">
+														&nbsp;
+													</i>
+												</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							{/maccms:vod}
+						</ul>
+					</div>
+					<a id="prev" class="prev" href="javascript:void(0)" rel="nofollow">
+					</a>
+					<a id="next" class="next" href="javascript:void(0)" rel="nofollow">
+					</a>
+				</div>
+				<script type="text/javascript">
+					$(function() {
+						$('#carousel ul').carouFredSel({
+							prev: '#prev',
+							next: '#next',
+							scroll: 1000
+						})
+					});
+				</script>
+				<div class="main_width">
+					<div class="likeBox">
+						<div class="like_tit">
+							<strong>
+								影片评论
+							</strong>
+						</div>
+						<div id="SOHUCS" sid="vod[vod:id]">
+						</div>
+						<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js">
+						</script>
+						<script type="text/javascript">
+							window.changyan.api.config({
+								appid: 'cyrTclNCR',
+								conf: 'prod_5733ef6427bacca070f0416c1b1508c1'
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+		{maccms:foot}
+	</body>
+</html>

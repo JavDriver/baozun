@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="txtUserName"><br>
+<input type="text" id="password"><br>
+<input type="button" value="登入" id="bthLogin">
+<script>
+  var bth = document.getElementById('bthLogin');
+    bth.onclick = function (){
+         var  txtUserName = document.getElementById('txtUserName');
+        var password = document.getElementById('password');
+        if (txtUserName.value.length < 3 || txtUserName.value.length >6){
+            txtUserName.className = 'bg';
+            return;
+        }else {
+            txtUserName.className = '';
+        }
+        if (password.value.length < 3 || password.value.length >6){
+            password.className = 'bg';
+            return;
+        }else {
+            password.className = '';
+        }
+
+
+    }
+
+</script>
+
+
+</body>
+</html>

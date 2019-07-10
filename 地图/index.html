@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
+    <title>3.23余姚行</title>
+    <style>
+        html,
+        body,
+        #container {
+            width: 100%;
+            height: 100%;
+        }
+        .amap-icon img{ width: 20px; height: 25px;}
+
+        #panel {
+            position: fixed;
+            background-color: white;
+            max-height: 90%;
+            overflow-y: auto;
+            top: 10px;
+            right: 10px;
+            width: 280px;
+        }
+        #panel .amap-call {
+            background-color: #009cf9;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        #panel .amap-lib-driving {
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            overflow: hidden;
+        }
+    </style>
+    <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.13&key=1822bd5555537ae66511f2a2e16e8cab&plugin=AMap.Driving"></script>
+    <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+</head>
+<body>
+<div id="container"></div>
+<div id="panel"></div>
+<script type="text/javascript">
+    var map = new AMap.Map('container',{
+        resizeEnable: true,
+        zoom: 13, //设置地图的缩放级别
+        center: [121.171542,30.096577],
+    });
+    var driving = new AMap.Driving({
+        map: map,
+        panel: "panel"
+    });
+    // 根据起终点经纬度规划驾车导航路线
+    driving.search(new AMap.LngLat(121.171542,30.096577), new AMap.LngLat(121.171542,30.096577),{
+        waypoints:[
+            new AMap.LngLat(121.217176,29.97201),
+            new AMap.LngLat(121.20487,29.876799),
+            new AMap.LngLat(121.369052,29.780701),//01
+            new AMap.LngLat(121.27594,29.831033),
+            new AMap.LngLat(121.135537,29.738795),
+            new AMap.LngLat(121.173491,29.839834),
+            new AMap.LngLat(121.10997,29.743741),
+        ]
+    }, function(status, result) {
+        // result 即是对应的驾车导航信息，相关数据结构文档请参考  https://lbs.amap.com/api/javascript-api/reference/route-search#m_DrivingResult
+        if (status === 'complete') {
+            log.success('绘制驾车路线完成')
+        } else {
+            log.error('获取驾车数据失败：' + result)
+        }
+    });
+
+    var marker = new AMap.Marker({
+        position: map.getCenter(),
+        icon: '//a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-default.png',
+        offset: new AMap.Pixel(-0, -0),
+        // 设置是否可拖拽
+        draggable: true,
+        cursor: 'move'
+    });
+
+    marker.setMap(map);
+
+    // 设置点标记的动画效果，此处为弹跳效果
+    marker.setAnimation('AMAP_ANIMATION_BOUNCE');
+
+    map.setMapStyle('amap://styles/02c34fd8849f7dfddc882a5970b1c3a4');
+
+
+
+</script>
+</body>
+</html>

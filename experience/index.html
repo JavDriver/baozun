@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>试穿体验</title>
+    <!-- html2canvas就是这样一款前端插件,它的原理是将Dom节点在Canvas里边画出来 -->
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <script src="js/html2canvas.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+<script type="text/javascript"> 
+function startUpload() { 
+document.getElementById('processing').innerHTML = 'loding...'; 
+return true; 
+} 
+function stopUpload(rel){ 
+var msg; 
+switch (rel) { 
+case 0: 
+msg = "上传成功"; 
+break; 
+case 1: 
+msg = "上传的文件超过限制"; 
+break; 
+case 2: 
+msg = "只能上传csv文件"; 
+break; 
+default: 
+msg = "上传文件失败"; 
+} 
+document.getElementById('processing').innerHTML = msg; 
+} 
+</script> 
+</head>
+<body class="demo-1">
+
+<div style="text-align:center"> 
+<div id="processing"></div> 
+<form action="upload.php" method="post" enctype="multipart/form-data" target="form-target" onsubmit="startUpload();"> 
+<input type="hidden" name="MAX_FILE_SIZE" value="1000000" /> 
+<input type="file" name="myfile" /> 
+<input type="submit" name="sub" value="上传" /> 
+</form> 
+<iframe style="width:0; height:0; border:0;" name="form-target"></iframe> 
+</div> 
+
+<svg class="hidden">
+    <svg id="icon-rewind" viewBox="0 0 36 20">
+        <title>rewind</title>
+        <path d="M16.315.061c.543 0 .984.44.984.984v17.217c0 .543-.44.983-.984.983L.328 10.391s-.738-.738 0-1.476C1.066 8.178 16.315.061 16.315.061zM35.006.061c.543 0 .984.44.984.984v17.217c0 .543-.44.984-.984.984L19.019 10.39s-.738-.738 0-1.475C19.757 8.178 35.006.06 35.006.06z"/>
+    </svg>
+</svg>
+<main>
+    </div>
+    <div class="grid">
+        <div class="hj01">
+        <canvas id="myCanvas" width="790" height="430"></canvas>
+            </div>
+        <div class="grid__item theme-1">
+            <button class="action"><svg class="icon icon--rewind"><use xlink:href="#icon-rewind"></use></svg></button>
+            <button class="particles-button" onclick="d()">点击生成尺码表<br/>victoria专用</button>
+        </div>
+
+    </div>
+    </div>
+</main>
+<script src='js/anime.min.js'></script>
+<script src='js/particles.js'></script>
+<script src='js/demo.js'></script>
+
+<!--<div class="box1 clearfix">-->
+    <!--<div class="box-top">-->
+        <!--<img src="images/02.jpg">-->
+    <!--</div>-->
+    <!--<div class="box2 clearfix">-->
+        <!--<div class="box-left">-->
+            <!--<img src="images/01.jpg">-->
+        <!--</div>-->
+        <!--<div class="box2-right">-->
+            <!--<table>-->
+                <!--<tr class="box21">-->
+                    <!--<td width="127">维密尺码</td>-->
+                    <!--<td>胸围<br>(厘米)</td>-->
+                    <!--<td>衣长<br>(厘米)</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td>XS</td>-->
+                    <!--<td>78</td>-->
+                    <!--<td>79</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td>S</td>-->
+                    <!--<td>78</td>-->
+                    <!--<td>79</td>-->
+                <!--</tr>-->
+
+                <!--<tr>-->
+                    <!--<td>M</td>-->
+                    <!--<td>78</td>-->
+                    <!--<td>79</td>-->
+                <!--</tr>-->
+
+                <!--<tr>-->
+                    <!--<td>L</td>-->
+                    <!--<td>78</td>-->
+                    <!--<td>79</td>-->
+                <!--</tr>-->
+
+
+            <!--</table>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+    <!--<div class="clearfix cc">-->
+        <!--<img src="images/cc.jpg">-->
+    <!--</div>-->
+<!--</div>-->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script type="text/javascript" src="canvas2image.js"></script>
+<script type="text/javascript" src="d.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        url: 'csv/V1.csv',
+        dataType: 'text'
+    }).done(successFunction);
+
+    var book = []
+
+    function successFunction(data) {
+
+        var allRows = data.split(/\r?\n|\r/);
+        //console.log(allRows,'???')
+        var table = '<table>';
+        for (var singleRow = 0; singleRow < 51; singleRow++) {
+            if (singleRow === 0) {
+                table += '<thead>';
+                table += '<tr>';
+            } else {
+                table += '<tr>';
+            }
+
+            var rowCells = allRows[singleRow].split(',');
+
+            var m = {
+                a: rowCells[0],
+                b: rowCells[1],
+                c: rowCells[2],
+                d: rowCells[3],
+                e: rowCells[4],
+                f: rowCells[5],
+                g: rowCells[6],
+                h: rowCells[7],
+                i: rowCells[8],
+                j: rowCells[9],
+                k: rowCells[10],
+                l: rowCells[11],
+                m: rowCells[12],
+                n: rowCells[13],
+                o: rowCells[14],
+                p: rowCells[15],
+                q: rowCells[16],
+                r: rowCells[17],
+                s: rowCells[18],
+                t: rowCells[19],
+                u: rowCells[20],
+                v: rowCells[21],
+                w: rowCells[22],
+                x: rowCells[23],
+                y: rowCells[24],
+                z: rowCells[25],
+                aa: rowCells[26],
+                ab: rowCells[27],
+                ac: rowCells[28],
+                ad: rowCells[29],
+                ae: rowCells[30],
+                af: rowCells[31],
+                ag: rowCells[32],
+                ah: rowCells[33],
+                ai: rowCells[34],
+                aj: rowCells[35],
+                ak: rowCells[36],
+            }
+            book.push(m)
+
+            for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
+                if (singleRow === 0) {
+                    table += '<th>';
+                    table += rowCells[rowCell];
+                    table += '</th>';
+                } else {
+                    table += '<td>';
+                    table += rowCells[rowCell];
+                    table += '</td>';
+                }
+            }
+            if (singleRow === 0) {
+                table += '</tr>';
+                table += '</thead>';
+                table += '<tbody>';
+            } else {
+                table += '</tr>';
+            }
+        }
+
+
+//        for(var i= 0, k=book.length; i<k;i++){
+//            table+='<td>'+book[i].d+'</td><td>'+book[i].e+'</td><td>'+book[i].f+'</td><td>'+book[i].g+'</td><td>'+book[i].h+'</td><td>'+book[i].i+'</td></tr>'
+//        }
+        table += '</tbody>';
+        table += '</table>';
+        $('body').append(table);
+    }
+   // console.log(book,'???')
+
+    var b = book.length
+
+    function d() {
+        b = book.length - 1
+        for (var i = 0; i < book.length; i++) {
+            setTimeout(() => {
+                if (b !== 0) {
+                console.log(b)
+                drawBook(book[b])
+                b--
+            }
+        }, i *1000 )
+        }
+    }
+
+    function drawBook(arr) {
+        console.log(arr)
+        var c = document.getElementById("myCanvas");
+        var img = 'images/bz.jpg'
+        var ctx = c.getContext("2d");
+        // cxt.drawImage('c.png',0,0)
+
+        var img = new Image();
+//        if (Math.random() < 0.5) {
+//            img.src = "images/bz.jpg";
+//        } else {
+//            img.src = "images/bz.jpg";
+//        }
+
+
+        if (arr.i=="薄款" && arr.j=="修身" ) {
+           img.src = "images/bx.jpg";
+        } else if(arr.i=="薄款" && arr.j=="适中"){
+                img.src = "images/bs.jpg";
+            }else
+                if(arr.i=="薄款" && arr.j=="宽松"){
+                    img.src = "images/bk.jpg";
+                }else
+                    if(arr.i=="适中" && arr.j=="修身"){
+                        img.src = "images/sx.jpg";
+                    }else
+                        if(arr.i=="适中" && arr.j=="适中"){
+                            img.src = "images/ss.jpg";
+                        }else
+                            if(arr.i=="适中" && arr.j=="宽松"){
+                                img.src = "images/sk.jpg";
+                            }else
+                                if(arr.i=="厚款" && arr.j=="修身"){
+                                    img.src = "images/hx.jpg";
+                                }else
+                                    if(arr.i=="厚款" && arr.j=="适中"){
+                                        img.src = "images/hs.jpg";
+                                    }else
+                                        if(arr.i=="厚款" && arr.j=="宽松"){
+                                            img.src = "images/hk.jpg";
+                                        }else {
+                                            img.src = "images/bz.jpg";
+
+                                        }
+
+
+
+
+        img.onload = function() {
+            ctx.drawImage(img, 0, 0, 790, 430);
+            ctx.fillStyle = "#6b6b6b";
+            ctx.textAlign = "center";
+            ctx.font = "17px victoriai";
+            ctx.fillText(arr.c, 105, 179);
+            ctx.fillText(arr.d, 224, 179);
+            ctx.fillText(arr.e, 337, 179);
+            ctx.fillText(arr.f, 458, 179);
+            ctx.fillText(arr.g, 571, 179);
+            ctx.font = "bold 17px MFKeSongRegular";
+            ctx.fillText(arr.h, 686, 179);
+//2行
+            ctx.font = "17px victoriai";
+            ctx.fillText(arr.l, 105, 218);
+            ctx.fillText(arr.m, 224, 218);
+            ctx.fillText(arr.n, 337, 218);
+            ctx.fillText(arr.o, 458, 218);
+            ctx.fillText(arr.p, 571, 218);
+            ctx.font = "bold 17px MFKeSongRegular";
+            ctx.fillText(arr.q, 686, 218);
+//3行
+
+            ctx.font = "17px victoriai";
+            ctx.fillText(arr.u, 105, 257);
+            ctx.fillText(arr.v, 224, 257);
+            ctx.fillText(arr.w, 337, 257);
+            ctx.fillText(arr.x, 458, 257);
+            ctx.fillText(arr.y, 571, 257);
+            ctx.font = "bold 17px MFKeSongRegular";
+            ctx.fillText(arr.z, 686, 257);
+//4行
+
+            ctx.font = "17px victoriai";
+            ctx.fillText(arr.ad, 105, 296);
+            ctx.fillText(arr.ae, 224, 296);
+            ctx.fillText(arr.af, 337, 296);
+            ctx.fillText(arr.ag, 458, 296);
+            ctx.fillText(arr.ah, 571, 296);
+            ctx.font = "bold 17px MFKeSongRegular";
+            ctx.fillText(arr.ai, 686, 296);
+
+            var i = c.toDataURL()
+            download(i, arr.a, "jpg")
+            // Canvas2Image.saveAsPNG(c)
+        }
+    }
+</script>
+<script type="text/javascript">
+    // downloadFile()
+    // console.log(i)
+    // download(i)
+    // Canvas2Image.saveAsPNG(c)
+</script>
+</body>
+
+
+</html>

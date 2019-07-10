@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>娱乐资讯-{maccms:name}</title>
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/style.css">
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/tv/basic_other.css">
+<script type="text/javascript" src="{maccms:templatepath}images/js/config.js"></script>
+<script type="text/javascript" src="{maccms:templatepath}images/js/sea1.2.js"></script>
+</head>
+<body screen_capture_injected="true">
+{maccms:head}
+<div class="wrap">
+<script src="{maccms:templatepath}ads/art980x90-1.js"></script>
+<div class="secMain">
+    <dl class="sideBar">
+      
+      <dd>
+        <ul class="secUlList">
+          <li><a href="{maccms:path}">首页</a></li>
+		  {maccms:menulist table=art type=parent by=id order=asc}
+          <li {if:[menulist:id]={maccms:curarttypeid}}class="selected"{end if}><a href="[menulist:link]">[menulist:name]</a></li>
+          {/maccms:menulist}
+        </ul>
+      </dd>
+    </dl>
+    <div class="secMainC">
+      <h2 class="h2Title1 h2T1Bg"><img src="{maccms:templatepath}images/xwdt.jpg" width="114" height="45" alt="新闻动态" title="新闻动态"></h2>
+   
+ 
+   <div class="content">
+        <dl class="xinwenList">
+{maccms:artlist num=5 type=all order=desc by=time}
+<dt><a href="[artlist:link]">[artlist:title len=30]</a> <em>[artlist:time style=yyyy-m-d]</em></dt>
+<dd><p> [artlist:contenttext len=100]..<a href="[artlist:link]">详细>></a></p></dd>
+{/maccms:artlist}
+{maccms:artlist num=20 type=all order=desc by=time}
+<dt {if:[artlist:num] < 6 }style="display:none;"{end if}><a href="[artlist:link]">[artlist:title len=30]</a> <em>[artlist:time style=yyyy-m-d]</em></dt>
+{/maccms:artlist}
+        </dl>
+		
+      </div>
+  </div>
+  </div>
+ 
+</div>
+{maccms:foot}
+ 
+<script type="text/javascript"> 
+ //__loadMainJs("empty");
+ __loadCompatibleMainJs('empty');
+ Q.projectName = 'qiyiV2';
+ Q.ready(function (lib) {
+     Q.load('base');
+ });
+</script>
+</body>
+</html>

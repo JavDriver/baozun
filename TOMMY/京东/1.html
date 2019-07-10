@@ -1,0 +1,31 @@
+<div class="j-module double12Nav" module-function="tab" module-param="{linkSelector: '.navMore a', linkCurrentClass: 'red', defaultSelected: true, navScrollBarSelector: '.navMain nav', tabWidthAutoEqual: false, needFixed: '$!ishead', fixedClass: 'fixed', firstMenuSelector: '.navMain a', firstMenuCurrentClass: 'red', secondMenuSelector:'.navmore a', secondMenuCurrentClass: 'current'}">
+    <div class="navBox">
+        <div class="navMain">
+            <nav #if($!bgColor && $!bgColor !='') style="background-color: $!bgColor;" #end>
+                #set($void='javascript:;')
+                #set($listLen=0)
+                #foreach($urlLink in $mobUrlLinkList)
+                #if($urlLink.parentId == -1)
+                #set($listLen = $listLen + 1)
+                <a #if($!urlLink.isSelected==true) class="act" #end  href="#if($!urlLink.linkUrl != '' && $!urlLink.linkUrl != '//') $urlLink.linkUrl #else $void#end">$!urlLink.name</a>
+                #end
+                #end
+            </nav>
+        </div>
+        <span class="switch" #if($!bgColor && $!bgColor !='') style="background-color: $!bgColor;" #end><em></em></span>
+        #if($!bgColor && $!bgColor !='')
+        <div class="navMore" style="display:none;background-color: $!bgColor;">
+            #else
+            <div class="navMore" style="display:none;">
+                #end
+                <h3>共有 $listLen 个分会场可选</h3>
+                <nav>
+                    #foreach($urlLink in $mobUrlLinkList)
+                    #if($urlLink.parentId == -1)
+                    <span><a #if($!urlLink.isSelected==true) class="act" #end  href="#if($!urlLink.linkUrl != '' && $!urlLink.linkUrl != '//') $urlLink.linkUrl #else $void#end">$!urlLink.name</a></span>
+                    #end
+                    #end
+                </nav>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<TITLE>最新{page:name},好看的{page:name},{page:name}排行榜-{maccms:url}-{maccms:name}</TITLE>
+<meta name="keywords" content="最新{page:name},好看的{page:name},{page:name}排行榜">
+<meta name="description" content="{maccms:description}">
+{maccms:include}
+</head>
+<body>
+{maccms:head}
+<div class="all">
+<div class="modev-list">
+  <ul class="view-modev">
+    <li id="view-letter"><a class="current" target="_self">字母模式</a></li>
+    <li id="view-grid"><a  href="{page:linkbytime}" target="_self">图片模式</a></li>
+    <!--<li id="view-list"><a  href="/vodlist-19-picm-2.html" target="_self">列表模式</a></li>-->
+  </ul>
+  <ul class="letter-txt">
+   <a  href="{page:linkbyscore}">{page:name}推荐榜</a><a  href="{page:linkbyhits}">{page:name}排行榜</a><a  href="{page:linkbytime}">最新{page:name}</a>
+  </ul>
+</div>
+	<div class="letter">
+     <ul>
+              <li><a target="_self" href="#A">A</a></li>     <li><a target="_self" href="#B">B</a></li>     <li><a target="_self" href="#C">C</a></li>     <li><a target="_self" href="#D">D</a></li>     <li><a target="_self" href="#E">E</a></li>     <li><a target="_self" href="#F">F</a></li>     <li><a target="_self" href="#G">G</a></li>     <li><a target="_self" href="#H">H</a></li>     <li><a target="_self" href="#I">I</a></li>     <li><a target="_self" href="#J">J</a></li>     <li><a target="_self" href="#K">K</a></li>     <li><a target="_self" href="#L">L</a></li>     <li><a target="_self" href="#M">M</a></li>     <li><a target="_self" href="#N">N</a></li>     <li><a target="_self" href="#O">O</a></li>     <li><a target="_self" href="#P">P</a></li>     <li><a target="_self" href="#Q">Q</a></li>     <li><a target="_self" href="#R">R</a></li>     <li><a target="_self" href="#S">S</a></li>     <li><a target="_self" href="#T">T</a></li>     <li><a target="_self" href="#U">U</a></li>     <li><a target="_self" href="#V">V</a></li>     <li><a target="_self" href="#W">W</a></li>     <li><a target="_self" href="#X">X</a></li>     <li><a target="_self" href="#Y">Y</a></li>     <li><a target="_self" href="#Z">Z</a></li><li class="sz"><a target="_self" href="#other">&nbsp;其他&nbsp;</a></li>
+    </ul>
+  </div>
+<div class="letter-abc">
+<div class="abc-tj"><h3>{page:name}排行榜</h3>
+                 <ul>
+                {maccms:vod num=5 by=weekhits type={maccms:curvodtypeid} order=desc}
+                <li><span>[vod:score]</span> <em {if-A:[vod:num]<4}class="stress"{endif-A}>[vod:numfill].</em></lt><a href="[vod:link]" title="[vod:name]">[vod:name]</a></li>
+				{/maccms:vod}
+				</ul>
+          <h3>{page:name}推荐榜</h3><ul>      
+                {maccms:vod num=10 by=level type={maccms:curvodtypeid} order=desc}
+                <li><span>[vod:score]</span> <em {if-A:[vod:num]<4}class="stress"{endif-A}>[vod:numfill].</em></lt><a href="[vod:link]" title="[vod:name]">[vod:name]</a></li>
+				{/maccms:vod}
+      </ul></div>
+     
+       <dl name="A" id="A">
+      <dt><a name="A">A</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=A order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl> 
+       <dl name="B" id="B">
+      <dt><a name="B">B</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=B order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl> 
+       <dl name="C" id="C">
+      <dt><a name="C">C</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=C order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>  
+       <dl name="D" id="D">
+      <dt><a name="D">D</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=D order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>  
+       <dl name="E" id="E">
+      <dt><a name="E">E</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=E order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl> 
+	   <dl name="F" id="F">
+      <dt><a name="F">F</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=F order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="G" id="G">
+      <dt><a name="G">G</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=G order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="H" id="H">
+      <dt><a name="H">H</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=H order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="I" id="I">
+      <dt><a name="I">I</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=I order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="J" id="J">
+      <dt><a name="J">J</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=J order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="K" id="K">
+      <dt><a name="K">K</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=K order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="L" id="L">
+      <dt><a name="L">A</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=L order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="M" id="M">
+      <dt><a name="M">M</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=M order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="N" id="N">
+      <dt><a name="N">N</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=N order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="O" id="O">
+      <dt><a name="O">O</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=O order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="P" id="P">
+      <dt><a name="P">P</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=P order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="Q" id="Q">
+      <dt><a name="Q">Q</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=Q order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="R" id="R">
+      <dt><a name="R">R</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=R order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="S" id="S">
+      <dt><a name="S">S</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=S order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="T" id="T">
+      <dt><a name="T">T</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=T order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="U" id="U">
+      <dt><a name="U">U</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=U order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="V" id="V">
+      <dt><a name="V">V</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=V order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="W" id="W">
+      <dt><a name="W">W</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=W order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl><dl name="X" id="X">
+      <dt><a name="X">X</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=X order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="Y" id="Y">
+      <dt><a name="Y">Y</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=Y order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl>
+	   <dl name="Z" id="Z">
+      <dt><a name="Z">Z</a></dt>
+	  {maccms:vod num=500 by=time type=parent letter=Z order=desc}
+      <dd><em>[vod:numfill].</em><a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>
+	  {/maccms:vod}	  
+	   </dl> 
+	  </div>
+</div>
+
+﻿<div class="spcial all" id="star-collection">
+      <div class="spanl_nav">
+       <a href="#" id="zt1" onmouseover="setTab('zt',1,2);" class="current">专题</a>
+       <!--<a id="zt2" onmouseover="setTab('zt',2,2);" href="/zhuanti/">电影</a>-->
+<div class="serach_sb">
+<form action="{maccms:link_search_vod}" method="post" id="search">
+<input type="text" id="wd" name="wd" class="search-input_b" value="请在此处输入影片片名或演员名称。" onfocus="if(this.value=='请在此处输入影片片名或演员名称。'){this.value='';}" onblur="if(this.value==''){this.value='请在此处输入影片片名或演员名称。';};" />
+<input type="submit" id="searchbutton"  class="search-button" value="" /></form></div>
+       </div>
+       
+   <ul id="con_zt_1" style="display:block;">  
+   {maccms:topic num=4 id=all table=vod order=desc} 
+       <li>
+           <a  title="[topic:name]" href="[topic:link]" target="_blank">
+	<img class="loading" width="237" height="119" src="{maccms:path_tpl}images/blankbig.png" data-original="[topic:pic]" alt="[topic:name]">
+		<span><em class="bg"></em><em class="text">[topic:name]</em></span></a>
+   	  </li>
+	{/maccms:topic}  
+        </ul>
+        <ul id="con_zt_2">          
+   {maccms:topic num=4 id=all by=hits table=vod order=desc} 
+       <li>
+           <a  title="[topic:name]" href="[topic:link]" target="_blank">
+	<img class="loading" width="237" height="119" src="{maccms:path_tpl}images/blankbig.png" data-original="[topic:pic]" alt="[topic:name]">
+		<span><em class="bg"></em><em class="text">[topic:name]</em></span></a>
+   	  </li>
+	{/maccms:topic} 
+       </ul>
+        </div>
+               
+{maccms:foot}
+<script language="javascript" src="{maccms:path_tpl}js/qireobj.js" type="text/javascript"></script>
+<script type="text/javascript" src="{maccms:path_tpl}js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="{maccms:path_tpl}js/jquery.vod.js"></script>
+<script src="{maccms:path_tpl}js/main.js" type="text/javascript"></script>
+<script type="text/javascript" src="{maccms:path_tpl}js/IE6Top.js"></script>
+<div class="back-to-top" id="back-to-top"><a href="javascript:window.scrollTo(0, 0);" target="_self">Back to Top</a></div>
+<script type="text/javascript">
+$(function(){
+	$(".letter ul li a").click(function(){
+		var rel=$(this).attr("href");
+		var pos=$(rel).offset().top;//获取该点到头部的距离
+		$("html,body").stop(true,false).animate({scrollTop:pos-60}, 800);
+		return false;
+	});
+	commonFixed(".letter");
+});
+//通用fixed固定
+function commonFixed(selector,top,offset){
+	var el = $(selector);
+	if(!el.length) return;
+	var	h = top || el.offset().top,
+		height = el.outerHeight(true),
+		offt = offset || 0,
+		isIE6 = $.browser.msie && $.browser.version=="6.0";
+	if(isIE6){
+		$(window).bind("scroll.fixed",function(){
+			if($(this).scrollTop() > h){
+				el.css({"position":"relative","z-index":"999","opacity":"0","top":$(this).scrollTop() - h + offt}).stop(true,false).animate({opacity:1});
+			}else{
+				el.css("position","static");
+			}
+		}).trigger("scroll.fixed");
+	}else{
+		$(window).bind("scroll.fixed",function(){
+			if($(this).scrollTop() > h){
+				el.hasClass("fixed")?"":el.addClass("fixed");
+			}else{
+				el.hasClass("fixed")?el.removeClass("fixed"):"";
+			}
+		}).trigger("scroll.fixed");
+	}
+}
+</script>
+</body>
+</html>

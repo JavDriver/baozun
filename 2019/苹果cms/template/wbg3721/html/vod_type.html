@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+
+
+<title>2016年必看热门影片推荐，全部免费在线观看！火速收藏！</title>
+<link href="{maccms:path_tpl}css/m.css?20160507" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+{maccms:head}
+<div id="content">
+  <div class="c-box"  id="resize_list">
+    <div class="title">
+      <h2>最新更新的{page:name}</h2>
+    </div>
+    <div class="plist">
+      <ul class="list_tab_img" id="xwajaxdata">
+        {maccms:vod pagesize=30 order=desc by=addtime}
+        <li><a href="[vod:playlink]">
+          <div class="picsize" style="width: 110px; height: 146px;"><img src="/loading.gif "  alt="[vod:name]" class="lazy img-responsive" data-original="[vod:pic]"/>
+            <label class="title">[vod:remarks]</label>
+            <label class="name">[vod:name]</label>
+          </div>
+          </a> </li>
+        {/maccms:vod}
+      </ul>
+    </div>
+  </div>
+  <div id="xwajaxpage" style="color:#FFF;"><span>{maccms:pages len=6}</span></div>
+  <script type="text/javascript" src="{maccms:path_tpl}css/zepto.min.js"></script> 
+  <script type="text/javascript" src="{maccms:path_tpl}css/common.min.js"></script>
+</div>
+
+{maccms:foot}
+</body>
+</html>

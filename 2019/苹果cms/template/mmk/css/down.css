@@ -1,0 +1,84 @@
+
+/* download-focus */
+.download-focus{
+	width: 950px;
+	overflow: hidden;
+	position: relative;
+}
+.download-focus .ui-title{
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	padding: 0 10px;
+	color: #0AA770;
+	font-size: 14px;
+	border-bottom: 1px solid #eee;
+	background-color: #fcfcfc;
+}	
+	.download-focus .ui-title strong{ color: #f60;}	
+	.download-focus .ui-title span{ color: #080; float: right; font-size: 12px;}	
+	
+
+/* download-footer */
+.download-footer{border-top: 1px solid #eee;}		
+.download-footer-group{margin: 10px 5px 10px 15px;overflow: hidden;}
+.download-footer table{ width: 100%;}
+.download-footer table td{
+	vertical-align: middle;
+	text-align: left;
+	height: 35px;
+	line-height: 35px;
+	white-space:nowrap; 
+	padding: 0 5px;
+}
+.download-footer .ckb{width: 10px;}
+.download-footer .tit{width: 40px;}
+.download-footer .tit label{
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.download-footer .sms{ text-align: right;}
+.download-footer .sms a{ color: #06c;}
+.download-footer .xlx .ui-button{
+	display: inline-block;
+	font-size: 12px;
+	font-weight: normal;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 10px;
+	vertical-align: middle;
+}
+.download-footer .xlx .ui-button{ background-color: #E0E0E0;}
+.download-footer .xlx .ui-button:hover{background-color:#0AA770;color: #FFF;}
+/*-Edit 2014-09-09-*/
+.down_list ul {overflow:hidden; zoom:1;}
+.down_list ul li {height:24px; padding:8px 0; border-bottom:1px solid #eee; overflow:hidden; vertical-align:middle;}
+.down_url {float:left; display:inline; margin:7px 8px 0 10px; margin:0 8px 0 10px\9;}
+.down_list ul li p {float:left; display:inline; overflow:hidden; line-height:24px;}
+.down_part_name {/*font-size:14px; */color:#bc2931; font-weight:400; padding-right:10px; float:left; display:inline;}
+.thunder_url {border:solid 1px #e4e4e4; background-color:#f9f9f9; color:#444; height:22px; line-height:22px; padding:0 5px; overflow:hidden; text-overflow:ellipsis;}
+.down_list ul li span {float:right; display:inline; overflow:hidden;}
+.down_list ul li span label {float:left; display:inline; margin-right:10px; padding:6px 9px; color:#fff; line-height:1; cursor:pointer;}
+.thunder_down {background-color:#249ff1;}
+.qqdl {background-color:#ff6c00;}
+.kk {background-color:#36c345;}
+
+.downlist {clear:both;padding-right:15px;padding-left:15px;border-right-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-right-style: solid;border-bottom-style: solid;border-left-style: solid;border-right-color: #ddd;border-bottom-color: #ddd;border-left-color: #ddd;background-color:#fff;padding-top: 10px;}
+.downlist ul li {height:40px; line-height:40px; font-size:14px; position:relative; border-bottom:1px solid #ddd;  overflow:hidden; vertical-align:middle;}
+.downlist ul li p {float:left; width:76%; padding-left:5px; overflow:hidden; color:#43667c; text-overflow:ellipsis; white-space:nowrap;}
+.downlist ul li span {float:right; padding-top:5px; width:18%; overflow:hidden; text-align:right; position:relative;}
+.downlist ul li p a:hover{ float:left; display:inline;}
+.downlist ul li input {margin-top:14px; *margin-top:9px; float:left; display:inline;}
+.downtools input {margin-top:6px; *margin-top:1px; float:left;}
+.downlist ul li span a {margin-right:10px; color:#fff; padding:3px 9px; float:left; display:inline; line-height:1.7;}
+.lx {background-color:#0AA770;}
+.yb {background-color:#309dcf;}
+.xf {background-color:#066;}
+.downtools {padding:15px 10px; overflow:hidden; zoom:1;}
+.downtools input {margin:5px 0 0; *margin:0; padding:0; float:left; display:inline;}
+.downtools em {padding:0 7px; float:left; font-style:normal;}
+.downtools a {display:inline-block; margin-left:10px; width:133px; height:26px; line-height:26px; overflow:hidden;background-color:#E0E0E0; text-align:center; color: #333;}
+.downtools a:hover{background-color:#00B586;color: #FFF;}

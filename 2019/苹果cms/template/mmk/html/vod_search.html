@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>搜索《{page:key}》 - 有{page:datacount}个关于{page:key}的数据 - {maccms:name}</title>
+<meta name="keywords" content="{page:key}" />
+<meta name="description" content="{maccms:name}提供关于本站的《{page:key}》数据。" />
+<link href="{maccms:path_tpl}css/index.css" rel="stylesheet" type="text/css" />
+{maccms:include}
+</head>
+<body>
+{maccms:head}
+<div class="mainBox">
+	<div class="main_width">
+    	<div class="mbx_nav bb">
+            <span class="current_position">您当前的位置：</span><a href='/'>首页</a> » <span id="kw" class="red">{page:key}</span> 搜索结果</a></strong>
+        </div>
+        <div class="sy_contBox">
+        <div class="yp_lx">
+<span>影片类型：</span>
+<ul class="yp_list lx_list" id="lxlist">
+{maccms:menu type=auto order=asc table=vod}
+<li><a href="[menu:link]" {if-A: "{page:id}"="[menu:id]" } class="cur" {endif-A} title="[menu:name]">[menu:name]</a></li>
+{/maccms:menu}
+</ul>
+</div>
+<div class="sy_timenav">
+<span>上映时间：</span>
+{maccms:year type=auto start=2006 end=2016 order=desc}
+<a href="[year:link]"  {if-A: "{page:year}"="[year:name]" } class="cur" {endif-A} title="[year:name]{page:name}" >[year:name]</a>
+{/maccms:year}
+</div>
+<div class="yp_dq">
+<span>影片地区：</span>
+<ul class="yp_list" id="dqlist">
+{maccms:area type=auto}
+<li><a href="[area:link]" {if-A: "{page:area}"="[area:name]" } class="cur" {endif-A} title="[area:name]{page:name}" >[area:name]</a></li>
+{/maccms:area}
+</ul>
+</div>
+</div>
+<div style="margin:5px auto; width:1000px;">
+<script src="{maccms:path_ads}960x90-1.js"></script></div>
+   <div class="movie_contBox">
+        	<div class="hot_movieBox">
+                <div class="lx_titBox">
+                 
+<a href="{page:linkbytime}"{if-A: "{page:by}"="time" } class="cur" {endif-A} >最新更新</a>
+<a href="{page:linkbyscore}" {if-A: "{page:by}"="score" } class="cur" {endif-A} >评分最高</a>
+<a href="{page:linkbyhits}" {if-A: "{page:by}"="hits" } class="cur" {endif-A} >人气排行</a>
+</div>
+                <div class="cl"></div>
+                <ul class="contBox hot_contBox">
+                    {maccms:vod pagesize=20 order=desc by=time}
+<li>
+<a title="[vod:name]" target="_blank" href="[vod:link]"><img  style="height:244px;" src="[vod:pic]" alt="[vod:name]" /></a>
+<div class="img_tit"><a title="[vod:name]" target="_blank" href="[vod:link]">[vod:name]</a></div>
+</li>
+{/maccms:vod}
+
+                    </ul>
+                    <div class="cl"></div>
+                    <div class="pre_nextBox">{maccms:pages len=5}</div>
+                </div>
+             
+            </div>
+        </div> 
+    </div>
+</div>
+{maccms:foot}
+</body>
+</html>

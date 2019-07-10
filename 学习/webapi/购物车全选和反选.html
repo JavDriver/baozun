@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<table>
+    <tr>
+        <th><input type="checkbox"  id="cc1">1</th>
+
+        <td id="cc2"><input type="checkbox">2
+            <input type="checkbox" >3
+            <input type="checkbox" >4
+            <input type="checkbox" >5
+            <input type="checkbox" >6</td>
+    </tr>
+    <tr>
+        <input type="button" id="cc4" value="全选">
+    </tr>
+
+
+
+</table>
+
+<script>
+   var cc1 = document.getElementById('cc1');
+   var cc2 = document.getElementById('cc2');
+    var cc3 = cc2.getElementsByTagName('input');
+
+    cc1.onclick = function(){
+       for(var i = 0; i < cc3.length; i++){
+           var input = cc3[i];
+           if(input.type === 'checkbox'){
+                input.checked = this.checked;
+           }
+       }
+
+    }
+
+
+   for(var i = 0;i < cc3.length;i++){
+       var input = cc3[i];
+
+       input.onclick = function(){
+           checkBox();
+       }
+
+   }
+
+ function checkBox(){
+     var isAllcheck = true;
+   for(var i = 0; i < cc3.length; i++){
+      var input = cc3[i];
+
+       if(!input.checked){
+           isAllcheck = false;
+       }
+   }
+   cc1.checked = isAllcheck;
+ }
+
+    var btn = document.getElementById('cc4');
+   btn.onclick = function(){
+     for(var i = 0 ; i < cc3.length; i++){
+         var input = cc3[i];
+         if(!input.checked){
+             input.checked = true;
+         }
+         checkBox();
+
+     }
+   }
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

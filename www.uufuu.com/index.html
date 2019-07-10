@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>victioria热区工具-123hzj.com</title>
+<meta name="Author" content="www.123hzj.com" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="css/tools.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<link rel="shortcut icon" href="favicon.ico" />
+<script>
+$(document).ready(function(){
+var x = y = n = c = 0;var $map_area;
+$("#pic-map").live({
+mousedown:function(e){
+x=e.clientX;
+y=e.clientY;
+$(this).append("<div class='map_area map"+n+"' style='left:"+(e.offsetX)+"px;top:"+(e.offsetY)+"px;'></div>");
+},
+mousemove:function(e){
+$(this).css({'cursor':'crosshair'});
+$('.map'+n).css({'width':(e.clientX-x)+"px",'height':(e.clientY-y)+"px"});
+},
+mouseup:function(e){
+if($('.map'+n).width()<30 || $('.map'+n).height()<30){
+$('.map'+n).remove();
+}else{n++;c=0;}
+$(".map_area" ).draggable({containment:'parent',cursor:'move',});
+$(".map_area" ).resizable({handles:'all',containment:'parent',});
+$('.map_area').mousedown(function(e){e.stopPropagation();});
+},
+});
+$(".map_area" ).draggable({containment:'parent',cursor:'move'});
+$(".edit_box").draggable({containment:'parent',cursor:'move',handle:".panel-title"});
+$(".map_area" ).resizable({handles:'all',containment:'parent'});
+
+$(".control .qp_width").change(function(){
+$("#pic-map").css({"width":$(".qp_width").val()+"px"});
+});
+$(".control .qp_width").change(function(){
+	$("#pic-map").css({"margin-left":-$(".qp_width").val()/2+"px"});
+});
+$(".control .qp_height").change(function(){
+$("#pic-map").css({"height":$(".qp_height").val()+"px"});
+});
+loadImg = function(){
+if(!$(".imgurl").val()){
+alert ("请输入图片的网络地址，用于淘宝店铺时，必须是淘宝平台支持的地址");return false;
+}
+$(".loading").show();
+var img = new Image();
+img.src = $(".imgurl").val();
+img.onload = function(){
+$("#map_preview").html('<img src="'+$(".imgurl").val()+'"/>');
+$("#map_preview").css({"display":"block"});
+$("#pic-map").css({"background-image":"url("+$(".imgurl").val()+")","height":this.height+"px"});
+$("#pic-map").css({"width":this.width+"px"});
+$("#pic-map").css({"margin-left":-this.width/2+"px"});
+$("#pic-map").attr("data-img",$(".imgurl").val());
+$(".qp_width").attr("value",this.width);
+$(".qp_height").attr("value",this.height);
+$("#map_preview").html('');
+$("#map_preview").css({"display":"none"});
+$(".loading").hide();
+}
+}
+$(".control .btn-setPic").click(loadImg);
+$("input[name='imgurl']").change(loadImg);
+$(".control .btn-clearPic").click(function(){
+$(".imgurl").val("");
+});
+$(".map_area .del").live({
+mouseover:function(){
+$(this).css({'cursor':'pointer'});
+},
+click:function(){
+$dom=$(this).parent();
+//if(confirm("确定删除此链接吗?")){$dom.remove();}
+$dom.remove();
+},
+});
+$(".map_area").live({
+dblclick:function(){
+$map_area=$(this);
+letDivCenterLeft('edit_box');
+letDivCenterTop('edit_box');
+var datajson=$(this).attr('data-xm');
+var obj="";
+if(typeof(datajson)!= "undefined"){
+obj = jQuery.parseJSON(datajson);
+}
+$(".edit-link").val(obj['edit-link']);
+$(".edit-title").val(obj['edit-title']);
+if(obj['edit-target']=='_self'){
+$(".edit-target").attr('checked',false);
+}else{
+$(".edit-target").attr("checked","checked");
+}
+$("#edit-width").val($(this).width());
+$("#edit-height").val($(this).height());
+},
+mousedown:function(e){e.stopPropagation();},
+mouseenter:function(){$(this).append("<div class='del' title='删除'>×</div>");},
+mouseleave:function(e){$('.del').remove();}
+});
+$(".edit_box .edit-ok").live({
+click:function(){
+var str="{";
+$(".edit_box .edit-window").find("input").each(function(i){
+var douhao=i?",":"";
+var paramvalue="";
+if($(this).attr("type")=='text'){
+paramvalue=$(this).val()?$(this).val():"";
+}else if($(this).attr("type")=='radio'){
+paramvalue=$("input[name='"+$(this).attr('name')+"']:checked").val();
+}else if($(this).attr("type")=='textarea'){
+paramvalue=$(this).val()?$(this).val():"";
+}else if($(this).attr("type")=='checkbox'){
+paramvalue=$(this).attr("checked")?$(this).attr('value'):"_self";
+}
+str+=douhao+'"'+$(this).attr("name")+'":"'+paramvalue+'"';
+});
+str+="}";
+$map_area.attr({"data-xm":str});
+$map_area.css({"width":$("#edit-width").val()+"px","height":$("#edit-height").val()+"px"});
+$(".edit_box").hide(300);
+},
+});
+$(".edit_box .close").live({
+click:function(){
+$(".edit_box").hide(300);
+},
+});
+$(".btn-preview").live({
+click:function(){
+var imgurl=$("#pic-map").attr("data-img");
+var name="map"+generateMixed(10);
+var str="<div style='width:"+$("#pic-map").width()+"px;overflow:hidden;text-align:center;'><img usemap='#"+name+"' src='"+imgurl+"'/><map name='"+name+"'>";
+$("#pic-map .map_area").each(function(){
+var datajson=$(this).attr('data-xm');
+var obj="";
+if(typeof(datajson)!= "undefined"){
+obj = jQuery.parseJSON(datajson);
+}
+if(obj['edit-target']=='_self'){
+$target="_self";
+}else{
+$target="_blank";
+}
+if(obj['edit-link']){
+$edit_link=obj['edit-link'];
+}else{
+$edit_link="/";
+}
+if(obj['edit-title']){
+$edit_title="title='"+obj['edit-title']+"'";
+}else{
+$edit_title="";
+}
+var mapY = $(this).position().top;
+var mapx = $(this).position().left;
+var coords=mapx+","+mapY+","+(mapx+$(this).width())+","+(mapY+$(this).height());
+str=str+"<area shape='rect' coords='"+coords+"' href ='"+$edit_link+"' target='"+$target+"' "+$edit_title+" style='outline:none;'/>";
+});
+str=str+"</map></div>";
+showMask();
+$("#map_preview").css({"width":$("#pic-map").width()+"px","height":$("#pic-map").css("height")});
+letDivCenterLeft('map_preview');
+$("#map_preview").html(str);
+$("#map_preview").append("<div style='position:absolute;width:"+$("#pic-map").width()+"px;left:0;top:130px;height:28px;'><div class='mapbtn'><div class='dcode'>生成代码</div><div class='close'>关闭</div></div></div>");
+}
+});
+$("#map_preview .close,#map_create .close").live({
+click:function(){
+$("#map_create,#map_preview").hide(300);
+$(".full_screen_lock").hide(300);
+},
+});
+$(".btn-create,#map_create .dcode,#map_preview .dcode").live({
+click:function(){
+var imgurl=$("#pic-map").attr("data-img");
+var name="map"+generateMixed(10);
+var divdom=$("#pic-map").width()>950?"class='"+"w"+$("#pic-map").width()+"'":"style='width:"+$("#pic-map").width()+"px;height:"+$("#pic-map").height()+"px;overflow:hidden;text-align:center;'";
+var str="<div "+divdom+"><img usemap='#"+name+"' src='"+imgurl+"'/><map name='"+name+"'>";
+$("#pic-map .map_area").each(function(){
+var datajson=$(this).attr('data-xm');
+var obj="";
+if(typeof(datajson)!= "undefined"){
+obj = jQuery.parseJSON(datajson);
+}
+if(obj['edit-target']=='_self'){
+$target="_self";
+}else{
+$target="_blank";
+}
+if(obj['edit-link']){
+$edit_link=obj['edit-link'];
+}else{
+$edit_link="#";
+}
+if(obj['edit-title']){
+$edit_title="title='"+obj['edit-title']+"'";
+}else{
+$edit_title="";
+}
+var mapY = $(this).position().top;
+var mapx = $(this).position().left;
+var coords=mapx+","+mapY+","+(mapx+$(this).width())+","+(mapY+$(this).height());
+str=str+"<area shape='rect' coords='"+coords+"' href ='"+$edit_link+"' target='"+$target+"' "+$edit_title+"/>";
+});
+str=str+"</map></div>";
+showMask();
+$("#map_create,#map_create iframe[name='create_code']").css({"overflow":"visible","width":"762px","padding":"10px","top":"160px"});
+$("#map_create iframe[name='create_code']").css({"padding":"0"});
+$("#map_create .anpanel").remove();
+$("#mapcode").text(str);
+var codekb=Math.round(($("#mapcode").text().replace(/[^\u0000-\u00ff]/g,"xx").length)/1024*100)/100;
+$(".codekb").html('总代码量:<em>'+codekb+"</em>KB");
+$("#map_create").show();
+$("#submitcode").submit();
+},
+});
+$(".btn-daoru").click(function(){
+$("#map_daoru #d_mapcode").val("");
+showMask();
+$("#map_daoru").show();
+});
+$("#map_daoru .close").click(function(){
+$(".full_screen_lock").hide(300);
+$("#map_daoru").hide(300);
+});
+$("#map_daoru .daoru").click(function(){
+if($("#map_daoru #d_mapcode").val().indexOf("map")<0){
+alert ("请输入本站导出的代码");return false;
+}
+$(".hot_bd .map_bd").html($("#map_daoru #d_mapcode").val());
+var img=$(".hot_bd .map_bd").find("img").attr("src");
+var zx_w=$(".hot_bd .map_bd").find('img:last').css("width");
+var zx_m=$(".hot_bd .map_bd").find('div:last').width()/2;
+var zx_y=$(".hot_bd .map_bd").find('div:last').css("height");
+var area='';
+$(".hot_bd .map_bd").find('area').each(function(){
+var arr = $(this).attr('coords').split(',');
+var left=arr[0];
+var top=arr[1];
+var width=arr[2]-left;
+var height=arr[3]-top;
+var href=$(this).attr('href')?$(this).attr('href'):'#';
+var title=$(this).attr('title')?$(this).attr('title'):'查看详情';
+var target=$(this).attr('target');
+area+='<div data-xm=\'{"edit-type":"1","edit-link":"'+href+'","edit-target":"'+target+'","edit-title":"'+title+'","edit-width":"'+width+'","edit-height":"'+height+'"}\' class="map_area" style="left:'+left+'px;top:'+top+'px;width:'+width+'px;height:'+height+'px;"></div>';
+});
+str='<div id="pic-map" data-img="'+img+'" style="width:'+zx_w+';height:'+zx_y+';margin-left:-'+zx_m+'px;background:url('+img+') no-repeat center top;">'+area+'<div class="loading"></div></div>';
+$(".hot_bd .map_bd").html(str);
+$(".imgurl").attr("value",img);
+$(".qp_width").attr("value",$("#pic-map").width());
+$(".qp_height").attr("value",$("#pic-map").height());
+$(".hot_bd .map_bd .map_area" ).draggable({containment:'parent',cursor:'move',});
+$(".hot_bd .map_bd .map_area" ).resizable({handles:'all',containment:'parent',});
+$("#map_daoru").hide(300);
+$(".full_screen_lock").hide(300);
+});
+});
+function letDivCenterLeft(divName){
+divName="."+divName;
+var left = ($(window).width() - $(divName).width())/2;
+var scrollLeft = $(document).scrollLeft();
+$(divName).show();
+$(divName).css({'left' : left + scrollLeft }).show();
+}
+function letDivCenterTop(divName){
+divName="."+divName;
+var top = ($(window).height() - $(divName).height())/2;
+var scrollTop = $(document).scrollTop();
+$(divName).show();
+$(divName).css({'top' : top + scrollTop }).show();
+}
+var jschars = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+function generateMixed(n) {
+var res = "";
+for(var i = 0; i < n ; i ++) {
+var id = Math.ceil(Math.random()*35);
+res += jschars[id];
+}
+return res;
+}
+function showMask(){ 
+$(".full_screen_lock").css("height",$(document).height());
+$(".full_screen_lock").css("width",$(document).width());
+$(".full_screen_lock").show();
+}
+</script>
+</head>
+<body>
+<!-- bd start -->
+<div id="bd">
+<div class="hot_hd">
+<div class="panels">
+
+<div class="control-group">
+<label class="control-label">全屏宽度:</label>
+<div class="control">
+<input class="input-box qp_width" style="width:66px;margin-right:15px;" type="text" value="1920" name="qp_width" title="载入图片，自动获取图片实际“宽度”">
+高度: <input class="input-box qp_height" style="width:55px;" type="text" value="780" name="qp_height" title="载入图片，自动获取图片实际“高度”">
+<a class="help" href="javascript:alert('QQ:378876897')" target="_blank">使用帮助</a>
+</div>
+</div>
+<div class="control-group" style="height:auto;overflow:hidden;margin-bottom:7px;">
+<label class="control-label">输入图片地址:</label>
+<div class="control">
+<input class="input-box imgurl" name="imgurl" style="width:740px;padding:0 10px;color:#999;" type="text" value="https://img.alicdn.com/imgextra/i4/3265150369/O1CN010c0f1G1Eb2df3TWHC_!!3265150369.jpg" />
+</div>
+<div style="clear:both;"></div>
+</div>
+<div class="control-group" style="height:auto;overflow:hidden;">
+<label class="control-label"></label>
+<div class="control">
+<a href="javascript:void(0);" class="btn-setPic">载入图片</a>
+<a href="javascript:void(0);" class="btn-clearPic">清空</a>
+<a href="https://sucai.wangpu.taobao.com" target="_blank" class="btn-picRoom">图片空间</a>
+<a href="javascript:void(0);" class="btn-ok btn-preview">预览</a>
+<a href="javascript:void(0);" class="btn-ok btn-create">生成代码</a>
+<a href="javascript:void(0);" class="btn-daoru">导入代码</a>
+<span>按住鼠标 可画新热区！鼠标左键双击，可进行编辑</span>
+</div>
+<div style="clear:both;"></div>
+</div>
+</div>
+</div>
+<div class="hot_bd">
+<div class="tools-area">
+<div class="map_bd">
+<div id="pic-map" data-img="images/tb2jal2awjlpufjsspjxxct.pxa_!!34251258.jpg" style="width:1920px;height:780px;margin-left:-960px;background:url('https://img.alicdn.com/imgextra/i4/3265150369/O1CN010c0f1G1Eb2df3TWHC_!!3265150369.jpg') no-repeat center top;">
+<div class="map_area" style="left:480px;top:150px;width:380px;height:510px;"></div>
+<div class="map_area" style="left:1160px;top:30px;width:280px;height:720px;"></div>
+<div class="loading"></div>
+</div>
+</div>
+</div>
+<div class="edit_box">
+<div class="panel-title">链接属性<span class="close">×</span></div>
+<div class="edit-window">
+<ul>
+<li>
+<label>类型:</label>
+<input type="radio" checked="checked" value="1" name="edit-type"><span>普通链接</span>
+</li>
+<li>
+<label>链接:</label>
+<input type="text" name="edit-link" class="edit-link" placeholder="http://">
+<input type="checkbox" name="edit-target" class="edit-target" value="_blank">新窗口打开
+</li>
+<li>
+<label>描述:</label>
+<input type="text" name="edit-title" class="edit-title" placeholder="请输入热区描述信息">
+</li>
+<li>
+<label>宽:</label>
+<input type="text" name="edit-width" id="edit-width" style="width:39px;"><label style="width:auto;">px</label>
+<label style="width:30px;">高:</label>
+<input type="text" name="edit-height" value="" id="edit-height" style="width:39px;"><label style="width:auto;">px</label>
+</li>
+<li style="text-align:center;padding:10px 0;">
+<a href="javascript:void(0)" class="edit-ok">确定</a>
+<a href="javascript:void(0)" class="close">取消</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="tp">
+<strong>【123hzj.com热区网-专注可视化淘宝店铺装修】【超好用的全屏图片热区工具】【淘宝网通用店铺装修工具】【www.123hzj.com】</strong><br />
+<a href="/" title="热区工具">热区工具</a> |
+<a href="/" title="全屏热区">全屏热区</a> |
+<a href="/" title="热图工具">热图工具</a> |
+<a href="/" title="图片热区">图片热区</a> |
+<a href="/" title="自定义热区">自定义热区</a> |
+<a href="/" title="全屏热区工具">全屏热区工具</a> |
+<a href="/" title="图片热区工具">图片热区工具</a> |
+<a href="/" title="淘宝装修可视化工具">可视化工具</a><br />
+<a href="/" title="淘宝工具">淘宝工具</a> |
+<a href="/" title="淘宝热区工具">淘宝热区工具</a> |
+<a href="/" title="淘宝店铺装修">淘宝店铺装修</a> |
+<a href="/" title="店铺装修工具">店铺装修工具</a> |
+<a href="/" title="淘宝店铺装修工具">淘宝店铺装修工具</a> |
+
+</div>
+
+</div>
+<!-- bd end -->
+<div class="full_screen_lock"></div>
+<div id="map_preview" class="map_preview"></div>
+<div id="map_create" class="map_create">
+<div class="map_bd">
+<div class="tips">请将导出的代码放入：<span>设计师模块[全屏模块-自定义html区]</span> 或者 <span>系统模块[自定义内容区]</span></div>
+<div class="codekb"></div>
+</div>
+<textarea name="mapcode" id="mapcode"></textarea>
+<div class="copy">点击复制代码</div>
+<div class="close">关闭</div>
+<div class="goshop"><a href="http://siteadmin.taobao.com/design.htm" target="_blank">进入店铺装修</a></div>
+<a class="help" href="help.htm#p6" target="_blank">使用帮助</a>
+</div>
+<input type="hidden" id="abs" name="abs" value="abs qzz"/><!-- 2018.9.15修改 -->
+<div id="map_daoru" class="map_daoru">
+<textarea name='d_mapcode' id="d_mapcode"></textarea>
+<div class="daoru">导入</div>
+<div class="close">关闭</div>
+</div>
+<script type="text/javascript" src="js/jquery.zclip.min.js"></script>
+<script type="text/javascript">
+$(function(){ 
+$('.copy').zclip({ 
+path: './js/ZeroClipboard.swf', 
+copy: function(){ 
+return $('#mapcode').val(); 
+}, 
+afterCopy:function(){
+$('#mapcode').select();
+alert('代码已经复制到粘贴板');
+}
+}); 
+$("#mapcode").click(function(){
+$("#mapcode").select();
+});
+$(".imgurl").click(function(){
+	$(".imgurl").select();
+});
+}); 
+</script>
+</body>
+</html>

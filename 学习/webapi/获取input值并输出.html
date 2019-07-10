@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text"><br/>
+<input type="text"><br/>
+<input type="text"><br/>
+<input type="text"><br/>
+<input type="text"><br/>
+<input type="text"><br/>
+<input type="text"><br/>
+<input type="text"><br/>
+<input type="text"><br/>
+<input type="button" id="btn" value="点击">
+<script>
+    var values = document.getElementsByTagName('input');
+    for(var i = 0; i < values.length; i++){
+        var input = values[i];
+
+    if(input.type === 'text'){
+        input.value = i;
+    }
+    }
+    var btn = document.getElementById('btn');
+    btn.onclick = function () {
+
+        var array = [];
+     for(var i = 0; i < values.length; i++){
+         var input = values[i];
+         if(input.type === 'text'){
+             array.push(input.value);
+         }
+
+     }
+    console.log( array.join('|'));
+    }
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

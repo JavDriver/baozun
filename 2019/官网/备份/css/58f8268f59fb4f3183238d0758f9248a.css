@@ -1,0 +1,1 @@
+﻿@charset "utf-8";.pager a{text-decoration:none;border:1px solid #aae;color:#15b}.pager a,.pager span{display:inline-block;padding:.1em .4em;margin-right:5px;margin-bottom:5px}.pager .current{background:#26b;color:#fff;border:1px solid #aae}.pager .current.prev,.pager .current.next{color:#999;border-color:#999;background:#fff}

@@ -1,0 +1,59 @@
+<div class="headBox">
+	<div class="head">
+		<a href="/" title="首页" class="head_logo">
+		</a>
+		<div class="head_nav">
+			<a href="{maccms:link_index_art}" title="首页" {if-A:{maccms:siteaid}=20}class="current"
+			{endif-A}>
+				资讯
+			</a>
+			{maccms:matrix table=vod type=1,2,3,4 order=desc}
+			<a href="[matrix:link]" {if-A:{maccms:curvodtypeid}=[matrix:id]}class="current"
+			{endif-A}{if-A:{maccms:curvodtypepid}=[matrix:id]}class="current" {endif-A}title="[matrix:name]">
+				[matrix:name]
+			</a>
+			{/maccms:matrix}
+		</div>
+	</div>
+</div>
+<div class="bg">
+	<div class="erji_navAndsearch">
+		<div class="erji_nav">
+			<a href="/" {if-A:{maccms:siteaid}=10}class="erji_current" {endif-A}>
+				首页
+			</a>
+			{maccms:matrix table=art num=3 parent=0}
+			<a href="[matrix:link]" {if-A:{maccms:curarttypeid}=[matrix:id]}class="erji_current"
+			{endif-A}title="[matrix:name]">
+				[matrix:name]
+			</a>
+			{/maccms:matrix}{maccms:menu type=parent order=asc table=vod}
+			<a href="/vod-list-id-[menu:id]-pg-1-order--by--class--year-2015-letter--area--lang-.html"
+			title="2015[menu:name]">
+				2015[menu:name]
+				<i class="hoticon">
+					&nbsp;
+				</i>
+			</a>
+			{/maccms:menu}
+		</div>
+		<div class="search">
+			<input type="text" name="keyword" id="keyword" autocomplete="off" maxlength="50"
+			value="" placeholder="搜索您想找的电影！" onfocus="serchFocus()" onblur="serchBlur()">
+			<input type="hidden" value="1" name="tid" id="tid" />
+			<span class="search_btn" onclick="SubmitForm()">
+			</span>
+		</div>
+		<script language="javascript">
+			$('#keyword').keydown(function(e) {
+				if (e.keyCode == 13) {
+					SubmitForm()
+				}
+			});
+		</script>
+	</div>
+	<div style=" margin:0 auto;padding-bottom:5px; width:1000px;">
+		<script src="{maccms:path_ads}960x90-1.js">
+		</script>
+	</div>
+</div>

@@ -1,0 +1,69 @@
+<div class="nav">
+<div class="all">
+<ul class="nav_link">
+<li><a {if-A:{maccms:siteaid}=10}class="current"{endif-A} target="_self" href="{maccms:path}"><i class="navv home"></i></a></li>
+{maccms:menu type=parent order=asc table=vod}
+<li><a {if-A:{maccms:curvodtypeid}=[menu:id]}class="current"{endif-A}{if-A:{maccms:curvodtypepid}=[menu:id]}class="current"{endif-A} target="_self" href="[menu:link]"><i class="navv {if-A:[menu:id]=1}dianying{endif-A}{if-A:[menu:id]=2}dianshiju{endif-A}{if-A:[menu:id]=4}dongman{endif-A}{if-A:[menu:id]=3}zongyi{endif-A}{if-A:[menu:id]=16}weidianying{endif-A}"></i>[menu:name]</a></li>
+{/maccms:menu}
+<li><a target="_self" href="{maccms:getlink zhibo.html}"><i class="navv live"></i>直播</a></li>
+<!--<li><a target="_self" href="{maccms:link_gbook}"><i class="navv ks"></i>留言</a></li>-->
+</ul>
+<ul id="skin"><li id="skin-blue" title="蓝色" class="selected"><i></i></li><li id="skin-green" title="绿色"><i></i></li><li id="skin-red" title="玫红"><i></i></li><li id="skin-orange" title="橙色"><i></i></li></ul><!-- // skin end -->
+<ul id="sign" class="ui-nav">
+{if-A:isN("{maccms:userid}")}
+<li class="nav-item drop-down"><a id="login" rel="nofollow" class="nav-link drop-title" target="_self" id="innermsg" href="#" _hover-ignore="1"><i class="navv sign-nav"></i>会员登录</a></li>
+{else-A}
+<li class="nav-item drop-down"><a rel="nofollow" class="nav-link drop-title" target="_self" id="login_box" href="{maccms:path}index.php?m=user-index.html" _hover-ignore="1"><i class="navv sign-nav"></i>{maccms:username}</a></li>
+{endif-A}
+<li class="nav-item drop-down" id="nav-looked">
+<a id="history" href="javascript:void(0);" class="nav-link drop-title"><i class="navv record"></i>播放记录</a>        
+</li>
+</ul>
+</div>
+<div class="all mnav">
+<ul class="aleft"><strong class="tvv">电视剧：</strong> 
+{maccms:menu parent=2 order=asc table=vod}
+{if-A:[menu:num]=1}{else-A}<em>|</em>{endif-A}<a href="[menu:link]" title="[menu:name]">[menu:name]</a>
+{/maccms:menu}
+</ul>
+<ul class="aright"><strong class="movv">电影：</strong>
+{maccms:menu parent=1 order=asc table=vod}
+{if-A:[menu:num]=1}{else-A}<em>|</em>{endif-A}<a href="[menu:link]" title="[menu:name]">[menu:name]</a>
+{/maccms:menu}
+</ul>
+</div>
+</div>
+<div class="all header"><img src="{maccms:path_tpl}images/logo.png" class="logo">
+<div class="search">
+<div class="serach_s">
+<form action="{maccms:link_search_vod}" method="post" id="search">
+<input type="text" id="wd" name="wd" class="search-input" value="请在此处输入影片片名或演员名称。" onfocus="if(this.value=='请在此处输入影片片名或演员名称。'){this.value='';}" onblur="if(this.value==''){this.value='请在此处输入影片片名或演员名称。';};" />
+<input type="submit" id="searchbutton"  class="search-button" value="" /></form></div>
+<div class="search_hotkey">
+{maccms:load hotkey.html} 
+
+</div>
+</div><ul class="top_r">
+<li><a  class="current" href="{maccms:getlink new.html}"><i class="ui-icon new-icon"></i>最近<br />更新</a></li>
+<li><a href="{maccms:getlink top.html}"><i class="ui-icon top-icon"></i>影片<br />排行</a></li>
+<li><a rel="nofollow" href="{maccms:getlink help.html}"><i class="ui-icon help-icon"></i>会员<br />帮助</a></li>
+<li><a rel="nofollow" href="{maccms:link_gbook}"><i class="ui-icon gb-icon"></i>留言<br />反馈</a></li
+><li><a rel="nofollow" target="_self" id="a-clo" href="javascript:void(0);" onclick='fav();'><i class="ui-icon fav-icon"></i>收藏<br />本站</a></li></ul></div>
+<script>
+function fav(){
+		var url = window.location.href;					 
+		try{
+			window.external.addFavorite(url,document.title);
+		}catch(err){
+			try{
+				window.sidebar.addPanel(document.title, url,"");
+			}catch(err){
+				alert("请使用Ctrl+D为您的浏览器添加书签！");
+			}
+		}
+}
+	$(document).ready(function(){		
+	});
+ </script> 
+
+<!--<div class="contenttt">公告：</div>-->   

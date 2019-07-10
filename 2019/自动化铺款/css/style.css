@@ -1,0 +1,262 @@
+#icanvas {
+
+}
+/*.haha85{width: 100%; height: 85px;}*/
+.conten {
+    width: 750px;
+    background: #ffffff;
+    padding-top: 40px;
+    float: left;
+
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.conten h3 {
+    font-size: 35px;
+    color: #1a1a1a;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 30px;
+    font-family: '造字工房刻宋';
+}
+
+
+.conten h2 {
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'fzltzh';
+    margin: 30px auto;
+    letter-spacing:1px;
+}
+.conten h2 em{ font-size: 25px; display: inline-block; margin-left: 10px;}
+
+.conten h4 {
+    font-size: 28px;
+    color: #1a1a1a;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'victoriai';
+    margin-bottom: 20px;
+}
+
+.conten ul li {
+    width: 356px;
+    float: left;
+    margin-right: 38px;
+    margin-bottom: 30px;
+}
+
+.conten ul li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.conten ul li div > span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 474px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.conten ul li div > span  img {
+    width: 100%;
+    position: absolute;
+
+  z-index: 1;
+  position: relative;
+  vertical-align: top;
+  display: block;
+  margin: auto;
+  overflow: auto;
+  /* padding: 10px 3px 10px 10px; */
+  float: right !important;
+}
+
+.conten ul li p {
+    font-size: 26px;
+    color: #1a1a1a;
+    text-align: center;
+    line-height: 30px;
+    text-transform:uppercase;
+    font-family: 'TradeGothicLTPro-BdCn20','方正兰亭黑简';
+    margin-bottom: 8px;
+}
+
+.conten ul li p span{vertical-align: bottom}
+
+.conten ul li em {
+    font-size: 22px;
+    text-align: center;
+    color: #272727;
+    display: block;
+    font-family: '方正兰亭黑简';
+}
+
+.logof {
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    width: 77%;
+    height: 80px;
+}
+.logof img{ width: 100%;}
+.logof h3 {
+    font-size: 27px;
+    position: absolute;
+    top: 7px;
+    left: 34px;
+    font-family: 'TradeGothicLTPro-BdCn20';
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.logof h2 {
+    font-size: 68px;
+    position: absolute;
+    color: #ffffff;
+    top: -3px;
+    right: 8px;
+    font-family: 'TradeGothicLTPro-BdCn20';
+    letter-spacing: -2px;
+    text-shadow: 4px 3px 0px #000;
+}
+
+.logof h2 i {
+    font-style: normal;
+    font-size: 50px;
+    position: absolute;
+    top: 8px;
+    left: -22px;
+    text-shadow: 4px 3px 0px #000;
+}
+
+
+
+
+.logof h3 i {
+    font-style: normal;
+    font-size: 20px;
+    position: relative;
+    top: -4px;
+    left: 0px;
+}
+
+.logof h3 cite {
+    font-size: 19px;
+    font-family: '方正兰亭大黑'
+}
+
+.logof h3 font {
+}
+
+.logof h4 {
+    font-size: 33px;
+    position: absolute;
+    color: #ffffff;
+    top: 37px;
+    right: 130px;
+    font-family: '方正兰亭大黑';
+}
+
+.wblj {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+}
+
+#shift {
+    float: left;
+    margin: 0 20px;
+    margin-top: 20%
+}
+
+#btn1 {
+    position: fixed;
+    right: 1%;
+    top: 9%;
+    width: 140px;
+    background-color: #48d1ee;
+    color: #ED2027;
+    text-align: center;
+}
+
+#btn1 li {
+    padding: 10px;
+    border-bottom: 2px solid cadetblue;
+}
+
+#btn1 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#btn1 a {
+    cursor: pointer;
+}
+
+.cenwen {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    padding: 10px;
+}
+
+.centop {
+    width: 24%;
+    float: left;
+    position: absolute;
+
+    /*width: 18%;*/
+    /*float: left;*/
+    /*position: absolute;*/
+    /*right: 804px;*/
+}
+
+.cof {
+    color: #ffffff;
+}
+
+.placeHolder div {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background-color: white !important;
+    border: dashed 1px gray !important;
+}
+
+.froala-editor.f-basic{ position: fixed;top: 43px;z-index: 9999999; border-bottom: 1px solid #333333 !important;}
+
+.budishow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: inset 1px -3px 23px -2px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 473px;
+    z-index: 9999;
+}
+
+.wenben{ float: left;
+    margin-right: 60px;
+    margin-left:384px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

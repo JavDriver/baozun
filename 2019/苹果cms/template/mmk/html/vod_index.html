@@ -1,0 +1,694 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>{maccms:name}-免费电影下载-电影电视剧西瓜影音免费看-影视资讯</title>
+		<meta name="keywords" content="免费电影下载,最新电影在线观看,{maccms:name}" />
+		<meta name="description" content="{maccms:name}提供最新上映的电影免费看和热门电视剧免费在线观看、付费电视剧和付费电影免费下载，另外我们将精心选出一些大片重点推荐给大家，希望影迷们可以享受到免费又好的观影体验。"/>
+		<link rel="alternate" media="only screen and(max-width: 640px)" href="{maccms:qq}">
+		{maccms:include}
+		<link href="{maccms:path_tpl}css/index.css" rel="stylesheet" type="text/css"/>
+		<link href="{maccms:path_tpl}css/art_global.css" rel="stylesheet" type="text/css"/>
+		<link href="{maccms:path_tpl}css/art_index.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		{maccms:head}
+		<div class="hdpAndMbx">
+			<div class="hdpBox">
+				<div class="slider">
+					<div class="bd">
+						<ul>
+							<li>
+								{maccms:vod num=4 type=2 start=1 order=desc by=time level=1}
+								<div class="zu01">
+									<a target="_blank" href="[vod:link]" title="[vod:name]">
+										<img src="[vod:pic]" alt="[vod:name]" />
+									</a>
+									<div class="tit_img">
+										<div class="tit_img_text">
+											<a href="[vod:link]" title="[vod:name]" target="_blank">
+												[vod:name]
+											</a>
+										</div>
+										<div class="tit_img_time">
+											{if-A:not isN("[vod:remarks]")} [vod:remarks]{elseif-A:[vod:state]=0}
+											[完结]{elseif-A:[vod:state]>0} {if-B:[vod:state]>10000} [连载[vod:state]]期
+											{else-B} [连载[vod:state]]集 {endif-B}{else-A}{endif-A}
+										</div>
+									</div>
+									<div class="bg_tit">
+									</div>
+								</div>
+								{/maccms:vod}
+							</li>
+							<li>
+								{maccms:vod num=4 type=1 start=1 order=desc by=time level=1}
+								<div class="zu01">
+									<a target="_blank" href="[vod:link]" title="[vod:name]">
+										<img src="[vod:pic]" alt="[vod:name]" />
+									</a>
+									<div class="tit_img">
+										<div class="tit_img_text">
+											<a href="[vod:link]" title="[vod:name]" target="_blank">
+												[vod:name]
+											</a>
+										</div>
+										<div class="tit_img_time">
+											{if-A:not isN("[vod:remarks]")} [vod:remarks]{elseif-A:[vod:state]=0}[完结]{elseif-A:[vod:state]>0}{if-B:[vod:state]>1000}[连载[vod:state]]期
+											{else-B}[连载[vod:state]]集{endif-B}{else-A}{endif-A}
+										</div>
+									</div>
+									<div class="bg_tit">
+									</div>
+								</div>
+								{/maccms:vod}
+							</li>
+							<li>
+								{maccms:vod num=4 type=4 start=1 order=desc by=time level=1}
+								<div class="zu01">
+									<a target="_blank" href="[vod:link]" title="[vod:name]">
+										<img src="[vod:pic]" alt="[vod:name]" />
+									</a>
+									<div class="tit_img">
+										<div class="tit_img_text">
+											<a href="[vod:link]" title="[vod:name]" target="_blank">
+												[vod:name]
+											</a>
+										</div>
+										<div class="tit_img_time">
+											{if-A:not isN("[vod:remarks]")} [vod:remarks]{elseif-A:[vod:state]=0}
+											[完结]{elseif-A:[vod:state]>0} {if-B:[vod:state]>10000} [连载[vod:state]]期
+											{else-B} [连载[vod:state]]集 {endif-B}{else-A}{endif-A}
+										</div>
+									</div>
+									<div class="bg_tit">
+									</div>
+								</div>
+								{/maccms:vod}
+							</li>
+							<li>
+								{maccms:vod num=4 type=3 start=1 order=desc by=addtime level=1}
+								<div class="zu01">
+									<a target="_blank" href="[vod:link]" title="[vod:name]">
+										<img src="[vod:pic]" alt="[vod:name]" />
+									</a>
+									<div class="tit_img">
+										<div class="tit_img_text">
+											<a href="[vod:link]" title="[vod:name]" target="_blank">
+												[vod:name]
+											</a>
+										</div>
+										<div class="tit_img_time">
+											{if-A:not isN("[vod:remarks]")} [vod:remarks]{elseif-A:[vod:state]=0}
+											[完结]{elseif-A:[vod:state]>0} {if-B:[vod:state]>10000} [连载[vod:state]]期
+											{else-B} [连载[vod:state]]集 {endif-B}{else-A}{endif-A}
+										</div>
+									</div>
+									<div class="bg_tit">
+									</div>
+								</div>
+								{/maccms:vod}
+							</li>
+						</ul>
+					</div>
+					<div class="hd">
+						<ul>
+						</ul>
+					</div>
+					<div class="pnBtn prev">
+						<span class="blackBg">
+						</span>
+						<a class="arrow" href="javascript:void(0)" rel="nofollow">
+						</a>
+					</div>
+					<div class="pnBtn next">
+						<span class="blackBg">
+						</span>
+						<a class="arrow" href="javascript:void(0)" rel="nofollow">
+						</a>
+					</div>
+				</div>
+				<script type="text/javascript">
+					jQuery(".slider .bd li").first().before(jQuery(".slider .bd li").last());
+					jQuery(".slider").hover(function() {
+						jQuery(this).find(".arrow").stop(true, true).fadeIn(300)
+					},
+					function() {
+						jQuery(this).find(".arrow").fadeOut(300)
+					});
+					jQuery(".slider").slide({
+						titCell: ".hd ul",
+						mainCell: ".bd ul",
+						effect: "leftLoop",
+						autoPlay: true,
+						vis: 3,
+						autoPage: true,
+						trigger: "click"
+					});
+				</script>
+			</div>
+		</div>
+		<div class="g-wrap g-wrap-6 f-cb" id="anchor-category" name="anchor-category">
+			<div class="g-mn f-fl">
+				<div class="g-mnc m-box m-box-1 f-cb">
+					<div class="m-head m-head-1">
+						今日头条
+					</div>
+					<span class="u-subnav">
+						{maccms:matrix table=art num=7 parent=0}
+						<a href="[matrix:link]" title="[matrix:name]">
+							[matrix:name]
+						</a>
+						{/maccms:matrix}
+					</span>
+					<ul class="m-list m-list-1 f-fl">
+						{maccms:art num=3 type={maccms:curarttypeid} start=1 order=desc by=time level=1}
+						<li>
+							<a href="[art:link]" title="[art:name]" target="_blank">
+								<img src="[art:pic]" alt="[art:name]">
+							</a>
+							<div class="u-tt">
+								<a href="[art:link]" title="[art:name]" target="_blank">
+									[art:name]
+								</a>
+							</div>
+						</li>
+						{/maccms:art}
+					</ul>
+					<ul class="m-list m-list-2 f-fr">
+						{maccms:art num=9 type={maccms:curarttypeid} start=4 order=desc by=time level=1}
+						<li>
+							<span class="u-newstime">
+								[art:time m-d]
+							</span>
+							<a href="[art:link]" title="[art:name]" target="_blank">
+								[art:name]
+							</a>
+						</li>
+						{/maccms:art}
+					</ul>
+				</div>
+			</div>
+			<div class="g-sd f-fr">
+				<div class="m-box m-box-2 m-notice">
+					<div class="m-head m-head-2">
+						最新资讯
+					</div>
+					<ul class="m-list m-list-4">
+						{maccms:art num=10 type=all start=1 order=desc by=time}{if-A:[art:num]
+						<10}<li>
+							<a href="[art:link]" class="s-last" title="[art:name]" target="_blank">
+								[art:name]
+							</a>
+							</li>
+							{elseif-A:[art:num]>9}
+							<li class="s-last">
+								<a href="[art:link]" class="s-last" title="[art:name]" target="_blank">
+									[art:name]
+								</a>
+							</li>
+							{endif-A}{/maccms:art}
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mainBox">
+			<div class="movie_trailerBox">
+				<div class="trailer_tit">
+					<div class="trailer_text">
+						<span class="color_hui">
+							今日
+						</span>
+						<i class="yuandian">
+							&nbsp;
+						</i>
+						<span class="color_hui">
+							热门
+						</span>
+					</div>
+				</div>
+				<ul class="contBox">
+					{maccms:vod num=10 type=all start=1 order=desc by=time}
+					<li>
+						<a href="[vod:link]" title="[vod:name]" target="_blank">
+							<img src="[vod:pic]" alt="[vod:name]" />
+						</a>
+						<div class="sy_time">
+							<span class="bgs">
+							</span>
+							<span class="sy_tit">
+								{if-A:not isN("[vod:remarks]")} [vod:remarks]{elseif-A:[vod:state]=0}
+								[完结]{elseif-A:[vod:state]>0} {if-B:[vod:state]>10000} [连载[vod:state]]期
+								{else-B} [连载[vod:state]]集 {endif-B}{else-A}{endif-A}
+							</span>
+						</div>
+						<div class="img_tit">
+							<a href="[vod:link]" title="[vod:name]" target="_blank">
+								[vod:name]
+
+							</a>
+						</div>
+					</li>
+					{/maccms:vod}
+				</ul>
+			</div>
+			<div style="margin:5px auto; width:1000px;">
+				<script src="{maccms:path_ads}960x90-2.js">
+				</script>
+			</div>
+			<div class="hot_movieBox">
+				<div class="hot_titBox">
+					{maccms:matrix type=1 table=vod}
+					<div class="hot_tit">
+						<strong>
+							免费[matrix:name]
+						</strong>
+					</div>
+					<div class="hot_nav" id="m_tab_1">
+						<span class="movie_cur" onmouseover="ShowTab(1,0)">
+							全部
+						</span>
+						{maccms:menu type=child parent=1 order=asc table=vod}
+						<span onmouseover="ShowTab(1,[menu:num])">
+							[menu:name]
+						</span>
+						{/maccms:menu}
+					</div>
+				</div>
+				{/maccms:matrix}
+				<div id="m_cont_1">
+					<ul class="contBox hot_contBox">
+						{maccms:vod num=10 type=1 order=desc by=time}
+						<li>
+							<a title="[vod:name]" target="_blank" href="[vod:link]">
+								<img src="[vod:pic]" alt="[vod:name]" />
+							</a>
+							<div class="sy_time">
+								<span class="bgs">
+								</span>
+								<span class="sy_tit">
+									{if-A:not isN("[vod:remarks]")} [vod:remarks]{elseif-A:[vod:state]=0}
+									[完结]{elseif-A:[vod:state]>0} {if-B:[vod:state]>10000} [连载[vod:state]]期
+									{else-B} [连载[vod:state]]集 {endif-B}{else-A}{endif-A}
+								</span>
+							</div>
+							<div class="img_tit">
+								<a title="[vod:name]" target="_blank" href="">
+									[vod:name]
+								</a>
+							</div>
+						</li>
+						{/maccms:vod}
+					</ul>
+					{maccms:matrix table=vod type=child parent=1 order=asc table=vod}
+					<ul class="contBox hot_contBox" style="display:none">
+						{maccms:vod num=10 type=[matrix:id] start=1 order=desc by=time}
+						<li>
+							<a title="[vod:name]" target="_blank" href="[vod:link]">
+								<img src="[vod:pic]" alt="[vod:name]" />
+							</a>
+							<div class="sy_time">
+								<span class="bgs">
+								</span>
+								<span class="sy_tit">
+									{if-A:not isN("[vod:remarks]")} [vod:remarks]{elseif-A:[vod:state]=0}
+									[完结]{elseif-A:[vod:state]>0} {if-B:[vod:state]>10000} [连载[vod:state]]期
+									{else-B} [连载[vod:state]]集 {endif-B}{else-A}{endif-A}
+								</span>
+							</div>
+							<div class="img_tit">
+								<a title="[vod:name]" target="_blank" href="">
+									[vod:name]
+								</a>
+							</div>
+						</li>
+						{/maccms:vod}
+					</ul>
+					{/maccms:matrix}
+				</div>
+			</div>
+			<div class="hydpBox">
+				<div class="hy_contBox">
+					<div class="hyBox_L">
+						<div class="tit_navBox">
+							{maccms:matrix type=1 table=vod}
+							<div class="hy_tit">
+								<strong>
+									最新电影
+								</strong>
+							</div>
+							<div class="hy_nav" id="m_tab_3">
+								<span class="movie_cur" onmouseover="ShowTab(3,0)">
+									新电影
+								</span>
+								{maccms:menu type=child parent=1 num=6 order=asc table=vod}
+								<span onmouseover="ShowTab(3,[menu:num])">
+									[menu:name]
+								</span>
+								{/maccms:menu}
+							</div>
+						</div>
+						{/maccms:matrix}
+						<div id="m_cont_3">
+							<ul class="cont_L">
+								{maccms:vod num=4 type=1 order=desc by=addtime}
+								<li>
+									<a title="[vod:name]" target="_blank" href="[vod:link]">
+										<img style=" height: 247px;" src="[vod:pic]" alt="[vod:name]" />
+									</a>
+									<div class="img_tit">
+										<a title="[vod:name]" target="_blank" href="[vod:link]">
+											[vod:name]
+										</a>
+									</div>
+								</li>
+								{/maccms:vod}
+							</ul>
+							{maccms:matrix table=vod type=child parent=1 num=6 order=asc table=vod}
+							<ul class="cont_L" style="display:none">
+								{maccms:vod num=4 type=[matrix:id] start=1 order=desc by=time}
+								<li>
+									<a title="[vod:name]" target="_blank" href="[vod:link]">
+										<img style=" height: 247px;" src="[vod:pic]" alt="[vod:name]" />
+									</a>
+									<div class="img_tit">
+										<a title="[vod:name]" target="_blank" href="[vod:link]">
+											[vod:name]
+										</a>
+									</div>
+								</li>
+								{/maccms:vod}
+							</ul>
+							{/maccms:matrix}
+						</div>
+					</div>
+					<div class="phbBox_R">
+						<div class="phb_tit">
+							<strong>
+								电影排行榜
+							</strong>
+						</div>
+						<ul class="phb_list">
+							{maccms:vod num=3 type=1 start=1 order=desc by=monthhits}
+							<li>
+								<div class="nunber number_tj">
+									[vod:numjoin]
+								</div>
+								<div class="phb_name">
+									<a href="[vod:link]" title="[vod:name]" target="_blank">
+										[vod:name]
+									</a>
+								</div>
+								<div class="fwl">
+									[vod:score]
+								</div>
+							</li>
+							{/maccms:vod}{maccms:vod num=7 type=1 start=4 order=desc by=monthhits}
+							<li>
+								<div class="nunber">
+									[vod:numjoin]
+								</div>
+								<div class="phb_name">
+									<a href="[vod:link]" title="[vod:name]" target="_blank">
+										[vod:name]
+									</a>
+								</div>
+								<div class="fwl">
+									[vod:score]
+								</div>
+							</li>
+							{/maccms:vod}
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div style="margin:5px auto; width:1000px;">
+				<script src="{maccms:path_ads}960x90-3.js">
+				</script>
+			</div>
+			<div class="hot_movieBox">
+				<div class="hot_titBox">
+					{maccms:matrix type=2 table=vod}
+					<div class="hot_tit">
+						<strong>
+							热门[matrix:name]
+						</strong>
+					</div>
+					<div class="hot_nav" id="m_tab_2">
+						<span class="movie_cur" onmouseover="ShowTab(2,0)">
+							全部
+						</span>
+						{maccms:menu type=child parent=2 order=asc table=vod}
+						<span onmouseover="ShowTab(2,[menu:num])">
+							[menu:name]
+						</span>
+						{/maccms:menu}
+					</div>
+				</div>
+				{/maccms:matrix}
+				<div id="m_cont_2">
+					<ul class="contBox hot_contBox">
+						{maccms:vod num=10 type=2 order=desc by=time}
+						<li>
+							<a title="[vod:name]" target="_blank" href="[vod:link]">
+								<img src="[vod:pic]" alt="[vod:name]" />
+							</a>
+							<div class="sy_time">
+								<span class="bgs">
+								</span>
+								<span class="sy_tit">
+									{if-A:not isN("[vod:remarks]")} [vod:remarks]{elseif-A:[vod:state]=0}
+									[完结]{elseif-A:[vod:state]>0} {if-B:[vod:state]>10000} [连载[vod:state]]期
+									{else-B} [连载[vod:state]]集 {endif-B}{else-A}{endif-A}
+								</span>
+							</div>
+							<div class="img_tit">
+								<a title="[vod:name]" target="_blank" href="">
+									[vod:name]
+								</a>
+							</div>
+						</li>
+						{/maccms:vod}
+					</ul>
+					{maccms:matrix table=vod type=child parent=2 order=asc table=vod}
+					<ul class="contBox hot_contBox" style="display:none">
+						{maccms:vod num=10 type=[matrix:id] start=1 order=desc by=time}
+						<li>
+							<a title="[vod:name]" target="_blank" href="[vod:link]">
+								<img src="[vod:pic]" alt="[vod:name]" />
+							</a>
+							<div class="sy_time">
+								<span class="bgs">
+								</span>
+								<span class="sy_tit">
+									{if-A:not isN("[vod:remarks]")} [vod:remarks]{elseif-A:[vod:state]=0}
+									[完结]{elseif-A:[vod:state]>0} {if-B:[vod:state]>10000} [连载[vod:state]]期
+									{else-B} [连载[vod:state]]集 {endif-B}{else-A}{endif-A}
+								</span>
+							</div>
+							<div class="img_tit">
+								<a title="[vod:name]" target="_blank" href="">
+									[vod:name]
+								</a>
+							</div>
+						</li>
+						{/maccms:vod}
+					</ul>
+					{/maccms:matrix}
+				</div>
+			</div>
+			<div class="hydpBox">
+				<div class="hy_contBox">
+					<div class="hyBox_L">
+						<div class="tit_navBox">
+							{maccms:matrix type=2 table=vod}
+							<div class="hy_tit">
+								<strong>
+									最新电视剧
+								</strong>
+							</div>
+							<div class="hy_nav" id="m_tab_4">
+								<span class="movie_cur" onmouseover="ShowTab(4,0)">
+									新电视剧
+								</span>
+								{maccms:menu type=child parent=2 num=6 order=asc table=vod}
+								<span onmouseover="ShowTab(4,[menu:num])">
+									[menu:name]
+								</span>
+								{/maccms:menu}
+							</div>
+						</div>
+						{/maccms:matrix}
+						<div id="m_cont_4">
+							<ul class="cont_L">
+								{maccms:vod num=4 type=2 order=desc by=addtime}
+								<li>
+									<a title="[vod:name]" target="_blank" href="[vod:link]">
+										<img style=" height: 247px;" src="[vod:pic]" alt="[vod:name]" />
+									</a>
+									<div class="img_tit">
+										<a title="[vod:name]" target="_blank" href="[vod:link]">
+											[vod:name]
+										</a>
+									</div>
+								</li>
+								{/maccms:vod}
+							</ul>
+							{maccms:matrix table=vod type=child parent=2 num=6 order=asc table=vod}
+							<ul class="cont_L" style="display:none">
+								{maccms:vod num=4 type=[matrix:id] start=1 order=desc by=time}
+								<li>
+									<a title="[vod:name]" target="_blank" href="[vod:link]">
+										<img style=" height: 247px;" src="[vod:pic]" alt="[vod:name]" />
+									</a>
+									<div class="img_tit">
+										<a title="[vod:name]" target="_blank" href="[vod:link]">
+											[vod:name]
+										</a>
+									</div>
+								</li>
+								{/maccms:vod}
+							</ul>
+							{/maccms:matrix}
+						</div>
+					</div>
+					<div class="phbBox_R">
+						<div class="phb_tit">
+							<strong>
+								电视剧排行榜
+							</strong>
+						</div>
+						<ul class="phb_list">
+							{maccms:vod num=3 type=2 start=1 order=desc by=monthhits}
+							<li>
+								<div class="nunber number_tj">
+									[vod:numjoin]
+								</div>
+								<div class="phb_name">
+									<a href="[vod:link]" title="[vod:name]" target="_blank">
+										[vod:name]
+									</a>
+								</div>
+								<div class="fwl">
+									[vod:score]
+								</div>
+							</li>
+							{/maccms:vod}{maccms:vod num=7 type=2 start=4 order=desc by=monthhits}
+							<li>
+								<div class="nunber">
+									[vod:numjoin]
+								</div>
+								<div class="phb_name">
+									<a href="[vod:link]" title="[vod:name]" target="_blank">
+										[vod:name]
+									</a>
+								</div>
+								<div class="fwl">
+									[vod:score]
+								</div>
+							</li>
+							{/maccms:vod}
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div style="margin:5px auto; width:1000px;">
+				<script src="{maccms:path_ads}960x90-2.js">
+				</script>
+			</div>
+			{maccms:matrix type=3,4 table=vod}
+			<div class="hydpBox">
+				<div class="hy_contBox">
+					<div class="hyBox_L">
+						<div class="tit_navBox">
+							<div class="hy_tit">
+								<strong>
+									最新[matrix:name]
+								</strong>
+							</div>
+						</div>
+						<div>
+							<ul class="cont_L">
+								{maccms:vod num=4 type=[matrix:id] order=desc by=time}
+								<li>
+									<a title="[vod:name]" target="_blank" href="[vod:link]">
+										<img style=" height: 247px;" src="[vod:pic]" alt="[vod:name]" />
+									</a>
+									<div class="img_tit">
+										<a title="[vod:name]" target="_blank" href="[vod:link]">
+											[vod:name]
+										</a>
+									</div>
+								</li>
+								{/maccms:vod}
+							</ul>
+						</div>
+					</div>
+					<div class="phbBox_R">
+						<div class="phb_tit">
+							<strong>
+								[matrix:name]排行榜
+							</strong>
+						</div>
+						<ul class="phb_list">
+							{maccms:vod num=3 type=[matrix:id] start=1 order=desc by=monthhits}
+							<li>
+								<div class="nunber number_tj">
+									[vod:numjoin]
+								</div>
+								<div class="phb_name">
+									<a href="[vod:link]" title="[vod:name]" target="_blank">
+										[vod:name]
+									</a>
+								</div>
+								<div class="fwl">
+									[vod:score]
+								</div>
+							</li>
+							{/maccms:vod}{maccms:vod num=7 type=[matrix:id] start=4 order=desc by=monthhits}
+							<li>
+								<div class="nunber">
+									[vod:numjoin]
+								</div>
+								<div class="phb_name">
+									<a href="[vod:link]" title="[vod:name]" target="_blank">
+										[vod:name]
+									</a>
+								</div>
+								<div class="fwl">
+									[vod:score]
+								</div>
+							</li>
+							{/maccms:vod}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{/maccms:matrix}
+			<script type="text/javascript">
+				jQuery("#j-deep").slide({
+					titCell: ".hd ul",
+					mainCell: ".bd ul",
+					autoPage: true,
+					effect: "leftLoop",
+					autoPlay: true,
+					scroll: 5,
+					vis: 5
+				});
+			</script>
+			<div class="friend_link">
+				<div class="link_tit">
+					友情连接&nbsp;:&nbsp;
+				</div>
+				<div class="link_cont">
+					{maccms:link type=font}
+					<a href="[link:link]" target="_blank">
+						[link:name]
+					</a>
+					{/maccms:link}
+				</div>
+			</div>
+		</div>
+		{maccms:foot}
+	</body>
+</html>

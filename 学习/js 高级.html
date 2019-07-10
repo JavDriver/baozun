@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="dw" style=" position:relative; width: 800px; height: 600px; background: #000000;">
+</div>
+<script>
+//    function Student(name, age ,sex){
+//        this.name = name;
+//        this.age = age;
+//        this.sex = sex;
+//    }
+//
+//    Student.prototype.sayHi = function(){
+//        console.log('大家好，我是' + this.name);
+//    }
+//
+//    var s1 = new Student('lilei', 18, '男');
+//    var s2 = new Student('hmm', 18 ,'女');
+//
+//    s1.sayHi();
+//    console.dir(s1);
+////求数组中 偶数的和
+//var array = [5, 4, 1, 8];
+//    Array.prototype.getSum =function(){
+//        var sum = 0;
+//        for (var i= 0; i< this.length;i++){
+//            if(this[i] % 2 === 0){
+//                sum += this[i];
+//            }
+//        }
+//        return sum;
+//    }
+//    console.log(array.getSum());
+
+//生成 随机数
+//var Tools = {
+//    getRandom: function(min, max){
+//        return Math.floor(Math.random() * (max - min + 1)) + min;
+//    }
+//
+//}
+//
+//  function Box(parent,options) {
+//      options = options || {};
+//      //设置对象属性
+//      this.backgroundColor = options.backgroundColor || 'red';
+//      this.width = options.width || 20;
+//      this.height = options.height || 20;
+//      this.x = options.x || 0;
+//      this.y = options.y || 0;
+//
+//      //创建对应的div
+//      this.div = document.createElement('div');
+//      parent.appendChild(this.div);
+//      this.parent = parent;
+////s设置div样式
+//      this.init();
+//  }
+//
+////初始化div（方块）的样式
+//    Box.prototype.init = function(){
+//        var div = this.div;
+//        div.style.backgroundColor = this.backgroundColor;
+//        div.style.width = this.width + 'px';
+//        div.style.height = this.height + 'px';
+//        div.style.left = this.x + 'px';
+//        div.style.top = this.y + 'px';
+//        //脱离文档流
+//        div.style.position = 'absolute';
+//
+//    }
+//
+////随机生成方块的位置
+//    Box.prototype.random = function(){
+//
+//// 父容器的宽度/方块的宽度  总共能放多少个方块
+//        var x = Tools.getRandom(0, (this.parent.offsetWidth / this.width - 1) * this.width);//((800/20)-1)*20
+//        var y = Tools.getRandom(0, (this.parent.offsetHeight / this.height - 1) * this.height);
+//        this.div.style.left = x + 'px';
+//        this.div.style.top = y + 'px';
+//    }
+//
+//    //生成10个方块
+//var dw = document.getElementById('dw');
+////数组，存储创建的方块对象
+//var array =[];
+//    for (var i = 0; i < 10; i++){
+//        var r = Tools.getRandom(0,255);
+//        var g = Tools.getRandom(0,255);
+//        var b = Tools.getRandom(0,255);
+//        var box = new  Box(dw,{
+//            backgroundColor:'rgb('+ r +','+ g +','+ b +')'
+//        });
+////把创建好的方块的对象，添加到数组中
+//        array.push(box);
+//    }
+//console.log(box);
+//console.log(array);
+////设置随机位置，开启定时器
+//  // setInterval(randomBox,500);
+////页面加载完生成随机位置
+//randomBox();
+//
+//function randomBox(){
+//    //随机生成方块坐标
+//    for (var i = 0; i < array.length;i++){
+//        var box = array[i];
+//        box.random();
+//        console.log(array[i]);
+//    }
+//}
+
+function createBox(){
+    console.log("createBox");
+    //创建盒子的方法
+    document.body.innerHTML = "";//先清空 body里面的内容
+    //下面是 获取 浏览器的宽高
+    var mWidth = document.documentElement.clientWidth || docuemnt.body.clientWidth;
+    var mHeight = document.documentElement.clientHeight || document.body.clientHeight;
+    // console.log(mWidth);
+    // console.log(mHeight);
+    //分 10 份
+    var nDivWidth = mWidth/10;
+    var nDivHeight = mHeight/10;
+    // console.log(nDivWidth);
+    // console.log(nDivHeight);
+    //创建文档 碎片
+    var oFrag = document.createDocumentFragment();
+
+    for(var row=0;row<10;row++){
+        for(var col=0;col<10;col++){
+            var oDiv = document.createElement("div");
+
+            oDiv.style.position = "absolute";//绝对 定位
+            oDiv.style.height = nDivHeight +"px";
+            oDiv.style.width = nDivWidth + "px";
+
+            //每个div的位置
+            oDiv.style.left = nDivWidth * col + "px";
+            oDiv.style.top = nDivHeight * row + "px";
+
+
+            //下面随机生RGB颜色值, 随机 数介于 0-256之间
+            oDiv.style.background = "RGB("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")";
+            //把每次创建 的div 追加给文档碎片
+            oFrag.appendChild(oDiv);
+        }
+    }
+    //最后一次性加 文档 碎片追加到body中,浏览器只渲染一次,提高性能
+    document.body.appendChild(oFrag);
+}
+
+// 让这些盒子的背景色随机发生变化的方法
+function changeColor(){
+    document.getElementsByTagName('div').item(Math.random()*100).style.background = "RGB("+ Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")";
+}
+
+// 当浏览器加载完成之后,运行fn方法 , 自动创建 背景颜色不同的10行10列小盒子,并且每隔两秒钟有一个小盒子颜色会变一次
+window.onload = function(){
+    console.log("onload");
+    createBox();
+    window.setInterval(changeColor,100);
+}
+//方法名后面 不加括号, 加了括号 就表示 把这个方法的返回 值赋给 onresize事件了
+window.onresize = createBox;
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</div>
+</body>
+</html>

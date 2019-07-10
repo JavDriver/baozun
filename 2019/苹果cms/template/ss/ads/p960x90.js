@@ -1,0 +1,1 @@
+document.writeln("p960x90");

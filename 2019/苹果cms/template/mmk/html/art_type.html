@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>最新{page:name}_{page:name}大全_第{page:now}页_{maccms:name}</title>
+<meta name="keywords" content="最新{page:name},{page:name}大全" />
+<meta name="description" content="{maccms:name}每天最新{page:name},收集网络各种{page:name}。" />
+<link rel="alternate" media="only screen and(max-width: 640px)"  href="{maccms:qq}/art-type-id-{page:id}-pg-{page:now}.html" >
+<link rel="stylesheet" href="{maccms:path_tpl}css/art_global.css">
+<link rel="stylesheet" href="{maccms:path_tpl}css/art_list.css">
+{maccms:include}
+<script src="{maccms:path_tpl}js/superslide.2.1.js"></script>
+</head>
+<body>
+{maccms:head}
+<div class="g-bd">
+<div class="m-crm">
+您当前的位置：{page:textlink}</div>
+<div class="g-mn-1">
+    <h2 class="f-fl">{page:name}</h2>
+    <ul class="u-menu">
+    {maccms:matrix table=art num=5 parent=0}
+        <li {if-A:"{page:name}"="[matrix:name]"}class="z-crt"{endif-A} ><a href="[matrix:link]" title="[matrix:name]">[matrix:name]</a></li>
+ {/maccms:matrix}
+
+    </ul>
+</div>
+<div class="g-mn-1 s-shadow">
+    <div class="u-toptext s-grey-1">共 <strong>{page:count}</strong> 篇内容</div>
+    
+       {maccms:art pagesize=10 order=desc by=time}
+        <div class="m-pt s-h130">
+            <a href="[art:link]" title="[art:name]" target="_blank"><img alt="[art:name]" src="[art:pic]"></a>
+            <h3><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></h3>
+            <div class="u-st">[art:remarks]</div>
+            <span class="s-grey-2">[art:time]</span>
+            <span class="s-grey-2">人气：[art:hits]</span>
+            <span class="s-blue-1"></span>
+        </div>
+    
+    	{/maccms:art}
+
+</div>
+                <div class="g-sd-1">
+                  <script src="{maccms:path_ads}250x250-1.js"></script>
+            </div>
+<div class="g-sd-1">
+    <div class="m-top-1 s-shadow">
+        <h2>点击排行</h2>
+        <ul class="hd">
+                            <li class="on">今天</li>
+                            <li>一周</li>
+                            <li>一月</li>
+                        </ul>
+                        <div class="bd">
+                            <ol>
+                            {maccms:art num=10 by=dayhits type={maccms:curarttypeid} order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}                                  
+                               </ol>
+                            <ol style="display: none;">
+                            {maccms:art num=10 by=weekhits type={maccms:curarttypeid}] order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}
+                           </ol>
+                            <ol style="display: none;">
+                                                        {maccms:art num=10 by=monthhits type={maccms:curarttypeid} order=desc}
+                               <li><a href="[art:link]" title="[art:name]" target="_blank">[art:name]</a></li>
+                                  {/maccms:art}
+
+                            </ol>
+                        </div>
+                    </div>
+                   
+    <script type="text/javascript">
+        jQuery(".m-top-1").slide({trigger: "click"});
+    </script>
+</div>
+            <div class="g-sd-1">
+                  <script src="{maccms:path_ads}250x250-2.js"></script>
+            </div>
+<div class="g-mn m-pages">
+{maccms:pages len=5}
+</div>
+</div>
+{maccms:foot}
+</body>
+</html>

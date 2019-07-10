@@ -1,0 +1,151 @@
+<style type="text/css"> 
+<!--
+.STYLE3 {color: #FFFFFF}
+-->
+</style>
+<div id="header">
+	<div id="headbar">
+		<div class="layout fn-clear">
+			<div id="logo">
+				<a> <img src="{maccms:templatepath}images/logo.gif">  </a>
+			</div>
+			<!-- // logo end -->
+			
+			<div id="searchbar">
+				<div class="todo-link">
+					<a href="/hot.html">影片排行</a>
+					<a href="/new.html">最近更新</a>
+					<a href="javascript:void(0);" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://{maccms:url}')">设为首页</a>
+<a href="javascript:void(0);" onclick='window.external.AddFavorite("http://{maccms:url}","{maccms:name}{maccms:url}")'>加入收藏</a>
+				</div>
+				<!-- // todo-link end -->
+				
+				<div class="ui-search">
+				   <form action="{maccms:searchlink}" name="keyword" method="POST">
+					<input type="text" value="" name="keyword" id="keyword" class="search-input" onfocus="if(value=='请输入您要搜索的关键字..') {value=''}" onblur="if(value=='') {value='请输入您要搜索的关键字..'}" value="请输入您要搜索的关键字..">
+					<input type="submit" value="搜索" class="search-button">
+					</form>
+				</div>
+				<!-- // search end -->
+			</div>
+			<!-- // searchbar end -->
+			<div id="hotkeys">
+				<label>热门推荐：</label>{label:hotsearch.html}</label>
+			</div>
+			<!-- // hotkeys end -->
+		</div>	
+	</div>
+	<!-- // headbar end -->
+ 
+<div id="navbar">
+		<div class="layout fn-clear">
+			<ul id="nav">
+				<li rel="home-nav" class="nav-item current"><a href="/">首页</a></li>
+	{maccms:menulist type=1}			
+<li rel="tv-nav" class="nav-item  "> <a href="[menulist:link] ">[menulist:name]</a></li>{/maccms:menulist} 
+	{maccms:menulist type=2}				
+<li rel="movie-nav" class="nav-item  "> <a href="[menulist:link] ">[menulist:name] </a>{/maccms:menulist} </li>
+	{maccms:menulist type=3}			
+<li rel="cartoon-nav" class="nav-item "> <a href="[menulist:link] ">[menulist:name] </a>{/maccms:menulist}</li>
+		{maccms:menulist type=4}		
+<li rel="fun-nav" class="nav-item "> <a href="[menulist:link] ">[menulist:name] </a>{/maccms:menulist}</li>
+				
+				<li rel="cartoon1-nav" class="nav-item "><a href="{maccms:vodtopiclink}">影视专题</a></li>
+						<li rel="cart-nav" class="nav-item "><a href="{maccms:artindexlink}">影视资讯</a></li>
+
+			</ul>
+			<!-- // nav end -->			
+			
+			<div id="looked-record">
+				<h5>我的观看记录</h5>
+				<div class="looked-box">		
+					<p class="tit"><a href="javascript:;" class="close">关闭</a><a href="javascript:;" id="emptybt">清空所有记录</a></p>
+					<ul class="highlight" id="playhistory">
+					</ul>
+				</div>
+			</div>
+
+			<!-- // looked-record end -->
+		</div>	
+	</div>
+	<!-- // navbar end -->	
+<div id="sub-nav">
+		<div class="layout fn-clear">
+			<div id="home-nav" class="sub-nav-item">
+			  			  <p class="sub-nav-tv fn-left">
+					<label>电视剧：</label>
+ {maccms:menulist parent=2}
+<a href="[menulist:link]">[menulist:name]</a> <em>|</em>
+{/maccms:menulist}
+ 
+				</p>
+			  <p class="sub-nav-movie fn-right">
+					<label>电影：</label>
+ {maccms:menulist parent=1}
+<a href="[menulist:link]">[menulist:name]</a> <em>|</em>
+{/maccms:menulist}
+ 
+				</p>
+
+			</div>
+			<!-- // sub-nav-item end -->
+			<div id="tv-nav" style="display: none;" class="sub-nav-item">
+				<p>
+					<label>电影：</label>
+ {maccms:menulist parent=1}
+<a href="[menulist:link]">[menulist:name]</a> <em>|</em>
+{/maccms:menulist}
+				</p>
+			</div>
+			<!-- // sub-nav-item end -->
+			<div id="movie-nav" style="display: none;" class="sub-nav-item">
+				<p>
+					<label>电视剧：</label>
+ {maccms:menulist parent=2}
+<a href="[menulist:link]">[menulist:name]</a> <em>|</em>
+{/maccms:menulist}
+				</p>
+			</div>
+			<!-- // sub-nav-item end -->
+			<div id="cartoon-nav" style="display: none;" class="sub-nav-item">
+				<p>
+					<label>经典动漫：</label>
+ 
+				</p>
+			</div>
+			<!-- // sub-nav-item end -->
+			
+			<div id="fun-nav" style="display: none;" class="sub-nav-item">
+				<p>
+					<label>综艺娱乐：</label>
+ 
+			</p>
+			</div>
+			<!-- // sub-nav-item end -->
+
+				<div id="cartoon1-nav" style="display: none;" class="sub-nav-item">
+				<p>
+					<label>专辑推荐：</label>
+{maccms:topiclist id=all num=10}
+ <a href="[topiclist:link]" target="_blank">[topiclist:name]</a> <em>|</em>{/maccms:topiclist}
+			</p>
+			</div>
+		
+			<!-- // sub-nav-item end -->
+						<!-- // sub-nav-item end -->
+
+				<div id="cart-nav" style="display: none;" class="sub-nav-item">
+				<p>
+					<label>资讯分类：</label>
+ {maccms:menulist table=art type=all}
+ <a href="[menulist:link]" target="_blank">[menulist:name]</a> <em>|</em>{/maccms:menulist}
+			</p>
+			</div>
+		
+			<!-- // sub-nav-item end -->
+		</div>
+	</div>	
+	<!-- // sub-nav end -->	
+</div>
+<script type="text/javascript">PlayHistoryObj.viewPlayHistory('playhistory');</script>
+ <!--//广告位 -->

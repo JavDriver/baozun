@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    if(!window.localStorage) {
+        alert("你的浏览器不支持本地存储所以无法使用此应用！");
+        return false;
+    }
+    var menu = [];
+    var timer;
+    var storage = window.localStorage;
+    if(!storage.length){
+        $(".menu .tip").show();
+    }else{
+        var menuList = "";
+        for(var i = 0; i < storage.length; i++){
+            menuList += "<li data-itemKey='"+storage.key(i)+"'><a href='javascript:'>"+storage.getItem(storage.key(i))+" <span>×</span></a></li>";
+        }
+        $(".menu .list ul").html(menuList);
+        menuArray();
+    }
+    $("#btn").click(function(){
+        theSwitch();
+    });
+    $(window).keypress(function(event){
+        event.keyCode === 32 && theSwitch();
+        event.keyCode === 13 && menuAdd();
+    });
+    $(".menu .add .btn").click(function(){
+        menuAdd();
+        storage.length && $(".menu .tip").hide();
+    });
+    $(".menu .clr").click(function(){
+        if(window.confirm("确定要清空菜单？")){
+            $(".menu .list ul li").remove();
+            storage.clear();
+            $(".menu .tip").show();
+            menuArray();
+        }
+    });
+    $(".menu .list li span").on("click",function(){
+        if(window.confirm("确定要删除这个菜谱？")){
+            var me = $(this);
+            menuRemove(me);
+            storage.removeItem(me.parents("li").index());
+        }
+    });
+    function menuArray(){
+        var menuItem = "";
+        for(var i = 0; i < storage.length; i++){
+            menuItem += storage.getItem(storage.key(i))+",";
+        }
+        menuItem = menuItem.substr(0,menuItem.length-1);
+        menu = menuItem.split(",");
+    }
+    function rnd(){
+        var rnd = parseInt(Math.random() * menu.length);
+        $("#eat").text(menu[rnd]);
+    }
+    function start(){
+        clearInterval(timer);
+        timer = setInterval(rnd,20);
+    }
+    function stop(){
+        clearInterval(timer);
+    }
+    function theSwitch(){
+        if($("#btn a").text() === "停止"){
+            stop();
+            $("#btn a").text("重新选餐");
+        }else{
+            if(!storage.length){
+                alert("没有菜谱，添加几个吧！");
+                return false;
+            }
+            start();
+            $("#btn a").text("停止");
+        }
+    }
+    function menuAdd(){
+        var itemObj = $(".menu .add .item");
+        var newItem = itemObj.val();
+        var itemNum = storage.length + 1;
+        if(!newItem){
+            alert("请输入菜谱名称！");
+            return false;
+        }
+        storage.setItem("menu"+itemNum,newItem);
+        $(".menu .list ul").append("<li data-itemKey='menu"+itemNum+"'><a href='javascript:'>"+newItem+" <span>×</span></a></li>");
+        menuArray();
+        itemObj.val("").focus();
+    }
+    function menuRemove(me){
+        var m = me.parents("li");
+        m.remove();
+        storage.removeItem(m.attr("data-itemKey"));
+        !storage.length && $(".menu .tip").show();
+        menuArray();
+    }
+    //该片段来自于http://outofmemory.cn
+</script>
+</html>

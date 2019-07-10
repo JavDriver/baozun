@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>最新{typepage:name}  -{maccms:name}</title>
+<meta name="keywords" content="{typepage:name},{typepage:key}">
+<meta name="description" content="{typepage:name},{typepage:des}">
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/tv/basic_other.css">
+<link href="{maccms:templatepath}images/v/basic.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{maccms:templatepath}images/js/config.js"></script>
+<script type="text/javascript" src="{maccms:templatepath}images/js/sea1.2.js"></script>
+</head>
+<!-- ad js -->
+<body screen_capture_injected="true">
+{maccms:head}
+		<div class="wrap">
+			<!--位置导航_START-->
+			<div class="m-bar-crumb">
+				{typepage:textlink}
+			</div>
+			<!--位置导航_END-->
+			<!--头部广告_START-->			
+			<div class="adv">
+			  <script src="{maccms:templatepath}ads/vodlist980x90-1.js"></script>
+			</div>
+			<!--头部广告_END-->
+			<div class="hg10"></div>
+			<div class="wrapper">
+				<!--左侧菜单_START-->
+				<div class="sideleft">
+				   <div class="Category">
+<a href=""><h2>分类检索</h2></a>
+<ul class="submenulist">	
+		     {maccms:menulist table=vod type=parent by=id order=asc}
+			 <li {if:[menulist:id] ={maccms:curvodtypeid}}class="selected"{end if}{if:[menulist:id] ={maccms:curvodtypepid}}class="selected"{end if}><a href="[menulist:link]">[menulist:name]</a></li>	
+             {/maccms:menulist}
+     </ul>
+									 		
+				    </div>
+					<div class="hg10"></div>
+					<!--广告部分2_START-->
+					<div class="adv2">
+					 <script src="{maccms:templatepath}ads/vodlist120x600-1.js"></script>
+					<div>
+					<script src="{maccms:templatepath}ads/vodlist120x600-2.js"></script>
+                    </div>
+					</div>
+					<!--广告部分2_END-->
+				</div>
+				
+				
+				<!--左侧菜单_END-->
+				<div class="sideright">
+ 
+						<!--右侧头部-->
+						<div class="compire">
+						
+							<div class="condition">	
+								共有
+								<span>{maccms:pagedata}</span>个符合条件的内
+							</div>
+							<div class="con_left">
+								<h2>
+									{typepage:name}
+								</h2>
+							</div>
+						</div>
+						<!--右侧头部_END-->
+						<!--内容_START-->
+						<div class="content_right">
+							 <div class="panel" id="j-filter">
+ <div class="item area">
+            <label>按地区：</label>
+            <ul>
+              <li class="current"><a href="">全部</a><span><em>全部</em></span></li>
+<li><a href="{maccms:searchlink}?area=%E5%A4%A7%E9%99%86&type={maccms:curvodtypeid}" target=_blank>大陆</a></li>
+<li><a href="{maccms:searchlink}?area=%E9%A6%99%E6%B8%AF&type={maccms:curvodtypeid}" target=_blank>香港</a></li>
+<li><a href="{maccms:searchlink}?area=%E5%8F%B0%E6%B9%BE&type={maccms:curvodtypeid}" target=_blank>台湾</a></li>
+<li><a href="{maccms:searchlink}?area=%E6%B8%AF%E5%8F%B0&type={maccms:curvodtypeid}" target=_blank>港台</a></li>
+<li><a href="{maccms:searchlink}?area=%E6%97%A5%E6%9C%AC&type={maccms:curvodtypeid}" target=_blank>日本</a></li>
+<li><a href="{maccms:searchlink}?area=%E9%9F%A9%E5%9B%BD&type={maccms:curvodtypeid}" target=_blank>韩国</a></li>
+<li><a href="{maccms:searchlink}?area=%E7%BE%8E%E5%9B%BD&type={maccms:curvodtypeid}" target=_blank>美国</a></li>
+<li><a href="{maccms:searchlink}?area=%E6%AC%A7%E6%B4%B2&type={maccms:curvodtypeid}" target=_blank>欧洲</a></li>
+<li><a href="{maccms:searchlink}?area=%E4%BA%9A%E6%B4%B2&type={maccms:curvodtypeid}" target=_blank>亚洲</a></li>
+<li><a href="{maccms:searchlink}?area=%E6%B3%B0%E5%9B%BD&type={maccms:curvodtypeid}" target=_blank>泰国</a></li>
+<li><a href="{maccms:searchlink}?area=%E5%85%B6%E4%BB%96&type={maccms:curvodtypeid}" target=_blank>其他</a></li>
+             
+            </ul>
+          </div>
+          <div class="item genre">  <a j-delegate="morebtn" tid="alx" opt="{show:{desc:'收起',css:'more_1',tw:660},hide:{desc:'更多',css:'more',th:27,tw:660}}" curstate="show" href="#" class="more_1">收起</a>
+            <label>按类型：</label>
+            <ul id="alx" class="wh660" style=" width:660px;">
+              {maccms:menulist table=vod parent=1,2,17,18 order=asc}
+              <li {if:[menulist:id]={maccms:curvodtypeid} }class="current"{end if}><a href="[menulist:link]">[menulist:name]</a><span><em>[menulist:name]</em></span></li>
+              {/maccms:menulist}              
+            </ul>
+          </div>
+          <div class="item age">
+            <label>按年份：</label>  
+            <ul>
+<li class="current"><a href="">全部</a><span><em>全部</em></span></li>			
+<li><a style="color:red" href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2013" target="_blank">2013</a></li>
+<li><a style="color:red" href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2012" target="_blank">2012</a></li>
+<li><a title='2011年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2011" target="_blank">2011</a></li>
+<li><a title='2010年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2010" target="_blank">2010</a></li>
+<li><a title='2009年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2009" target="_blank">2009</a></li>
+<li><a title='2008年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2008" target="_blank">2008</a></li>
+<li><a title='2007年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2007" target="_blank">2007</a></li>
+<li><a title='2006年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2006" target="_blank">2006</a></li>
+<li><a title='2005年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2005" target="_blank">2005</a></li>
+<li><a title='2004年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2004" target="_blank">2004</a></li>
+<li><a title='2003年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2003" target="_blank">2003</a></li>
+<li><a title='2002年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2002" target="_blank">2002</a></li>
+<li><a title='2001年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2001" target="_blank">2001</a></li>
+<li><a title='2000年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2000" target="_blank">2000</a></li>
+<li><a title='1999年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=1999" target="_blank">1999</a></li>
+ 
+            </ul>
+          </div>
+							</div>
+<script type="text/javascript"> 
+    window.areaCode = 'guess01';
+</script>
+		<div class="list_content">
+			<div class="list_title">
+				<div class="tiltl1">
+					<h2 class="selected">
+						<span>						 
+						     <a href="" id="t2" title="按最近更新排序"> 最近更新</a> 
+						</span>
+					</h2>
+				</div>
+			</div>
+	    <!--列表部分_START-->  
+			<div class="list0">
+				<ul class="ulList 动漫">
+					{maccms:vodpagelist num=20 type=current by=time order=desc}	
+						<li class="j-listanim">
+							<a class="imgBg1" href="[pagelist:link]"> <img width="120" height="160" title="[pagelist:name] " alt="[pagelist:name]" src="[pagelist:pic]"> 
+										<span class="imgBg1Bg"></span>
+											<span class="imgBg1C">[pagelist:remarks]</span>
+									 </a>
+							<div align="center"><a title="[pagelist:name]" href="[pagelist:link]" class="title">[pagelist:name len=8]</a></div>							
+									<div class="popUp" style="display: none">
+										<div class="popUplist" style="overflow: hidden; ">
+											<a class="imgBg1" href="[pagelist:link]"> <img width="120" height="160" title="[pagelist:name] " alt="[pagelist:name]" src="[pagelist:pic]"> <span class="imgBg1Bg"></span><span class="imgBg1C">[pagelist:remarks]</span></a>		
+							<a title="[pagelist:name]" href="[pagelist:link]" class="title">[pagelist:name len=8]</a>					<p class="s1">
+													<span>人气：[pagelist:hits]</span>
+												</p>
+											<p class="s1">
+												<span>类型：</span><a href="[pagelist:typelink]">[pagelist:typename]</a>
+											</p>
+												<p class="s1"><span>更新时间：</span>[pagelist:time style=mm-dd]</p>
+										</div>
+											<div class="pop-bottom">
+											</div>
+											<div style="position: absolute; bottom: -30px;">
+												<table width="120" border="0" cellspacing="0" cellpadding="0" style="magin:0 auto;">
+													<tbody><tr>
+														<td width="50" align="left">
+														<a href="[pagelist:link]">详情</a>
+														</td>
+														<td width="36" align="right">
+															<a href="[pagelist:playlink]">观看</a>
+														</td>
+													</tr>
+												</tbody></table>
+											</div>
+									</div>
+						</li>
+						{/maccms:vodpagelist}
+				</ul>
+			</div>
+			<!--分页 begin-->
+			<div class="page">
+			 当前:{maccms:pagenow}/{maccms:pagecount} 页<a href="{maccms:pagefirst}" class="a1">首页</a> <a href="{maccms:pagepre}" class="a1">上一页</a> {maccms:pagenum len=6}<a href="{maccms:pagenext}" class="a1">下一页</a> <a href="{maccms:pagelast}" class="a1">尾页</a>{maccms:pageselect}
+		
+	</div>
+			<!--分页 end-->
+			<!--列表部分_END-->
+		</div>								
+						</div>
+						<!--内容_END-->
+					</div>
+				</div>
+			</div>
+				
+{maccms:foot}
+	
+	
+<script type="text/javascript"> 
+   //__loadMainJs("ranklistnew");
+    __loadCompatibleMainJs("ranklistnew"); 
+     Q.projectName = 'qiyiV2';
+       Q.ready(function (lib) {
+     Q.load('base');
+     });
+</script>
+ 
+</body>
+</html>

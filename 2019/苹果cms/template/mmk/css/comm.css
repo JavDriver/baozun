@@ -1,0 +1,55 @@
+/* CSS Document */
+*{margin:0;padding:0;}
+body{padding:0; margin:0; font-family:"微软雅黑"; background:#f6f6f6;}
+h1,h2,h3,h4,h5{font-family:"微软雅黑";font-weight:normal;}
+ol,ul,li,dl,dt,dd{list-style-type:none; list-style-image:none; list-style-position:outside; margin:0px; padding:0;}
+i,em{ font-style:normal;}
+a{text-decoration:none; outline:none;}
+
+/*header star*/
+.headBox{display:block; width:100%; height:58px; line-height:58px; background:#333333;}
+.headBox .head{overflow:hidden; width:1000px; margin:0 auto;}
+.headBox .head .head_logo{float:left; display:block; width:180px; height:58px; background:url("../images/manmankan_icon.png") no-repeat; background-position:0 0; cursor:pointer;}
+.headBox .head .head_zy_tit{float:left; display:block; font-family:"冬青黑简体"; font-size:30px; color:#f9fc02;}
+.headBox .head .head_nav a{float:right; display:block; padding:0 20px; font-size:16px; color:#fff;}
+.headBox .head .head_nav .current{background:#030202; color:#fcff02;}
+.headBox .head .head_nav a:hover{background:#030202; color:#fcff02;}
+.cl{ clear:both; height:0px; overflow:hidden; width:100%;}
+
+/*footer star*/
+.footer{width:100%; background:#333; text-align:center;font-size:12px; color:#cfcccc; line-height:26px; padding:15px 0;}
+.footer a{ color:#fff;}
+
+/*友情链接*/
+.friend_link{overflow:hidden; display:block; width:1000px; padding:15px 0;}
+.friend_link .link_tit{float:left; display:block; width:60px; font-size:12px; color:#6c6a6a; line-height:26px;}
+.friend_link .link_cont{float:left; display:block; width:940px;}
+.friend_link .link_cont a{float:left; display:block; font-size:12px; color:#a5a0a0; padding:0 2px; margin:0 4px; line-height:26px;}
+.friend_link .link_cont a:hover{ color:#ff0000;}
+
+/*二级导航*/
+i{display:inline-block; background:url("../images/manmankan_icon.png?v=0409") no-repeat;}
+.bg{background:#f8f7f7;}
+.erji_navAndsearch{overflow:hidden; width:1000px; margin:0 auto; height:72px; line-height:72px; padding-top:5px;}
+.erji_navAndsearch .erji_nav{float:left; display:block;}
+.erji_navAndsearch .erji_nav a{float:left; display:block; font-size:16px; color:#000; height:38px; line-height:38px; padding:0px 10px; margin:17px 0; position:relative;}
+.erji_nav a .hoticon{width:17px; height:7px; position:absolute; top:0px; right:0; background-position:0 -59px; cursor:pointer; _background:url("../images/hot_icon.png") right top no-repeat;}
+.erji_nav a .newicon{width:17px; height:7px; position:absolute; top:0px; right:0; background-position:0 -67px; cursor:pointer; _background:url("../images/new_icon.png") right top no-repeat;}
+.erji_navAndsearch .erji_nav a:hover{background:#00B586; color:#fff;}
+.erji_navAndsearch .erji_nav .erji_current{background:#00B586; color:#fff;}
+.erji_navAndsearch .search{float:right; width:309px; height:39px; line-height:39px; margin-top:17px;margin-left:15px;}
+.erji_navAndsearch .search input{ float:left; width:254px; *width:236px; height:37px; border:1px solid #e4e4e4; border-right:none; font-size:14px; line-height:37px; color:#424242; padding-left:10px;}
+.erji_navAndsearch .search .search_btn{ float:left;width:44px; height:39px; background:url("../images/manmankan_icon.png") no-repeat; background-position:0 -75px; cursor:pointer}
+::-webkit-input-placeholder { font-size:14px; color:#b6b6b5; text-overflow: ellipsis; }
+:-moz-placeholder { font-size:14px;color: #b6b6b5 !important; text-overflow: ellipsis; }
+::-moz-placeholder {  font-size:14px;color: #b6b6b5 !important; text-overflow: ellipsis; }
+:-ms-input-placeholder {  font-size:14px; color: #acacac !important; text-overflow: ellipsis; }
+
+/*分页*/
+.pre_nextBox{height:94px; line-height:94px; border-bottom:1px solid #e7e7e7; text-align:center; margin-bottom:65px;}
+.pre_nextBox a{display:inline-block; width:53px; height:27px; text-align:center; line-height:28px; border:1px solid #e3e3e3; font-size:14px; color:#333; background:#fff; margin:0 2px;}
+.pre_nextBox .pagenow,.pre_nextBox a:hover{display:inline-block; width:53px; height:27px; text-align:center; line-height:28px; border:1px solid #e3e3e3; font-size:14px; color:#333; background:#fff; margin:0 2px;background:#00B586; border:1px solid #00B586; color:#fff;}
+.pre_nextBox .pre ,.pre_nextBox .next{width:58px;}
+
+.searchTip{height: 50px;line-height: 50px;color: red;text-align: center;}
+.red{ color:red;}

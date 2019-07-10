@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{margin:0;padding:0;}
+*{margin:0;padding:0;text-shadow:none;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+body{font-family: "微软雅黑",san-serif;background:#fff;margin:0 auto;overflow-x: hidden;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+address,cite,code,em,th{font-weight:normal;font-style:normal;}
+input,button,textarea,select{font:100% Arial,'微软雅黑';vertical-align:middle;}
+ul, ol{list-style: none;}
+img,fieldset{vertical-align:top;border:0;max-width:100%;height:auto;}
+.clear{height:0px;line-height:0px;font-size:0;clear:both;overflow:hidden;display:block;}
+.clearfix{zoom:1;}
+.clearfix:after{display:block;overflow:hidden;clear:both;height:0;visibility:hidden;content:".";}
+a{color:#666;text-decoration:none;}
+a:hover{color:#db0000;text-decoration:none;}
+p{color:#000;font-weight:normal;word-break:break-all;}
+.fl{float:left;}
+.fr{float:right;}
+.mr{ margin-right: 0 !important;}
+.rel{position:relative;}
+.abs{position:absolute;}
+ul,li{list-style: none;}
+
+
+.w1200{width: 1200px; margin: 0 auto;}
+.conter{width: 100%;}
+.conter ul li { float: left;}
+.conter ul li span{ display: block; overflow: hidden;margin-bottom: 20px;}
+.conter ul li p{ font-size: 24px; color: #232323;font-family:MFKeSongRegular !important; text-align: center;}
+.conter ul li em{ display: block; font-size: 18px; color: #232323;font-family:Victoria; text-align: center;}
+.conter ul li i{ display: block; text-align: center;}
+.conter ul li cite{font-family:Victoria;  font-size: 18px;}
+
+.conter1{width: 100%;}
+.conter1 ul li { float: left;}
+.conter1 ul li span{ display: block; overflow: hidden; margin-bottom: 20px;}
+.conter1 ul li p{ font-size: 24px; color: #232323;font-family:MFKeSongRegular !important; text-align: center;}
+.conter1 ul li em{ display: block; font-size: 18px; color: #232323;font-family:Victoria; text-align: center;}
+.conter1 ul li i{ display: block; text-align: center;}
+.conter1 ul li cite{font-family:Victoria;  font-size: 18px;}
+
+.conter ul li:nth-child(1){ width: 385px; margin-right: 23px; margin-top: 56px;}
+.conter ul li:nth-child(1) span{ width: 385px; height: 503px;}
+
+.conter ul li:nth-child(2){ width: 384px; margin-right: 23px; margin-bottom: 38px; }
+.conter ul li:nth-child(2) span{ width: 384px; height: 603px;}
+
+.conter ul li:nth-child(3){ width: 385px; margin-top: 56px;}
+.conter ul li:nth-child(3) span{ width: 385px; height: 503px;}
+
+.conter1 ul li:nth-child(1){ width: 488px; margin-top: 28px; margin-left: 40px; margin-right: 45px;}
+.conter1 ul li:nth-child(1) span{ width: 488px; height: 617px;}
+
+.conter1 ul li:nth-child(2){ width: 589px; }
+.conter1 ul li:nth-child(2) span{ width: 589px; height: 696px;}
+
+
+
+
+@font-face {
+ font-family: 'MFKeSongRegular';
+ src: url('../font/MFKeSong.eot');
+ src: local('MFKeSong Regular'),
+        local('MFKeSong'),
+        url('../font/MFKeSong.woff') format('woff'),
+        url('../font/MFKeSong.ttf') format('truetype'),
+        url('../font/MFKeSong.svg#MFKeSong') format('svg');
+}  
+
+
+
+
+
+
+
+
+
+
+
+

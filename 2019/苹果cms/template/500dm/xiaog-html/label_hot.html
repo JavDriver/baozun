@@ -1,0 +1,85 @@
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>最新韩剧、tvb,欧美电影、电视剧 排行榜 _{maccms:name}-{maccms:url}</title>
+<meta name="keywords" content="最新,2013最新,_{maccms:name}-{maccms:url}">
+<meta name="description" content="最新,2013最新,_{maccms:name}-{maccms:url}！">
+	<link href="{maccms:templatepath}images/base.css" type="text/css" rel="stylesheet" />
+	<script src="{maccms:templatepath}images/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="{maccms:templatepath}images/base.js" type="text/javascript"></script>
+	<script src="{maccms:templatepath}images/log.js" type="text/javascript"></script>
+</head>
+<body>
+ 
+{maccms:head}
+<div id="content">
+ <div id="content">	
+	<div class="layout" id="top-ranking">
+		<div class="ui-box top-catalog fn-left">
+			<h2 class="current"><a href="/hot.html">排行榜首页</a></h2>
+			<ul>
+		
+			</ul>
+		</div>
+		<div class="top-content fn-right"> {maccms:typematrix type=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20}
+			<div class="top-item-box fn-clear"> 
+			
+			<div class="top-min">
+					<div class="tt fn-clear">
+						<span class="top-icon">[typematrix:name]</span>
+						<h5>总评分榜</h5>
+					</div>
+					<ul class="top-list fn-clear">{maccms:vodlist num=10 by=time type=[typematrix:id] order=desc}
+					<li>
+								<a href="[vodlist:name]">
+									<span class="num">[vodlist:numjoin].</span>
+									<span class="tit">[vodlist:name]</span>
+									<span class="score">[vodlist:hits]</span>
+								</a>	
+							</li>{/maccms:vodlist}
+								</ul>
+					<!-- // txt-list End -->
+					</div>	
+					<!-- // top-min End -->	
+					<div class="top-min">
+					<div class="tt fn-clear">
+						<h5>周排行榜</h5>
+					</div>
+					<ul class="top-list fn-clear">{maccms:vodlist num=10 by=time type=[typematrix:id] day=7 order=desc}
+																														<li>
+								<a href="[vodlist:name]">
+									<span class="num">[vodlist:numjoin].</span>
+									<span class="tit">[vodlist:name]</span>
+									<span class="score">[vodlist:hits]</span>
+								</a>	
+							</li>	{/maccms:vodlist}						
+							</ul>
+					<!-- // txt-list End -->
+					</div>	
+					<div class="top-min">
+					<div class="tt fn-clear">
+						<h5>月排行榜</h5>
+					</div>
+					<ul class="top-list fn-clear">{maccms:vodlist num=10 by=time type=[typematrix:id] day=30 order=desc}
+																														<li>
+								<a href="[vodlist:name]">
+									<span class="num">[vodlist:numjoin].</span>
+									<span class="tit">[vodlist:name]</span>
+									<span class="score">[vodlist:hits]</span>
+								</a>	
+							</li>	{/maccms:vodlist}
+							</ul>
+					<!-- // txt-list End -->
+					</div>
+				<!-- // top-min End -->	
+			</div>{/maccms:typematrix}
+			<!-- // top-item-box end -->
+</div>
+	</div>
+	<!-- // ui-box#latest end -->
+</div>
+{maccms:foot}
+</body>
+</html>

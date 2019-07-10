@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>VICTORIASSECRET—热区工具</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<link href="css/83fdca715bdb4d38a02e0d29ee42dfe9.css" rel="stylesheet"/>
+<link href="css/98753c9af19044e2a03ced18a24458f0.css" rel="stylesheet"/>
+<link href="css/8a61886daa974802b6fe4242fddc86d9.css" rel="stylesheet"/>
+<link href="css/346e45b33c864608afb17b486453e5bb.css" rel="stylesheet"/>
+<link href="css/8e7da366302c41969624bdb8882b91ee.css" rel="stylesheet"/>
+<link href="css/056f3c97be2c4a28aac319710aaca2ee.css" rel="stylesheet"/>
+<link href="css/58f8268f59fb4f3183238d0758f9248a.css" rel="stylesheet"/>
+<script src="js/cc7cc24f9b674c83a410a42d6dbf6e05.js"></script>
+<script src="js/1eecf2837bb040c8ace5f31dbd57f20d.js"></script>
+<script src="js/8884eac6b0ba4c96b83c3ce088061e3c.js"></script>
+<script src="js/af55625232fc483db50aeb6de99d1a21.js"></script>
+<script src="js/e5bb17cad1c74580bb1eb66502e40b9a.js"></script>
+<script src="js/adbcab666bbd49cd95035ebf4e6baadb.js"></script>
+<script src="js/541b9b8daacd46beaa020fcb040c9bff.js"></script>
+<script src="js/2cb3dfcaaac945839fddb86d63baf713.js"></script>
+<script src="js/e95069b8f0eb4c78ac5e4c52e1d6d3a3.js"></script>
+</head>
+
+<body>
+<div id="wrap"> 
+  
+  <!---Header Begin--->
+  
+  
+  <!---Container Begin--->
+  <div id="mainBox">
+    <link href="css/f4f1394cdb27444d9c00f4be4e5ffdf1.css" rel="stylesheet"/>
+    <link href="css/13bf09d3df62479cb02987648261a79f.css" rel="stylesheet"/>
+    <script src="js/388972335ade43359f30ac74046ed31d.js"></script> 
+    <script src="js/de7fd3870c1e4b9fbec6e76e406aa388.js"></script> 
+    
+    <!-- 说明开始 -->
+  
+    <!-- 工具箱开始 -->
+    <div class="tools">
+		<div class="hj01" style="600px; color: #ffffff">VICTORIA'S SECRET—专用热区工具</div>
+      <div class="inner">
+        <ul class="toolSet">
+         
+<!--
+          <li>
+            <input id="tools_zuobiao" type="checkbox" />
+            <label for="tools_zuobiao">鼠标坐标</label>
+          </li>
+-->
+          <!-- <li><input id="tools_fuzhu" type="checkbox" checked="checked"></input> <label for="tools_fuzhu">鼠标辅助线</label></label></li> -->
+        </ul>
+        <ul class="toolBar">
+<!--
+          <li>
+            <button id="hostspacePreview" class="J_import">预览</button>
+          </li>
+-->
+          <li>
+            <button id="hostspaceCreate" class="J_export">生成代码</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="toolLoad">
+      <div class="inner"> <span>请填图片地址</span>
+        <input type="text" value="https://img.alicdn.com/imgextra/i1/3265150369/TB2hWlSpQSWBuNjSszdXXbeSpXa_!!3265150369.jpg" class="loadText" id="ChangBgUrl" />
+        <input type="button" value="确定" class="submit" id="ChangBgBtn" />
+        <a id="cleanUrl">清空</a> <a href="http://tadget.taobao.com/picture/pictureIndex.htm" target="_blank">图片空间</a> </div>
+    </div>
+    <!-- 操作面板开始 -->
+    <div class="controlSelect">
+      <div class="selectTop"> </div>
+      <div class="selectCenter">
+        <li> <a class="icon1_s" title="热区" id="Choosehostspace"><span>热区</span></a> </li>
+        <li> <a class="icon2" title="选择指针" id="ChoosePointer"><span>选中热区</span></a> </li>
+      </div>
+      <div class="selectBottom"> </div>
+    </div>
+    
+    <!-- 画布开始 -->
+    <div class="boxContainer">
+      <div id="boxRule" onselectstart="return false">
+        <div class="HOTruler HOTvRule"></div>
+        <div class="HOTruler HOThRule"></div>
+        <div id="box" date-val='1' boxsrc=""> </div>
+      </div>
+    </div>
+    <!-- 双击弹出开始 -->
+    <div id="dlgCreateCode" class="easyui-dialog" style="width: 600px; height: 315px" title="&nbsp; 热区代码生成" data-options="closed:true,iconCls:'icon-cut'">
+      <div class="cssBox">
+        <div class="cssBox_info">
+          <textarea class="cssBox_Content" id="CreateText"></textarea>
+        </div>
+        <div class="cssBox_bottom">
+          <button class="btn_close_02" id="copy_close">关闭</button>
+          <button class="btn_copy" id="copy_code">点此复制</button>
+        </div>
+      </div>
+    </div>
+    <div id="dlgdbConfig" data-options="collapsible:false,minimizable:false,maximizable:false"></div>
+    <div id="CopySuccessBox" style="display:none;">
+      <div class="copySuccess_box"> <a href="javascript:void(0)" class="btn_close_03" onclick="$('.jquery-lightbox-button-close').click();">&nbsp;</a>
+        <div class="show_text">
+          <p>已经复制成功！</p>
+          <p>点击进入 <a href="http://siteadmin.taobao.com/design.htm" target="_blank">店铺装修</a> ，双击模块粘贴代码即可</p>
+        </div>
+      </div>
+    </div>
+    <a href="#CopySuccessBox" id="copylightbox" class="copylightbox" style=" display:none;" ></a> 
+    <!---帮助工具栏--->
+    
+    <div class="links cr fl">
+      <div class="inner">  </div>
+    </div>
+    <a href="javascript:void(0)" onclick="javascript:AddFavorite()" class="collect_box"></a> 
+    <!-- JiaThis Button BEGIN --> 
+    
+    <!-- JiaThis Button END -->
+    <style>
+    .ckepopBottom { display:none;}
+    .centerBottom { display:none;}
+</style>
+
+</div>
+</body>
+</html>

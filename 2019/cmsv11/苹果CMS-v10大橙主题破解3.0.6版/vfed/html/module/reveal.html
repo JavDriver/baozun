@@ -1,0 +1,19 @@
+<div class="fed-part-rows">
+	<div class="fed-vfed-info fed-part-rows">
+		{maccms:art num="3" type="all" order="desc" by="time" level="6"}
+		<div class="fed-vfed-boxs fed-col-sm4">
+			<div class="fed-part-layout fed-back-whits">
+				<h2 class="fed-padding fed-font-xvi fed-text-center">{$vo.art_name}</h2>
+				<p class="fed-text-center fed-text-muted">{$vo.art_sub}</p>
+				<div class="fed-padding">
+					<a class="fed-list-pics fed-lazy fed-part-2by1 fed-part-rows" data-original="{$vo.art_pic|mac_url_img}"></a>
+				</div>
+				<div class="fed-vfed-btns fed-padding fed-text-center">
+					<a class="fed-btns-info fed-rims-info fed-btns-green" href="{:mac_url_art_detail($vo)}">查看详情</a>
+					<a class="fed-btns-info fed-rims-info" href="{$vo.art_jumpurl}">主题演示</a>
+				</div>
+			</div>
+		</div>
+		{/maccms:art}
+	</div>
+</div>

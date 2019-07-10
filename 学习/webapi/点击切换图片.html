@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" id="bth" value="点我">
+<img id="mv" src="../1.jpg">
+<script>
+    var bth = document.getElementById('bth');
+    var mv = document.getElementById('mv');
+    var flag = 1;
+    bth.onclick = function() {
+if(flag === 1){
+    mv.src = '2.jpg'
+    flag = 2;
+}else {
+    mv.src = '1.jpg'
+    flag = 1;
+}
+    }
+
+</script>
+
+</body>
+</html>

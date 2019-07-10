@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset>
+<url>{maccms:vod num=1000 page=true order=desc by=addtime}
+<loc>http://{maccms:url}[vod:link]</loc>
+<lastmod>[vod:time style=Y-m-d]</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority>
+</url>{/maccms:vod}
+</urlset>

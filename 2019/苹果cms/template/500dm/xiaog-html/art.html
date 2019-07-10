@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<TITLE>[artinfo:title]--[artinfo:typename] 资讯---{maccms:name}</TITLE>
+<meta name="keywords" content="[artinfo:title],{maccms:name}">
+<meta name="description" content="[artinfo:title],{maccms:name}">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="{maccms:templatepath}images/base.css" type="text/css" rel="stylesheet" />
+<script src="{maccms:templatepath}images/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="{maccms:templatepath}images/base.js" type="text/javascript"></script>
+<script src="{maccms:templatepath}images/log.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/all.css" />
+<script>var maccms_path='{maccms:path}';</script>
+<script src="{maccms:path}js/jquery.js"></script>
+<script src="{maccms:path}js/function.js"></script>
+<Style type="text/css"> 
+.gap_l {
+height: 0;
+overflow: hidden;
+line-height: 0;
+border-top: 2px solid #DBDBDB;
+margin: 10px 0;
+font-size: 0;
+clear: both;
+}
+</Style>
+</head>
+ 
+{maccms:head}
+<div class="wrapper">
+  <div id="side">
+  <div class="submenu">
+        <div class="boxTt nol">
+          <h2>资讯分类</h2>
+        </div>
+        <div class="boxCon">
+          <ul class="subList">
+		  {maccms:menulist table=art type=all}
+			<li class="[menulist:num]"><a href="[menulist:link]" title="[menulist:name]" target="_self">[menulist:name]</a><b></b></li> 
+			
+{/maccms:menulist}
+	</ul>
+        </div>
+      </div> 
+	      
+      <div class="submenu">
+      <div class="boxTt top">
+        <h2>每日资讯排行</h2>
+      </div>
+      <div class="boxCon">
+        <div class="reboList rL nrL">
+          <ul>
+		    {maccms:artlist num=15  type=current by=dayhits}
+ 
+            <li class="no2">
+			  <em>
+            [artlist:numjoin]                        
+			</em><a href="[artlist:newslink] " title="[artlist:colortitle] ">[artlist:colortitle]</a>
+              </li>{/maccms:artlist}
+	  </ul>
+        </div>
+      </div>
+    </div>
+ <div class="submenu">
+      <div class="boxTt top">
+        <h2>每月资讯排行</h2>
+      </div>
+      <div class="boxCon">
+        <div class="reboList rL nrL">
+          <ul>
+ {maccms:artlist num=15 type=current by=weekhits}
+ 
+            <li class="no2">
+			  <em>
+            [artlist:numjoin]                        
+			</em><a href="[artlist:link] " title="[artlist:colortitle] ">[artlist:colortitle]</a>
+              </li>{/maccms:artlist}
+	  </ul>
+        </div>
+      </div>
+    </div>
+	<div class="leftAd">
+ad    </div>
+ 
+ <div class="submenu">
+      <div class="boxTt top">
+        <h2>资讯总排行</h2>
+      </div>
+      <div class="boxCon">
+        <div class="reboList rL nrL">
+          <ul>
+		    {maccms:artlist num=15 type=current by=all}
+ 
+            <li class="no2">
+			  <em>
+            [artlist:numjoin]                        
+			</em><a href="[artlist:newslink] " title="[artlist:colortitle] ">[artlist:colortitle]</a>
+              </li>{/maccms:artlist}
+	  </ul>
+        </div>
+      </div>
+    </div> 
+ </div>
+ 
+      <div class="submenu">
+ 
+           
+    </div>
+<!--判断是否有小类 -->  
+ <div class="dLeft ndl">
+    <div class="news_box bd">
+      <div class="ibox iboxText playBox">
+        <div class="boxList top news">
+ 
+          <div class="newsTitle">
+            <h1>[artinfo:title]</h1>
+            <div class="info">来源：<em>www.xj.com.nu|</em>点击：<em id="hit">小俊设计</em><em>|</em>发布时间:[artinfo:addtime]</div>
+          </div>
+          <div class="newsCont">
+   <div class="main-body">
+[artinfo:content]
+ <div class="gap_l"></div>[artinfo:nextlink]  <div class="gap_l"></div>
+				 [artinfo:comment]</div>
+          </div>
+        </div>
+      </div>
+       </div>
+  </div>
+</div>
+ 
+{maccms:foot}
+</div>
+</body>
+</html>

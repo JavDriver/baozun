@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <title>45区</title>
+    <link type="text/css" rel="stylesheet" href="css/demo.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/dropload.css">
+    <link href="css/base.css" rel="stylesheet" type="text/css"/>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/global_hzj.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+    <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+    <script src="js/dropload.min.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+
+    var $orgMenu, $menu, $html;
+
+
+
+    $(function() {
+
+        $html = $('html');
+
+        $orgMenu = $('nav#menu').detach();
+
+        updateMenu({});
+
+    });
+
+
+
+    function updateMenu( opts )
+
+    {
+
+        var opened = false;
+
+        var createMenu = function()
+
+        {
+
+            if ( $menu )
+
+            {
+
+                $menu.remove();
+
+            }
+
+            $menu = $orgMenu.clone().prependTo( 'body' ).mmenu( opts );
+
+            if ( opened )
+
+            {
+
+                $menu.trigger( 'open.mm' );
+
+            }
+
+        }
+
+
+
+        if ( $menu )
+
+        {
+
+            if ( $html.hasClass( 'mm-opened' ) )
+
+            {
+
+                opened = true;
+
+                $menu
+
+                        .on( 'closed.mm', createMenu )
+
+                        .trigger( 'close.mm' );
+
+            }
+
+            else
+
+            {
+
+                createMenu();
+
+            }
+
+        }
+
+        else
+
+        {
+
+            createMenu();
+
+        }
+
+
+
+    }
+
+</script>
+<header class="clearfix heec">
+    <div class="w1120 clearfix">
+        <div class="header-left clearfix">
+            <div class="logo"><img src="images/logo.png"></div>
+            <div class="nav clearfix">
+                <a href="#">首页</a>
+                <a href="#">深度阅读</a>
+                <a href="#">作弊手册</a>
+                <a href="#">早知道</a>
+                <a class="navactive" href="#">关于我们</a>
+                <a href="#">找工作</a>
+            </div>
+        </div>
+        <div class="header-right clearfix">
+            <a class="header-right01 modaltrigger" href="#loginmodal"><img src="images/heard01.png">搜索</a>
+            <a class="header-right01" href="#"><img src="images/heard02.png">登录</a>
+            <a class="header-right01" href="#"><img src="images/heard03.png">注册</a>
+            <a class="header-right02" href="#">投稿</a>
+            <div class="header-right03"><img src="images/heard04.png">
+                <div class="header-right031">
+                    <img src="images/rwm.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="page">
+
+    <div class="header">
+
+        <a href="#menu">
+        </a>
+        45区
+
+    </div>
+
+
+
+    <nav id="menu" >
+
+        <ul>
+
+            <li><a href="#">首页 </a></li>
+            <li><a href="#">深度阅读</a></li>
+            <li><a href="#">作弊手册</a> </li>
+            <li><a href="#">早知道</a> </li>
+            <li><a href="#">关于我们</a> </li>
+            <li><a  href="#">找工作</a> </li>
+            <li><a  href="#">搜索</a> </li>
+            <li><a href="#">登录</a> </li>
+            <li><a href="#">注册</a> </li>
+
+
+        </ul>
+
+    </nav>
+
+</div>
+
+<div class="gywm w1120 clearfix">
+    <div class="gywm1 clearfix">
+        45区是一个专注于区块链的深度媒体，由一群关爱未来金融黑科技的媒体人建立。团队包括拥有10年财经报道经验的资深记者，若干话唠专栏作者，还有一个建在硅谷的密码学研究室。
+
+    </div>
+<ul class="gywm2 clearfix">
+<li>
+    <span><img src="images/gy01.png"></span>
+<p>创始人：中国顶级财经记者，联合国教科文组织杰出新闻贡献表彰；曾在三家财经媒体任首席记者，年度十大新闻人物之首，上海市委宣传部好新闻一等奖获得者</p>
+    <h3>创始人——劳佳迪 <br><em>中国顶级财经记者</em></h3>
+
+</li>
+
+    <li>
+        <span><img src="images/gy02.png"></span>
+        <p>上海交通大学信息安全硕士毕业，美国普林斯顿大学比特币和数字货币开发课程学员，曾在世界500强企业从事网络安全工作，现长居硅谷
+        </p>
+        <h3>聂小尘 <br><em>驻美记者，教育产品负责人</em></h3>
+
+    </li>
+
+    <li>
+        <span><img src="images/gy03.png"></span>
+        <p>FX168财经网资深记者，活跃于最大财经部落，拥有超过200家Fintech企业、记者资源，独立视频拍摄师</p>
+        <h3>吕苗苗<br><em>资深双语记者</em></h3>
+
+    </li>
+
+    <li>
+        <span><img src="images/gy04.png"></span>
+        <p>美国Nall Speak Off演讲赛一等奖，曾接待美国、罗马尼亚、意大利、希腊等多国驻沪领事，《飞鸟集》译者；有丰富海外活动策划经验
+        </p>
+        <h3>朱宸晨<br><em>资深双语记者</em></h3>
+
+    </li>
+    
+
+
+</ul>
+
+    <ul class="gywm3 clearfix">
+        <li>
+            <h4><img src="images/index512.png">联系电话</h4>
+            <p>+86-138xxxxxxxx</p>
+        </li>
+        <li>
+            <h4><img src="images/index52.png">公司地址</h4>
+            <p>上海市宜山路900号科技产业化大厦8楼</p>
+        </li>
+        <li>
+            <h4><img src="images/index53.png">QQ</h4>
+            <p>12345465</p>
+        </li>
+        <li>
+            <h4><img src="images/index54.png">EMAIL</h4>
+            <p>block45@blk45.com</p>
+        </li>
+    </ul>
+
+
+    <div class="lx_03 clearfix">
+        <iframe src="map.html" style="width:100%;height:350px;" frameborder="0" scrolling="no"></iframe>
+    </div>
+</div>
+
+
+<div class="foot clearfix">
+    <div class="clearfix w1120">
+        <div class="foot1 clearfix">
+
+            <div class="foot11 clearfix">
+                <h3>我们的产品</h3>
+                <dl class="clearfix">
+                    <dt><img src="images/foot1.png"></dt>
+                    <dd><span>渡渡鸟访谈</span>让一部分人先看到未来</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt><img src="images/foot2.png"></dt>
+                    <dd><span>45区媒体</span>让一部分人先看到未来</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt><img src="images/foot3.png"></dt>
+                    <dd><span>作弊手册</span>让一部分人先看到未来</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt><img src="images/foot4.png"></dt>
+                    <dd><span>研究院</span>让一部分人先看到未来</dd>
+                </dl>
+            </div>
+            <div class="foot12 clearfix">
+                <h3>日常</h3>
+                <a href="#">关于我们</a>
+                <a href="#">我要投稿</a>
+                <a href="#">找工作</a>
+            </div>
+
+            <div class="foot13">
+                <h3>45区微信公众号</h3>
+                <img src="images/rwm.png">
+                <em>扫一扫，关注45区</em>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="footer-logo"><a href=""> <img src="images/footlogo.png" alt=""> </a></div>
+            <div class="copyright"><span class="mobile-hide">本站由 <a href="http://www.aliyun.com" rel="nofollow" target="_blank">
+                <img src="images/aly.png" alt="阿里云" ></a><em>提供计算与安全服务</em>   </span>
+                <span class="law">Copyright ©  45区   京ICP备12013432号-1 <img src="images/wj.png"> 京公网安备 11010102001402号  技术支持：            <span
+                        class="mobile-hide">| <a href="" target="_blank">司慧网络 </a></span></span>
+
+                <br></div>
+            <div class="share"><a class="iconfooter-weibo" href="" target="_blank" rel="nofollow"></a>
+                <a class="iconfooter-qq" href="" target="_blank" rel="nofollow"></a>
+                <a class="iconfooter-txwb" href="" target="_blank" rel="nofollow"></a>
+                <a class="iconfooter-rss" href="" target="_blank" rel="nofollow"></a>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!--搜索-->
+<header class="clearfix isearch" style="display:none;" id="loginmodal">
+    <div class="w1120 clearfix">
+        <div class="logo"><img src="images/logo.png"></div>
+        <div class="search1">
+            <img src="images/heard01.png">
+            <form action="" class="">
+                <input type="text" placeholder="搜索" class="" tabindex="-1">
+            </form>
+        </div>
+        <a href="javascript:" class="search1a hidemodal1"><img src="images/close2.png"> </a>
+    </div>
+</header>
+
+</body>
+</html>

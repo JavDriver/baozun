@@ -1,0 +1,52 @@
+@charset "utf-8";
+.dybtn, .diversity_jlp li, .diversity_txt sub, .star em, .star, .topic_input textarea, .topic_input button, .weibo_btn_qq, .quicksearch button, .ranklist .top em, .ratebox a, .switchtigger, .tabbox .on, .diversity_list a {background:url(http://img.kankan.xunlei.com/img/kankan/mp4_1209/sprite_1031.png) no-repeat 0 0;}
+/*diversity*/
+.diversity {position:relative;width:700px;background:#fcfcfc;padding:0 0 15px;margin:10px auto 0;border:solid #ededed 1px;z-index:1;}
+.diversity_tt {height:24px;padding:15px 15px 0;}
+.diversity_tt h2 {float:left;font-size:14px;color:#666;}
+.diversity_tt_tab {float:left;font-size:14px;color:#ccc;}
+.diversity_tt_tab a {cursor:pointer;}
+.diversity_tt_tab span {margin:0 8px;}
+.diversity_tt_tab .on {color:#666;font-weight:bold;}
+.diversity_tt_tip {float:left;}
+.diversity_tt .act {background-position:50px -35px;padding-right:12px;}
+.diversity_tt .act:hover {background-position:50px -197px;}
+.diversity_tt .act_on {background-position:50px -181px;}
+.diversity_tt .act_on:hover {background-position:50px -51px;}
+.diversity_lau {position:relative;float:left;display:inline;width:56px;height:22px;margin:-2px 3px 0 0;overflow:hidden;z-index:2;}
+.diversity_lau_con {position:absolute;left:0;top:0;width:56px;}
+.diversity_lau a {display:block;height:22px;font-size:14px;color:#666;line-height:22px;font-weight:bold;text-align:center;cursor:default;}
+.diversity_lau a:hover {text-decoration:none;}
+.diversity_lau a span {color:#0296dc;}
+.diversity_lau_on {margin-top:-3px;overflow:visible;}
+.diversity_lau_on .diversity_lau_con {width:54px;height:46px;background:#fff;border:solid #ededed 1px;border-bottom:none;}
+.diversity_lau_on a {border-bottom:solid #ededed 1px;}
+.diversity_lau_on a span {color:#666;}
+.diversity_lau_on .diversity_lau_other {cursor:pointer;}
+.diversity_lau_on .diversity_lau_other span {color:#0296dc;}
+.diversity_box {padding:0 0 0 15px;}
+.diversity_list, .diversity_txt {overflow:hidden;zoom;1;}
+.diversity_list li {float:left;display:inline;width:142px;height:32px;margin:10px 10px 0 0;overflow:hidden;}
+.diversity_list a {display:block;height:32px;background-position:0 0;line-height:32px;text-align:center;}
+.diversity_list .on {background-position:-143px 0;color:#fff;border-color:#288bca;}
+.diversity_txt {margin-top:5px;}
+.diversity_txt li {float:left;display:inline;width:230px;height:24px;line-height:24px;overflow:hidden;}
+.diversity_txt a {float:left;}
+.diversity_txt span {float:left;display:inline;margin:0 5px;}
+.diversity_txt sub {float:left;display:block;width:25px;height:11px;background-position:-61px -131px;margin-top:6px;text-indent:-9999px;overflow:hidden;}
+.diversity_dsj li {width:78px;margin-right:8px;}
+.diversity_dsj a {background-position:-87px -131px;}
+.diversity_dsj .on {background-position:-166px -131px;}
+.diversity_zy {zoom:1;}
+.diversity_zy li {width:215px;}
+.diversity_zy a {float:none;}
+.diversity_zy .on, .diversity_txt .on {color:#0296DC;}
+.diversity_jlp li {width:178px;}
+.diversity_jlp a {background-position:-138px -95px;padding:0 10px;text-align:left;}
+.diversity_jlp a:hover {text-decoration:none;}
+.diversity_jlp span {float:left;display:block;width:53px;color:#999;cursor:pointer;}
+.diversity_jlp em {float:left;display:block;width:108px;padding:0 5px 0 12px;text-align:left;cursor:pointer;}
+.diversity_jlp .on {background-position:-245px -131px;}
+.diversity_jlp .on span, .diversity_jlp .on em {color:#fff;}
+.diversity_gkk a {background-position:-286px 0;padding:0;text-align:center;}
+.diversity_gkk .on {background-position:-138px -62px;}

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>娱乐专题-娱乐频道专题汇总-娱乐频道-{maccms:name}</title>
+<link type="text/css" rel="stylesheet" href="{maccms:templatepath}images/vs/dyzthz110110.css"/>
+</head>
+<body>
+<!-- 主内容 -->
+<div class="wrap2">
+	<!--outer-->
+	<div class="outer">
+		<!--inner-->
+		<div class="inner inner02">
+			<!--main-->
+			<div class="main">
+				<!--标题-->
+					 <div class="header">                	
+                    <b>专题群英——{maccms:name}专题汇总页</b>
+                    <!--导航-->
+                    <div class="menu menu02" style="width: 600px;">
+                    <a href="{maccms:path}" title="首页">首页</a>/
+					{maccms:menulist table=vod type=parent by=id order=asc}
+					<a href="[menulist:link]" title="[menulist:name]">[menulist:name]</a>/
+					{/maccms:menulist}
+                    </div>
+                    <!--导航 end-->
+                </div>
+ 
+						<!--标题 end-->
+						<!--curPath-->
+						 <div class="curPath">
+                	<p>
+                    	<a href="" title="专题群英会">专题群英会</a>
+                        >
+                        <b>娱乐频道</b>
+                     </p>
+                     <ul>
+					 {maccms:topiclist num=2 id=all table=vod}
+                     	<li>
+                        	<a href="[topiclist:link]" title="[topiclist:name]">
+                            	<img src="[topiclist:pic]" alt="[topiclist:name]" />
+                                [topiclist:name len=30]
+                            </a>
+                        </li>
+                    {/maccms:topiclist}
+                     </ul>
+                </div>
+ 
+ 
+ 
+   
+						<!--curPath end-->
+						<!--专题回顾-->
+ <div class="special">
+<h3><b>专题回顾</b></h3>
+<!--speOuter-->
+<div class="speOuter">
+<!--speInner-->
+<div class="speInner">
+                             <div class="picList">
+                                <ul>
+{maccms:topicpagelist num=120 table=vod id=all}									
+<li>
+                                        <a href="[pagelist:link]" title="[pagelist:name]">
+                                            <img src="[pagelist:pic]" alt="[pagelist:name]" />
+                                           [pagelist:name len=10]
+                                        </a>
+                                        <p>共收录[pagelist:count]部作品</p>
+                                    </li>{/maccms:topicpagelist}
+ 
+				  </ul>
+                            </div>
+ 
+		
+ 
+		
+  
+</div>
+<!--speInner end-->
+</div>
+<!--speOuter end-->
+</div>
+<!--专题回顾 end-->
+</div>
+<!--main end-->
+</div>
+<!--inner end-->
+</div>
+<!--outer end-->
+</div>
+<!-- 主内容 end -->
+
+</body>
+</html>

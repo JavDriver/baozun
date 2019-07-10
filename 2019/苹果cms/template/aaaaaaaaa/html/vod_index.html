@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{maccms:name}</title>
+<meta name="keywords" content="{maccms:keywords}" />
+<meta name="description" content="{maccms:description}" />
+{maccms:include}
+</head>
+<body>
+{maccms:head}		      
+<div class="layout mt10">
+	<div class="w670 left">
+		<div class="w670_tbg"></div>
+		<div class="mainArea px14">
+			<h2><div align="center"><font color="#FF0000" style="font-size:14px">在线视频播放 - 无需安装任何播放器，支持手机播放和一切移动设备播放</font></div></h2>
+			<ul class="newMovies">
+			{maccms:vod num=24 type=all order=desc by=time}
+				<li><a href="[vod:link]" target="_blank"><h3>[vod:name]</h3><img src="{maccms:path_tpl}images/grey.jpg" data-original="[vod:pic]" /><p>[vod:time style=yy-m-d H:i:s]</p></a></li>
+            {/maccms:vod}
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="w670_bbg"></div>
+ </div>
+ <div class="clear"></div>
+ </div>
+<!--  -->
+<div class="layout mt10">
+	<div class="w670 left">
+		<div class="w670_tbg"></div>
+		<div class="mainArea px14">
+			<h2><div align="center"><font color="#FF0000" style="font-size:14px">在线播放下载 - 提供肥佬和吉吉在线播放电影，以及BT种子下载，迅雷下载</font></div></h2>
+			<ul class="newMovies">
+			{maccms:vod num=24 type=all order=desc by=time}
+				<li><a href="[vod:link]" target="_blank"><h3>[vod:name]</h3><img src="{maccms:path_tpl}images/grey.jpg" data-original="[vod:pic]" /><p>[vod:time style=yy-m-d H:i:s]</p></a></li>
+            {/maccms:vod}
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="w670_bbg"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+{maccms:foot}
+<script type="text/javascript">
+$(function() {
+	$("img").lazyload({
+		effect : "fadeIn"
+	});
+});
+</script>
+</body>
+</html>

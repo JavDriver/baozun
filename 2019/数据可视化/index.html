@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>小组的年龄体重统计</title>
+    
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/2.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js">
+    </script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=muwdlCxKd3s2ablcjmDDdNTE8etj3QAC"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js">
+    </script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+
+</head>
+
+<body>
+    <div
+        style="position: relative; overflow: hidden; width: 1538px; height: 760px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+        <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+        <div id="bar" style="height:400px"></div>
+        <script type="text/javascript">
+            var myChart = echarts.init(document.getElementById('bar'));
+            var arr1 = [],
+                arr2 = [],
+                arr3 = [];
+
+            function arrTest() {
+                //这个功能块的作用就是读取json数据。
+                $.ajax({
+                    type: "post", //请求服务器载入数据
+                    async: false, //异步属性
+                    url: "bar.php",
+                    data: {},
+                    dataType: "json",
+                    success: function (result) {
+                        if (result) {
+                            for (var i = 0; i < result.length; i++) {
+                                arr1.push(result[i].name);
+                                arr2.push(result[i].age);
+                                arr3.push(result[i].kg); //这边更新字段，可以只写你需要展示的字段。 
+                            }
+                        }
+                    }
+                })
+                return arr1, arr2, arr3;
+            }
+            arrTest();
+            var option = {
+                title: {
+                    text: '小组的年龄体重',
+                    subtext: '随便搞搞'
+                },
+
+                //Bootstrap 提示工具（Tooltip）插件,鼠标悬停时候的提示框
+                tooltip: {
+                    show: true
+                },
+                //图例
+                legend: {
+                    data: ['age', 'kg']
+                },
+                //工具箱
+                toolbox: {
+                    show: true,
+                    feature: {
+                        dataView: {
+                            show: true,
+                            readOnly: false
+                        },
+                        magicType: {
+                            show: true,
+                            type: ['line', 'bar']
+                        },
+                        restore: {
+                            show: true
+                        },
+                        saveAsImage: {
+                            show: true
+                        }
+                    }
+                },
+                calculable: true,
+                //x轴
+                xAxis: [{
+                    type: 'category',
+                    data: arr1
+                }],
+                //y轴
+                yAxis: [{
+                    type: 'value'
+                }],
+                //需要展示的系列，根据需要
+                series: [{
+                        "name": "age",
+                        "type": "bar",
+                        "data": arr2,
+                        markPoint: {
+                            data: [{
+                                    type: 'max',
+                                    name: '最大值'
+                                },
+                                {
+                                    type: 'min',
+                                    name: '最小值'
+                                }
+                            ]
+                        },
+                        markLine: {
+                            data: [{
+                                type: 'average',
+                                name: '平均值'
+                            }]
+                        }
+                    },
+                    {
+                        "name": "kg",
+                        "type": "bar",
+                        "data": arr3,
+                        markPoint: {
+                            data: [{
+                                    type: 'max',
+                                    name: '最大值'
+                                },
+                                {
+                                    type: 'min',
+                                    name: '最小值'
+                                }
+                            ]
+                        },
+                        markLine: {
+                            data: [{
+                                type: 'average',
+                                name: '平均值'
+                            }]
+                        }
+                    }
+                ]
+            };
+            // 为echarts对象加载数据
+            if (option && typeof option === "object") {
+                myChart.setOption(option, true);
+            }
+        </script>
+</body>
+
+</html>

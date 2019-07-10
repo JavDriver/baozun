@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/1.12.1/jquery.js"></script>
+    <style>
+    .csl{ background: #000000;}
+    body{ background: #ffffff;}
+    </style>
+    <script>
+            $(function(){
+            // $('#btn').click(function(){
+            //    if($(this).val()=='关灯'){
+            //      $("body").addClass("csl");
+            //      $(this).val('开灯');
+            //    }else{
+            //        $('body').removeClass();
+            //        $(this).val('关灯');
+            //     //    $(this).text('开c');
+            //     //    $(this).html('haha');
+            //    }
+        //      $('ul>li:even').css('backgroundColor','red');
+        //      $('ul>li:odd').css('backgroundColor','yellow');
+        //      $('.qw123').find('li').css('backgroundColor','red');
+        // })  
+             $('.qw123>ul>li').mouseover(function(){
+                 //console.log($('.qw123>ul>li'));
+               $(this).css('backgroundColor','red').siblings('li').css('backgroundColor','');
+             }).click(function(){
+                 if($(this).css('fontSize') =='50px'){
+                     $(this).css('fontSize','');
+                 }else{
+                    $(this).css('fontSize','50px').siblings('li').css('fontSize','');
+                 }
+                 //console.log($(this).css('fontSize') =='50px');
+             });
+
+            });
+
+
+            
+            
+            </script>
+</head>
+<body>
+<input type="" value="关灯" id="btn">
+<div class="qw123">
+<ul>
+    <li>sdadadasdasd</li>
+    <li>sdadadasdasd</li>
+    <li>sdadadasdasd</li>
+    <li>sdadadasdasd</li>
+</ul>
+</div>
+
+    
+</body>
+</html>

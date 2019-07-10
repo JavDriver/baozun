@@ -1,0 +1,32 @@
+.conten {
+    width: 750px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding-top: 40px;
+}
+
+.conten h3 {
+    font-size: 35px;
+    color: #1a1a1a;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 30px;
+    font-family: 'MFKeSongRegular';
+}
+
+.conten h4 {
+    font-size: 28px;
+    color: #1a1a1a;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'victoriai';
+    margin-bottom: 20px;
+}
+.conten ul li{ width: 355px; float: left; margin-right: 38px; margin-bottom: 30px;}
+.conten ul li:nth-child(2n){ margin-right: 0;}
+.conten ul li span {position:relative; display: block; width: 355px; height:473.38px; overflow:hidden; margin-bottom: 20px;}
+.conten ul li span img{ position: absolute; width:100%;}
+.conten ul li p{ font-size: 28px; color: #1a1a1a; text-align: center; line-height: 30px;font-family: 'MFKeSongRegular'; margin-bottom: 5px;}
+.conten ul li em{ font-size: 24px; text-align: center; color: #272727; display: block;}
+
+

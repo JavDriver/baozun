@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>vfed主题使用说明</title>
+</head>
+<body>
+<pre class="layui-code"></pre>
+<link href="../../../../static/layui/css/layui.css" rel="stylesheet" type="text/css" />
+<script src="../../asset/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../../static/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+layui.use('code', function() {
+	layui.code();
+	$.get('../../read.txt', function(data) {
+		$('.layui-code .layui-code-ol').html('<li>' + data.replace(/\r\n/ig, '<li>'));
+	});
+});
+</script>
+</body>
+</html>

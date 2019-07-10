@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中午吃啥</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+<div class="w300">
+<div id="foodName" >准备选午餐了。。</div>
+<input type="button" value=" 开始选择 " onclick="Start();" />
+<input type="button" value=" 选定！ " onclick="Stop();" />
+</div>
+</body>
+
+<script type="text/javascript">
+    //此处修改饭菜，以逗号隔开
+    var foodName = 'A栋,智慧园方向,中铁方向,外卖'//,肯德基,pizza,汉堡王,鸡公煲,麻辣烫,A栋,香锅,冒菜,福龙祥,不吃,沙拉,鱼,日料
+    var foodNameArray = foodName.split(',');
+    var num = foodNameArray.length-1;
+    var timer;
+    function $(o){
+        return document.getElementById(o);
+    }
+    function change(){
+        $('foodName').innerHTML = foodNameArray[getRun(0,num)];
+    }
+    function getRun(_min,_max){
+        return parseInt(Math.random()*(_max-_min+1));
+    }
+    function Start(){
+        clearInterval(timer);
+        timer = setInterval('change()',30);
+    }
+    function Stop(){
+        clearInterval(timer);
+    }
+</script>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            border: 0;
+        }
+
+        .all {
+            width: 500px;
+            height: 200px;
+            padding: 7px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .screen {
+            width: 500px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .screen li {
+            width: 500px;
+            height: 200px;
+            overflow: hidden;
+            float: left;
+        }
+
+        .screen ul {
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 3000px;
+        }
+
+        .all ol {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .all ol li {
+            float: left;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .all ol li.current {
+            background: yellow;
+        }
+
+        #arr {
+            display: none;
+            z-index: 1000;
+
+        }
+
+        #arr span {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            margin-top: -20px;
+            background: #000;
+            cursor: pointer;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            font-family: '黑体';
+            font-size: 30px;
+            color: #fff;
+            opacity: 0.3;
+            border: 1px solid #fff;
+        }
+
+        #arr #right {
+            right: 5px;
+            left: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="all" id='box'>
+    <div class="screen">
+        <ul>
+            <li><img src="images/wf1.jpg" width="500" height="200"/></li>
+            <li><img src="images/wf2.jpg" width="500" height="200"/></li>
+            <li><img src="images/wf3.jpg" width="500" height="200"/></li>
+            <li><img src="images/wf4.jpg" width="500" height="200"/></li>
+            <li><img src="images/wf5.jpg" width="500" height="200"/></li>
+        </ul>
+        <ol>
+        </ol>
+    </div>
+    <div id="arr"><span id="left">&lt;</span><span id="right">&gt;</span></div>
+</div>
+
+
+
+<script>
+
+    var box = document.getElementById('box');
+   var  arr = document.getElementById('arr');
+   var  arrleft = document.getElementById('left');
+   var  arrright = document.getElementById('right');
+    var  screen = box.children[0];
+    var ul = screen.children[0];
+    var ol = screen.children[1];
+    var imgWhidth = screen.offsetWidth;
+    var count = ul.children.length;
+    //自动生成序号
+    for(var i = 0; i < count;i++){
+        var li = document.createElement('li');
+        ol.appendChild(li);
+        li.innerHTML = i + 1;
+
+//点击序号移动图片
+        li.onclick = liClick;
+        li.setAttribute('index' , i);
+    }
+    function liClick(){
+     for(var i = 0; i < ol.children.length;i++){
+         var li = ol.children[i];
+         li.className = '';
+     }
+this.className = 'current';
+
+var liIndex = parseInt(this.getAttribute('index'));
+        animate(ul , -liIndex * imgWhidth);
+        index = liIndex;
+    }
+
+    ol.children[0].className = 'current';
+
+
+    box.onmouseover = function(){
+         arr.style.display = 'block';
+        clearInterval(timeId);
+    }
+    box.onmouseout = function(){
+        arr.style.display = 'none';
+        timeId = setInterval(function(){
+            arrright.click();
+        },2000)
+    }
+    var index = 0;
+    arrright.onclick = function(){
+        if (index === count) {
+            ul.style.left = '0px';
+            index = 0;
+        }
+        index++;
+        if(index <  count){
+
+            ol.children[index].click();
+        }else {
+            animate(ul , -index * imgWhidth);
+            for(var i = 0; i < ol.children.length;i++){
+                var li = ol.children[i];
+                li.className = '';
+            }
+            ol.children[0].className = 'current'
+
+        }
+//        if(index < count - 1){
+//            index++;
+//            ol.children[index].click();
+//            //animate(ul , -index * imgWhidth);
+//        }
+
+
+    }
+
+    arrleft.onclick = function(){
+     if(index === 0){
+         index = count;
+         ul.style.left = -index * imgWhidth + 'px';
+     }
+        index--;
+        ol.children[index].click();
+
+//     if(index > 0){
+//       index--;
+//         ol.children[index].click();
+//         //animate(ul , -index * imgWhidth);
+//
+//     }
+
+    }
+
+   var firstLi = ul.children[0];
+    var cloneLi = firstLi.cloneNode(true);
+   ul.appendChild(cloneLi);
+
+ var timeId = setInterval(function(){
+     arrright.click();
+ },2000)
+
+
+
+
+
+
+
+
+
+
+
+
+    // var timerId = null;
+    // 封装动画的函数
+    function animate(element, target) {
+        // 通过判断，保证页面上只有一个定时器在执行动画
+        if (element.timerId) {
+            clearInterval(element.timerId);
+            element.timerId = null;
+        }
+
+        element.timerId = setInterval(function () {
+            // 步进  每次移动的距离
+            var step = 10;
+            // 盒子当前的位置
+            var current = element.offsetLeft;
+            // 当从400 到 800  执行动画
+            // 当从800 到 400  不执行动画
+
+            // 判断如果当前位置 > 目标位置 此时的step  要小于0
+            if (current > target) {
+                step = - Math.abs(step);
+            }
+
+            // Math.abs(current - target)   <= Math.abs(step)
+            if (Math.abs(current - target)   <= Math.abs(step)) {
+                // 让定时器停止
+                clearInterval(element.timerId);
+                // 让盒子到target的位置
+                element.style.left = target + 'px';
+                return;
+            }
+            // 移动盒子
+            current += step;
+            element.style.left = current + 'px';
+        }, 5);
+    }
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

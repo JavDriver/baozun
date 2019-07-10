@@ -1,0 +1,42 @@
+
+
+/*Ê×Ò³*/
+#rightMenu {width: 60px;height: 218px;margin-left: 120px;background: url(rightMenu.png) 0 -21px no-repeat;position: fixed;padding-top: 22px;_position: absolute;}
+#rightMenu a {width: 60px;height: 41px;margin-bottom: 1px;text-align: center;line-height: 41px;font-weight: 700;font-size: 14px;color: white;float: left;display: inline;}
+
+#index-silder {height: auto;width: 950px;overflow: hidden;clear: both;padding: 0 3px;position: relative;border-bottom: 1px solid #F0F0F0;}
+#index-silder .index-list {width: 960px;overflow: hidden;}
+#index-silder .index-list li {float: left;overflow: hidden;}
+#index-silder .index-list dl {width: 208px;height: 95px;margin: 12px 0 15px 0;overflow: hidden;padding: 0 10px 0 20px;border-right: 1px solid #F0F0F0;}
+#index-silder .index-list dt {height: 30px;line-height: 30px;overflow: hidden;font-size: 14px;font-weight: bold;color: #333;}
+#index-silder .index-list dd {line-height: 22px;margin-right: 10px;float: left;}
+#index-silder .index-list dd a {white-space: nowrap;float: left;}
+.index-search{height: 35px;padding: 5px 10px;}
+.index-search .hotKeys {width: 430px;padding-top: 5px;overflow: hidden;height: 24px;line-height: 24px;}
+.index-search .hotKeys strong {font-weight: bold;color:#0060A5;}
+.index-search .hotKeys a {margin-right: 5px;}
+
+.index-search .FormSearch{float: left;width: 475px;}
+.index-search .searchForm {width: 475px;position: relative;}
+.index-search .searchSubmit {border: 0 none;background: url(../images/common.png) 0 -74px no-repeat;width: 68px;height: 35px;cursor: pointer;}
+.index-search .searchInput {background: url(../images/sico.gif) 8px 8px no-repeat white;width: 370px;height: 20px;border: 1px solid #999;border-right: 0 none;padding: 7px 3px 6px 30px;line-height: 20px;font-size: 14px;color: #999;}
+.index-search .searchForm input {float: left;}
+
+.IndexLink{width: 960px;}
+.mod_cooperation {position: relative;width: 100%;overflow: hidden;}
+.mod_tit {height: 30px;line-height: 30px;_line-height: 32px;overflow: hidden;font-size: 14px;color: #2D2D2D;}
+.mod_cooperation ul {overflow: hidden;padding: 0 3px;zoom: 1;clear: both;}
+.mod_cooperation li {float: left;margin:0 10px;width: 98px;height: 22px;line-height: 22px;overflow: hidden;white-space: nowrap;}
+.mod_cooperation li a{color: #777;}
+
+.hotTop .title {height: 44px;line-height: 44px;overflow: hidden;font-size: 14px;border-bottom: 1px solid #EEE;zoom: 1;overflow: hidden;}
+.hotTop .title h3 {background: url(../images/h3_down.gif) no-repeat 17px;padding-left: 37px;font-weight: normal;color: #2F9DDA;float: left;}
+.hotTop .title .more {float: right;margin-right: 10px;}
+
+/*µ×²¿*/
+.foot {clear: both;margin-top: 20px;padding: 20px 0 20px 0;line-height: 24px;text-align: center;border-top: #88C1FF solid 2px;background: #F8F8F8;color: #666;}
+.foot a {color: #2E2E2E;}
+.foot .copyrighten{width: 550px;margin: 0 auto;}
+.foot .footermenu{margin-bottom: 10px;}
+.foot .footermenu a{margin: 0 10px;}
+.foot .footermenu a.color{color: #0060A5;}

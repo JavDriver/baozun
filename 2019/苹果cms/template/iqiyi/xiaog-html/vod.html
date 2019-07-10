@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBliC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>[vodinfo:name]_[vodinfo:typename] - {maccms:name}</title>
+<meta name="keywords" content="[vodinfo:name],[vodinfo:typename],{maccms:name}">
+<meta name="description" content="[vodinfo:name],[vodinfo:typename],{maccms:name}">
+<script>var maccms_path = "{maccms:path}";</script>
+<script src="{maccms:path}js/jquery.js"></script>
+<script src="{maccms:path}js/function.js"></script>
+<script type="text/javascript"> 
+var info={}
+var albumInfo={}
+</script>
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/tv/basic_other.css">
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/tv/album_dm.css">
+<link rel="stylesheet" type="text/css" href="{maccms:templatepath}images/tv/vod.css">
+
+</head>
+<body class="zhuanji" screen_capture_injected="true">
+{maccms:head}
+<div class="wrap">
+  <!-- 主内容 begin -->
+  <!-- 头部信息 -->
+<div class="focus_area" style="position:relative;overflow:hidden;">
+ <script src="{maccms:templatepath}ads/vod980x90-1.js"></script>
+</div>
+  	<div class="topInfo" collection="Y">
+	<h1 class="h2Title1">[vodinfo:textlink]</h1>
+</div>
+</div>
+<!--平铺背景图-->
+<div class="rep_area">
+  <!--左右layout-->
+  <div class="zj_layout">
+    <!--左侧-->
+    <div class="al_left">
+	
+<div class="ju_msg" collection="Y">
+	<div class="pic">
+		<p style="height:240px">
+			<a class="pic_cur" href="[vodinfo:link]" title="[vodinfo:name]" alt="[vodinfo:name]">
+				<img width="220" height="250" src="[vodinfo:pic]" title="[vodinfo:name]" alt="[vodinfo:name]">
+			</a>
+		</p>
+		<p><a href="[vodinfo:playlink]" class="lookBtn"></a></p>
+	</div>
+	<div class="rtxt">
+		<h2>
+			<strong><a href="[vodinfo:link]">[vodinfo:name]</a></strong>
+			
+			<em>([vodinfo:remarks])</em>
+			
+		</h2>
+ 
+		<p class="updateNew">		
+		</p>		
+		<p>标签：<a href="[vodinfo:typelink]">[vodinfo:typename]</a></p>	
+				<p>主角：[vodinfo:starringlink]</p>		
+				<p>导演：[vodinfo:directedlink]</p>
+				<p>年份：[vodinfo:yearlink]</p>
+				<p>地区：[vodinfo:arealink]</p>
+				<p>语言：[vodinfo:languagelink]</p>
+				<p>人气：[vodinfo:hits]</p>
+				<p>更新时间：[vodinfo:time]</p>
+		
+          <div id="j-album-less">[vodinfo:contenttext len=100]..
+          		<p class="open shouzhan less" collection="Y">
+					<a onClick="return false;" href="#">展开</a>
+            	</p>
+          
+          </div>
+          <div id="j-album-more" style="display:none">[vodinfo:contenttext]
+            <p class="close shouzhan">
+                <a onClick="return false;" href="#">收起</a>
+            </p>
+          </div>
+	</div>
+</div>
+ 
+
+      <!--tab切换区-->
+      	<div class="tabBar mt15" collection="Y">
+<div id="j-tab-nav" class="hd">
+ {maccms:playlist}
+<h2 class="selected" j-tab="[playlist:from]"><span>[playlist:show]</span></h2>
+{maccms:urllist}{/maccms:urllist}
+ {/maccms:playlist}
+</div>
+<div id="j-tab-content">
+ 
+ {maccms:playlist}
+<div j-tab-cnt="[playlist:from]" class="dongman_jujiBlock jujiBlock" {if:[playlist:num]=1}style="display: block;"{else}style="display: none;"{end if}>
+ 
+		<div class="diversity_tt">
+						<div class="diversity_tt_tab">([playlist:tip])</div>			
+		</div>
+		<div class="diversity_box">
+			<ul class="diversity_list diversity_dsj">
+			{maccms:urllist order=desc}
+			<li><a href="[urllist:link]" title="[urllist:name]">[urllist:name]</a></li>																						
+			{/maccms:urllist}					
+			</ul>		
+		</div><!--diversity_box 分集区域 END-->
+<div style="height:20px"></div>
+ 
+</div>
+{/maccms:playlist}
+ 
+</div>
+</div>
+ 
+      <!--tab切换区 end-->
+      <!--猜你喜欢-->
+      	<div id="j-looking" class="tabBar mt15">
+	<div class="hd">
+		<h2 class="selected"><span id="j-lookingTitle" style="">猜你喜欢的视频</span></h2>
+		<p collection="Y" class="open" style="">
+			<a href="#" onClick="return false;" id="j-lookingOpen" style="">查看全部</a>
+		</p>
+	</div>
+	<div id="j-lookingLoading" class="">
+		<span id="j-lookingLoadingDesc"></span>
+		<!--剧集列表内容-->
+		<div id="j-lookingBd" class="list_block1 align_l" style="height: 140px; overflow: hidden;" qiyubuildend="true">
+			<ul>
+{maccms:vodlist num=15 type={maccms:curvodtypeid}  by=time order=desc}
+			<li>
+   <a href="[vodlist:link]" class="a_bar">
+       <img data-lazy="[vodlist:pic]" width="116" height="65" title="[vodlist:name]" alt="[vodlist:name]">
+       <span class="s1"></span>
+       <span class="s2">[vodlist:remarks]</span>
+       <span class="cqBg"></span>
+   </a>
+   <p>
+       <a href="[vodlist:link]" title="[vodlist:name]">[vodlist:name len=8]</a>
+   </p>
+</li>
+{/maccms:vodlist}
+</ul>
+			<p class="close"><a id="j-lookingClose" onClick="return false;" href="#">收起</a></p>
+		</div>
+	</div>
+</div>
+ 
+      <!--猜你喜欢 end-->
+ 
+      <!--奇谈影评-->
+     		<!--section reviewlist-->
+     <div class="tabBar mt15" collection="Y">
+        <div class="hd">
+          <h2 class="selected"><a href="#" target="blank">吹他一把</a></h2>
+        </div>
+		<div class="qt-cmtReview">
+		 [vodinfo:comment]
+		</div>
+     </div>
+<!--end section-->
+ 
+      <!--奇谈影评 end-->
+    </div>
+    <!--左侧 end-->
+	
+    <!--右侧-->
+    <div class="al_right">
+      <!--一键分享区-->
+      	<div class="album_fenxiang" collection="Y">
+        <div class="urlIcon_box">
+          <div class="gui_fenxiang">
+            <div style="height: 70px; display: block;" class="fx_box"> <span class="fx_txt">分享至：</span>
+              <div data-sharetype="url" data-value="7" class="bd urlIcon">
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+<a class="bds_tsina"></a>
+<a class="bds_qzone"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<a class="bds_baidu"></a>
+<a class="bds_tsohu"></a>
+<a class="bds_tqf"></a>
+<a class="bds_kaixin001"></a>
+<a class="bds_douban"></a>
+<a class="bds_mshare"></a>
+<a class="bds_copy"></a>
+<span class="bds_more">更多</span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&uid=404365" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript"> 
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+			  <div style="height:0;font-size:0;overflow:hidden;clear:both;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!--一键分享区 end-->
+      <!--广告-->
+<script src="{maccms:templatepath}ads/vod250x250-1.js"></script>
+      <!--广告-->
+      <!--电视剧热播榜-->
+        <div class="hot_list" collection="Y">
+	<h2>影视风云榜</h2>
+	<div class="hot_tab" id="j-hottab-nav"> 
+		<div class="hotHd_mar">
+			<a href="#" class="selected" j-tab="j-hot-1">电影</a>
+			<a href="#" j-tab="j-hot-2">电视剧</a>
+			<a href="#" j-tab="j-hot-3">动漫</a>
+			<a href="#" j-tab="j-hot-4">综艺</a>
+		</div>
+	</div>
+	<div class="hot_order" id="j-hottab-content">
+		<!--单个排行榜-->
+		<div j-tab-cnt="j-hot-1" style="display: block;">
+			<ul>
+			{maccms:vodlist num=10 type=1 by=monthhits order=desc}	
+					<li>					
+							<span class="numHot">[vodlist:num]</span>
+						<a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]">
+							[vodlist:name len=10]
+						</a>人气：[vodlist:hits]
+					</li>
+            {/maccms:vodlist}	
+			</ul>
+			
+		</div>
+		<!--单个排行榜 end-->
+		<!--单个排行榜-->
+		<div j-tab-cnt="j-hot-2" style="display: none;">
+			<ul>
+			{maccms:vodlist num=10 type=2 by=monthhits order=desc}	
+					<li>					
+							<span class="numHot">[vodlist:num]</span>
+						<a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]">
+							[vodlist:name len=10]
+						</a>人气：[vodlist:hits]
+					</li>
+            {/maccms:vodlist}					
+			</ul>
+			
+		</div>
+		<!--单个排行榜-->
+		<!--单个排行榜 end-->
+		<div j-tab-cnt="j-hot-3" style="display: none;">
+			<ul>
+			{maccms:vodlist num=10 type=4 by=monthhits order=desc}	
+					<li>					
+							<span class="numHot">[vodlist:num]</span>
+						<a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]">
+							[vodlist:name len=10]
+						</a>人气：[vodlist:hits]
+					</li>
+            {/maccms:vodlist}				</ul>
+					</div>
+		<!--单个排行榜 end-->
+		<!--单个排行榜-->
+        <div j-tab-cnt="j-hot-4" style="display: none;">
+			<ul>
+			{maccms:vodlist num=10 type=3 by=monthhits order=desc}	
+					<li>					
+							<span class="numHot">[vodlist:num]</span>
+						<a alt="[vodlist:name]" title="[vodlist:name]" href="[vodlist:link]">
+							[vodlist:name len=10]
+						</a>人气：[vodlist:hits]
+					</li>
+            {/maccms:vodlist}	
+			</ul>			
+		</div>
+	</div>
+</div>
+ 
+      <!--电视剧热播榜 end-->
+ 
+<!-- -->
+ 
+ 
+      <!--广告-->      	
+    <<script src="{maccms:templatepath}ads/vod250x250-2.js"></script>
+      <!--广告-->
+      <!--类型分类切换-->
+				<div id="gd01" collection="Y">
+        <div class="title1 title2 titleBg">
+          <h2 class="selected" style="display: block;" ><span>[vodinfo:typename]</span></h2>
+        </div>
+        <dl class="dlList1">
+          <dt>按类型</dt>
+          <dd>
+		  {maccms:menulist table=vod parent={maccms:curvodtypepid} order=asc}
+		  <a href="[menulist:link]">[menulist:name]</a>
+		  {/maccms:menulist}
+		  </dd>
+          <dt>按年份</dt>
+          <dd>
+<a style="color:red" href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2013" target="_blank">2013</a>
+<a style="color:red" href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2012" target="_blank">2012</a>
+<a title='2011年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2011" target="_blank">2011</a>
+<a title='2010年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2010" target="_blank">2010</a>
+<a title='2009年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2009" target="_blank">2009</a>
+<a title='2008年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2008" target="_blank">2008</a>
+<a title='2007年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2007" target="_blank">2007</a>
+<a title='2006年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2006" target="_blank">2006</a>
+<a title='2007年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2007" target="_blank">2005</a>
+<a title='2006年' href="{maccms:searchlink}?type={maccms:curvodtypeid}&year=2006" target="_blank">2004</a>	  
+		  </dd>
+          <dt>按地区</dt>		  
+          <dd>	  
+<a href="{maccms:searchlink}?area=%E5%A4%A7%E9%99%86"  hidefocus="false" target=_blank>大陆</a>
+<a href="{maccms:searchlink}?area=%E9%A6%99%E6%B8%AF"  hidefocus="false" target=_blank>香港</a>
+<a href="{maccms:searchlink}?area=%E5%8F%B0%E6%B9%BE"  hidefocus="false" target=_blank>台湾</a>
+<a href="{maccms:searchlink}?area=%E6%B8%AF%E5%8F%B0"  hidefocus="false" target=_blank>港台</a>
+<a href="{maccms:searchlink}?area=%E6%97%A5%E6%9C%AC"  hidefocus="false" target=_blank>日本</a>	 
+</dd> 
+        </dl>
+ 
+      </div>
+ 
+      <!--类型分类切换 end-->
+    </div>
+    <!--右侧 end-->
+  </div>
+  <!--左右layout end-->
+</div>
+<!--平铺背景图-->
+<div class="high15"></div>
+<!-- 标准尾 begin -->
+{maccms:foot}
+<!-- 标准尾 end -->
+ 
+<script type="text/javascript" src="{maccms:templatepath}images/js/config.js"></script>
+<script type="text/javascript" src="{maccms:templatepath}images/js/sea1.2.js"></script>
+<script type="text/javascript"> 
+ //__loadMainJs("ctalbum");
+ __loadCompatibleMainJs('ctalbum');
+ Q.projectName = 'qiyiV2';
+ Q.ready(function (lib) {
+     Q.load('base');
+ });
+</script>
+<!-- 小俊模板仿制修改QQ：787850323 需要的联系-->
+<noscript>
+</body>
+</html>
+<noscript>

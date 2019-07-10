@@ -1,0 +1,1 @@
+document.writeln('<img name="ad" src="" width="980" height="90" alt="art980x90-1" style="background-color: #CCCCCC" />');

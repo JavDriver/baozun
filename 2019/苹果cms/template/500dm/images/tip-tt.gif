@@ -1,0 +1,1945 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>2013最新电影,最新电视剧,好看的电影,百度影音 M1938电影网- m1938.com</title>
+	<meta name="keywords" content="最新电视剧,百度影音电影,好看的电影,2013最新电影,在线观看,电影排行榜,M1938电影网" />
+	<meta name="description" content="M1938电影网提供最全的最新电视剧，2013最新电影，韩国电视剧、香港TVB电视剧、韩剧、日剧、美剧、综艺的在线观看和剧集交流场所，在线观看分为普通视频模式、百度影音等播放高清播放模式，每天第一时间更新，放送最新好看的高清免费电视剧" />
+		<link href="/m1938/css/base.css" type="text/css" rel="stylesheet" />
+<script src="/m1938/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="/m1938/js/log.js" type="text/javascript"></script>
+<script src="/m1938/js/base.js" type="text/javascript"></script>
+<script>var maccms_path = "/";</script></head>
+<body>
+<div id="header">
+	<div id="headbar">
+		<div class="layout fn-clear">
+			<div id="logo">
+				<a> <img src="/m1938/images/logo.gif">  </a>
+			</div>
+			<!-- // logo end -->
+			
+			<div id="searchbar">
+				<div class="todo-link">
+					<a href="/top.html">影片排行</a>
+					<a href="/new.html">最近更新</a>
+					<a href="javascript:void(0);" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.m1938.com')">设为首页</a>
+<a href="javascript:void(0);" onclick='window.external.AddFavorite("http://www.m1938.com","M1938电影网www.m1938.com")'>加入收藏</a>
+				</div>
+				<!-- // todo-link end -->
+				
+				<div class="ui-search">
+				   <form action="/search.php" name="keyword" method="POST">
+					<input type="text" value="" name="keyword" id="kw" class="search-input" 
+						onfocus="if(value=='请输入您要搜索的关键字..') {value=''}" 
+						onblur="if(value=='') {value='请输入您要搜索的关键字..'}"
+						value="请输入您要搜索的关键字..">
+					<input type="submit" value="搜索" class="search-button">
+					</form>
+				</div>
+				<!-- // search end -->
+			</div>
+			<!-- // searchbar end -->
+			
+			<div id="hotkeys">
+				<label>热门推荐：</label> <a href="/DVD/index11349.html" target="_blank">百年的遗产/百年</a><a href="/DVD/index15345.html" target="_blank">我是歌手(湖南卫</a><a href="/DVD/index12089.html" target="_blank">赵氏孤儿案</a><a href="/DVD/index15283.html" target="_blank">老米家的婚事</a><a href="/DVD/index12127.html" target="_blank">一个鬼子都不留</a><a href="/DVD/index5234.html" target="_blank">男人如衣服</a><a href="/DVD/index12144.html" target="_blank">血滴子</a><a href="/DVD/index12145.html" target="_blank">血滴子 2012</a> </label>
+			</div>
+			<!-- // hotkeys end -->
+		</div>	
+	</div>
+	<!-- // headbar end -->
+	
+	<div id="navbar">
+		<div class="layout fn-clear">
+			<ul id="nav">
+				<li rel="home-nav" class="nav-item current"><a href="/">首页</a></li>
+				
+<li rel="tv-nav" class="nav-item  "> <a href="/DVDlist/index2.html ">电视剧 </a></li>
+				
+<li rel="movie-nav" class="nav-item  "> <a href="/DVDlist/index1.html ">电影 </a></li>
+				
+<li rel="cartoon-nav" class="nav-item "> <a href="/DVDlist/index4.html ">动漫 </a></li>
+				
+<li rel="fun-nav" class="nav-item "> <a href="/DVDlist/index3.html ">综艺 </a></li>
+				
+<li rel="weidy-nav" class="nav-item "><a href="/DVDlist/index20.html ">微电影 </a></li>
+				<li  class=""><a href="/vodtopicindex/index.html">影视专题</a></li>
+				<li  class=""><a href="/artindex.html">影视资讯</a></li>
+                                                              <li  class=""><a href="/tv.html">电视直播</a></li>
+			</ul>
+			<!-- // nav end -->			
+			
+			<div id="looked-record">
+				<h5>我的观看记录</h5>
+				<div class="looked-box">		
+					<p class="tit"><a href="javascript:;" class="close">关闭</a><a href="javascript:;" id="emptybt">清空所有记录</a></p>
+					<ul class="highlight" id="playhistory">
+					</ul>
+				</div>
+			</div>
+			<!-- // looked-record end -->
+		</div>	
+	</div>
+	<!-- // navbar end -->	
+	
+	<div id="sub-nav">
+		<div class="layout fn-clear">
+			<div id="home-nav" class="sub-nav-item">
+				<p class="sub-nav-tv fn-left">
+					<label>电视剧：</label>
+
+  <a href="/DVDlist/index12.html" target="_blank">大陆</a> <em>|</em>
+
+  <a href="/DVDlist/index13.html" target="_blank">香港</a> <em>|</em>
+
+  <a href="/DVDlist/index14.html" target="_blank">台湾</a> <em>|</em>
+
+  <a href="/DVDlist/index15.html" target="_blank">日本</a> <em>|</em>
+
+  <a href="/DVDlist/index16.html" target="_blank">韩国</a> <em>|</em>
+
+  <a href="/DVDlist/index17.html" target="_blank">美国</a> <em>|</em>
+
+  <a href="/DVDlist/index18.html" target="_blank">泰国</a> <em>|</em>
+	
+				</p>
+				<p class="sub-nav-movie fn-right">
+					<label>电影：</label>
+
+<a href="/DVDlist/index5.html"  target="_blank">动作</a><em>|</em>
+<a href="/DVDlist/index6.html"  target="_blank">喜剧</a><em>|</em>
+<a href="/DVDlist/index7.html"  target="_blank">爱情</a><em>|</em>
+<a href="/DVDlist/index8.html"  target="_blank">科幻</a><em>|</em>
+<a href="/DVDlist/index9.html"  target="_blank">恐怖</a><em>|</em>
+<a href="/DVDlist/index10.html"  target="_blank">剧情</a><em>|</em>
+<a href="/DVDlist/index11.html"  target="_blank">战争</a><em>|</em>
+<a href="/DVDlist/index19.html"  target="_blank">记录</a><em>|</em>
+				</p>
+			</div>
+			<!-- // sub-nav-item end -->
+			
+			<div id="tv-nav" style="display: none;" class="sub-nav-item">
+				<p>
+					<label>电视剧：</label>
+
+<a href="/DVDlist/index12.html"  target="_blank">大陆电视剧</a><em>|</em>
+<a href="/DVDlist/index13.html"  target="_blank">香港电视剧</a><em>|</em>
+<a href="/DVDlist/index14.html"  target="_blank">台湾电视剧</a><em>|</em>
+<a href="/DVDlist/index15.html"  target="_blank">日本电视剧</a><em>|</em>
+<a href="/DVDlist/index16.html"  target="_blank">韩国电视剧</a><em>|</em>
+<a href="/DVDlist/index17.html"  target="_blank">美国电视剧</a><em>|</em>
+<a href="/DVDlist/index18.html"  target="_blank">泰国电视剧</a><em>|</em>
+				</p>
+			</div>
+			<!-- // sub-nav-item end -->
+			
+			<div id="movie-nav" style="display: none;" class="sub-nav-item">
+				<p>
+					<label>电影：</label>
+
+<a href="/DVDlist/index5.html"  target="_blank">动作电影</a><em>|</em>
+<a href="/DVDlist/index6.html"  target="_blank">喜剧电影</a><em>|</em>
+<a href="/DVDlist/index7.html"  target="_blank">爱情电影</a><em>|</em>
+<a href="/DVDlist/index8.html"  target="_blank">科幻电影</a><em>|</em>
+<a href="/DVDlist/index9.html"  target="_blank">恐怖电影</a><em>|</em>
+<a href="/DVDlist/index10.html"  target="_blank">剧情电影</a><em>|</em>
+<a href="/DVDlist/index11.html"  target="_blank">战争电影</a><em>|</em>
+<a href="/DVDlist/index19.html"  target="_blank">记录电影</a><em>|</em>
+				</p>
+			</div>
+			<!-- // sub-nav-item end -->
+			
+			<div id="cartoon-nav" style="display: none;" class="sub-nav-item">
+				<p>
+					<label>经典动漫：</label>
+<a href="/search.php?type=4&area=美国">美国动漫</a><em>|</em>	
+<a href="/search.php?type=4&area=香港">香港动漫</a><em>|</em>	
+<a href="/search.php?type=4&area=台湾">台湾动漫</a><em>|</em>	
+<a href="/search.php?type=4&area=大陆">大陆动漫</a><em>|</em>	
+<a href="/search.php?type=4&area=韩国">韩国动漫</a><em>|</em>	
+<a href="/search.php?type=4&area=日本">日本动漫</a><em>|</em>	
+				</p>
+			</div>
+			<!-- // sub-nav-item end -->
+			
+			<div id="fun-nav" style="display: none;" class="sub-nav-item">
+				<p>
+					<label>综艺娱乐：</label>
+<a href="/search.php?type=4&area=美国">美国综艺</a><em>|</em>	
+<a href="/search.php?type=4&area=香港">香港综艺</a><em>|</em>	
+<a href="/search.php?type=4&area=台湾">台湾综艺</a><em>|</em>	
+<a href="/search.php?type=4&area=大陆">大陆综艺</a><em>|</em>	
+<a href="/search.php?type=4&area=韩国">韩国综艺</a><em>|</em>	
+<a href="/search.php?type=4&area=日本">日本综艺</a><em>|</em>	
+			</p>
+			</div>
+			<!-- // sub-nav-item end -->
+			
+			<div id="weidy-nav" style="display: none;" class="sub-nav-item">
+				<p>
+					<label>微电影：</label>
+ 
+<a href="/DVDlist/index21.html"  target="_blank"> 艺术写真</a><em>|</em>
+<a href="/DVDlist/index22.html"  target="_blank"> 相声小品</a><em>|</em>
+<a href="/DVDlist/index23.html"  target="_blank"> 搞笑视频</a><em>|</em>
+<a href="/DVDlist/index24.html"  target="_blank"> 曲艺戏曲</a><em>|</em>
+<a href="/DVDlist/index25.html"  target="_blank"> 教育培训</a><em>|</em>
+<a href="/DVDlist/index26.html"  target="_blank"> 快播高清</a><em>|</em>
+<a href="/DVDlist/index27.html"  target="_blank"> 演唱会</a><em>|</em>
+				</p>
+			</div>
+			<!-- // sub-nav-item end -->
+		</div>
+	</div>	
+	<!-- // sub-nav end -->	
+</div>
+<script type="text/javascript">PlayHistoryObj.viewPlayHistory('playhistory');</script>
+ <!--//广告位 -->
+<div id="content">
+<div id="content">
+<div style="zoom:1;overflow:hidden;width:980px;height:32px;border:1px solid #EDCE7B;margin-top:8px;padding:8px;padding-top:9px;background-color:#FFFFEA;color:#000000;"> <p> <b><font color=red>郑重声明</font></b>：M1938电影网提供最全的最新百度影音电视剧，2013最新电影我们向大家承诺：我们坚决不放弹窗广告，为大家提供更清爽、更快速、更绿色的观看体验。1938影院欢迎您!</p> <p>请相互转告推荐给你的朋友，谢谢！各大影视程序精品影视模板源码，免费模板请访问<b><font color=red>bbs.m1938.com</font></b>模板购买，仿制，修改，联系QQ438638916.</p> </div>
+	<div class="ui-box fn-clear" id="latest-focus">
+		<div class="latest-tab-nav">
+			<ul>
+				<li onmouseover="setTab('latest',1,6);" id="latest1" class="current">热门影片推荐</li>
+				<li onmouseover="setTab('latest',2,6);" id="latest2">最新电视剧</li>
+				<li onmouseover="setTab('latest',3,6);" id="latest3">最新电影</li>
+				<li onmouseover="setTab('latest',4,6);" id="latest4">最新动漫</li>
+				<li onmouseover="setTab('latest',5,6);" id="latest5">最新综艺</li>
+				<li onmouseover="setTab('latest',6,6);" id="latest6">最新微电影</li>
+			</ul>
+		</div>
+		<div class="latest-tab-box">
+			<div id="con_latest_1" class="hot-latest">
+				<ul class="img-list fn-clear">
+				 			       <li>
+						<a href="/DVD/index11349.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454887113.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="百年的遗产/百年遗产" />
+							<label class="fbg"> </label>
+							<label class="txt">第32集</label>
+						</a>
+						<h5><a href="/DVD/index11349.html">百年的遗产/百年遗产</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index15345.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136522074016.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="我是歌手(湖南卫视)" />
+							<label class="fbg"> </label>
+							<label class="txt">总决赛</label>
+						</a>
+						<h5><a href="/DVD/index15345.html">我是歌手(湖南卫视)</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index12089.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454916710.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="赵氏孤儿案" />
+							<label class="fbg"> </label>
+							<label class="txt">完结</label>
+						</a>
+						<h5><a href="/DVD/index12089.html">赵氏孤儿案</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index15283.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136489237319.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="老米家的婚事" />
+							<label class="fbg"> </label>
+							<label class="txt">第32集</label>
+						</a>
+						<h5><a href="/DVD/index15283.html">老米家的婚事</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index12127.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454918110.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="一个鬼子都不留" />
+							<label class="fbg"> </label>
+							<label class="txt">全集</label>
+						</a>
+						<h5><a href="/DVD/index12127.html">一个鬼子都不留</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index5234.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645374945.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="男人如衣服" />
+							<label class="fbg"> </label>
+							<label class="txt">DVD+BD全集</label>
+						</a>
+						<h5><a href="/DVD/index5234.html">男人如衣服</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index12144.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645491888.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="血滴子" />
+							<label class="fbg"> </label>
+							<label class="txt">DVD</label>
+						</a>
+						<h5><a href="/DVD/index12144.html">血滴子</a></h5>
+					</li>		       			       			       			       			       			       			       			       			       			       			       			       					
+				</ul>
+				<!-- // img-list end -->
+				
+				<ul class="txt-list fn-clear">
+									 <li><em>01.</em><a href="/DVD/index12145.html" title="血滴子 2012版" target="_blank">血滴子 2012版</a>/<a href="/DVDlist/index5.html" class="gray" target="_blank">动作</a></li> <li><em>02.</em><a href="/DVD/index12143.html" title="伤心童话" target="_blank">伤心童话</a>/<a href="/DVDlist/index6.html" class="gray" target="_blank">喜剧</a></li> <li><em>03.</em><a href="/DVD/index12142.html" title="一九四二/1942" target="_blank">一九四二/1942</a>/<a href="/DVDlist/index10.html" class="gray" target="_blank">剧情</a></li> <li><em>04.</em><a href="/DVD/index9.html" title="十二生肖" target="_blank">十二生肖</a>/<a href="/DVDlist/index5.html" class="gray" target="_blank">动作</a></li> <li><em>05.</em><a href="/DVD/index4611.html" title="人再囧途之泰囧" target="_blank">人再囧途之泰囧</a>/<a href="/DVDlist/index6.html" class="gray" target="_blank">喜剧</a></li> <li><em>06.</em><a href="/DVD/index11994.html" title="樱桃红" target="_blank">樱桃红</a>/<a href="/DVDlist/index12.html" class="gray" target="_blank">大陆</a></li> <li><em>07.</em><a href="/DVD/index11518.html" title="新笑傲江湖" target="_blank">新笑傲江湖</a>/<a href="/DVDlist/index12.html" class="gray" target="_blank">大陆</a></li> <li><em>08.</em><a href="/DVD/index11859.html" title="贤妻" target="_blank">贤妻</a>/<a href="/DVDlist/index12.html" class="gray" target="_blank">大陆</a></li> <li><em>09.</em><a href="/DVD/index12133.html" title="大唐女巡按" target="_blank">大唐女巡按</a>/<a href="/DVDlist/index12.html" class="gray" target="_blank">大陆</a></li> <li><em>10.</em><a href="/DVD/index11539.html" title="爱情自有天意" target="_blank">爱情自有天意</a>/<a href="/DVDlist/index12.html" class="gray" target="_blank">大陆</a></li> <li><em>11.</em><a href="/DVD/index12128.html" title="青春期2:青春失乐园" target="_blank">青春期2:青春失乐园</a>/<a href="/DVDlist/index6.html" class="gray" target="_blank">喜剧</a></li> <li><em>12.</em><a href="/DVD/index12130.html" title="青春期3" target="_blank">青春期3</a>/<a href="/DVDlist/index6.html" class="gray" target="_blank">喜剧</a></li>					
+				</ul>
+				<!-- // txt-list end -->
+			</div>
+			<!-- // con_latest_1 end -->
+			
+			<div id="con_latest_2" class="fn-hide">
+				<ul class="img-list fn-clear">
+				   			       <li>
+						<a href="/DVD/index16266.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136624623716.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="波吉亚家族第三季/博基亚家族第三季" />
+							<label class="fbg"> </label>
+							<label class="txt">第2集</label>
+						</a>
+						<h5><a href="/DVD/index16266.html">波吉亚家族第三季/博基亚家族第三季</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16125.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13659119461.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="张玉贞为爱而生" />
+							<label class="fbg"> </label>
+							<label class="txt">第5集</label>
+						</a>
+						<h5><a href="/DVD/index16125.html">张玉贞为爱而生</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16230.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13662462081.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="云上的诱惑" />
+							<label class="fbg"> </label>
+							<label class="txt">第8集</label>
+						</a>
+						<h5><a href="/DVD/index16230.html">云上的诱惑</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index15259.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136486944012.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="职场之神" />
+							<label class="fbg"> </label>
+							<label class="txt">第7集</label>
+						</a>
+						<h5><a href="/DVD/index15259.html">职场之神</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index12125.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645491818.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="伊甸园之东(国语)" />
+							<label class="fbg"> </label>
+							<label class="txt">第45集</label>
+						</a>
+						<h5><a href="/DVD/index12125.html">伊甸园之东(国语)</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index15240.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136486943312.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="面具情人(国语)/新娘面具(国语)" />
+							<label class="fbg"> </label>
+							<label class="txt">第16集</label>
+						</a>
+						<h5><a href="/DVD/index15240.html">面具情人(国语)/新娘面具(国语)</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16124.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13659119440.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="九家之书" />
+							<label class="fbg"> </label>
+							<label class="txt">第5集</label>
+						</a>
+						<h5><a href="/DVD/index16124.html">九家之书</a></h5>
+					</li>
+				</ul>
+				<!-- // img-list end -->
+				
+				<ul class="txt-list fn-clear">
+					                  	      <li><em>01.</em><a href="/DVD/index11394.html" title="家族的诞生(电视剧)" target="_blank">家族的诞生(电视剧)</a>/<a class="gray" href="/DVD/index11394.html" title="家族的诞生(电视剧)" target="_blank">更新至第96集</a></li>  <li><em>02.</em><a href="/DVD/index16170.html" title="大宅门1912" target="_blank">大宅门1912</a>/<a class="gray" href="/DVD/index16170.html" title="大宅门1912" target="_blank">更新至第41集</a></li>  <li><em>03.</em><a href="/DVD/index16091.html" title="K歌情人梦/K歌・情人・梦" target="_blank">K歌情人梦/K歌・情人・梦</a>/<a class="gray" href="/DVD/index16091.html" title="K歌情人梦/K歌・情人・梦" target="_blank">更新至第9集</a></li>  <li><em>04.</em><a href="/DVD/index11861.html" title="借用一下你的爱" target="_blank">借用一下你的爱</a>/<a class="gray" href="/DVD/index11861.html" title="借用一下你的爱" target="_blank">更新至第8集</a></li>  <li><em>05.</em><a href="/DVD/index11332.html" title="美人龙汤" target="_blank">美人龙汤</a>/<a class="gray" href="/DVD/index11332.html" title="美人龙汤" target="_blank">更新至第12集</a></li>  <li><em>06.</em><a href="/DVD/index16342.html" title="法庭新鲜人" target="_blank">法庭新鲜人</a>/<a class="gray" href="/DVD/index16342.html" title="法庭新鲜人" target="_blank">更新至第9集</a></li>  <li><em>07.</em><a href="/DVD/index16276.html" title="仁医/TimeSlipDr.Jin" target="_blank">仁医/TimeSlipDr.Jin</a>/<a class="gray" href="/DVD/index16276.html" title="仁医/TimeSlipDr.Jin" target="_blank">更新至第17集</a></li>  <li><em>08.</em><a href="/DVD/index11978.html" title="最佳李纯信" target="_blank">最佳李纯信</a>/<a class="gray" href="/DVD/index11978.html" title="最佳李纯信" target="_blank">更新至第14集</a></li>  <li><em>09.</em><a href="/DVD/index11348.html" title="钱的化身" target="_blank">钱的化身</a>/<a class="gray" href="/DVD/index11348.html" title="钱的化身" target="_blank">更新至第24集</a></li>  <li><em>10.</em><a href="/DVD/index375.html" title="金大花的华丽冒险" target="_blank">金大花的华丽冒险</a>/<a class="gray" href="/DVD/index375.html" title="金大花的华丽冒险" target="_blank">更新至第15集</a></li>  <li><em>11.</em><a href="/DVD/index16295.html" title="就是喜欢你(国语)" target="_blank">就是喜欢你(国语)</a>/<a class="gray" href="/DVD/index16295.html" title="就是喜欢你(国语)" target="_blank">更新至第12集</a></li>  <li><em>12.</em><a href="/DVD/index16070.html" title="金子轻松出来吧" target="_blank">金子轻松出来吧</a>/<a class="gray" href="/DVD/index16070.html" title="金子轻松出来吧" target="_blank">更新至第6集</a></li>
+				</ul>
+				<!-- // txt-list end -->
+			</div>
+			<!-- // con_latest_2 end -->
+			
+			<div id="con_latest_3" class="fn-hide">
+			    	<ul class="img-list fn-clear">
+				    			       <li>
+						<a href="/DVD/index16396.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136668048915.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="爱丽丝梦游仙境/魔境梦游" />
+							<label class="fbg"> </label>
+							<label class="txt">1280高清</label>
+						</a>
+						<h5><a href="/DVD/index16396.html">爱丽丝梦游仙境/魔境梦游</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16395.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136668048814.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="复仇者联盟" />
+							<label class="fbg"> </label>
+							<label class="txt">1280超清</label>
+						</a>
+						<h5><a href="/DVD/index16395.html">复仇者联盟</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16394.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136668048813.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="黑潮-麦尔坎X" />
+							<label class="fbg"> </label>
+							<label class="txt">1280高清</label>
+						</a>
+						<h5><a href="/DVD/index16394.html">黑潮-麦尔坎X</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16393.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136668048712.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="007:大破天幕杀机/新铁金刚智破天凶城/007:空降危机" />
+							<label class="fbg"> </label>
+							<label class="txt">1280超清</label>
+						</a>
+						<h5><a href="/DVD/index16393.html">007:大破天幕杀机/新铁金刚智破天凶城/007:空降危机</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16389.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13666804848.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="背水一战/重击防线/终极封锁线" />
+							<label class="fbg"> </label>
+							<label class="txt">1280高清</label>
+						</a>
+						<h5><a href="/DVD/index16389.html">背水一战/重击防线/终极封锁线</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16388.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/http://gvod.uoso.net/Upload/http://tu.xunbo.cc/20130422175228737.jpg#err2013-04-23" onerror="javascript:this.src='/m1938/fx8.gif';" alt="极恶非道2/全员恶人完结" />
+							<label class="fbg"> </label>
+							<label class="txt">1024高清</label>
+						</a>
+						<h5><a href="/DVD/index16388.html">极恶非道2/全员恶人完结</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index9659.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136453923517.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="爱回家" />
+							<label class="fbg"> </label>
+							<label class="txt">第241集</label>
+						</a>
+						<h5><a href="/DVD/index9659.html">爱回家</a></h5>
+					</li>
+			</ul>
+				<!-- // img-list end -->
+				
+				<ul class="txt-list fn-clear">
+					                  	         <li><em>01.</em><a href="/DVD/index16382.html" title="犀利人夫/超级英雄(2010)" target="_blank">犀利人夫/超级英雄(2010)</a>/<a class="gray" href="/DVD/index16382.html" title="犀利人夫/超级英雄(2010)" target="_blank">BD</a></li>  <li><em>02.</em><a href="/DVD/index16381.html" title="超级英雄" target="_blank">超级英雄</a>/<a class="gray" href="/DVD/index16381.html" title="超级英雄" target="_blank">DVD+BD</a></li>  <li><em>03.</em><a href="/DVD/index16380.html" title="一个好人" target="_blank">一个好人</a>/<a class="gray" href="/DVD/index16380.html" title="一个好人" target="_blank">DVD</a></li>  <li><em>04.</em><a href="/DVD/index16348.html" title="蓝色激情2" target="_blank">蓝色激情2</a>/<a class="gray" href="/DVD/index16348.html" title="蓝色激情2" target="_blank">BD</a></li>  <li><em>05.</em><a href="/DVD/index16344.html" title="齐瓦格医生/日瓦格医生" target="_blank">齐瓦格医生/日瓦格医生</a>/<a class="gray" href="/DVD/index16344.html" title="齐瓦格医生/日瓦格医生" target="_blank">1024超清</a></li>  <li><em>06.</em><a href="/DVD/index16201.html" title="纳瓦隆大炮" target="_blank">纳瓦隆大炮</a>/<a class="gray" href="/DVD/index16201.html" title="纳瓦隆大炮" target="_blank">1280高清</a></li>  <li><em>07.</em><a href="/DVD/index11365.html" title="高楼惊魂" target="_blank">高楼惊魂</a>/<a class="gray" href="/DVD/index11365.html" title="高楼惊魂" target="_blank">1280超清</a></li>  <li><em>08.</em><a href="/DVD/index16204.html" title="把妹幻觉/性感的邪恶天才" target="_blank">把妹幻觉/性感的邪恶天才</a>/<a class="gray" href="/DVD/index16204.html" title="把妹幻觉/性感的邪恶天才" target="_blank">1280高清</a></li>  <li><em>09.</em><a href="/DVD/index15202.html" title="宿主" target="_blank">宿主</a>/<a class="gray" href="/DVD/index15202.html" title="宿主" target="_blank">1280高清</a></li>  <li><em>10.</em><a href="/DVD/index16350.html" title="生化危机5：惩罚/恶灵古堡V：天谴日3D/生化危机之灭绝真相" target="_blank">生化危机5：惩罚/恶灵古堡V：天谴日3D/生化危机之灭绝真相</a>/<a class="gray" href="/DVD/index16350.html" title="生化危机5：惩罚/恶灵古堡V：天谴日3D/生化危机之灭绝真相" target="_blank">1280超清</a></li>  <li><em>11.</em><a href="/DVD/index16349.html" title="棒球男孩" target="_blank">棒球男孩</a>/<a class="gray" href="/DVD/index16349.html" title="棒球男孩" target="_blank">1024超清</a></li>  <li><em>12.</em><a href="/DVD/index10003.html" title="冲出宁静号" target="_blank">冲出宁静号</a>/<a class="gray" href="/DVD/index10003.html" title="冲出宁静号" target="_blank">1280高清</a></li>
+				</ul>
+				<!-- // txt-list end -->
+			</div>
+			<!-- // con_latest_3 end -->
+			
+			<div id="con_latest_4" class="fn-hide">
+					<ul class="img-list fn-clear">
+				   			       <li>
+						<a href="/DVD/index11657.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454899315.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="心跳！光之美少女" />
+							<label class="fbg"> </label>
+							<label class="txt">第12集</label>
+						</a>
+						<h5><a href="/DVD/index11657.html">心跳！光之美少女</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index11563.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454895617.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="霹雳侠影之轰动武林" />
+							<label class="fbg"> </label>
+							<label class="txt">第21集</label>
+						</a>
+						<h5><a href="/DVD/index11563.html">霹雳侠影之轰动武林</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16253.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13662462296.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="血型君" />
+							<label class="fbg"> </label>
+							<label class="txt">第3集</label>
+						</a>
+						<h5><a href="/DVD/index16253.html">血型君</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index15269.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13648923627.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="宠物小精灵Best Wishe" />
+							<label class="fbg"> </label>
+							<label class="txt">第124集</label>
+						</a>
+						<h5><a href="/DVD/index15269.html">宠物小精灵Best Wishe</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index3665.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136453680418.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="娱乐百分百" />
+							<label class="fbg"> </label>
+							<label class="txt">04-20</label>
+						</a>
+						<h5><a href="/DVD/index3665.html">娱乐百分百</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16383.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13666804792.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="纸箱战机第三季" />
+							<label class="fbg"> </label>
+							<label class="txt">第3集</label>
+						</a>
+						<h5><a href="/DVD/index16383.html">纸箱战机第三季</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index12114.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454917516.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="虹猫蓝兔奥悠国历险记" />
+							<label class="fbg"> </label>
+							<label class="txt">第25集</label>
+						</a>
+						<h5><a href="/DVD/index12114.html">虹猫蓝兔奥悠国历险记</a></h5>
+					</li>
+			</ul>
+				<!-- // img-list end -->
+				
+				<ul class="txt-list fn-clear">
+					                  	        <li><em>01.</em><a href="/DVD/index16173.html" title="翼空之巅/极限运动" target="_blank">翼空之巅/极限运动</a>/<a class="gray" href="/DVD/index16173.html" title="翼空之巅/极限运动" target="_blank">更新至第11集</a></li>  <li><em>02.</em><a href="/DVD/index11693.html" title="偶像活动/偶像传说" target="_blank">偶像活动/偶像传说</a>/<a class="gray" href="/DVD/index11693.html" title="偶像活动/偶像传说" target="_blank">更新至第27集</a></li>  <li><em>03.</em><a href="/DVD/index3027.html" title="侠岚" target="_blank">侠岚</a>/<a class="gray" href="/DVD/index3027.html" title="侠岚" target="_blank">更新至第72集</a></li>  <li><em>04.</em><a href="/DVD/index16379.html" title="乌鸦之日" target="_blank">乌鸦之日</a>/<a class="gray" href="/DVD/index16379.html" title="乌鸦之日" target="_blank">更新至DVD</a></li>  <li><em>05.</em><a href="/DVD/index11734.html" title="马达加斯加的疯狂情人节" target="_blank">马达加斯加的疯狂情人节</a>/<a class="gray" href="/DVD/index11734.html" title="马达加斯加的疯狂情人节" target="_blank">更新至1024超清</a></li>  <li><em>06.</em><a href="/DVD/index15312.html" title="歌之王子殿下真爱2000%" target="_blank">歌之王子殿下真爱2000%</a>/<a class="gray" href="/DVD/index15312.html" title="歌之王子殿下真爱2000%" target="_blank">更新至第3集</a></li>  <li><em>07.</em><a href="/DVD/index15311.html" title="打工吧！魔王大人" target="_blank">打工吧！魔王大人</a>/<a class="gray" href="/DVD/index15311.html" title="打工吧！魔王大人" target="_blank">更新至第3集</a></li>  <li><em>08.</em><a href="/DVD/index16191.html" title="革命机" target="_blank">革命机</a>/<a class="gray" href="/DVD/index16191.html" title="革命机" target="_blank">更新至第2集</a></li>  <li><em>09.</em><a href="/DVD/index15310.html" title="恶魔幸存者2" target="_blank">恶魔幸存者2</a>/<a class="gray" href="/DVD/index15310.html" title="恶魔幸存者2" target="_blank">更新至第3集</a></li>  <li><em>10.</em><a href="/DVD/index15308.html" title="我的青春恋爱物语果然有问题" target="_blank">我的青春恋爱物语果然有问题</a>/<a class="gray" href="/DVD/index15308.html" title="我的青春恋爱物语果然有问题" target="_blank">更新至第3集</a></li>  <li><em>11.</em><a href="/DVD/index15309.html" title="写.真女友" target="_blank">写.真女友</a>/<a class="gray" href="/DVD/index15309.html" title="写.真女友" target="_blank">更新至第3集</a></li>  <li><em>12.</em><a href="/DVD/index15307.html" title="学活第二季" target="_blank">学活第二季</a>/<a class="gray" href="/DVD/index15307.html" title="学活第二季" target="_blank">更新至第3集</a></li>
+				</ul>
+				<!-- // txt-list end -->
+			</div>
+			<!-- // con_latest_4 end -->
+			
+			<div id="con_latest_5" class="fn-hide">
+				 	<ul class="img-list fn-clear">
+				    			       <li>
+						<a href="/DVD/index11220.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454881717.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="国光帮帮忙2013" />
+							<label class="fbg"> </label>
+							<label class="txt">20130422期</label>
+						</a>
+						<h5><a href="/DVD/index11220.html">国光帮帮忙2013</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index12085.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645491676.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="王牌谍中谍" />
+							<label class="fbg"> </label>
+							<label class="txt">20130422期</label>
+						</a>
+						<h5><a href="/DVD/index12085.html">王牌谍中谍</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index11218.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454881715.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="大学生了没2013" />
+							<label class="fbg"> </label>
+							<label class="txt">20130422期</label>
+						</a>
+						<h5><a href="/DVD/index11218.html">大学生了没2013</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index11217.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454881614.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="美食大三通2013" />
+							<label class="fbg"> </label>
+							<label class="txt">20130422期</label>
+						</a>
+						<h5><a href="/DVD/index11217.html">美食大三通2013</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16101.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136551303615.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="明日之星SUPERSTAR" />
+							<label class="fbg"> </label>
+							<label class="txt">04-20</label>
+						</a>
+						<h5><a href="/DVD/index16101.html">明日之星SUPERSTAR</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16100.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136551303514.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="天才冲冲冲" />
+							<label class="fbg"> </label>
+							<label class="txt">04-20</label>
+						</a>
+						<h5><a href="/DVD/index16100.html">天才冲冲冲</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16099.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136551303413.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="综艺大集合" />
+							<label class="fbg"> </label>
+							<label class="txt">04-21</label>
+						</a>
+						<h5><a href="/DVD/index16099.html">综艺大集合</a></h5>
+					</li>
+			</ul>
+				<!-- // img-list end -->
+				
+				<ul class="txt-list fn-clear">
+					                  	        <li><em>01.</em><a href="/DVD/index16373.html" title="12-13赛季NBA季后赛" target="_blank">12-13赛季NBA季后赛</a>/<a class="gray" href="/DVD/index16373.html" title="12-13赛季NBA季后赛" target="_blank">更新至04-22</a></li>  <li><em>02.</em><a href="/DVD/index16392.html" title="顾嘉辉大师经典演唱会" target="_blank">顾嘉辉大师经典演唱会</a>/<a class="gray" href="/DVD/index16392.html" title="顾嘉辉大师经典演唱会" target="_blank">更新至1280高清</a></li>  <li><em>03.</em><a href="/DVD/index6793.html" title="M1938电影网欢迎你 ,2013最受欢迎的电影" target="_blank">M1938电影网欢迎你 ,2013最受欢迎的电影</a>/<a class="gray" href="/DVD/index6793.html" title="M1938电影网欢迎你 ,2013最受欢迎的电影" target="_blank">更新至</a></li>  <li><em>04.</em><a href="/DVD/index11522.html" title="综艺大集合2013" target="_blank">综艺大集合2013</a>/<a class="gray" href="/DVD/index11522.html" title="综艺大集合2013" target="_blank">更新至20130421期</a></li>  <li><em>05.</em><a href="/DVD/index15321.html" title="百变大咖秀" target="_blank">百变大咖秀</a>/<a class="gray" href="/DVD/index15321.html" title="百变大咖秀" target="_blank">更新至04-18</a></li>  <li><em>06.</em><a href="/DVD/index15302.html" title="幸存者：卡拉莫安第二十六季" target="_blank">幸存者：卡拉莫安第二十六季</a>/<a class="gray" href="/DVD/index15302.html" title="幸存者：卡拉莫安第二十六季" target="_blank">更新至第10集</a></li>  <li><em>07.</em><a href="/DVD/index15331.html" title="中国梦想秀第五季" target="_blank">中国梦想秀第五季</a>/<a class="gray" href="/DVD/index15331.html" title="中国梦想秀第五季" target="_blank">更新至平民圆梦</a></li>  <li><em>08.</em><a href="/DVD/index16355.html" title="中国最强音" target="_blank">中国最强音</a>/<a class="gray" href="/DVD/index16355.html" title="中国最强音" target="_blank">更新至励志音乐</a></li>  <li><em>09.</em><a href="/DVD/index15365.html" title="食尚玩家" target="_blank">食尚玩家</a>/<a class="gray" href="/DVD/index15365.html" title="食尚玩家" target="_blank">更新至04-18</a></li>  <li><em>10.</em><a href="/DVD/index15273.html" title="国光帮帮忙" target="_blank">国光帮帮忙</a>/<a class="gray" href="/DVD/index15273.html" title="国光帮帮忙" target="_blank">更新至04-19</a></li>  <li><em>11.</em><a href="/DVD/index15271.html" title="完全娱乐" target="_blank">完全娱乐</a>/<a class="gray" href="/DVD/index15271.html" title="完全娱乐" target="_blank">更新至04-19</a></li>  <li><em>12.</em><a href="/DVD/index15270.html" title="型男大主厨" target="_blank">型男大主厨</a>/<a class="gray" href="/DVD/index15270.html" title="型男大主厨" target="_blank">更新至04-19</a></li>
+			</ul>
+				<!-- // txt-list end -->
+			</div>
+			<!-- // con_latest_5 end -->
+			
+			<div id="con_latest_6" class="fn-hide">
+					<ul class="img-list fn-clear">
+				    			       <li>
+						<a href="/DVD/index16050.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136530202812.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="(歌剧)普契尼&多明戈-《托斯卡》" />
+							<label class="fbg"> </label>
+							<label class="txt"></label>
+						</a>
+						<h5><a href="/DVD/index16050.html">(歌剧)普契尼&多明戈-《托斯卡》</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16049.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136530202711.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="(音乐mv)蔡依林《爱情任务》冠军连霸影音混搭典藏版" />
+							<label class="fbg"> </label>
+							<label class="txt">第1集</label>
+						</a>
+						<h5><a href="/DVD/index16049.html">(音乐mv)蔡依林《爱情任务》冠军连霸影音混搭典藏版</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index14980.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13646066719.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="辛晓琪2006承诺演唱会" />
+							<label class="fbg"> </label>
+							<label class="txt"></label>
+						</a>
+						<h5><a href="/DVD/index14980.html">辛晓琪2006承诺演唱会</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index14979.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13646066718.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="草蜢2006我们的草蜢演唱会" />
+							<label class="fbg"> </label>
+							<label class="txt"></label>
+						</a>
+						<h5><a href="/DVD/index14979.html">草蜢2006我们的草蜢演唱会</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16048.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136530202610.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="(音乐mv)郭静《下一个天亮》MV专辑" />
+							<label class="fbg"> </label>
+							<label class="txt"></label>
+						</a>
+						<h5><a href="/DVD/index16048.html">(音乐mv)郭静《下一个天亮》MV专辑</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16047.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13653020259.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="陈绮贞《绮贞Best》MV专辑" />
+							<label class="fbg"> </label>
+							<label class="txt"></label>
+						</a>
+						<h5><a href="/DVD/index16047.html">陈绮贞《绮贞Best》MV专辑</a></h5>
+					</li> 			       <li>
+						<a href="/DVD/index16046.html" class="play-pic">
+							<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13653020258.jpg" onerror="javascript:this.src='/m1938/fx8.gif';" alt="alan阿兰《Voice Of Earth》MV专辑" />
+							<label class="fbg"> </label>
+							<label class="txt"></label>
+						</a>
+						<h5><a href="/DVD/index16046.html">alan阿兰《Voice Of Earth》MV专辑</a></h5>
+					</li>
+			</ul>
+				<!-- // img-list end -->
+				
+				<ul class="txt-list fn-clear">
+					                  	        <li><em>01.</em><a href="/DVD/index16045.html" title="(音乐mv)许志安《歌人》MV专辑" target="_blank">(音乐mv)许志安《歌人》MV专辑</a>/<a class="gray" href="/DVD/index16045.html" title="(音乐mv)许志安《歌人》MV专辑" target="_blank">更新至</a></li>  <li><em>02.</em><a href="/DVD/index16044.html" title="(音乐mv)张靓颖《The One》MV专辑" target="_blank">(音乐mv)张靓颖《The One》MV专辑</a>/<a class="gray" href="/DVD/index16044.html" title="(音乐mv)张靓颖《The One》MV专辑" target="_blank">更新至</a></li>  <li><em>03.</em><a href="/DVD/index14978.html" title="野人花园2000年澳洲演唱会" target="_blank">野人花园2000年澳洲演唱会</a>/<a class="gray" href="/DVD/index14978.html" title="野人花园2000年澳洲演唱会" target="_blank">更新至</a></li>  <li><em>04.</em><a href="/DVD/index16043.html" title="(音乐mv)梁静茹《静茹&情歌：别再为他流泪》MV专辑" target="_blank">(音乐mv)梁静茹《静茹&情歌：别再为他流泪》MV专辑</a>/<a class="gray" href="/DVD/index16043.html" title="(音乐mv)梁静茹《静茹&情歌：别再为他流泪》MV专辑" target="_blank">更新至</a></li>  <li><em>05.</em><a href="/DVD/index16042.html" title="(音乐mv)张力尹《星愿》mv专辑" target="_blank">(音乐mv)张力尹《星愿》mv专辑</a>/<a class="gray" href="/DVD/index16042.html" title="(音乐mv)张力尹《星愿》mv专辑" target="_blank">更新至</a></li>  <li><em>06.</em><a href="/DVD/index16041.html" title="(音乐MV)黄宗泽" target="_blank">(音乐MV)黄宗泽</a>/<a class="gray" href="/DVD/index16041.html" title="(音乐MV)黄宗泽" target="_blank">更新至第2集</a></li>  <li><em>07.</em><a href="/DVD/index16040.html" title="(音乐mv)吕方" target="_blank">(音乐mv)吕方</a>/<a class="gray" href="/DVD/index16040.html" title="(音乐mv)吕方" target="_blank">更新至第1集</a></li>  <li><em>08.</em><a href="/DVD/index16039.html" title="(音乐mv)女子十二乐坊" target="_blank">(音乐mv)女子十二乐坊</a>/<a class="gray" href="/DVD/index16039.html" title="(音乐mv)女子十二乐坊" target="_blank">更新至第12集</a></li>  <li><em>09.</em><a href="/DVD/index16038.html" title="(音乐mv)平井坚(Ken Kirai) 《Ken Hirai Films vol.9》MV专辑" target="_blank">(音乐mv)平井坚(Ken Kirai) 《Ken Hirai Films vol.9》MV专辑</a>/<a class="gray" href="/DVD/index16038.html" title="(音乐mv)平井坚(Ken Kirai) 《Ken Hirai Films vol.9》MV专辑" target="_blank">更新至</a></li>  <li><em>10.</em><a href="/DVD/index14977.html" title="James Blunt詹姆仕·布朗特《不插电》演唱会" target="_blank">James Blunt詹姆仕·布朗特《不插电》演唱会</a>/<a class="gray" href="/DVD/index14977.html" title="James Blunt詹姆仕·布朗特《不插电》演唱会" target="_blank">更新至</a></li>  <li><em>11.</em><a href="/DVD/index16037.html" title="(音乐mv)KAT-TUN《真我面目》MV专辑" target="_blank">(音乐mv)KAT-TUN《真我面目》MV专辑</a>/<a class="gray" href="/DVD/index16037.html" title="(音乐mv)KAT-TUN《真我面目》MV专辑" target="_blank">更新至</a></li>  <li><em>12.</em><a href="/DVD/index16036.html" title="(歌剧)列昂卡瓦洛歌剧《丑角》》（Pagliacci）" target="_blank">(歌剧)列昂卡瓦洛歌剧《丑角》》（Pagliacci）</a>/<a class="gray" href="/DVD/index16036.html" title="(歌剧)列昂卡瓦洛歌剧《丑角》》（Pagliacci）" target="_blank">更新至</a></li>
+				</ul>
+				<!-- // txt-list end -->
+			</div>
+			<!-- // con_latest_6 end -->
+		</div>	
+	</div>
+	<!-- // latest-focus end -->
+	
+	<div class="layout fn-clear">
+		<div class="mainbox fn-left">
+			<div class="ui-box l-h" id="tv-module">
+				<div class="ui-title fn-clear">
+					<label class="ui-mark">电视</label>
+					<h2>电视剧<em>·  TV</em></h2>
+
+<span>  <a href="/DVDlist/index12.html" target="_blank">大陆剧</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index13.html" target="_blank">香港剧</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index14.html" target="_blank">台湾剧</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index15.html" target="_blank">日本剧</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index16.html" target="_blank">韩国剧</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index17.html" target="_blank">美国剧</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index18.html" target="_blank">泰国剧</a> <em>|</em></span>
+		
+				</div>
+				<div class="ui-cnt">
+					<ul class="img-list fn-clear">
+                                                     								<li>
+							  <a href="/DVD/index15283.html" class="play-pic" title="老米家的婚事" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136489237319.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="老米家的婚事" />
+								<label class="fbg"> </label>
+								<label class="txt">第32集</label>
+							</a>
+							<h5><a href="/DVD/index15283.html" title="老米家的婚事" target="_blank">老米家的婚事</a></h5>
+							<p class="txt">宋丹丹 张洪杰 傅晶 周冬齐 姜妍 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:8%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">8</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index12133.html" class="play-pic" title="大唐女巡按" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454918216.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="大唐女巡按" />
+								<label class="fbg"> </label>
+								<label class="txt"></label>
+							</a>
+							<h5><a href="/DVD/index12133.html" title="大唐女巡按" target="_blank">大唐女巡按</a></h5>
+							<p class="txt">钟欣桐 陈浩民 王姬同 姬晨牧 万妮恩 邬靖靖 钱泳辰 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:6%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">6</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index12127.html" class="play-pic" title="一个鬼子都不留" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454918110.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="一个鬼子都不留" />
+								<label class="fbg"> </label>
+								<label class="txt">全集</label>
+							</a>
+							<h5><a href="/DVD/index12127.html" title="一个鬼子都不留" target="_blank">一个鬼子都不留</a></h5>
+							<p class="txt">于震 马少华 池程 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:8%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">8</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index12089.html" class="play-pic" title="赵氏孤儿案" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454916710.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="赵氏孤儿案" />
+								<label class="fbg"> </label>
+								<label class="txt">完结</label>
+							</a>
+							<h5><a href="/DVD/index12089.html" title="赵氏孤儿案" target="_blank">赵氏孤儿案</a></h5>
+							<p class="txt">吴秀波 孙淳 应采儿 王雨 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:37%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">37</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index11994.html" class="play-pic" title="樱桃红" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454912910.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="樱桃红" />
+								<label class="fbg"> </label>
+								<label class="txt">完结</label>
+							</a>
+							<h5><a href="/DVD/index11994.html" title="樱桃红" target="_blank">樱桃红</a></h5>
+							<p class="txt">宋小宝 沈春阳 赵本山 杨冰 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index11859.html" class="play-pic" title="贤妻" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645490779.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="贤妻" />
+								<label class="fbg"> </label>
+								<label class="txt">完结</label>
+							</a>
+							<h5><a href="/DVD/index11859.html" title="贤妻" target="_blank">贤妻</a></h5>
+							<p class="txt">刘涛 保剑锋 洪小玲 谢紫彬 高仁 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:1%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">1</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index11539.html" class="play-pic" title="爱情自有天意" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454894711.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="爱情自有天意" />
+								<label class="fbg"> </label>
+								<label class="txt">第83集</label>
+							</a>
+							<h5><a href="/DVD/index11539.html" title="爱情自有天意" target="_blank">爱情自有天意</a></h5>
+							<p class="txt">戚薇 陈赫 娄艺潇 谢佳见 张丹峰 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:2%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">2</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index11518.html" class="play-pic" title="新笑傲江湖" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645489389.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="新笑傲江湖" />
+								<label class="fbg"> </label>
+								<label class="txt">完结</label>
+							</a>
+							<h5><a href="/DVD/index11518.html" title="新笑傲江湖" target="_blank">新笑傲江湖</a></h5>
+							<p class="txt">霍建华 杨蓉 邓莎 陈乔恩 韩栋 袁姍姍 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:5%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">5</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index11349.html" class="play-pic" title="百年的遗产/百年遗产" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454887113.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="百年的遗产/百年遗产" />
+								<label class="fbg"> </label>
+								<label class="txt">第32集</label>
+							</a>
+							<h5><a href="/DVD/index11349.html" title="百年的遗产/百年遗产" target="_blank">百年的遗产/百年遗产</a></h5>
+							<p class="txt">柳真 李廷镇 申久 郑惠善 郑普硕 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:5%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">5</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index16296.html" class="play-pic" title="开心麻花剧场第二季" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13662462609.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="开心麻花剧场第二季" />
+								<label class="fbg"> </label>
+								<label class="txt">第5集</label>
+							</a>
+							<h5><a href="/DVD/index16296.html" title="开心麻花剧场第二季" target="_blank">开心麻花剧场第二季</a></h5>
+							<p class="txt">艾伦 王宁 常远 陶亮 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li>										</ul>
+					<!-- // img-list end -->
+					
+					  <ul class="txt-list fn-clear">
+						 					        					        <li><em>01.</em><a href="/DVD/index16266.html" title="波吉亚家族第三季/博基亚家族第三季" target="_blank">波吉亚家族第三季/博基亚家族第三季</a>/<a href="/DVD/index16266.html" title="波吉亚家族第三季/博基亚家族第三季" class="gray" target="_blank">更新至第2集</a>
+					      </li> <li><em>02.</em><a href="/DVD/index16125.html" title="张玉贞为爱而生" target="_blank">张玉贞为爱而生</a>/<a href="/DVD/index16125.html" title="张玉贞为爱而生" class="gray" target="_blank">更新至第5集</a>
+					      </li> <li><em>03.</em><a href="/DVD/index16230.html" title="云上的诱惑" target="_blank">云上的诱惑</a>/<a href="/DVD/index16230.html" title="云上的诱惑" class="gray" target="_blank">更新至第8集</a>
+					      </li> <li><em>04.</em><a href="/DVD/index15259.html" title="职场之神" target="_blank">职场之神</a>/<a href="/DVD/index15259.html" title="职场之神" class="gray" target="_blank">更新至第7集</a>
+					      </li> <li><em>05.</em><a href="/DVD/index12125.html" title="伊甸园之东(国语)" target="_blank">伊甸园之东(国语)</a>/<a href="/DVD/index12125.html" title="伊甸园之东(国语)" class="gray" target="_blank">更新至第45集</a>
+					      </li> <li><em>06.</em><a href="/DVD/index15240.html" title="面具情人(国语)/新娘面具(国语)" target="_blank">面具情人(国语)/新娘面具(国语)</a>/<a href="/DVD/index15240.html" title="面具情人(国语)/新娘面具(国语)" class="gray" target="_blank">更新至第16集</a>
+					      </li> <li><em>07.</em><a href="/DVD/index16124.html" title="九家之书" target="_blank">九家之书</a>/<a href="/DVD/index16124.html" title="九家之书" class="gray" target="_blank">更新至第5集</a>
+					      </li> <li><em>08.</em><a href="/DVD/index11394.html" title="家族的诞生(电视剧)" target="_blank">家族的诞生(电视剧)</a>/<a href="/DVD/index11394.html" title="家族的诞生(电视剧)" class="gray" target="_blank">更新至第96集</a>
+					      </li> <li><em>09.</em><a href="/DVD/index16170.html" title="大宅门1912" target="_blank">大宅门1912</a>/<a href="/DVD/index16170.html" title="大宅门1912" class="gray" target="_blank">更新至第41集</a>
+					      </li>
+				</ul>
+					<!-- // txt-list end -->
+				</div>
+			</div>
+			<!-- // ui-box#latest end -->
+		</div>
+		<!-- // mainbox end -->
+		
+		<div class="sidebar fn-right">
+			<div class="ui-box r-h">
+				<div class="ui-box-item score-ranking">
+					<div class="ui-title">
+						<h3>电视剧评分榜</h3>
+					</div>
+					<div class="ui-cnt">
+						<ul class="ranking-list">
+							  <li><em class="red">1 </em>
+								<span class="score"> 181</span>
+								<h5><a href="/DVD/index15224.html" title="隋唐英雄(张卫健版)">隋唐英雄(张卫健版)</a></h5>
+							</li>  <li><em class="red">2 </em>
+								<span class="score"> 71</span>
+								<h5><a href="/DVD/index12041.html" title="美味的想念">美味的想念</a></h5>
+							</li>  <li><em class="red">3 </em>
+								<span class="score"> 38</span>
+								<h5><a href="/DVD/index11619.html" title="盛夏晚晴天">盛夏晚晴天</a></h5>
+							</li>  <li><em class="red">4 </em>
+								<span class="score"> 37</span>
+								<h5><a href="/DVD/index12089.html" title="赵氏孤儿案">赵氏孤儿案</a></h5>
+							</li>  <li><em class="red">5 </em>
+								<span class="score"> 30</span>
+								<h5><a href="/DVD/index949.html" title="孤军英雄">孤军英雄</a></h5>
+							</li>  <li><em class="red">6 </em>
+								<span class="score"> 26</span>
+								<h5><a href="/DVD/index11564.html" title="周一清晨第一季">周一清晨第一季</a></h5>
+							</li>  <li><em class="red">7 </em>
+								<span class="score"> 12</span>
+								<h5><a href="/DVD/index16170.html" title="大宅门1912">大宅门1912</a></h5>
+							</li>  <li><em class="red">8 </em>
+								<span class="score"> 13</span>
+								<h5><a href="/DVD/index11530.html" title="儿子们">儿子们</a></h5>
+							</li>  <li><em class="red">9 </em>
+								<span class="score"> 8</span>
+								<h5><a href="/DVD/index15283.html" title="老米家的婚事">老米家的婚事</a></h5>
+							</li>  <li><em class="red">10 </em>
+								<span class="score"> 8</span>
+								<h5><a href="/DVD/index12127.html" title="一个鬼子都不留">一个鬼子都不留</a></h5>
+							</li>
+
+						</ul>
+						<!-- // ranking-list end -->
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+				
+				<div class="ui-box-item ui-indexing">
+					<div class="ui-title fn-clear">
+						<h3>电视剧索引分类</h3>
+						<span><a href="/DVDlist/index2.html" target="_blank">更多</a></span>					</div>
+					<div class="ui-cnt">
+						<dl class="indexing-item">
+							<dt>按类型：</dt>
+
+
+<dd>  <a href="/DVDlist/index12.html" target="_blank">大陆剧</a>  </dd>
+
+<dd>  <a href="/DVDlist/index13.html" target="_blank">香港剧</a>  </dd>
+
+<dd>  <a href="/DVDlist/index14.html" target="_blank">台湾剧</a>  </dd>
+
+<dd>  <a href="/DVDlist/index15.html" target="_blank">日本剧</a>  </dd>
+
+<dd>  <a href="/DVDlist/index16.html" target="_blank">韩国剧</a>  </dd>
+
+<dd>  <a href="/DVDlist/index17.html" target="_blank">美国剧</a>  </dd>
+
+<dd>  <a href="/DVDlist/index18.html" target="_blank">泰国剧</a>  </dd>
+	
+				</dl>
+						<dl class="indexing-item">
+							<dt>按地区：</dt>
+							
+<dd><a href="/search.php?type=2&area=美国">美国</a></dd>	
+<dd><a href="/search.php?type=2&area=内地">内地</a></dd>
+<dd><a href="/search.php?type=2&area=香港">香港</a></dd>	
+<dd><a href="/search.php?type=2&area=台湾">台湾</a></dd>	
+<dd><a href="/search.php?type=2&area=大陆">大陆</a></dd>	
+<dd><a href="/search.php?type=2&area=韩国">韩国</a></dd>	
+<dd><a href="/search.php?type=2&area=日本">日本</a></dd>	
+<dd><a href="/search.php?type=2&area=英国">英国</a></dd>	
+<dd><a href="/search.php?type=2&area=法国">法国</a></dd>	
+<dd><a href="/search.php?type=2&area=德国">德国</a></dd>							
+<dd><a href="/search.php?type=2&area=泰国">泰国</a></dd>	
+<dd><a href="/search.php?type=2&area=国产">国产</a></dd>
+						</dl>
+                                                                                          <dl class="indexing-item">
+							<dt>按年代：</dt>
+							<dd>
+<a href="/search.php?type=2&year=2013">2013</a></dd>
+<dd><a href="/search.php?type=2&year=2012">2012</a></dd>
+<dd><a href="/search.php?type=2&year=2011">2011</a></dd>
+<dd><a href="/search.php?type=2&year=2010">2010</a></dd>
+<dd><a href="/search.php?type=2&year=2009">2009</a></dd>
+<dd><a href="/search.php?type=2&year=2008">2008</a></dd>
+<dd><a href="/search.php?type=2&year=2007">2007</a></dd>
+<dd><a href="/search.php?type=2&year=2006">2006</a></dd>
+<dd><a href="/search.php?type=2&year=2005">2005</a></dd>
+<dd><a href="/search.php?type=2&year=2004">2004</a></dd>
+<dd><a href="/search.php?type=2&year=2003">2003</a></dd>
+<dd><a href="/search.php?type=2&year=2002">2002</a></dd>
+<dd><a href="/search.php?type=2&year=2001">2001</a></dd>
+<dd><a href="/search.php?type=2&year=2000">2000</a></dd>
+<dd><a href="/search.php?type=2&year=1999">1999</a></dd>
+<dd><a href="/search.php?type=2&year=1998">1998</a></dd>
+<dd><a href="/search.php?type=2&year=1997">1997</a></dd>
+<dd><a href="/search.php?type=2&year=1996">1996</a></dd>
+<dd><a href="/search.php?type=2&year=1995">1995</a></dd>
+<dd><a href="/search.php?type=2&year=1994">1994</a></dd>
+	
+				</dl>
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+			</div>
+		</div>	
+		<!-- // sidebar end -->
+	</div>
+	<!-- // layout end -->
+	
+	<div class="layout fn-clear">
+		<div class="mainbox fn-left">
+			<div class="ui-box l-h" id="movie-module">
+				<div class="ui-title fn-clear">
+					<label class="ui-mark">电影</label>
+					<h2>电影<em>·  Movie</em></h2>
+					
+<span>  <a href="/DVDlist/index5.html" target="_blank">动作片</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index6.html" target="_blank">喜剧片</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index7.html" target="_blank">爱情片</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index8.html" target="_blank">科幻片</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index9.html" target="_blank">恐怖片</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index10.html" target="_blank">剧情片</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index11.html" target="_blank">战争片</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index19.html" target="_blank">记录片</a> <em>|</em></span>
+					</div>
+				<div class="ui-cnt">
+					<ul class="img-list fn-clear">
+						                            								<li>
+							  <a href="/DVD/index12145.html" class="play-pic" title="血滴子 2012版" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645491899.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="血滴子 2012版" />
+								<label class="fbg"> </label>
+								<label class="txt">DVD+BD</label>
+							</a>
+							<h5><a href="/DVD/index12145.html" title="血滴子 2012版" target="_blank">血滴子 2012版</a></h5>
+							<p class="txt">黄晓明 阮经天 李宇春 井柏然 余文乐 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:4%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">4</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index12144.html" class="play-pic" title="血滴子" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645491888.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="血滴子" />
+								<label class="fbg"> </label>
+								<label class="txt">DVD</label>
+							</a>
+							<h5><a href="/DVD/index12144.html" title="血滴子" target="_blank">血滴子</a></h5>
+							<p class="txt">陈观泰 汪禹 韦弘 谷峰 林伟图 江洋 刘午琪 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index12143.html" class="play-pic" title="伤心童话" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645491887.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="伤心童话" />
+								<label class="fbg"> </label>
+								<label class="txt">DVD+BD</label>
+							</a>
+							<h5><a href="/DVD/index12143.html" title="伤心童话" target="_blank">伤心童话</a></h5>
+							<p class="txt">刘诗诗 胡夏 大左 谢楠 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:1%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">1</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index12142.html" class="play-pic" title="一九四二/1942" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645491886.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="一九四二/1942" />
+								<label class="fbg"> </label>
+								<label class="txt">TS+BD</label>
+							</a>
+							<h5><a href="/DVD/index12142.html" title="一九四二/1942" target="_blank">一九四二/1942</a></h5>
+							<p class="txt">张国立 陈道明 李雪健 张涵予 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index12130.html" class="play-pic" title="青春期3" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454918213.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="青春期3" />
+								<label class="fbg"> </label>
+								<label class="txt">BD</label>
+							</a>
+							<h5><a href="/DVD/index12130.html" title="青春期3" target="_blank">青春期3</a></h5>
+							<p class="txt">赵奕欢 王一 古筝 王梦婷 秦汉擂 梁庭瑜 张倩 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:1%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">1</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index12128.html" class="play-pic" title="青春期2:青春失乐园" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454918111.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="青春期2:青春失乐园" />
+								<label class="fbg"> </label>
+								<label class="txt">BD高清版</label>
+							</a>
+							<h5><a href="/DVD/index12128.html" title="青春期2:青春失乐园" target="_blank">青春期2:青春失乐园</a></h5>
+							<p class="txt">赵奕欢 王一 莫熙儿 王紫潼 田晓天 宋丹 秦汉擂 梁庭瑜 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index5234.html" class="play-pic" title="男人如衣服" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645374945.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="男人如衣服" />
+								<label class="fbg"> </label>
+								<label class="txt">DVD+BD全集</label>
+							</a>
+							<h5><a href="/DVD/index5234.html" title="男人如衣服" target="_blank">男人如衣服</a></h5>
+							<p class="txt">黄百鸣 毛舜筠 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:5%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">5</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index4611.html" class="play-pic" title="人再囧途之泰囧" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645373163.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="人再囧途之泰囧" />
+								<label class="fbg"> </label>
+								<label class="txt">BD</label>
+							</a>
+							<h5><a href="/DVD/index4611.html" title="人再囧途之泰囧" target="_blank">人再囧途之泰囧</a></h5>
+							<p class="txt">徐峥 王宝强 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:32%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">32</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index9.html" class="play-pic" title="十二生肖" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645495450.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="十二生肖" />
+								<label class="fbg"> </label>
+								<label class="txt">BD</label>
+							</a>
+							<h5><a href="/DVD/index9.html" title="十二生肖" target="_blank">十二生肖</a></h5>
+							<p class="txt">成龙 权相宇 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index11370.html" class="play-pic" title="我老公不靠谱" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454887815.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="我老公不靠谱" />
+								<label class="fbg"> </label>
+								<label class="txt">DVDscr+BD</label>
+							</a>
+							<h5><a href="/DVD/index11370.html" title="我老公不靠谱" target="_blank">我老公不靠谱</a></h5>
+							<p class="txt">蔡卓妍 郑伊健 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:35%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">35</strong>
+							</p>
+						  </li>
+				</ul>
+					<!-- // img-list end -->
+					
+					  <ul class="txt-list fn-clear">
+						 					        					         <li><em>01.</em><a href="/DVD/index16396.html" title="爱丽丝梦游仙境/魔境梦游" target="_blank">爱丽丝梦游仙境/魔境梦游</a>/<a href="/DVD/index16396.html" title="爱丽丝梦游仙境/魔境梦游" class="gray" target="_blank">1280高清</a>
+					      </li> <li><em>02.</em><a href="/DVD/index16395.html" title="复仇者联盟" target="_blank">复仇者联盟</a>/<a href="/DVD/index16395.html" title="复仇者联盟" class="gray" target="_blank">1280超清</a>
+					      </li> <li><em>03.</em><a href="/DVD/index16394.html" title="黑潮-麦尔坎X" target="_blank">黑潮-麦尔坎X</a>/<a href="/DVD/index16394.html" title="黑潮-麦尔坎X" class="gray" target="_blank">1280高清</a>
+					      </li> <li><em>04.</em><a href="/DVD/index16393.html" title="007:大破天幕杀机/新铁金刚智破天凶城/007:空降危机" target="_blank">007:大破天幕杀机/新铁金刚智破天凶城/007:空降危机</a>/<a href="/DVD/index16393.html" title="007:大破天幕杀机/新铁金刚智破天凶城/007:空降危机" class="gray" target="_blank">1280超清</a>
+					      </li> <li><em>05.</em><a href="/DVD/index16389.html" title="背水一战/重击防线/终极封锁线" target="_blank">背水一战/重击防线/终极封锁线</a>/<a href="/DVD/index16389.html" title="背水一战/重击防线/终极封锁线" class="gray" target="_blank">1280高清</a>
+					      </li> <li><em>06.</em><a href="/DVD/index16388.html" title="极恶非道2/全员恶人完结" target="_blank">极恶非道2/全员恶人完结</a>/<a href="/DVD/index16388.html" title="极恶非道2/全员恶人完结" class="gray" target="_blank">1024高清</a>
+					      </li> <li><em>07.</em><a href="/DVD/index9659.html" title="爱回家" target="_blank">爱回家</a>/<a href="/DVD/index9659.html" title="爱回家" class="gray" target="_blank">第241集</a>
+					      </li> <li><em>08.</em><a href="/DVD/index16382.html" title="犀利人夫/超级英雄(2010)" target="_blank">犀利人夫/超级英雄(2010)</a>/<a href="/DVD/index16382.html" title="犀利人夫/超级英雄(2010)" class="gray" target="_blank">BD</a>
+					      </li> <li><em>09.</em><a href="/DVD/index16381.html" title="超级英雄" target="_blank">超级英雄</a>/<a href="/DVD/index16381.html" title="超级英雄" class="gray" target="_blank">DVD+BD</a>
+					      </li>
+			   </ul>
+					<!-- // txt-list end -->
+				</div>
+			</div>
+			<!-- // ui-box#latest end -->
+		</div>
+		<!-- // mainbox end -->
+		
+		<div class="sidebar fn-right">
+			<div class="ui-box r-h">
+				<div class="ui-box-item score-ranking">
+					<div class="ui-title">
+						<h3>电影评分榜</h3>
+					</div>
+					<div class="ui-cnt">
+						<ul class="ranking-list">
+							  <li><em class="purple">1 </em>
+								<span class="score"> 64</span>
+								<h5><a href="/DVD/index11902.html" title="缘来藏不了/爱情避风港">缘来藏不了/爱情避风港</a></h5>
+							</li>  <li><em class="purple">2 </em>
+								<span class="score"> 5</span>
+								<h5><a href="/DVD/index16382.html" title="犀利人夫/超级英雄(2010)">犀利人夫/超级英雄(2010)</a></h5>
+							</li>  <li><em class="purple">3 </em>
+								<span class="score"> 5</span>
+								<h5><a href="/DVD/index10831.html" title="赌侠2之上海滩赌圣">赌侠2之上海滩赌圣</a></h5>
+							</li>  <li><em class="purple">4 </em>
+								<span class="score"> 5</span>
+								<h5><a href="/DVD/index8800.html" title="爱在阳光下">爱在阳光下</a></h5>
+							</li>  <li><em class="purple">5 </em>
+								<span class="score"> 3</span>
+								<h5><a href="/DVD/index16348.html" title="蓝色激情2">蓝色激情2</a></h5>
+							</li>  <li><em class="purple">6 </em>
+								<span class="score"> 3</span>
+								<h5><a href="/DVD/index16131.html" title="爱神/爱神来了">爱神/爱神来了</a></h5>
+							</li>  <li><em class="purple">7 </em>
+								<span class="score"> 2</span>
+								<h5><a href="/DVD/index16381.html" title="超级英雄">超级英雄</a></h5>
+							</li>  <li><em class="purple">8 </em>
+								<span class="score"> 2</span>
+								<h5><a href="/DVD/index16347.html" title="侠探杰克">侠探杰克</a></h5>
+							</li>  <li><em class="purple">9 </em>
+								<span class="score"> 2</span>
+								<h5><a href="/DVD/index16294.html" title="神的诊疗簿">神的诊疗簿</a></h5>
+							</li>  <li><em class="purple">10 </em>
+								<span class="score"> 2</span>
+								<h5><a href="/DVD/index16133.html" title="囧人之越骚越痒">囧人之越骚越痒</a></h5>
+							</li>
+
+						</ul>
+						</ul>
+						<!-- // ranking-list end -->
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+				
+				<div class="ui-box-item ui-indexing">
+					<div class="ui-title fn-clear">
+						<h3>电影索引分类</h3>
+						<span><a href="/DVDlist/index1.html" target="_blank">更多</a></span>					</div>
+					<div class="ui-cnt">
+						<dl class="indexing-item">
+							<dt>按类型：</dt>
+							
+<dd>  <a href="/DVDlist/index5.html" target="_blank">动作</a>  </dd>
+
+<dd>  <a href="/DVDlist/index6.html" target="_blank">喜剧</a>  </dd>
+
+<dd>  <a href="/DVDlist/index7.html" target="_blank">爱情</a>  </dd>
+
+<dd>  <a href="/DVDlist/index8.html" target="_blank">科幻</a>  </dd>
+
+<dd>  <a href="/DVDlist/index9.html" target="_blank">恐怖</a>  </dd>
+
+<dd>  <a href="/DVDlist/index10.html" target="_blank">剧情</a>  </dd>
+
+<dd>  <a href="/DVDlist/index11.html" target="_blank">战争</a>  </dd>
+
+<dd>  <a href="/DVDlist/index19.html" target="_blank">记录</a>  </dd>
+	
+				</dl>
+						<dl class="indexing-item">
+							<dt>按地区：</dt>
+							
+<dd><a href="/search.php?type=1&area=美国">美国</a></dd>	
+<dd><a href="/search.php?type=1&area=内地">内地</a></dd>
+<dd><a href="/search.php?type=1&area=香港">香港</a></dd>	
+<dd><a href="/search.php?type=1&area=台湾">台湾</a></dd>	
+<dd><a href="/search.php?type=1&area=大陆">大陆</a></dd>	
+<dd><a href="/search.php?type=1&area=韩国">韩国</a></dd>	
+<dd><a href="/search.php?type=1&area=日本">日本</a></dd>	
+<dd><a href="/search.php?type=1&area=英国">英国</a></dd>	
+<dd><a href="/search.php?type=1&area=法国">法国</a></dd>	
+<dd><a href="/search.php?type=1&area=德国">德国</a></dd>							
+<dd><a href="/search.php?type=1&area=泰国">泰国</a></dd>	
+<dd><a href="/search.php?type=1&area=国产">国产</a></dd>
+						</dl>
+                                                                                          <dl class="indexing-item">
+							<dt>按年代：</dt>
+							<dd>
+<a href="/search.php?type=1&year=2013">2013</a></dd>
+<dd><a href="/search.php?type=1&year=2012">2012</a></dd>
+<dd><a href="/search.php?type=1&year=2011">2011</a></dd>
+<dd><a href="/search.php?type=1&year=2010">2010</a></dd>
+<dd><a href="/search.php?type=1&year=2009">2009</a></dd>
+<dd><a href="/search.php?type=1&year=2008">2008</a></dd>
+<dd><a href="/search.php?type=1&year=2007">2007</a></dd>
+<dd><a href="/search.php?type=1&year=2006">2006</a></dd>
+<dd><a href="/search.php?type=1&year=2005">2005</a></dd>
+<dd><a href="/search.php?type=1&year=2004">2004</a></dd>
+<dd><a href="/search.php?type=1&year=2003">2003</a></dd>
+<dd><a href="/search.php?type=1&year=2002">2002</a></dd>
+<dd><a href="/search.php?type=1&year=2001">2001</a></dd>
+<dd><a href="/search.php?type=1&year=2000">2000</a></dd>
+<dd><a href="/search.php?type=1&year=1999">1999</a></dd>
+<dd><a href="/search.php?type=1&year=1998">1998</a></dd>
+<dd><a href="/search.php?type=1&year=1997">1997</a></dd>
+<dd><a href="/search.php?type=1&year=1996">1996</a></dd>
+<dd><a href="/search.php?type=1&year=1995">1995</a></dd>
+<dd><a href="/search.php?type=1&year=1994">1994</a></dd>
+	
+				</dl>
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+			</div>
+		</div>	
+		<!-- // sidebar end -->
+	</div>
+	<!-- // layout end -->
+	
+	<div class="layout fn-clear">
+		<div class="mainbox fn-left">
+			<div class="ui-box l-h" id="comic-module">
+				<div class="ui-title fn-clear">
+					<label class="ui-mark">动漫</label>
+					<h2>经典动漫<em>·  Comic</em></h2>
+				<span> <a href="/search.php?type=4&area=美国">美国动漫</a><em>|</em>	
+<a href="/search.php?type=4&area=香港">香港动漫</a><em>|</em>	
+<a href="/search.php?type=4&area=台湾">台湾动漫</a><em>|</em>	
+<a href="/search.php?type=4&area=大陆">大陆动漫</a><em>|</em>	
+<a href="/search.php?type=4&area=韩国">韩国动漫</a><em>|</em>	
+<a href="/search.php?type=4&area=日本">日本动漫</a><em>|</em></span> </div>
+				<div class="ui-cnt">
+				<ul class="img-list fn-clear">
+						                            								<li>
+							  <a href="/DVD/index16383.html" class="play-pic" title="纸箱战机第三季" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13666804792.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="纸箱战机第三季" />
+								<label class="fbg"> </label>
+								<label class="txt">第3集</label>
+							</a>
+							<h5><a href="/DVD/index16383.html" title="纸箱战机第三季" target="_blank">纸箱战机第三季</a></h5>
+							<p class="txt">久保田恵 井上麻里奈 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index16379.html" class="play-pic" title="乌鸦之日" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136668047517.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="乌鸦之日" />
+								<label class="fbg"> </label>
+								<label class="txt">DVD</label>
+							</a>
+							<h5><a href="/DVD/index16379.html" title="乌鸦之日" target="_blank">乌鸦之日</a></h5>
+							<p class="txt">洛兰特·道驰 让·雷诺 伊莎贝尔·卡雷 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index16363.html" class="play-pic" title="鸭子的生活" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13666804632.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="鸭子的生活" />
+								<label class="fbg"> </label>
+								<label class="txt">第3集</label>
+							</a>
+							<h5><a href="/DVD/index16363.html" title="鸭子的生活" target="_blank">鸭子的生活</a></h5>
+							<p class="txt">内详 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index16322.html" class="play-pic" title="假面骑士HIBIKI剧场版：七人之战鬼" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136624627315.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="假面骑士HIBIKI剧场版：七人之战鬼" />
+								<label class="fbg"> </label>
+								<label class="txt">DVD</label>
+							</a>
+							<h5><a href="/DVD/index16322.html" title="假面骑士HIBIKI剧场版：七人之战鬼" target="_blank">假面骑士HIBIKI剧场版：七人之战鬼</a></h5>
+							<p class="txt">细川茂树 榆原乐人 涉江让二 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index16321.html" class="play-pic" title="美食的俘虏剧场版-3D开幕!美食家的冒险!!" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136624627114.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="美食的俘虏剧场版-3D开幕!美食家的冒险!!" />
+								<label class="fbg"> </label>
+								<label class="txt">DVD</label>
+							</a>
+							<h5><a href="/DVD/index16321.html" title="美食的俘虏剧场版-3D开幕!美食家的冒险!!" target="_blank">美食的俘虏剧场版-3D开幕!美食家的冒险!!</a></h5>
+							<p class="txt">置鲇龙太郎 朴璐美 柿原彻也 桃井薰 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index16298.html" class="play-pic" title="摩登原始人第二季" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136624626111.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="摩登原始人第二季" />
+								<label class="fbg"> </label>
+								<label class="txt">第24集</label>
+							</a>
+							<h5><a href="/DVD/index16298.html" title="摩登原始人第二季" target="_blank">摩登原始人第二季</a></h5>
+							<p class="txt">Alan Reed Jean Vander Pyl </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index16282.html" class="play-pic" title="钢铁侠：纳米魔崛起/钢铁侠：崛起的噬甲病毒" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136624625114.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="钢铁侠：纳米魔崛起/钢铁侠：崛起的噬甲病毒" />
+								<label class="fbg"> </label>
+								<label class="txt">1280高清</label>
+							</a>
+							<h5><a href="/DVD/index16282.html" title="钢铁侠：纳米魔崛起/钢铁侠：崛起的噬甲病毒" target="_blank">钢铁侠：纳米魔崛起/钢铁侠：崛起的噬甲病毒</a></h5>
+							<p class="txt"> </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index16279.html" class="play-pic" title="常住战阵！虫奉行" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136624624911.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="常住战阵！虫奉行" />
+								<label class="fbg"> </label>
+								<label class="txt">第2集</label>
+							</a>
+							<h5><a href="/DVD/index16279.html" title="常住战阵！虫奉行" target="_blank">常住战阵！虫奉行</a></h5>
+							<p class="txt">KENN 大久保瑠美 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index16272.html" class="play-pic" title="钢铁侠：纳米魔崛起" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13662462443.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="钢铁侠：纳米魔崛起" />
+								<label class="fbg"> </label>
+								<label class="txt">BD</label>
+							</a>
+							<h5><a href="/DVD/index16272.html" title="钢铁侠：纳米魔崛起" target="_blank">钢铁侠：纳米魔崛起</a></h5>
+							<p class="txt">内详 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index16270.html" class="play-pic" title="麻吉妖怪岛" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13662462431.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="麻吉妖怪岛" />
+								<label class="fbg"> </label>
+								<label class="txt">DVD+BD</label>
+							</a>
+							<h5><a href="/DVD/index16270.html" title="麻吉妖怪岛" target="_blank">麻吉妖怪岛</a></h5>
+							<p class="txt">香取慎吾 山寺宏一 YOU 加藤清史郎 阿部隆史 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:1%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">1</strong>
+							</p>
+						  </li>
+				</ul>
+					<!-- // img-list end -->
+					
+					  <ul class="txt-list fn-clear">
+						 					        					         <li><em>01.</em><a href="/DVD/index11657.html" title="心跳！光之美少女" target="_blank">心跳！光之美少女</a>/<a href="/DVD/index11657.html" title="心跳！光之美少女" class="gray" target="_blank">更新至第12集</a>
+					      </li> <li><em>02.</em><a href="/DVD/index11563.html" title="霹雳侠影之轰动武林" target="_blank">霹雳侠影之轰动武林</a>/<a href="/DVD/index11563.html" title="霹雳侠影之轰动武林" class="gray" target="_blank">更新至第21集</a>
+					      </li> <li><em>03.</em><a href="/DVD/index16253.html" title="血型君" target="_blank">血型君</a>/<a href="/DVD/index16253.html" title="血型君" class="gray" target="_blank">更新至第3集</a>
+					      </li> <li><em>04.</em><a href="/DVD/index15269.html" title="宠物小精灵Best Wishe" target="_blank">宠物小精灵Best Wishe</a>/<a href="/DVD/index15269.html" title="宠物小精灵Best Wishe" class="gray" target="_blank">更新至第124集</a>
+					      </li> <li><em>05.</em><a href="/DVD/index3665.html" title="娱乐百分百" target="_blank">娱乐百分百</a>/<a href="/DVD/index3665.html" title="娱乐百分百" class="gray" target="_blank">更新至04-20</a>
+					      </li> <li><em>06.</em><a href="/DVD/index16383.html" title="纸箱战机第三季" target="_blank">纸箱战机第三季</a>/<a href="/DVD/index16383.html" title="纸箱战机第三季" class="gray" target="_blank">更新至第3集</a>
+					      </li> <li><em>07.</em><a href="/DVD/index12114.html" title="虹猫蓝兔奥悠国历险记" target="_blank">虹猫蓝兔奥悠国历险记</a>/<a href="/DVD/index12114.html" title="虹猫蓝兔奥悠国历险记" class="gray" target="_blank">更新至第25集</a>
+					      </li> <li><em>08.</em><a href="/DVD/index16173.html" title="翼空之巅/极限运动" target="_blank">翼空之巅/极限运动</a>/<a href="/DVD/index16173.html" title="翼空之巅/极限运动" class="gray" target="_blank">更新至第11集</a>
+					      </li> <li><em>09.</em><a href="/DVD/index11693.html" title="偶像活动/偶像传说" target="_blank">偶像活动/偶像传说</a>/<a href="/DVD/index11693.html" title="偶像活动/偶像传说" class="gray" target="_blank">更新至第27集</a>
+					      </li>
+			   </ul>
+					<!-- // txt-list end -->
+				</div>
+			</div>
+			<!-- // ui-box#latest end -->
+		</div>
+		<!-- // mainbox end -->
+		
+		<div class="sidebar fn-right">
+			<div class="ui-box r-h">
+				<div class="ui-box-item score-ranking">
+					<div class="ui-title">
+						<h3>经典动漫评分榜</h3>
+					</div>
+					<div class="ui-cnt">
+						<ul class="ranking-list">
+								  <li><em class="green">1 </em>
+								<span class="score"> 9</span>
+								<h5><a href="/DVD/index11565.html" title="野兽传奇">野兽传奇</a></h5>
+							</li>  <li><em class="green">2 </em>
+								<span class="score"> 8</span>
+								<h5><a href="/DVD/index11256.html" title="妖精的尾巴">妖精的尾巴</a></h5>
+							</li>  <li><em class="green">3 </em>
+								<span class="score"> 2</span>
+								<h5><a href="/DVD/index16126.html" title="虫奉行">虫奉行</a></h5>
+							</li>  <li><em class="green">4 </em>
+								<span class="score"> 5</span>
+								<h5><a href="/DVD/index11734.html" title="马达加斯加的疯狂情人节">马达加斯加的疯狂情人节</a></h5>
+							</li>  <li><em class="green">5 </em>
+								<span class="score"> 1</span>
+								<h5><a href="/DVD/index16270.html" title="麻吉妖怪岛">麻吉妖怪岛</a></h5>
+							</li>  <li><em class="green">6 </em>
+								<span class="score"> 1</span>
+								<h5><a href="/DVD/index15327.html" title="太阳幻影">太阳幻影</a></h5>
+							</li>  <li><em class="green">7 </em>
+								<span class="score"> 1</span>
+								<h5><a href="/DVD/index15269.html" title="宠物小精灵Best Wishe">宠物小精灵Best Wishe</a></h5>
+							</li>  <li><em class="green">8 </em>
+								<span class="score"> 1</span>
+								<h5><a href="/DVD/index12114.html" title="虹猫蓝兔奥悠国历险记">虹猫蓝兔奥悠国历险记</a></h5>
+							</li>  <li><em class="green">9 </em>
+								<span class="score"> 6</span>
+								<h5><a href="/DVD/index12007.html" title="少女与战车">少女与战车</a></h5>
+							</li>  <li><em class="green">10 </em>
+								<span class="score"> 1</span>
+								<h5><a href="/DVD/index11595.html" title="火影忍者">火影忍者</a></h5>
+							</li>
+						</ul>
+						<!-- // ranking-list end -->
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+				
+				<div class="ui-box-item ui-indexing">
+					<div class="ui-title fn-clear">
+						<h3>经典动漫索引分类</h3>
+						<span><a href="/DVDlist/index4.html" target="_blank">更多</a></span>					</div>
+					<div class="ui-cnt">
+						<dl class="indexing-item">
+							<dt>按地区：</dt>
+							
+<dd><a href="/search.php?type=4&area=美国">美国</a></dd>	
+<dd><a href="/search.php?type=4&area=内地">内地</a></dd>
+<dd><a href="/search.php?type=4&area=香港">香港</a></dd>	
+<dd><a href="/search.php?type=4&area=台湾">台湾</a></dd>	
+<dd><a href="/search.php?type=4&area=大陆">大陆</a></dd>	
+<dd><a href="/search.php?type=4&area=韩国">韩国</a></dd>	
+<dd><a href="/search.php?type=4&area=日本">日本</a></dd>	
+<dd><a href="/search.php?type=4&area=英国">英国</a></dd>	
+<dd><a href="/search.php?type=4&area=法国">法国</a></dd>	
+<dd><a href="/search.php?type=4&area=德国">德国</a></dd>							
+<dd><a href="/search.php?type=4&area=泰国">泰国</a></dd>	
+<dd><a href="/search.php?type=4&area=国产">国产</a></dd>
+						</dl>
+                                                                                          <dl class="indexing-item">
+							<dt>按年代：</dt>
+							<dd>
+<a href="/search.php?type=4&year=2013">2013</a></dd>
+<dd><a href="/search.php?type=4&year=2012">2012</a></dd>
+<dd><a href="/search.php?type=4&year=2011">2011</a></dd>
+<dd><a href="/search.php?type=4&year=2010">2010</a></dd>
+<dd><a href="/search.php?type=4&year=2009">2009</a></dd>
+<dd><a href="/search.php?type=4&year=2008">2008</a></dd>
+<dd><a href="/search.php?type=4&year=2007">2007</a></dd>
+<dd><a href="/search.php?type=4&year=2006">2006</a></dd>
+<dd><a href="/search.php?type=4&year=2005">2005</a></dd>
+<dd><a href="/search.php?type=4&year=2004">2004</a></dd>
+<dd><a href="/search.php?type=4&year=2003">2003</a></dd>
+<dd><a href="/search.php?type=4&year=2002">2002</a></dd>
+<dd><a href="/search.php?type=4&year=2001">2001</a></dd>
+<dd><a href="/search.php?type=4&year=2000">2000</a></dd>
+<dd><a href="/search.php?type=4&year=1999">1999</a></dd>
+<dd><a href="/search.php?type=4&year=1998">1998</a></dd>
+<dd><a href="/search.php?type=4&year=1997">1997</a></dd>
+<dd><a href="/search.php?type=4&year=1996">1996</a></dd>
+<dd><a href="/search.php?type=4&year=1995">1995</a></dd>
+<dd><a href="/search.php?type=4&year=1994">1994</a></dd>
+			</dl>
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+			</div>
+		</div>	
+		<!-- // sidebar end -->
+	</div>
+	<!-- // layout end -->
+	
+	<div class="layout fn-clear">
+		<div class="mainbox fn-left">
+			<div class="ui-box l-h" id="fun-module">
+				<div class="ui-title fn-clear">
+					<label class="ui-mark">综艺</label>
+					<h2>综艺娱乐<em>·  Variety Show</em></h2>
+				<span> <a href="/search.php?type=4&area=美国">美国综艺</a><em>|</em>	
+<a href="/search.php?type=4&area=香港">香港综艺</a><em>|</em>	
+<a href="/search.php?type=4&area=台湾">台湾综艺</a><em>|</em>	
+<a href="/search.php?type=4&area=大陆">大陆综艺</a><em>|</em>	
+<a href="/search.php?type=4&area=韩国">韩国综艺</a><em>|</em>	
+<a href="/search.php?type=4&area=日本">日本综艺</a><em>|</em></span> </div>
+				<div class="ui-cnt">
+						<ul class="img-list fn-clear">
+						                            								<li>
+							  <a href="/DVD/index15345.html" class="play-pic" title="我是歌手(湖南卫视)" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136522074016.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="我是歌手(湖南卫视)" />
+								<label class="fbg"> </label>
+								<label class="txt">总决赛</label>
+							</a>
+							<h5><a href="/DVD/index15345.html" title="我是歌手(湖南卫视)" target="_blank">我是歌手(湖南卫视)</a></h5>
+							<p class="txt"> </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:4%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">4</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index12149.html" class="play-pic" title="舞林争霸第五季" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454919113.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="舞林争霸第五季" />
+								<label class="fbg"> </label>
+								<label class="txt">TV录制版</label>
+							</a>
+							<h5><a href="/DVD/index12149.html" title="舞林争霸第五季" target="_blank">舞林争霸第五季</a></h5>
+							<p class="txt">Cat Deeley </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index11647.html" class="play-pic" title="快乐大本营2013" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645489895.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="快乐大本营2013" />
+								<label class="fbg"> </label>
+								<label class="txt">20130216期</label>
+							</a>
+							<h5><a href="/DVD/index11647.html" title="快乐大本营2013" target="_blank">快乐大本营2013</a></h5>
+							<p class="txt">何炅 李维嘉 谢娜 杜海涛 吴昕 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:3%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">3</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index11607.html" class="play-pic" title="凤凰大视野2013" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645489753.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="凤凰大视野2013" />
+								<label class="fbg"> </label>
+								<label class="txt">20130416期</label>
+							</a>
+							<h5><a href="/DVD/index11607.html" title="凤凰大视野2013" target="_blank">凤凰大视野2013</a></h5>
+							<p class="txt">陈晓楠 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:4%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">4</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index11480.html" class="play-pic" title="百变大咖秀2013" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454892210.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="百变大咖秀2013" />
+								<label class="fbg"> </label>
+								<label class="txt">20130418期</label>
+							</a>
+							<h5><a href="/DVD/index11480.html" title="百变大咖秀2013" target="_blank">百变大咖秀2013</a></h5>
+							<p class="txt">何炅 谢娜 王祖蓝 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:7%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">7</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index11443.html" class="play-pic" title="美凤有约2013" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454890910.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="美凤有约2013" />
+								<label class="fbg"> </label>
+								<label class="txt">20130416期</label>
+							</a>
+							<h5><a href="/DVD/index11443.html" title="美凤有约2013" target="_blank">美凤有约2013</a></h5>
+							<p class="txt">陈美凤 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:4%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">4</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index11403.html" class="play-pic" title="天天向上2013" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645488939.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="天天向上2013" />
+								<label class="fbg"> </label>
+								<label class="txt">20130419期</label>
+							</a>
+							<h5><a href="/DVD/index11403.html" title="天天向上2013" target="_blank">天天向上2013</a></h5>
+							<p class="txt">汪涵 欧弟 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:38%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">38</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index11388.html" class="play-pic" title="2013湖南卫视小年夜春晚" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-02/201302061360121315.png" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="2013湖南卫视小年夜春晚" />
+								<label class="fbg"> </label>
+								<label class="txt">HDTV</label>
+							</a>
+							<h5><a href="/DVD/index11388.html" title="2013湖南卫视小年夜春晚" target="_blank">2013湖南卫视小年夜春晚</a></h5>
+							<p class="txt">群星 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:100%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">275</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index11381.html" class="play-pic" title="鲁豫有约2013" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/13645488847.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="鲁豫有约2013" />
+								<label class="fbg"> </label>
+								<label class="txt">20130417期</label>
+							</a>
+							<h5><a href="/DVD/index11381.html" title="鲁豫有约2013" target="_blank">鲁豫有约2013</a></h5>
+							<p class="txt">陈鲁豫 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:6%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">6</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index11366.html" class="play-pic" title="劲歌金曲2013" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-03/136454887811.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="劲歌金曲2013" />
+								<label class="fbg"> </label>
+								<label class="txt">20130421期</label>
+							</a>
+							<h5><a href="/DVD/index11366.html" title="劲歌金曲2013" target="_blank">劲歌金曲2013</a></h5>
+							<p class="txt">众明星 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:3%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">3</strong>
+							</p>
+						  </li>
+				</ul>
+					<!-- // img-list end -->
+					
+					  <ul class="txt-list fn-clear">
+						 					        					         <li><em>01.</em><a href="/DVD/index11220.html" title="国光帮帮忙2013" target="_blank">国光帮帮忙2013</a>/<a href="/DVD/index11220.html" title="国光帮帮忙2013" class="gray" target="_blank">更新至20130422期</a>
+					      </li> <li><em>02.</em><a href="/DVD/index12085.html" title="王牌谍中谍" target="_blank">王牌谍中谍</a>/<a href="/DVD/index12085.html" title="王牌谍中谍" class="gray" target="_blank">更新至20130422期</a>
+					      </li> <li><em>03.</em><a href="/DVD/index11218.html" title="大学生了没2013" target="_blank">大学生了没2013</a>/<a href="/DVD/index11218.html" title="大学生了没2013" class="gray" target="_blank">更新至20130422期</a>
+					      </li> <li><em>04.</em><a href="/DVD/index11217.html" title="美食大三通2013" target="_blank">美食大三通2013</a>/<a href="/DVD/index11217.html" title="美食大三通2013" class="gray" target="_blank">更新至20130422期</a>
+					      </li> <li><em>05.</em><a href="/DVD/index16101.html" title="明日之星SUPERSTAR" target="_blank">明日之星SUPERSTAR</a>/<a href="/DVD/index16101.html" title="明日之星SUPERSTAR" class="gray" target="_blank">更新至04-20</a>
+					      </li> <li><em>06.</em><a href="/DVD/index16100.html" title="天才冲冲冲" target="_blank">天才冲冲冲</a>/<a href="/DVD/index16100.html" title="天才冲冲冲" class="gray" target="_blank">更新至04-20</a>
+					      </li> <li><em>07.</em><a href="/DVD/index16099.html" title="综艺大集合" target="_blank">综艺大集合</a>/<a href="/DVD/index16099.html" title="综艺大集合" class="gray" target="_blank">更新至04-21</a>
+					      </li> <li><em>08.</em><a href="/DVD/index16373.html" title="12-13赛季NBA季后赛" target="_blank">12-13赛季NBA季后赛</a>/<a href="/DVD/index16373.html" title="12-13赛季NBA季后赛" class="gray" target="_blank">更新至04-22</a>
+					      </li> <li><em>09.</em><a href="/DVD/index16392.html" title="顾嘉辉大师经典演唱会" target="_blank">顾嘉辉大师经典演唱会</a>/<a href="/DVD/index16392.html" title="顾嘉辉大师经典演唱会" class="gray" target="_blank">更新至1280高清</a>
+					      </li>
+			   </ul>
+					<!-- // txt-list end -->
+				</div>
+			</div>
+			<!-- // ui-box#latest end -->
+		</div>
+		<!-- // mainbox end -->
+		
+		<div class="sidebar fn-right">
+			<div class="ui-box r-h">
+				<div class="ui-box-item score-ranking">
+					<div class="ui-title">
+						<h3>综艺娱乐评分榜</h3>
+					</div>
+					<div class="ui-cnt">
+						<ul class="ranking-list">
+								  <li><em class="brown">1 </em>
+								<span class="score"> 11295</span>
+								<h5><a href="/DVD/index6793.html" title="M1938电影网欢迎你 ,2013最受欢迎的电影">M1938电影网欢迎你 ,2013最受欢迎的电影</a></h5>
+							</li>  <li><em class="brown">2 </em>
+								<span class="score"> 5</span>
+								<h5><a href="/DVD/index15321.html" title="百变大咖秀">百变大咖秀</a></h5>
+							</li>  <li><em class="brown">3 </em>
+								<span class="score"> 6</span>
+								<h5><a href="/DVD/index11220.html" title="国光帮帮忙2013">国光帮帮忙2013</a></h5>
+							</li>  <li><em class="brown">4 </em>
+								<span class="score"> 4</span>
+								<h5><a href="/DVD/index15368.html" title="TVBS哈新闻">TVBS哈新闻</a></h5>
+							</li>  <li><em class="brown">5 </em>
+								<span class="score"> 4</span>
+								<h5><a href="/DVD/index15345.html" title="我是歌手(湖南卫视)">我是歌手(湖南卫视)</a></h5>
+							</li>  <li><em class="brown">6 </em>
+								<span class="score"> 3</span>
+								<h5><a href="/DVD/index11576.html" title="美食凤味2013">美食凤味2013</a></h5>
+							</li>  <li><em class="brown">7 </em>
+								<span class="score"> 11</span>
+								<h5><a href="/DVD/index11289.html" title="欢乐集结号2013">欢乐集结号2013</a></h5>
+							</li>  <li><em class="brown">8 </em>
+								<span class="score"> 2</span>
+								<h5><a href="/DVD/index16158.html" title="我们约会吧+">我们约会吧+</a></h5>
+							</li>  <li><em class="brown">9 </em>
+								<span class="score"> 4</span>
+								<h5><a href="/DVD/index11266.html" title="料理美食王2013">料理美食王2013</a></h5>
+							</li>  <li><em class="brown">10 </em>
+								<span class="score"> 1</span>
+								<h5><a href="/DVD/index15273.html" title="国光帮帮忙">国光帮帮忙</a></h5>
+							</li>
+					</ul>
+						<!-- // ranking-list end -->
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+				
+				<div class="ui-box-item ui-indexing">
+					<div class="ui-title fn-clear">
+						<h3>综艺娱乐热门节目推荐</h3>
+						<span><a href="/DVDlist/index3.html" target="_blank">更多</a></span>
+					</div>
+					<div class="ui-cnt">
+						<dl class="indexing-item indexing-item-long">
+						
+<dd><a href="/DVD/index11218.html">大学生了没2013</a></dd>
+<dd><a href="/DVD/index11366.html">劲歌金曲2013</a></dd>
+<dd><a href="/DVD/index11275.html">今晚谁当家2013</a></dd>
+<dd><a href="/DVD/index11289.html">欢乐集结号2013</a></dd>
+<dd><a href="/DVD/index11403.html">天天向上2013</a></dd>
+<dd><a href="/DVD/index11480.html">百变大咖秀2013</a></dd>
+<dd><a href="/DVD/index11213.html">康熙来了2013</a></dd>
+<dd><a href="/DVD/index11276.html">娱乐大风暴2013</a></dd>
+<dd><a href="/DVD/index11607.html">凤凰大视野2013</a></dd>
+<dd><a href="/DVD/index11381.html">鲁豫有约2013</a></dd>
+<dd><a href="/DVD/index11443.html">美凤有约2013</a></dd>
+<dd><a href="/DVD/index11239.html">麻辣天后宫2013</a></dd>
+<dd><a href="/DVD/index11342.html">非你莫属2013</a></dd>
+<dd><a href="/DVD/index11345.html">说出你的故事2013</a></dd>
+<dd><a href="/DVD/index11214.html">我是歌手2013</a></dd>
+<dd><a href="/DVD/index11283.html">中国好声音之对战最强音</a></dd>
+<dd><a href="/DVD/index11277.html">非关命运2013</a></dd>
+<dd><a href="/DVD/index12149.html">舞林争霸第五季</a></dd>
+<dd><a href="/DVD/index11308.html">非诚勿扰2013</a></dd>
+<dd><a href="/DVD/index11647.html">快乐大本营2013</a></dd>
+						</dl>
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+			</div>
+		</div>	
+		<!-- // sidebar end -->
+	</div>
+	<!-- // layout end -->
+	
+	<div class="layout fn-clear">
+		<div class="mainbox fn-left">
+			<div class="ui-box" id="wei-module">
+				<div class="ui-title fn-clear">
+					<label class="ui-mark">微影</label>
+					<h2>微电影<em>·  Micro Film</em></h2>
+				
+<span>  <a href="/DVDlist/index21.html" target="_blank">艺术写真</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index22.html" target="_blank">相声小品</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index23.html" target="_blank">搞笑视频</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index24.html" target="_blank">曲艺戏曲</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index25.html" target="_blank">教育培训</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index26.html" target="_blank">快播高清</a> <em>|</em></span>
+
+<span>  <a href="/DVDlist/index27.html" target="_blank">演唱会</a> <em>|</em></span>
+	</div>
+				<div class="ui-cnt">
+					<ul class="img-list fn-clear">
+						                            								<li>
+							  <a href="/DVD/index16050.html" class="play-pic" title="(歌剧)普契尼&多明戈-《托斯卡》" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136530202812.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="(歌剧)普契尼&多明戈-《托斯卡》" />
+								<label class="fbg"> </label>
+								<label class="txt"></label>
+							</a>
+							<h5><a href="/DVD/index16050.html" title="(歌剧)普契尼&多明戈-《托斯卡》" target="_blank">(歌剧)普契尼&多明戈-《托斯卡》</a></h5>
+							<p class="txt">RainaKabaivanska&多明戈 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:3%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">3</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index16049.html" class="play-pic" title="(音乐mv)蔡依林《爱情任务》冠军连霸影音混搭典藏版" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136530202711.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="(音乐mv)蔡依林《爱情任务》冠军连霸影音混搭典藏版" />
+								<label class="fbg"> </label>
+								<label class="txt">第1集</label>
+							</a>
+							<h5><a href="/DVD/index16049.html" title="(音乐mv)蔡依林《爱情任务》冠军连霸影音混搭典藏版" target="_blank">(音乐mv)蔡依林《爱情任务》冠军连霸影音混搭典藏版</a></h5>
+							<p class="txt">蔡依林 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:4%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">4</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index16048.html" class="play-pic" title="(音乐mv)郭静《下一个天亮》MV专辑" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/136530202610.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="(音乐mv)郭静《下一个天亮》MV专辑" />
+								<label class="fbg"> </label>
+								<label class="txt"></label>
+							</a>
+							<h5><a href="/DVD/index16048.html" title="(音乐mv)郭静《下一个天亮》MV专辑" target="_blank">(音乐mv)郭静《下一个天亮》MV专辑</a></h5>
+							<p class="txt">郭静 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index16047.html" class="play-pic" title="陈绮贞《绮贞Best》MV专辑" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13653020259.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="陈绮贞《绮贞Best》MV专辑" />
+								<label class="fbg"> </label>
+								<label class="txt"></label>
+							</a>
+							<h5><a href="/DVD/index16047.html" title="陈绮贞《绮贞Best》MV专辑" target="_blank">陈绮贞《绮贞Best》MV专辑</a></h5>
+							<p class="txt">陈绮贞 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:1%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">1</strong>
+							</p>
+						  </li><li>
+							  <a href="/DVD/index16046.html" class="play-pic" title="alan阿兰《Voice Of Earth》MV专辑" target="_blank">
+								<img src="http://a.m1938.com/m1938img/upload/vod/2013-04/13653020258.jpg" onerror="javascript:this.src='/m1938/fx8.gif';"  alt="alan阿兰《Voice Of Earth》MV专辑" />
+								<label class="fbg"> </label>
+								<label class="txt"></label>
+							</a>
+							<h5><a href="/DVD/index16046.html" title="alan阿兰《Voice Of Earth》MV专辑" target="_blank">alan阿兰《Voice Of Earth》MV专辑</a></h5>
+							<p class="txt">alan阿兰 </p>
+							<p class="txt">
+								<span class="ratbar">
+									<span style="width:0%;" class="ratbar-item"> </span>
+								</span>
+								<strong class="ratbar-num">0</strong>
+							</p>
+						  </li>
+				</ul>
+					<!-- // img-list end -->
+					
+					  <ul class="txt-list fn-clear">
+						 					        					         <li><em>01.</em><a href="/DVD/index16050.html" title="(歌剧)普契尼&多明戈-《托斯卡》" target="_blank">(歌剧)普契尼&多明戈-《托斯卡》</a>/<a href="/DVD/index16050.html" title="(歌剧)普契尼&多明戈-《托斯卡》" class="gray" target="_blank"></a>
+					      </li> <li><em>02.</em><a href="/DVD/index16049.html" title="(音乐mv)蔡依林《爱情任务》冠军连霸影音混搭典藏版" target="_blank">(音乐mv)蔡依林《爱情任务》冠军连霸影音混搭典藏版</a>/<a href="/DVD/index16049.html" title="(音乐mv)蔡依林《爱情任务》冠军连霸影音混搭典藏版" class="gray" target="_blank">第1集</a>
+					      </li> <li><em>03.</em><a href="/DVD/index14980.html" title="辛晓琪2006承诺演唱会" target="_blank">辛晓琪2006承诺演唱会</a>/<a href="/DVD/index14980.html" title="辛晓琪2006承诺演唱会" class="gray" target="_blank"></a>
+					      </li> <li><em>04.</em><a href="/DVD/index14979.html" title="草蜢2006我们的草蜢演唱会" target="_blank">草蜢2006我们的草蜢演唱会</a>/<a href="/DVD/index14979.html" title="草蜢2006我们的草蜢演唱会" class="gray" target="_blank"></a>
+					      </li> <li><em>05.</em><a href="/DVD/index16048.html" title="(音乐mv)郭静《下一个天亮》MV专辑" target="_blank">(音乐mv)郭静《下一个天亮》MV专辑</a>/<a href="/DVD/index16048.html" title="(音乐mv)郭静《下一个天亮》MV专辑" class="gray" target="_blank"></a>
+					      </li> <li><em>06.</em><a href="/DVD/index16047.html" title="陈绮贞《绮贞Best》MV专辑" target="_blank">陈绮贞《绮贞Best》MV专辑</a>/<a href="/DVD/index16047.html" title="陈绮贞《绮贞Best》MV专辑" class="gray" target="_blank"></a>
+					      </li> <li><em>07.</em><a href="/DVD/index16046.html" title="alan阿兰《Voice Of Earth》MV专辑" target="_blank">alan阿兰《Voice Of Earth》MV专辑</a>/<a href="/DVD/index16046.html" title="alan阿兰《Voice Of Earth》MV专辑" class="gray" target="_blank"></a>
+					      </li> <li><em>08.</em><a href="/DVD/index16045.html" title="(音乐mv)许志安《歌人》MV专辑" target="_blank">(音乐mv)许志安《歌人》MV专辑</a>/<a href="/DVD/index16045.html" title="(音乐mv)许志安《歌人》MV专辑" class="gray" target="_blank"></a>
+					      </li> <li><em>09.</em><a href="/DVD/index16044.html" title="(音乐mv)张靓颖《The One》MV专辑" target="_blank">(音乐mv)张靓颖《The One》MV专辑</a>/<a href="/DVD/index16044.html" title="(音乐mv)张靓颖《The One》MV专辑" class="gray" target="_blank"></a>
+					      </li>
+				   </ul>
+					<!-- // txt-list end -->
+				</div>
+			</div>
+			<!-- // ui-box#latest end -->
+		</div>
+		<!-- // mainbox end -->
+		
+		<div class="sidebar fn-right">
+			<div class="ui-box">
+				<div class="ui-box-item score-ranking">
+					<div class="ui-title">
+						<h3>微电影评分榜</h3>
+					<span><a href="/DVDlist/index20.html" target="_blank">更多</a></span>
+</div>
+					<div class="ui-cnt">
+						<ul class="ranking-list">
+								  <li><em class="gray">1 </em>
+								<span class="score"> 4</span>
+								<h5><a href="/DVD/index16049.html" title="(音乐mv)蔡依林《爱情任务》冠军连霸影音混搭典藏版">(音乐mv)蔡依林《爱情任务》冠军连霸影音混搭典藏版</a></h5>
+							</li>  <li><em class="gray">2 </em>
+								<span class="score"> 3</span>
+								<h5><a href="/DVD/index16050.html" title="(歌剧)普契尼&多明戈-《托斯卡》">(歌剧)普契尼&多明戈-《托斯卡》</a></h5>
+							</li>  <li><em class="gray">3 </em>
+								<span class="score"> 2</span>
+								<h5><a href="/DVD/index16045.html" title="(音乐mv)许志安《歌人》MV专辑">(音乐mv)许志安《歌人》MV专辑</a></h5>
+							</li>  <li><em class="gray">4 </em>
+								<span class="score"> 2</span>
+								<h5><a href="/DVD/index15049.html" title="(戏曲)梅花香自苦寒来-李仙花从艺35周年汉剧经典演唱会">(戏曲)梅花香自苦寒来-李仙花从艺35周年汉剧经典演唱会</a></h5>
+							</li>  <li><em class="gray">5 </em>
+								<span class="score"> 2</span>
+								<h5><a href="/DVD/index15036.html" title="郑少秋2005真经典演唱会">郑少秋2005真经典演唱会</a></h5>
+							</li>  <li><em class="gray">6 </em>
+								<span class="score"> 2</span>
+								<h5><a href="/DVD/index13410.html" title="太极张三丰(QMV)">太极张三丰(QMV)</a></h5>
+							</li>  <li><em class="gray">7 </em>
+								<span class="score"> 2</span>
+								<h5><a href="/DVD/index12943.html" title="飞翔的艺术(QMV)">飞翔的艺术(QMV)</a></h5>
+							</li>  <li><em class="gray">8 </em>
+								<span class="score"> 2</span>
+								<h5><a href="/DVD/index12293.html" title="训练日(QMV)">训练日(QMV)</a></h5>
+							</li>  <li><em class="gray">9 </em>
+								<span class="score"> 1</span>
+								<h5><a href="/DVD/index16047.html" title="陈绮贞《绮贞Best》MV专辑">陈绮贞《绮贞Best》MV专辑</a></h5>
+							</li>  <li><em class="gray">10 </em>
+								<span class="score"> 1</span>
+								<h5><a href="/DVD/index16039.html" title="(音乐mv)女子十二乐坊">(音乐mv)女子十二乐坊</a></h5>
+							</li>
+						</ul>
+						<!-- // ranking-list end -->
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+				
+				<div class="ui-box-item ui-indexing">
+					<div class="ui-cnt">
+						<dl class="indexing-item">
+							<dt>按地区：</dt>
+							<dd><a href="/search.php?type=20&area=美国">美国</a></dd>	
+<dd><a href="/search.php?type=20&area=香港">香港</a></dd>	
+<dd><a href="/search.php?type=20&area=台湾">台湾</a></dd>	
+<dd><a href="/search.php?type=20&area=大陆">大陆</a></dd>	
+<dd><a href="/search.php?type=20&area=韩国">韩国</a></dd>	
+<dd><a href="/search.php?type=20&area=日本">日本</a></dd>	
+<dd><a href="/search.php?type=20&area=英国">英国</a></dd>								
+<dd><a href="/search.php?type=20&area=泰国">泰国</a></dd>	
+							</dl>
+					</div>
+				</div>
+				<!-- // ui-box-item end -->
+			</div>
+		</div>	
+		<!-- // sidebar end -->
+	</div>
+	<!-- // layout end -->
+	 <div class="ui-box fn-clear" id="link-focus"><div class="ui-title fn-clear"><label class="ui-mark">链接</label><h2>友情链接<em>·  Friend Links</em></h2></div>
+	 <div class="ui-cnt"><ul class="txt-list links-list fn-clear">
+	  <li><a href="http://m1938.com/" target="_blank">m1938电影网</a></li>
+
+<li><a href="http://www.m1938.com/" target="_blank">最新百度影音电影网</a></li>
+
+	 </ul></div></div>
+</div>
+<!-- // content end -->
+
+﻿<div class="layout" id="footer">
+
+<a class="color" href="/baiduplayer/F.html" target="_blank" title="使用帮助">使用帮助</a>---<a class="color" href="/baiduplayer/O.html" target="_blank" title="使用帮助">常见问题</a>---<a href="/gbook.php" target="_blank" title="给我留言">给我留言</a>---<a href="/new.html" target="_blank" title="最新更新">最新更新</a>---<a href="/map.html ">网站地图</a>---<a href="/baidu.xml" target="_blank" title="百度地图">百度地图</a>---<a href="/rss.xml" target="_blank" title="RSS订阅">RSS订阅</a></script>
+<p>M1938电影网 所提供最新电视剧,好看的百度影音电影,百度影音电视剧,2013最新电影在线观看,百度影音动漫综艺排行榜百度电影全集均系抓取于互联网和各大视频网站，</p>
+<p>本站只提供页面服务，更加不会提供影片存储和上传若本站收录的节目无意侵犯了贵司版权，请给网页底部邮箱地址来信，我们会及时处理和回复，谢谢</p>
+<p>Copyright @ 2012-2013 www.m1938.com 粤ICP备11073798号-2  联系我们 ：<img src="/contact.gif"  align="absmiddle" />(弹窗富媒体勿扰!) </p>
+<p> <script src="http://s94.cnzz.com/stat.php?id=1333346&web_id=1333346&show=pic" language="JavaScript"></script></p> </div>
+<!-- // footer end -->
+<!-- m1938.com 2013-01-06 09:58:37 -->
+<!-- footer 结束 -->
+<script src="/m1938/css/ui.js"></script>
+</body>
+</html>
